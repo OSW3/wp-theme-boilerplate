@@ -127,6 +127,7 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
                 ]);
             }
         }
+        unset($menu);
     }
 
 
