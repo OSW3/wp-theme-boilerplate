@@ -11,8 +11,14 @@
 
 $pages = [
     [
-        'title' => 'Example Page',
-        'slug'  => 'example-page',
-        'template' => 'example-page.php'
+        'title' => 'Example Content',
+        'slug'  => 'example-content',
+        'template' => 'templates/example-content.php',
+        'content' => "This content is writed in the Pages editor"
+    ],
+    [
+        'title' => 'Example Template',
+        'slug'  => 'example-template',
+        'template' => 'templates/example-template.php'
     ],
 ];
