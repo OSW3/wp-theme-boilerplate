@@ -76,12 +76,13 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
             {
                 $item_parent        = isset($item['parent']) ? $item['parent'] : 0;
                 $item_position      = isset($item['position']) ? $item['position'] : $index;
-                $item_title         = isset($item['title']) ? __($item['title']) : '';
+                $item_title         = isset($item['title']) ? __($item['title']) : 'xxx';
                 $item_url           = isset($item['url']) ? $item['url'] : '';
                 $item_description   = isset($item['description']) ? __($item['description']) : '';
                 $item_attr_title    = isset($item['attr_title']) ? __($item['attr_title']) : '';
                 $item_target        = isset($item['target']) ? $item['target'] : '';
                 $item_classes       = isset($item['classes']) ? $item['classes'] : '';
+                $item_xfn           = isset($item['xfn']) ? $item['xfn'] : '';
                 
                 $item_type          = 'custom';
                 $item_object        = '';
@@ -91,7 +92,7 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
                 if (isset($item['object']))
                 {
                     $object = get_page_by_slug($item['object']);
-
+                    
                     if (isset($object->ID))
                     {
                         $item_title     = $object->post_title;
@@ -108,7 +109,7 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
                         $item_url       = get_home_url($item_url);
                     }
                 }
-                
+
                 // Add item 
                 wp_update_nav_menu_item($menu_id, 0, [
                     'menu-item-object-id'   => $item_object_id,
@@ -122,11 +123,12 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
                     'menu-item-attr-title'  => $item_attr_title,
                     'menu-item-target'      => $item_target,
                     'menu-item-classes'     => $item_classes,
-                    'menu-item-xfn'         => 'friend',
+                    'menu-item-xfn'         => $item_xfn,
                     'menu-item-status'      => 'publish',
                 ]);
             }
         }
+        unset($menu);
     }
 
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * get__menu
+ * get_menu
  * --
  * @param string $menu the slug of the menu
  * @param string $ul_class class for ul element
