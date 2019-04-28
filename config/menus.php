@@ -9,12 +9,12 @@ $menus = [
         "title" => "Main Menu",
         "items" => [
             [
-                'title' => "Accueil",
+                'title' => "Home",
                 'classes' => null,
                 'url'   => "/",
             ],
             [
-                "object" => "example-page"
+                "object" => "contact-us"
             ]
         ]
     ],
@@ -43,13 +43,12 @@ $menus = [
     /**
      * Copyright Menu
      */
-    // [
-    //     "title" => "Copyright Menu",
-    //     "items" => [
-    //         ["object" => "mentions-legales"],
-    //         ["object" => "conditions-generales-dutilisation"],
-    //         ["object" => "politique-de-confidentialite"],
-    //         ["object" => "contactez-nous"]
-    //     ]
-    // ],
+    [
+        "title" => "Copyright Menu",
+        "items" => [
+            ["object" => "terms-of-use"],
+            ["object" => "privacy-policy"],
+            ["object" => "contact-us"]
+        ]
+    ],
 ];

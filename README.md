@@ -91,10 +91,11 @@ $pages = [
 
 ##### Page declaration parameters
 
-- `title`
-- `slug`
-- `template`
-- `content`
+- `title` : `string` Define the title of the page.
+- `slug` : `string` Define the slug of the page.
+- `template` : `string` set the template file of the page.
+- `content` : `string` set the content of the page if the template is not defiend.
+- `homepage` : `boolean` If `true` set the page as static homepage.
 
 ### Create menus on theme activation
 

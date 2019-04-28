@@ -10,9 +10,34 @@
  */
 
 $pages = [
+
+    // Homepage
+
     [
-        'title' => 'Example Page',
-        'slug'  => 'example-page',
-        'template' => 'example-page.php'
+        'title' => 'Homepage',
+        'slug'  => 'homepage',
+        'template' => 'index.php',
+        'homepage' => true
+    ],
+
+    // Supports
+
+    [
+        'title' => 'Contact',
+        'slug'  => 'contact-us',
+        'template' => 'templates/contact.php'
+    ],
+
+    // Legal
+
+    [
+        'title' => "Terms of use",
+        'slug'  => 'terms-of-use',
+        'template' => 'templates/legal.php'
+    ],
+    [
+        'title' => "Privacy policy",
+        'slug'  => 'privacy-policy',
+        'template' => 'templates/legal.php'
     ],
 ];

@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Homepage
+ * Template Name: Legal
  * 
- * The main template file
+ * The contact template file
  */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_template_part( 'templates/components/page', 'header' ); ?>
 
 <div class="page-inner">
     <div class="container">
-        Homepage
+        Contact Form
     </div>
 </div>
 
