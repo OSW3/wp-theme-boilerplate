@@ -11,9 +11,9 @@ if (!function_exists('get_image'))
 {    
     function get_image(string $file)
     {
-        if (defined('URI_THEME')) 
+        if (defined('THEME_IMAGES_URI')) 
         {
-            return THEME_URI."assets/images/".$file;
+            return THEME_IMAGES_URI.$file;
         }
 
         return null;

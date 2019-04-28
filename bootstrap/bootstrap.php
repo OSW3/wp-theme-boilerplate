@@ -12,6 +12,9 @@ define("WP_INCLUDES_DIRNAME", "wp-includes");
  */
 define("WP_CONTENT_DIRNAME", "wp-content");
 
+/**
+ * Directory Separator alias
+ */
 define("DS", DIRECTORY_SEPARATOR);
 
 
@@ -64,6 +67,12 @@ define("THEME_STYLES_URI", THEME_URI."assets".DS."css".DS);
  * Define the uri of the current "theme" scripts directory 
  */
 define("THEME_SCRIPTS_URI", THEME_URI."assets".DS."js".DS);
+
+/**
+ * Type: String
+ * Define the uri of the current "theme" images directory 
+ */
+define("THEME_IMAGES_URI", THEME_URI."assets".DS."images".DS);
 
 
 // ------------------------------ // 

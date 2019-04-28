@@ -17,7 +17,7 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
         $page_title     = isset($page['title'])     ? __($page['title'])    : null;
         $page_slug      = isset($page['slug'])      ? __($page['slug'])     : null;
         $page_content   = isset($page['content'])   ? __($page['content'])  : '';
-        $page_template  = isset($page['template'])  ? $page['template']     : null;
+        $page_template  = isset($page['template'])  ? "templates/".$page['template']     : null;
         $page_exists    = get_page_by_title($page_title);
 
         $page = [
@@ -117,6 +117,18 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
                 ]);
             }
         }
+    }
+
+
+    /**
+     * Change the permalink structure
+     */
+    if (defined("PERMALINK_STRUCTURE") && PERMALINK_STRUCTURE != null) 
+    {
+        add_action('init', function() {
+            global $wp_rewrite;
+            $wp_rewrite->set_permalink_structure( PERMALINK_STRUCTURE );
+        });
     }
 }
 

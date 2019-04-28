@@ -97,3 +97,11 @@ $pages = [
 - `content`
 
 ### Create menus on theme activation
+
+### Set the permalink structure
+
+Change the constant `PERMALINK_STRUCTURE` 
+
+```php
+define("PERMALINK_STRUCTURE", (string) "/%postname%/");
+```
