@@ -17,8 +17,10 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
         $page_title     = isset($page['title'])     ? __($page['title'])    : null;
         $page_slug      = isset($page['slug'])      ? __($page['slug'])     : null;
         $page_content   = isset($page['content'])   ? __($page['content'])  : '';
-        $page_template  = isset($page['template'])  ? "templates/".$page['template']     : null;
+        $page_template  = isset($page['template'])  ? $page['template']     : null;
+        $is_homepage    = isset($page['homepage'])  ? $page['homepage']     : false;
         $page_exists    = get_page_by_title($page_title);
+        $page_id        = isset($page_exists->ID)   ? $page_exists->ID      : null;
 
         $page = [
             'post_type'     => 'page',
@@ -29,7 +31,7 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
             'post_author'   => 1,
         ];
 
-        if(!isset($page_exists->ID))
+        if($page_id === null)
         {
             // Add new page
             $page_id = wp_insert_post($page);
@@ -39,6 +41,14 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
             {
                 update_post_meta($page_id, '_wp_page_template', $page_template);
             }
+
+            $page_exists = get_page_by_title($page_title);
+        }
+
+        if ($page_id != null && $is_homepage)
+        {
+            update_option( 'page_on_front', $page_id );
+            update_option( 'show_on_front', 'page' );
         }
     }
 
