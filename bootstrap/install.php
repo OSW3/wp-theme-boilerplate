@@ -1,0 +1,136 @@
+<?php
+
+// Work on theme activation
+if (isset($_GET['activated']) && is_admin() && is_array($pages))
+{
+    /**
+     * Create pages on theme activation
+     */
+
+    // Include pages configuration
+    if (file_exists(THEME_DIR."/config/pages.php")) {
+        include_once THEME_DIR."/config/pages.php";
+    }
+
+    foreach ($pages as $page) 
+    {
+        $page_title     = isset($page['title'])     ? __($page['title'])    : null;
+        $page_slug      = isset($page['slug'])      ? __($page['slug'])     : null;
+        $page_content   = isset($page['content'])   ? __($page['content'])  : '';
+        $page_template  = isset($page['template'])  ? $page['template']     : null;
+        $page_exists    = get_page_by_title($page_title);
+
+        $page = [
+            'post_type'     => 'page',
+            'post_title'    => $page_title,
+            'post_name'     => $page_slug,
+            'post_content'  => $page_content,
+            'post_status'   => 'publish',
+            'post_author'   => 1,
+        ];
+
+        if(!isset($page_exists->ID))
+        {
+            // Add new page
+            $page_id = wp_insert_post($page);
+
+            // Add page template
+            if(!empty($page_template))
+            {
+                update_post_meta($page_id, '_wp_page_template', $page_template);
+            }
+        }
+    }
+
+
+    /**
+     * Create menus on theme activation
+     */
+
+    // Include menus configuration
+    if (file_exists(THEME_DIR."/config/menus.php")) {
+        include_once THEME_DIR."/config/menus.php";
+    }
+
+    foreach ($menus as $menu) 
+    {
+        $menu_title     = isset($menu['title']) ? $menu['title'] : null;
+        $menu_items     = isset($menu['items']) ? $menu['items'] : [];
+        $menu_exists    = wp_get_nav_menu_object($menu_title);
+
+        if (!$menu_exists)
+        {
+            $menu_id    = wp_create_nav_menu($menu_title);
+
+            foreach ($menu_items as $index => $item) 
+            {
+                $item_parent        = isset($item['parent']) ? $item['parent'] : 0;
+                $item_position      = isset($item['position']) ? $item['position'] : $index;
+                $item_title         = isset($item['title']) ? __($item['title']) : '';
+                $item_url           = isset($item['url']) ? $item['url'] : '';
+                $item_description   = isset($item['description']) ? __($item['description']) : '';
+                $item_attr_title    = isset($item['attr_title']) ? __($item['attr_title']) : '';
+                $item_target        = isset($item['target']) ? $item['target'] : '';
+                $item_classes       = isset($item['classes']) ? $item['classes'] : '';
+                
+                $item_type          = 'custom';
+                $item_object        = '';
+                $item_object_id     = 0;
+
+                // If link is a WP Object
+                if (isset($item['object']))
+                {
+                    $object = get_page_by_slug($item['object']);
+
+                    if (isset($object->ID))
+                    {
+                        $item_title     = $object->post_title;
+                        $item_object    = $object->post_type;
+                        $item_object_id = $object->ID;
+                        $item_type      = 'post_type';
+                    }
+                }
+
+                else 
+                {
+                    if (!preg_match("/^http(s)?/", $item_url))
+                    {
+                        $item_url       = get_home_url($item_url);
+                    }
+                }
+                
+                // Add item 
+                wp_update_nav_menu_item($menu_id, 0, [
+                    'menu-item-object-id'   => $item_object_id,
+                    'menu-item-object'      => $item_object,
+                    'menu-item-parent-id'   => $item_parent,
+                    'menu-item-position'    => $item_position,
+                    'menu-item-type'        => $item_type,
+                    'menu-item-title'       => $item_title,
+                    'menu-item-url'         => $item_url,
+                    'menu-item-description' => $item_description,
+                    'menu-item-attr-title'  => $item_attr_title,
+                    'menu-item-target'      => $item_target,
+                    'menu-item-classes'     => $item_classes,
+                    'menu-item-xfn'         => 'friend',
+                    'menu-item-status'      => 'publish',
+                ]);
+            }
+        }
+    }
+}
+
+// 'menu-item-db-id'       => $menu_item_db_id, // menu item ID, If exist.
+// 'menu-item-object-id'   => 0, // menu item to add.
+// 'menu-item-object'      => '', // post type, taxonomy - post or term belong to.
+// 'menu-item-parent-id'   => 0, // parent menu id.
+// 'menu-item-position'    => 0, // item position in menu.
+// 'menu-item-type'        => 'custom',// post_type, post_type_archive, taxonomy, custom.
+// 'menu-item-title'       => '', // custom title of the menu item.
+// 'menu-item-url'         => '', // custom url of menu item.
+// 'menu-item-description' => '', // menu item description.
+// 'menu-item-attr-title'  => '', // menu item attribute title.
+// 'menu-item-target'      => '', // _blank, to open link on new tab.
+// 'menu-item-classes'     => '', // menu item extra custom class.
+// 'menu-item-xfn'         => 'friend', // to set XHTML Friends Network. it will set rel attribute to your link, ex. rel=`friend` to set that link is your friends blog or so.
+// 'menu-item-status'      => '', // draft, publish.
