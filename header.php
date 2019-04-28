@@ -36,7 +36,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <?= get__menu('main-menu', 'navbar-nav ml-auto', 'nav-item', 'nav-link', false) ?>
+                <?= get_menu('main-menu', 'navbar-nav ml-auto', 'nav-item', 'nav-link', false) ?>
                 </div>
             </div>
         </nav>

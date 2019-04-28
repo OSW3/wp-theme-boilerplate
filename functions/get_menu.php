@@ -9,9 +9,9 @@
  * @param string $a_class class for a element
  */
 
-if (!function_exists('get__menu')) 
+if (!function_exists('get_menu')) 
 {    
-    function get__menu(string $menu, string $ul_class = '', string $li_class = '', string $a_class = '', bool $print_html = true)
+    function get_menu(string $menu, string $ul_class = '', string $li_class = '', string $a_class = '', bool $print_html = true)
     {
         set_query_var( 'menu', $menu );
         set_query_var( 'ul_class', $ul_class );
@@ -19,11 +19,11 @@ if (!function_exists('get__menu'))
         set_query_var( 'a_class', $a_class );
 
         if ($print_html) {
-            get_template_part( 'pages/components/menu/menu' );
+            get_template_part( 'components/menus/menu' );
         }
         else {
             ob_start();
-            get_template_part( 'pages/components/menu/menu' );
+            get_template_part( 'components/menus/menu' );
             return ob_get_clean();
         }
         
