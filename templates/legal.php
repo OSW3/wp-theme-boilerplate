@@ -12,7 +12,7 @@ get_template_part( 'components/header/page' ); ?>
 
 <div class="page-inner">
     <div class="container">
-        Contact Form
+        Legal Template
     </div>
 </div>
 

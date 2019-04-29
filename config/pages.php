@@ -20,6 +20,14 @@ $pages = [
         'homepage' => true
     ],
 
+    // blog
+
+    [
+        'title' => 'Blog',
+        'slug'  => 'blog',
+        'template' => 'templates/blog.php'
+    ],
+
     // Supports
 
     [

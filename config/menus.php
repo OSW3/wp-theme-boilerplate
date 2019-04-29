@@ -13,9 +13,8 @@ $menus = [
                 'classes' => null,
                 'url'   => "/",
             ],
-            [
-                "object" => "contact-us"
-            ]
+            ["object" => "blog"],
+            ["object" => "contact-us"]
         ]
     ],
 

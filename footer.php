@@ -7,7 +7,9 @@
 
     <footer id="main-footer">
         <div class="container">
-            footer
+            
+            <?= get_menu('copyright-menu', 'navbar-nav ml-auto', 'nav-item', 'nav-link', false) ?>
+
         </div>
     </footer>
 
