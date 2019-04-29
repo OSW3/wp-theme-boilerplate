@@ -22,7 +22,7 @@
 
     <header id="main-header">
 
-        <?= get__bar_top(true) ?>
+        <?= get_topbar(true) ?>
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">

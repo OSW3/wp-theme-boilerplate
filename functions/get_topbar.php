@@ -1,13 +1,13 @@
 <?php
 
 /**
- * get__bar_top
+ * get_topbar
  * --
  */
 
-if (!function_exists('get__bar_top')) 
+if (!function_exists('get_topbar')) 
 {    
-    function get__bar_top(bool $print_html = true)
+    function get_topbar(bool $print_html = true)
     {
         if ($print_html) {
             get_template_part( 'components/topbar/topbar' );
