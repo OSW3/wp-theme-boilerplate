@@ -8,9 +8,7 @@
 get_header(); ?>
 
 <div class="page-header">
-    <div class="container">
-        <h3>Contact</h3>
-    </div>
+    <?= get_map(1, ['url' => 'https://www.google.com/maps/embed?xxxx']) ?>
 </div>
 
 <div class="page-inner">

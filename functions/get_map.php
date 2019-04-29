@@ -1,15 +1,15 @@
 <?php
 
 /**
- * get__map
+ * get_map
  * --
  * @param array $params 
  * @return string 
  */
 
-if (!function_exists('get__map')) 
+if (!function_exists('get_map')) 
 {    
-    function get__map(int $version = 1, array $data = [], bool $print_html = true)
+    function get_map(int $version = 1, array $data = [], bool $print_html = true)
     {
         set_query_var( 'data', $data );
 
