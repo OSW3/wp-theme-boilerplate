@@ -2,8 +2,8 @@
 /**
  * The template for displaying the header
  */
-
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -14,6 +14,9 @@
     <![endif]-->
     <?php wp_head(); ?>
 
+    <?= get_partial("meta/opengraph") ?>
+    <?= get_partial("meta/twittercard") ?>
+
     <meta name="description" content="<?= date("j M Y") ?> - <?= bloginfo('description') ?>">
     <link rel="shortcut" href="<?= get_image("favicon.ico") ?>" type="image/x-icon" />
     <link rel="icon" href="<?= get_image("favicon.ico") ?>" type="image/x-icon" />
@@ -22,24 +25,8 @@
 
     <header id="main-header">
 
-        <?= get_topbar(true) ?>
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-
-                <a class="navbar-brand brand" href="<?= get_home_url(); ?>">
-                    <img src="<?= get_image('logo.png') ?>" alt="<?= bloginfo('name') ?>">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <?= get_menu('main-menu', 'navbar-nav ml-auto', 'nav-item', 'nav-link', false) ?>
-                </div>
-            </div>
-        </nav>
+        <?= get_partial("topbar/topbar") ?>
+        <?= get_partial("navbar/navbar") ?>
 
     </header>
 

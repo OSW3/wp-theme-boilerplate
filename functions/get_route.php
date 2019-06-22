@@ -9,7 +9,7 @@
 
 if (!function_exists('get_route')) 
 {    
-    function get_route(integer $post_id, string $slug = '')
+    function get_route(int $post_id, string $slug = '')
     {
         $translations = [];
 

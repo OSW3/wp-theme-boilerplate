@@ -3,6 +3,9 @@
 // Work on theme activation
 if (isset($_GET['activated']) && is_admin() && is_array($pages))
 {
+
+    // exit("On activate");
+
     /**
      * Create pages on theme activation
      */
@@ -134,12 +137,54 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
     /**
      * Change the permalink structure
      */
+
     if (defined("PERMALINK_STRUCTURE") && PERMALINK_STRUCTURE != null) 
     {
         add_action('init', function() {
             global $wp_rewrite;
             $wp_rewrite->set_permalink_structure( PERMALINK_STRUCTURE );
         });
+    }
+
+
+    /**
+     * Email
+     */
+
+    if (defined("OPTION_EMAIL_HOST")) 
+    {
+        update_option( "mailserver_url", OPTION_EMAIL_HOST );
+    }
+    if (defined("OPTION_EMAIL_USER")) 
+    {
+        update_option( "mailserver_login", OPTION_EMAIL_USER );
+    }
+    if (defined("OPTION_EMAIL_PASS")) 
+    {
+        update_option( "mailserver_pass", OPTION_EMAIL_PASS );
+    }
+    if (defined("OPTION_EMAIL_PORT")) 
+    {
+        update_option( "mailserver_port", OPTION_EMAIL_PORT );
+    }
+
+
+    /**
+     * Blog Options
+     */
+
+    if (defined("OPTION_BLOGNAME") && OPTION_BLOGNAME != null) 
+    {
+        update_option( "blogname", OPTION_BLOGNAME );
+    }
+    if (defined("OPTION_BLOGDESCRIPTION")) 
+    {
+        update_option( "blogdescription", OPTION_BLOGDESCRIPTION );
+    }
+
+    if (defined("OPTION_POST_PER_PAGE")) 
+    {
+        update_option( "posts_per_page", OPTION_POST_PER_PAGE );
     }
 }
 

@@ -3,14 +3,11 @@
  * The template for displaying the footer
  */
 ?>
-    </div>
+    </div><!-- End #main-content -->
 
     <footer id="main-footer">
-        <div class="container">
-            
-            <?= get_menu('copyright-menu', 'navbar-nav ml-auto', 'nav-item', 'nav-link', false) ?>
-
-        </div>
+        <?= get_partial("footer/links") ?>
+        <?= get_partial("footer/copyright") ?>
     </footer>
 
     <?php wp_footer(); ?>

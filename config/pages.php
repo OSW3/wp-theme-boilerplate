@@ -25,7 +25,7 @@ $pages = [
     [
         'title' => 'Blog',
         'slug'  => 'blog',
-        'template' => 'templates/blog.php'
+        'template' => 'blog.php'
     ],
 
     // Supports
@@ -33,7 +33,7 @@ $pages = [
     [
         'title' => 'Contact',
         'slug'  => 'contact-us',
-        'template' => 'templates/contact.php'
+        'template' => 'contact.php'
     ],
 
     // Legal
@@ -41,11 +41,11 @@ $pages = [
     [
         'title' => "Terms of use",
         'slug'  => 'terms-of-use',
-        'template' => 'templates/legal.php'
+        'template' => 'legal.php'
     ],
     [
         'title' => "Privacy policy",
         'slug'  => 'privacy-policy',
-        'template' => 'templates/legal.php'
+        'template' => 'legal.php'
     ],
 ];

@@ -1,0 +1,94 @@
+/* ======================== */
+/* Header                   */
+/* ======================== */
+
+#main-header {
+    background: #EDF1F4;
+}
+
+
+/* ------------------------ */
+/* Header : Topbar          */
+/* ------------------------ */
+
+#main-topbar {
+    background-color: #d41717;
+}
+.topbar-content {
+    color: #ffffff;
+    
+    font-size: 14px;
+    font-weight: 300;
+
+    text-align: center;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.topbar-content a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+/* ------------------------ */
+/* Header : Navbar          */
+/* ------------------------ */
+
+#main-navbar {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+
+
+/* ======================== */
+/* Footer                   */
+/* ======================== */
+
+#main-footer {
+    background: #EDF1F4;
+}
+
+
+/* ------------------------ */
+/* Footer : Links       */
+/* ------------------------ */
+
+.footer-links {
+    /* background: rgb(38, 109, 163); */
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+/* ------------------------ */
+/* Footer : Copyright       */
+/* ------------------------ */
+
+.footer-copyright {
+    color: #666;
+    background: rgba(0, 0, 0, 0.03);
+
+    font-size: 12px;
+    line-height: 23px;
+
+    text-align: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+
+
+/* ======================== */
+/* Content                   */
+/* ======================== */
+
+#main-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
