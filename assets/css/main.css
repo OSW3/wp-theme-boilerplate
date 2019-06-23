@@ -193,8 +193,15 @@ html, body {
     object-position: top;
     width: 100%;
     height: 100%;
-
 }
+.card-cover:hover img {
+    cursor: pointer !important;
+    filter: brightness(85%);
+    transition: filter .15s ease-in-out;
+    -moz-transition: filter .15s ease-in-out;
+    -webkit-transition: filter .15s ease-in-out;
+}
+
 .card-cover:first-child {
     border-radius: .5em;
     border-bottom-left-radius: 0;
@@ -216,13 +223,14 @@ html, body {
 .card-title {
     font-size: 1.2em;
     color: #5e5e5e;
-    color: rgb(193, 45, 124);
+    /* color: rgb(193, 45, 124); */
     line-height: 1.5em;
     font-weight: 700;
     margin-bottom: .75rem;
 }
 .card-title a {
     color: inherit;
+    text-decoration: none;
 }
 
 
