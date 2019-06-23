@@ -59,6 +59,7 @@ html, body {
 #main-footer {
     /* background: #333333; */
     background: #343837;
+    color: rgb(153, 153, 153);
 }
 
 
@@ -79,8 +80,9 @@ html, body {
 /* ------------------------ */
 
 .footer-copyright {
-    color: rgb(153, 153, 153);
+    /* color: rgb(153, 153, 153); */
     /* background: rgba(0, 0, 0, 0.03); */
+    color: inherit;
 
     font-size: 12px;
     line-height: 23px;
@@ -117,8 +119,6 @@ html, body {
 /* ------------------------ */
 
 .page-header {
-    /* background-color: aquamarine; */
-
     padding-top: 30px;
     padding-bottom: 30px;
 

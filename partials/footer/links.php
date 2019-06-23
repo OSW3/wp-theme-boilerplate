@@ -1,5 +1,12 @@
 <div class="footer-links">
     <div class="container">
-        <?= get_menu('copyright-menu', 'navbar-nav ml-auto', 'nav-item', 'nav-link', false) ?>
+        <div class="row">
+
+            <div class="col-3">xxx</div>
+            <div class="col-3">xxx</div>
+            <div class="col-3">xxx</div>
+            <div class="col-3">xxx</div>
+
+        </div>
     </div>
 </div>
