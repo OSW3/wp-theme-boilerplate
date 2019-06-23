@@ -103,7 +103,7 @@ html, body {
 
 
 /* ======================== */
-/* Content                   */
+/* Content                  */
 /* ======================== */
 
 #main-content {
@@ -147,8 +147,9 @@ html, body {
 
 
 
-
-
+/* ======================== */
+/* Card                     */
+/* ======================== */
 
 .card {
     display: flex;
@@ -166,6 +167,11 @@ html, body {
     box-shadow: 0px 12px 18px -6px rgba(34,56,101,0.1);
     border-radius: .5em;
     border: none;
+
+    transition: all .3s;
+}
+.card:hover {
+    box-shadow: 0px 12px 18px -6px rgba(34,56,101,0.3);
 }
 .card-cover,
 .card-footer {
@@ -175,10 +181,6 @@ html, body {
 }
 .card-cover {
     background-color: inherit;
-
-    /* background-image: url(https://aws1.discourse-cdn.com/standard10/uploads/batcommunity1/original/1X/318be3d78de88edc9c79bb98706b951e46951bba.jpeg);
-    background-size: cover;
-    height: 200px; */
     width: 100%;
     height: 14em;
     background-color: none;
@@ -233,8 +235,53 @@ html, body {
     text-decoration: none;
 }
 
-
 .card-inner {
     font-size: 0.85em;
     color: #969696;
+}
+
+
+
+
+
+
+
+
+/* ======================== */
+/* Carousel                 */
+/* ======================== */
+
+.carousel {
+    /* display: flex;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-pack: justify;
+    justify-content: space-between; */
+    margin-bottom: 24px;
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px; */
+    /* flex-direction: column; */
+    /* border-radius: 4px; */
+    /* padding: 20px 32px; */
+
+    /* box-shadow: 0 2px 8px 0 rgba(35,47,53,.09); */
+    box-shadow: 0px 12px 18px -6px rgba(34,56,101,0.3);
+    border-radius: .5em;
+    border: none;
+}
+
+.carousel-item {
+    height: 380px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: .5em;
+    border: none;
+}
+
+.carousel-item a {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
