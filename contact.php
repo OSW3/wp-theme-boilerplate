@@ -1,11 +1,11 @@
 <?php
 /**
- * Template Name: Contact
- * 
- * The contact template file
+ * Template Name: Single
  */
+?>
 
-get_header(); ?>
+<?= get_header(); ?>
+<?= get_partial( 'header/page' ); ?>
 
 <div class="page-header">
     <?= get_map(1, ['url' => 'https://www.google.com/maps/embed?xxxx']) ?>
@@ -13,7 +13,7 @@ get_header(); ?>
 
 <div class="page-inner">
     <div class="container">
-        Contact Form
+        Page : Single
     </div>
 </div>
 

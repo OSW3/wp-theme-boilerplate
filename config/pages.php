@@ -28,6 +28,12 @@ $pages = [
         'template' => 'blog.php'
     ],
 
+    [
+        'title' => 'Store',
+        'slug'  => 'store',
+        'template' => 'store.php'
+    ],
+
     // Supports
 
     [

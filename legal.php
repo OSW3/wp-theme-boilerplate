@@ -4,11 +4,10 @@
  * 
  * The contact template file
  */
+?>
 
-get_header(); ?>
-
-<?php // Page Header
-get_template_part( 'components/header/page' ); ?>
+<?= get_header(); ?>
+<?= get_partial( 'header/page' ); ?>
 
 <div class="page-inner">
     <div class="container">

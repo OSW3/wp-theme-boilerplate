@@ -19,11 +19,11 @@ if (!function_exists('get_menu'))
         set_query_var( 'a_class', $a_class );
 
         if ($print_html) {
-            get_template_part( 'components/menus/menu' );
+            get_template_part( 'partials/menus/menu' );
         }
         else {
             ob_start();
-            get_template_part( 'components/menus/menu' );
+            get_template_part( 'partials/menus/menu' );
             return ob_get_clean();
         }
         

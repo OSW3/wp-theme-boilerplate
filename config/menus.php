@@ -14,6 +14,7 @@ $menus = [
                 'url'   => "/",
             ],
             ["object" => "blog"],
+            ["object" => "store"],
             ["object" => "contact-us"]
         ]
     ],
