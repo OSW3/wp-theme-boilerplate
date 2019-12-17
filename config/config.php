@@ -1,15 +1,23 @@
 <?php
+/**
+ * WP Theme Boilerplate : config/config
+ * 
+ * Definition of constants and variables
+ */
 
-// ****************************** //
-// Constants
-// ****************************** //
+/**
+ * show_adminbar
+ * --
+ * Type: integer
+ */
+define("WPTB_SHOW_ADMINBAR", (bool) false);
 
 /**
  * excerpt_length
  * --
  * Type: integer
  */
-define("EXCERPT_LENGTH", (integer) 30);
+define("WPTB_EXCERPT_LENGTH", (integer) 30);
 
 /**
  * Permalink Structure
@@ -18,4 +26,4 @@ define("EXCERPT_LENGTH", (integer) 30);
  * --
  * Type: string | null
  */
-define("PERMALINK_STRUCTURE", (string) "/%postname%/");
+define("WPTB_PERMALINK_STRUCTURE", (string) "/%postname%/");

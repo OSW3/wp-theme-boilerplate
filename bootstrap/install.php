@@ -1,27 +1,44 @@
 <?php
+/**
+ * WP Theme Boilerplate : bootstrap/install
+ * 
+ * Execute on theme activation
+ */
 
-// Work on theme activation
-if (isset($_GET['activated']) && is_admin() && is_array($pages))
-{
+if (
+    isset($_GET['activated']) &&    // activated parameter
+    is_admin()                      // On admin page
+){
     /**
      * Create pages on theme activation
      */
 
     // Include pages configuration
-    if (file_exists(THEME_DIR."/config/pages.php")) {
+    if (file_exists(THEME_DIR."/config/pages.php")) 
+    {
         include_once THEME_DIR."/config/pages.php";
     }
 
+    if (!isset($pages) || !is_array($pages)) 
+    {
+        $pages = [];
+    }
+
+    // For each pages defined on $pages array
     foreach ($pages as $page) 
     {
+        // Retrieve page settings
         $page_title     = isset($page['title'])     ? __($page['title'])    : null;
         $page_slug      = isset($page['slug'])      ? __($page['slug'])     : null;
         $page_content   = isset($page['content'])   ? __($page['content'])  : '';
         $page_template  = isset($page['template'])  ? $page['template']     : null;
         $is_homepage    = isset($page['homepage'])  ? $page['homepage']     : false;
+
+        // Check if page exists
         $page_exists    = get_page_by_title($page_title);
         $page_id        = isset($page_exists->ID)   ? $page_exists->ID      : null;
 
+        // Reset page settings
         $page = [
             'post_type'     => 'page',
             'post_title'    => $page_title,
@@ -31,6 +48,7 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
             'post_author'   => 1,
         ];
 
+        // If page don't exists
         if($page_id === null)
         {
             // Add new page
@@ -45,11 +63,15 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
             $page_exists = get_page_by_title($page_title);
         }
 
+        // Define page as Homepage
         if ($page_id != null && $is_homepage)
         {
             update_option( 'page_on_front', $page_id );
             update_option( 'show_on_front', 'page' );
         }
+
+        // Free memory
+        unset($page);
     }
 
 
@@ -58,22 +80,36 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
      */
 
     // Include menus configuration
-    if (file_exists(THEME_DIR."/config/menus.php")) {
+    if (file_exists(THEME_DIR."/config/menus.php")) 
+    {
         include_once THEME_DIR."/config/menus.php";
     }
 
+    if (!isset($menus) || !is_array($menus)) 
+    {
+        $menus = [];
+    }
+
+    // For each menus defined on $menus array
     foreach ($menus as $menu) 
     {
+        // Retrieve menu settings
         $menu_title     = isset($menu['title']) ? $menu['title'] : null;
         $menu_items     = isset($menu['items']) ? $menu['items'] : [];
+
+        // Check if menu exists
         $menu_exists    = wp_get_nav_menu_object($menu_title);
 
+        // If menu don't exists
         if (!$menu_exists)
         {
-            $menu_id    = wp_create_nav_menu($menu_title);
+            // Create the menu
+            $menu_id = wp_create_nav_menu($menu_title);
 
+            // Add menu items
             foreach ($menu_items as $index => $item) 
             {
+                // Retrieve item settings
                 $item_parent        = isset($item['parent']) ? $item['parent'] : 0;
                 $item_position      = isset($item['position']) ? $item['position'] : $index;
                 $item_title         = isset($item['title']) ? __($item['title']) : 'xxx';
@@ -128,6 +164,8 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
                 ]);
             }
         }
+
+        // Free memory
         unset($menu);
     }
 
@@ -135,11 +173,11 @@ if (isset($_GET['activated']) && is_admin() && is_array($pages))
     /**
      * Change the permalink structure
      */
-    if (defined("PERMALINK_STRUCTURE") && PERMALINK_STRUCTURE != null) 
+    if (defined("WPTB_PERMALINK_STRUCTURE") && WPTB_PERMALINK_STRUCTURE != null) 
     {
         add_action('init', function() {
             global $wp_rewrite;
-            $wp_rewrite->set_permalink_structure( PERMALINK_STRUCTURE );
+            $wp_rewrite->set_permalink_structure( WPTB_PERMALINK_STRUCTURE );
         });
     }
 }

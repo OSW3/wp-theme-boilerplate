@@ -1,1 +1,3 @@
-<?php include_once "bootstrap/bootstrap.php" ?>
+<?php 
+
+require_once __DIR__."/bootstrap/bootstrap.php";
