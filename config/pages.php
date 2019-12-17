@@ -23,7 +23,7 @@ array_push($pages, [
     'title'     => "Example Content",
     'slug'      => "example-content",
     'content'   => "This content is writed in the Pages editor",
-    'template'  => "templates/example-content.php"]);
+    'template'  => "templates/example-content.php"]);   // DON'T FORGET TO CREATE THE FILE
 
 
 /**
@@ -34,4 +34,4 @@ array_push($pages, [
 array_push($pages, [
     'title'     => "Example Template",
     'slug'      => "example-template",
-    'template'  => "templates/example-template.php"]);
+    'template'  => "templates/example-template.php"]);  // DON'T FORGET TO CREATE THE FILE

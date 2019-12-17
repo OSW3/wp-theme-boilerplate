@@ -16,8 +16,8 @@
 
 // Add Styles
 array_push($assets["styles"], ["main", THEME_STYLES_URI."main.css"]);
-// array_push($assets["styles"], ["page1", THEME_STYLES_URI."page1.css"]);
-// array_push($assets["styles"], ["page2", THEME_STYLES_URI."page2.css"]);
+array_push($assets["styles"], ["bootstrap", THEME_STYLES_URI."bootstrap.min.css"]);
+array_push($assets["styles"], ["animate", THEME_STYLES_URI."animate.min.css"]);
 
 
 
@@ -35,4 +35,6 @@ array_push($assets["styles"], ["main", THEME_STYLES_URI."main.css"]);
 
 // Add Scripts
 array_push($assets["scripts"], ["app", THEME_SCRIPTS_URI."app.js", "1", []]);
-// array_push($assets["scripts"], ["app1", THEME_SCRIPTS_URI."app1.js", "2", [], true]);
+array_push($assets["scripts"], ["bootstrap", THEME_SCRIPTS_URI."bootstrap.min.js", "4.4", ['jquery','popper.js'], true]);
+array_push($assets["scripts"], ["jquery", THEME_SCRIPTS_URI."jquery.min.js", "3.4.1", [], true]);
+array_push($assets["scripts"], ["popper.js", THEME_SCRIPTS_URI."popper.min.js", "1.16.0", [], true]);

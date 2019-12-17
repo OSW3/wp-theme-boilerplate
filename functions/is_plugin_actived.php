@@ -11,10 +11,10 @@ if (!function_exists('is_plugin_actived'))
 {    
     function is_plugin_actived(string $plugin = null)
     {
-        // if (!function_exists('get_active_plugins')) {
+        // if (!function_exists('wptb_active_plugins')) {
         //     return false;
         // }
 
-        // return in_array($plugin, get_active_plugins());
+        // return in_array($plugin, wptb_active_plugins());
     }
 }

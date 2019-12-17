@@ -1,14 +1,14 @@
 <?php
 
 /**
- * get_active_plugins
+ * wptb_active_plugins
  * --
  * @return array array of names of actived plugins
  */
 
-if (!function_exists('get_active_plugins')) 
+if (!function_exists('wptb_active_plugins')) 
 {    
-    function get_active_plugins()
+    function wptb_active_plugins()
     {
         $plugins = [];
         $active_plugins = get_option('active_plugins');
