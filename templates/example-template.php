@@ -5,8 +5,19 @@
 
 get_header(); ?>
 
-<h2>Example Template</h2>
+<!-- Page Header -->
+<div class="page-header">
+    <h1><?= WPTB_THEME_TITLE ?></h1>
+    <h2>Example Template</h2>
+</div>
 
-<p>This content is directly writed in the <code>template/example-template.php</code>.</p>
+<!-- Page Content -->
+<div class="page-content">
+
+    <?php wptb_debug__pageinfo(__DIR__,__FILE__) ?>
+
+    <p>This content is directly writed in the <code>template/example-template.php</code>.</p>
+
+</div>
 
 <?php get_footer(); ?>

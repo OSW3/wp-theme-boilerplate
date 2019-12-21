@@ -5,8 +5,19 @@
 
 get_header(); ?>
 
-<h2>Content Template</h2>
+<!-- Page Header -->
+<div class="page-header">
+    <h1><?= WPTB_THEME_TITLE ?></h1>
+    <h2>Example Content Template</h2>
+</div>
 
-<?= get__page_content(get_the_id()) ?>
+<!-- Page Content -->
+<div class="page-content">
+
+    <?php wptb_debug__pageinfo(__DIR__,__FILE__) ?>
+
+    <?= get__page_content(get_the_id()) ?>
+
+</div>
 
 <?php get_footer(); ?>

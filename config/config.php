@@ -6,9 +6,16 @@
  */
 
 /**
+ * theme_title
+ * --
+ * Type: string
+ */
+define("WPTB_THEME_TITLE", (string) "WP Theme Boilerplate");
+
+/**
  * show_adminbar
  * --
- * Type: integer
+ * Type: bool
  */
 define("WPTB_SHOW_ADMINBAR", (bool) false);
 

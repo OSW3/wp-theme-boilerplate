@@ -5,11 +5,17 @@
 
 get_header(); ?>
 
+<!-- Page Header -->
 <div class="page-header">
-    <h1>Welcome to the WP Theme Boilerplate</h1>
+    <h1><?= WPTB_THEME_TITLE ?></h1>
+    <h2>Index / Homepage</h2>
 </div>
 
+<!-- Page Content -->
 <div class="page-content">
+
+    <?php wptb_debug__pageinfo(__DIR__,__FILE__) ?>
+
     <pre><?php // print_r( wptb_plugins__get_active(['name','version','identifier']) ) ?></pre>
     <pre><?php // print_r( wptb_plugins__is_active("hello") ) ?></pre>
 

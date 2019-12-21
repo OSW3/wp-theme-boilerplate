@@ -1,17 +1,21 @@
 <?php
 /**
- * The 404 template file
+ * The template for displaying when page is not found
  */
 
 get_header(); ?>
 
+<!-- Page Header -->
 <div class="page-header">
-    <h1><?= get_bloginfo('name') ?></h1>
-    <h2>Page not found</h2>
+    <h1><?= WPTB_THEME_TITLE ?></h1>
+    <h2>Page : 404</h2>
 </div>
 
+<!-- Page Content -->
 <div class="page-content">
-    404
+
+    <?php wptb_debug__pageinfo(__DIR__,__FILE__) ?>
+
 </div>
 
 <?php get_footer(); ?>

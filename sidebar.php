@@ -3,3 +3,5 @@
  * The template for the sidebar
  */
 ?>
+
+SIDEBAR
