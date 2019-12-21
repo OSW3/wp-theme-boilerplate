@@ -122,6 +122,12 @@ define("THEME_DIR", get_template_directory().DS);
 
 /**
  * Type: String
+ * Define the path of the current "theme config" 
+ */
+define("CONFIG_DIR", THEME_DIR."config".DS);
+
+/**
+ * Type: String
  * Define the path of the current "theme assets" 
  */
 define("ASSETS_DIR", THEME_DIR."assets".DS);
