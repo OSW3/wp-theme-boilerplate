@@ -35,3 +35,13 @@ array_push($pages, [
     'title'     => "Example Template",
     'slug'      => "example-template",
     'template'  => "templates/example-template.php"]);  // DON'T FORGET TO CREATE THE FILE
+
+
+/**
+ * Documentation Page
+ * --
+ */
+array_push($pages, [
+    'title'     => "Documentation",
+    'slug'      => "wptb-documentation",
+    'template'  => "templates/wptb-documentation.php"]);

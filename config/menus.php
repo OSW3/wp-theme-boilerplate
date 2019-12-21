@@ -40,6 +40,7 @@ array_push($mainMenuItems, [
 ]);
 
 // Add menu items as referenced "page"
+array_push($mainMenuItems, ["object" => "wptb-documentation"]);
 array_push($mainMenuItems, ["object" => "example-content"]);
 array_push($mainMenuItems, ["object" => "example-template"]);
 

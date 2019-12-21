@@ -197,8 +197,8 @@ if (file_exists(THEME_DIR."/config/config.php")) {
 // Install
 // ****************************** //
 
-if (file_exists(THEME_DIR."/bootstrap/install.php")) {
-    $pages = [];
+if (file_exists(THEME_DIR."/bootstrap/install.php")) 
+{
     include_once THEME_DIR."/bootstrap/install.php";
 }
 
@@ -208,6 +208,7 @@ if (file_exists(THEME_DIR."/bootstrap/install.php")) {
 // Setup
 // ****************************** //
 
-if (file_exists(THEME_DIR."/bootstrap/setup.php")) {
+if (file_exists(THEME_DIR."/bootstrap/setup.php")) 
+{
     include_once THEME_DIR."/bootstrap/setup.php";
 }

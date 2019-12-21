@@ -5,23 +5,18 @@
  * Execute on theme activation
  */
 
-if (
-    isset($_GET['activated']) &&    // activated parameter
-    is_admin()                      // On admin page
-){
+add_action('after_switch_theme', function () {
+    
     /**
      * Create pages on theme activation
      */
+
+    $pages = array();
 
     // Include pages configuration
     if (file_exists(THEME_DIR."/config/pages.php")) 
     {
         include_once THEME_DIR."/config/pages.php";
-    }
-
-    if (!isset($pages) || !is_array($pages)) 
-    {
-        $pages = [];
     }
 
     // For each pages defined on $pages array
@@ -79,15 +74,12 @@ if (
      * Create menus on theme activation
      */
 
+    $menus = array();
+
     // Include menus configuration
     if (file_exists(THEME_DIR."/config/menus.php")) 
     {
         include_once THEME_DIR."/config/menus.php";
-    }
-
-    if (!isset($menus) || !is_array($menus)) 
-    {
-        $menus = [];
     }
 
     // For each menus defined on $menus array
@@ -180,7 +172,14 @@ if (
             $wp_rewrite->set_permalink_structure( WPTB_PERMALINK_STRUCTURE );
         });
     }
-}
+});
+// add_action('after_switch_theme', 'wptb__install');
+
+// if (
+//     isset($_GET['activated']) &&    // activated parameter
+//     is_admin()                      // On admin page
+// ){
+// }
 
 // 'menu-item-db-id'       => $menu_item_db_id, // menu item ID, If exist.
 // 'menu-item-object-id'   => 0, // menu item to add.
