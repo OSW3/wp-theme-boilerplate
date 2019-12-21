@@ -2,6 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptb_component__get_menu
  * 
+ * @Description: xxxx
+ * @Version: 1.0.0
+ * @Usage: xxx
+ * @Example: xxx
+ * 
  * Return a HTML menu component
  * --
  * @param string $name the slug of the menu

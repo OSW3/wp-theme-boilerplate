@@ -16,6 +16,12 @@ get_header(); ?>
 
     <?php wptb_debug__pageinfo(__DIR__,__FILE__) ?>
 
+    <?php wptb_documentation() ?>
+
+    <pre><?php // print_r($GLOBALS) ?></pre>
+
+
+
 </div>
 
 <?php get_footer(); ?>

@@ -2,7 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_component__copyright
  * 
- * Generate the copyright sting
+ * @Description: Generate the copyright string
+ * @Version: 1.0.0
+ * @Usage: wptb_component__copyright([$since = null])
+ * @Example: wptb_component__copyright(2009);
  * --
  * @param string $since
  */

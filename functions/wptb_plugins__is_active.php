@@ -2,6 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptb_plugins__get_active
  * 
+ * @Description: xxxx
+ * @Version: 1.0.0
+ * @Usage: xxx
+ * @Example: xxx
+ * 
  * Check if $plugin is actived
  * --
  * @param string $plugin the name of a plugin

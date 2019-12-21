@@ -2,6 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptp_assets__get_favicon
  * 
+ * @Description: xxxx
+ * @Version: 1.0.0
+ * @Usage: xxx
+ * @Example: xxx
+ * 
  * Return the path of an image in the assets/ directory
  * --
  * @param string $script 

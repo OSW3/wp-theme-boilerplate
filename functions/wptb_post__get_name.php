@@ -2,6 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptb_post__get_name
  * 
+ * @Description: xxxx
+ * @Version: 1.0.0
+ * @Usage: xxx
+ * @Example: xxx
+ * 
  * Return the post name
  * --
  * @param integer $post_id

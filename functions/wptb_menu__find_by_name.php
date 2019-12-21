@@ -2,6 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptb_menu__find_by_name
  * 
+ * @Description: xxxx
+ * @Version: 1.0.0
+ * @Usage: xxx
+ * @Example: xxx
+ * 
  * Retrieve a menu by his name
  * --
  * @param string $name the name of a menu

@@ -2,6 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptb_component__get_carousel
  * 
+ * @Description: xxxx
+ * @Version: 1.0.0
+ * @Usage: xxx
+ * @Example: xxx
+ * 
  * Return a HTML carousel component
  * --
  * @param string $name the slug of the menu

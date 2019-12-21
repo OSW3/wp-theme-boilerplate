@@ -2,6 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptp_assets__get_script
  * 
+ * @Description: xxxx
+ * @Version: 1.0.0
+ * @Usage: xxx
+ * @Example: xxx
+ * 
  * Return the path of the script in the assets/ directory
  * --
  * @param string $script 
