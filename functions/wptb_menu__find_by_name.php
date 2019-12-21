@@ -17,9 +17,9 @@ if (!function_exists('wptb_menu__find_by_name'))
     {
         $locale = null;
 
-        if (function_exists('get_current_language')) 
+        if (function_exists('wptb_i18n__get_current_lang')) 
         {
-            $locale = get_current_language();
+            $locale = wptb_i18n__get_current_lang();
         }
 
         if (null != $locale) 

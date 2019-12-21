@@ -18,9 +18,9 @@ if (!function_exists('get_page_url_by_slug'))
         }
 
         if (null != $page) {
-            if (function_exists('is_plugin_actived') && function_exists('pll_get_post_translations') && function_exists('get_current_language')) {
+            if (function_exists('is_plugin_actived') && function_exists('pll_get_post_translations') && function_exists('wptb_i18n__get_current_lang')) {
                 if (is_plugin_actived("polylang")) {
-                    $lang = get_current_language();
+                    $lang = wptb_i18n__get_current_lang();
                     $posts = pll_get_post_translations( $pageID );
                     if (isset($posts[$lang])) {
                         $pageID = $posts[$lang];

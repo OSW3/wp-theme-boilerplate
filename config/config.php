@@ -34,3 +34,13 @@ define("WPTB_EXCERPT_LENGTH", (integer) 30);
  * Type: string | null
  */
 define("WPTB_PERMALINK_STRUCTURE", (string) "/%postname%/");
+
+/**
+ * Locales
+ * 
+ * Define available i18n
+ * --
+ * Type: array
+ */
+define("WPTB_LOCALES", array("fr", "en", "it", "es"));
+define("WPTB_DEFAULT_LOCALE", "fr");

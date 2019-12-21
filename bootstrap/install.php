@@ -7,6 +7,11 @@
 
 add_action('after_switch_theme', function () {
     
+    // Check if Polylang plugin is actives
+    // and if language is avilable
+    $locale = (wptb_plugins__is_active('polylang') && wptb_i18n__is_available_language( WPTB_DEFAULT_LOCALE )) ? WPTB_DEFAULT_LOCALE : null;
+
+
     /**
      * Create pages on theme activation
      */
@@ -85,75 +90,91 @@ add_action('after_switch_theme', function () {
     // For each menus defined on $menus array
     foreach ($menus as $menu) 
     {
+        // Define $_menus array for i18n menus
+        $_menus = array();
+
         // Retrieve menu settings
-        $menu_title     = isset($menu['title']) ? $menu['title'] : null;
-        $menu_items     = isset($menu['items']) ? $menu['items'] : [];
+        $menu_title = isset($menu['title']) ? $menu['title'] : null;
+        $menu_items = isset($menu['items']) ? $menu['items'] : [];
 
-        // Check if menu exists
-        $menu_exists    = wp_get_nav_menu_object($menu_title);
+        // Add default $menu to $_menue
+        array_push($_menus, $menu_title);
 
-        // If menu don't exists
-        if (!$menu_exists)
+        // Add menu i18n to $_menus
+        if ($locale)
         {
-            // Create the menu
-            $menu_id = wp_create_nav_menu($menu_title);
+            $menu_title.= " ($locale)";
+            array_push($_menus, $menu_title);
+        }
 
-            // Add menu items
-            foreach ($menu_items as $index => $item) 
+        foreach ($_menus as $_menu)
+        {
+            // Check if menu exists
+            $menu_exists = wp_get_nav_menu_object($_menu);
+    
+            // If menu don't exists
+            if (!$menu_exists)
             {
-                // Retrieve item settings
-                $item_parent        = isset($item['parent']) ? $item['parent'] : 0;
-                $item_position      = isset($item['position']) ? $item['position'] : $index;
-                $item_title         = isset($item['title']) ? __($item['title']) : 'xxx';
-                $item_url           = isset($item['url']) ? $item['url'] : '';
-                $item_description   = isset($item['description']) ? __($item['description']) : '';
-                $item_attr_title    = isset($item['attr_title']) ? __($item['attr_title']) : '';
-                $item_target        = isset($item['target']) ? $item['target'] : '';
-                $item_classes       = isset($item['classes']) ? $item['classes'] : '';
-                $item_xfn           = isset($item['xfn']) ? $item['xfn'] : '';
-                
-                $item_type          = 'custom';
-                $item_object        = '';
-                $item_object_id     = 0;
-
-                // If link is a WP Object
-                if (isset($item['object']))
+                // Create the menu
+                $menu_id = wp_create_nav_menu($_menu);
+    
+                // Add menu items
+                foreach ($menu_items as $index => $item) 
                 {
-                    $object = get_page_by_slug($item['object']);
+                    // Retrieve item settings
+                    $item_parent        = isset($item['parent']) ? $item['parent'] : 0;
+                    $item_position      = isset($item['position']) ? $item['position'] : $index;
+                    $item_title         = isset($item['title']) ? __($item['title']) : 'xxx';
+                    $item_url           = isset($item['url']) ? $item['url'] : '';
+                    $item_description   = isset($item['description']) ? __($item['description']) : '';
+                    $item_attr_title    = isset($item['attr_title']) ? __($item['attr_title']) : '';
+                    $item_target        = isset($item['target']) ? $item['target'] : '';
+                    $item_classes       = isset($item['classes']) ? $item['classes'] : '';
+                    $item_xfn           = isset($item['xfn']) ? $item['xfn'] : '';
                     
-                    if (isset($object->ID))
+                    $item_type          = 'custom';
+                    $item_object        = '';
+                    $item_object_id     = 0;
+    
+                    // If link is a WP Object
+                    if (isset($item['object']))
                     {
-                        $item_title     = $object->post_title;
-                        $item_object    = $object->post_type;
-                        $item_object_id = $object->ID;
-                        $item_type      = 'post_type';
+                        $object = get_page_by_slug($item['object']);
+                        
+                        if (isset($object->ID))
+                        {
+                            $item_title     = $object->post_title;
+                            $item_object    = $object->post_type;
+                            $item_object_id = $object->ID;
+                            $item_type      = 'post_type';
+                        }
                     }
-                }
-
-                else 
-                {
-                    if (!preg_match("/^http(s)?/", $item_url))
+    
+                    else 
                     {
-                        $item_url       = get_home_url($item_url);
+                        if (!preg_match("/^http(s)?/", $item_url))
+                        {
+                            $item_url       = get_home_url($item_url);
+                        }
                     }
+    
+                    // Add item 
+                    wp_update_nav_menu_item($menu_id, 0, [
+                        'menu-item-object-id'   => $item_object_id,
+                        'menu-item-object'      => $item_object,
+                        'menu-item-parent-id'   => $item_parent,
+                        'menu-item-position'    => $item_position,
+                        'menu-item-type'        => $item_type,
+                        'menu-item-title'       => $item_title,
+                        'menu-item-url'         => $item_url,
+                        'menu-item-description' => $item_description,
+                        'menu-item-attr-title'  => $item_attr_title,
+                        'menu-item-target'      => $item_target,
+                        'menu-item-classes'     => $item_classes,
+                        'menu-item-xfn'         => $item_xfn,
+                        'menu-item-status'      => 'publish',
+                    ]);
                 }
-
-                // Add item 
-                wp_update_nav_menu_item($menu_id, 0, [
-                    'menu-item-object-id'   => $item_object_id,
-                    'menu-item-object'      => $item_object,
-                    'menu-item-parent-id'   => $item_parent,
-                    'menu-item-position'    => $item_position,
-                    'menu-item-type'        => $item_type,
-                    'menu-item-title'       => $item_title,
-                    'menu-item-url'         => $item_url,
-                    'menu-item-description' => $item_description,
-                    'menu-item-attr-title'  => $item_attr_title,
-                    'menu-item-target'      => $item_target,
-                    'menu-item-classes'     => $item_classes,
-                    'menu-item-xfn'         => $item_xfn,
-                    'menu-item-status'      => 'publish',
-                ]);
             }
         }
 
@@ -165,6 +186,7 @@ add_action('after_switch_theme', function () {
     /**
      * Change the permalink structure
      */
+
     if (defined("WPTB_PERMALINK_STRUCTURE") && WPTB_PERMALINK_STRUCTURE != null) 
     {
         add_action('init', function() {
@@ -173,13 +195,7 @@ add_action('after_switch_theme', function () {
         });
     }
 });
-// add_action('after_switch_theme', 'wptb__install');
 
-// if (
-//     isset($_GET['activated']) &&    // activated parameter
-//     is_admin()                      // On admin page
-// ){
-// }
 
 // 'menu-item-db-id'       => $menu_item_db_id, // menu item ID, If exist.
 // 'menu-item-object-id'   => 0, // menu item to add.

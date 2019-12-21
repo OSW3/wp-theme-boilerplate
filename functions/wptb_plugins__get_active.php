@@ -19,9 +19,11 @@ if (!function_exists('wptb_plugins__get_active'))
         {
             $plugin_filename = PLUGINS_DIR.$plugin_file;
 
-            $identifier = explode('/',$plugin_file);
-            $identifier = $identifier[0];
+            $plugin_filedata = explode('/',$plugin_file);
+            $identifier = $plugin_filedata[0];
             $identifier = preg_replace("/\.php/", null, $identifier);
+
+            $plugin_directory = str_replace(end($plugin_filedata), null, $plugin_filename);
 
             $plugin_data = array_merge(get_file_data($plugin_filename, [
                 'name'        => 'Plugin Name',
@@ -38,6 +40,7 @@ if (!function_exists('wptb_plugins__get_active'))
                 '_sitewide'   => 'Site Wide Only',
             ], 'plugin'),[
                 'filename' => $plugin_filename,
+                'directory' => $plugin_directory,
                 'identifier' => $identifier,
             ]);
 

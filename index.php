@@ -18,6 +18,8 @@ get_header(); ?>
 
     <pre><?php // print_r( wptb_plugins__get_active(['name','version','identifier']) ) ?></pre>
     <pre><?php // print_r( wptb_plugins__is_active("hello") ) ?></pre>
+    <pre><?php // print_r( wptb_i18n__get_current_lang() ) ?></pre>
+    <pre><?php // print_r( wptb_i18n__get_current_lang('name') ) ?></pre>
 
     <?= wptb_component__get_carousel([
         'name'      => null,
