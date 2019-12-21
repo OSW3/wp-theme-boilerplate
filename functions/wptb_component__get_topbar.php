@@ -2,18 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_component__get_topbar
  * 
- * @Description: xxxx
+ * @Description: Return a HTML topbar component
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
- * 
- * Return a HTML topbar component
- * --
- * @param string $name the slug of the menu
- * @param string $component file in components/menus/ directory
- * @param string $class class for ul element
- * @param string $item_class class for li element
- * @param string $link_class class for a element
+ * @Usage: wptb_component__get_topbar(array $options);
+ * @Example: wptb_component__get_topbar([...]);
  */
 
 if (!function_exists('wptb_component__get_topbar')) 

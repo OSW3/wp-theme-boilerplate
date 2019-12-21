@@ -2,12 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptb_post__get_title
  * 
- * @Description: xxxx
+ * @Description: Return the post title
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_post__get_title([?int $post_id = null]);
+ * @Example: wptb_post__get_title(42);
  * 
- * Return the post title
  * --
  * @param integer $post_id
  */

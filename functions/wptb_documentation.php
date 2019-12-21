@@ -39,9 +39,6 @@ if (!function_exists('wptb_documentation'))
                 <dt><?= $index ?></dt>
                 <dd>
                     <pre><?= $value ?></pre>
-                    <?php if ($index == "example" ): ?>
-                        <pre><?php echo eval($value); ?></pre>
-                    <?php endif; ?>
                 </dd>
             <?php endforeach; ?>
 

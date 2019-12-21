@@ -2,12 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_post__get_current_id
  * 
- * @Description: xxxx
+ * @Description: Return the current post ID
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
- * 
- * Return the current post ID
+ * @Usage: wptb_post__get_current_id();
+ * @Example: wptb_post__get_current_id();
  */
 
 if (!function_exists('wptb_post__get_current_id')) 

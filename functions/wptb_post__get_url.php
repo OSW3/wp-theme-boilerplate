@@ -1,13 +1,12 @@
 <?php
 /**
- * WP Theme Boilerplate : functions/wptb_post__get_path
+ * WP Theme Boilerplate : functions/wptb_post__get_url
  * 
- * @Description: xxxx
+ * @Description: Return the absolute url for a route
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_post__get_url(int $post_id);
+ * @Example: wptb_post__get_url(42);
  * 
- * Return the path for a route
  * --
  * @param integer $post_id
  */

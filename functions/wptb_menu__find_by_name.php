@@ -2,12 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_menu__find_by_name
  * 
- * @Description: xxxx
+ * @Description: Retrieve a menu by his name
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
- * 
- * Retrieve a menu by his name
+ * @Usage: wptb_menu__find_by_name(string $name);
+ * @Example: wptb_menu__find_by_name("main-menu");
  * --
  * @param string $name the name of a menu
  * @return array the array of items

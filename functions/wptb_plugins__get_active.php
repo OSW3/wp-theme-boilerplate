@@ -2,12 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_plugins__get_active
  * 
- * @Description: xxxx
+ * @Description: Return the list of actived wordpress plugins
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
- * 
- * Return the list of actived wordpress plugins
+ * @Usage: wptb_plugins__get_active(array $output_data=[]);
+ * @Example: wptb_plugins__get_active([...]);
  */
 
 if (!function_exists('wptb_plugins__get_active'))

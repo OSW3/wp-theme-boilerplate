@@ -2,12 +2,11 @@
 /**
  * WP Theme Boilerplate : functions/wptb_post__get_path
  * 
- * @Description: xxxx
+ * @Description: Return the path for a route
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_post__get_path(int $post_id[, bool $absolute=false]);
+ * @Example: wptb_post__get_path(42;
  * 
- * Return the path for a route
  * --
  * @param integer $post_id
  * @param boolean $absolute

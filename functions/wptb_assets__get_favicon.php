@@ -1,24 +1,23 @@
 <?php
 /**
- * WP Theme Boilerplate : functions/wptp_assets__get_favicon
+ * WP Theme Boilerplate : functions/wptb_assets__get_favicon
  * 
- * @Description: xxxx
+ * @Description: Return the path of an image in the assets/ directory
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_assets__get_favicon(string $image[, bool $withTags=false[, array $attr_rel=["icon"][, ?array $type=null]]]);
+ * @Example: wptb_assets__get_favicon("favicon.ico");
  * 
- * Return the path of an image in the assets/ directory
  * --
  * @param string $script 
  * @param string $withTags 
  * @param string $attr_rel 
  */
 
-if (!function_exists('wptp_assets__get_favicon')) 
+if (!function_exists('wptb_assets__get_favicon')) 
 {
     // <link rel="icon" href="" type="image/x-icon" />
 
-    function wptp_assets__get_favicon(string $image, bool $withTags=false, array $attr_rel=["icon"], ?array $type=null)
+    function wptb_assets__get_favicon(string $image, bool $withTags=false, array $attr_rel=["icon"], ?array $type=null)
     {
         if (!defined('THEME_IMAGES_URI'))
         {

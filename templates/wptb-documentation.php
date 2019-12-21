@@ -18,10 +18,6 @@ get_header(); ?>
 
     <?php wptb_documentation() ?>
 
-    <pre><?php // print_r($GLOBALS) ?></pre>
-
-
-
 </div>
 
 <?php get_footer(); ?>

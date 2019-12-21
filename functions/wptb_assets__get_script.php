@@ -1,22 +1,21 @@
 <?php
 /**
- * WP Theme Boilerplate : functions/wptp_assets__get_script
+ * WP Theme Boilerplate : functions/wptb_assets__get_script
  * 
- * @Description: xxxx
+ * @Description: Return the path of the script in the assets/ directory
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_assets__get_script(string $script, [bool $withTags=false[, ?string $condition=null]]);
+ * @Example: wptb_assets__get_script("app");
  * 
- * Return the path of the script in the assets/ directory
  * --
  * @param string $script 
  * @param string $withTags 
  * @param string $condition 
  */
 
-if (!function_exists('wptp_assets__get_script')) 
+if (!function_exists('wptb_assets__get_script')) 
 {    
-    function wptp_assets__get_script(string $script, bool $withTags=false, ?string $condition=null)
+    function wptb_assets__get_script(string $script, bool $withTags=false, ?string $condition=null)
     {
         if (!defined('THEME_SCRIPTS_URI'))
         {

@@ -2,10 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_plugins__get_active
  * 
- * @Description: xxxx
+ * @Description: Check if $plugin is actived
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_plugins__is_active(string $plugin);
+ * @Example: wptb_plugins__is_active("hello");
  * 
  * Check if $plugin is actived
  * --

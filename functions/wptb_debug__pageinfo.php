@@ -2,18 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_debug__pageinfo
  * 
- * @Description: xxxx
+ * @Description: Return a HTML topbar component
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
- * 
- * Return a HTML topbar component
- * --
- * @param string $name the slug of the menu
- * @param string $component file in components/menus/ directory
- * @param string $class class for ul element
- * @param string $item_class class for li element
- * @param string $link_class class for a element
+ * @Usage: wptb_debug__pageinfo($_DIR, $_FILE);
+ * @Example: wptb_debug__pageinfo(__DIR__,__FILE__);
  */
 
 if (!function_exists('wptb_debug__pageinfo')) 

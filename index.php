@@ -30,21 +30,21 @@ get_header(); ?>
         'items'     => [
             [
                 'active' => true,
-                'image' => wptp_assets__get_image("carousel/slide1.png"),
+                'image' => wptb_assets__get_image("carousel/slide1.png"),
                 'image_alt' => "Main Carousel: Slide 1",
                 'link' => null,
                 'link_target' => null,
             ],
             [
                 'active' => false,
-                'image' => wptp_assets__get_image("carousel/slide2.png"),
+                'image' => wptb_assets__get_image("carousel/slide2.png"),
                 'image_alt' => "Main Carousel: Slide 2",
                 'link' => null,
                 'link_target' => null,
             ],
             [
                 'active' => false,
-                'image' => wptp_assets__get_image("carousel/slide3.png"),
+                'image' => wptb_assets__get_image("carousel/slide3.png"),
                 'image_alt' => "Main Carousel: Slide 3",
                 'link' => null,
                 'link_target' => null,

@@ -9,13 +9,13 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <?= wptp_assets__get_script('html5shiv', true, "lt IE 5") ?>
+    <?= wptb_assets__get_script('html5shiv', true, "lt IE 5") ?>
 
     <?php wp_head(); ?>
 
     <meta name="description" content="<?= date("j M Y") ?> - <?= bloginfo('description') ?>">
     
-    <?= wptp_assets__get_favicon(
+    <?= wptb_assets__get_favicon(
         "favicon.ico", true, 
         ["shortcut","icon"], 
         ["image/x-icon"]) ?>
@@ -35,7 +35,7 @@
                 <div class="container">
     
                     <a class="navbar-brand brand" href="<?= get_home_url(); ?>">
-                        <?= wptp_assets__get_image("logo.png", true, get_bloginfo('name')) ?>
+                        <?= wptb_assets__get_image("logo.png", true, get_bloginfo('name')) ?>
                     </a>
     
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

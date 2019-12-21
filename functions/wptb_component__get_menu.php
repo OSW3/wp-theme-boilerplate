@@ -2,10 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_component__get_menu
  * 
- * @Description: xxxx
+ * @Description: Return a HTML menu component
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_component__get_menu(array $options);
+ * @Example: wptb_component__get_menu([...]);
  * 
  * Return a HTML menu component
  * --

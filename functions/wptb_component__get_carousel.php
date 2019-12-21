@@ -2,12 +2,10 @@
 /**
  * WP Theme Boilerplate : functions/wptb_component__get_carousel
  * 
- * @Description: xxxx
+ * @Description: Return a HTML carousel component
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
- * 
- * Return a HTML carousel component
+ * @Usage: wptb_component__get_carousel(array $options);
+ * @Example: wptb_component__get_carousel([...]);
  * --
  * @param string $name the slug of the menu
  * @param string $component file in components/menus/ directory

@@ -1,22 +1,21 @@
 <?php
 /**
- * WP Theme Boilerplate : functions/wptp_assets__get_image
+ * WP Theme Boilerplate : functions/wptb_assets__get_image
  * 
- * @Description: xxxx
+ * @Description: Return the path of an image in the assets/ directory
  * @Version: 1.0.0
- * @Usage: xxx
- * @Example: xxx
+ * @Usage: wptb_assets__get_image(string $image[, bool $withTags=false[, ?string $attr_alt=null]]);
+ * @Example: wptb_assets__get_image("logo.png");
  * 
- * Return the path of an image in the assets/ directory
  * --
  * @param string $script 
  * @param string $withTags 
  * @param string $attr_alt 
  */
 
-if (!function_exists('wptp_assets__get_image')) 
+if (!function_exists('wptb_assets__get_image')) 
 {
-    function wptp_assets__get_image(string $image, bool $withTags=false, ?string $attr_alt=null)
+    function wptb_assets__get_image(string $image, bool $withTags=false, ?string $attr_alt=null)
     {
         if (!defined('THEME_IMAGES_URI'))
         {
