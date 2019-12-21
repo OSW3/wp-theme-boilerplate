@@ -4,16 +4,21 @@
  * 
  * Definition of the menus that will be created during the theme installation
  * 
- * Page parameters :
+ * Menu parameters :
  * @param required title
  * @param optional items
  * 
+ * Menu item parameters :
+ * @param required title    Item label
+ * @param optional classes  Item class attribute
+ * @param optional url      Item link url
+ * @param optional object   Item Object (like a page or post)
  * 
-    // $item_parent        = isset($item['parent']) ? $item['parent'] : 0;
-    // $item_position      = isset($item['position']) ? $item['position'] : $index;
-    // $item_description   = isset($item['description']) ? __($item['description']) : '';
-    // $item_attr_title    = isset($item['attr_title']) ? __($item['attr_title']) : '';
-    // $item_xfn           = isset($item['xfn']) ? $item['xfn'] : '';
+ * TODO: $item_parent        = isset($item['parent']) ? $item['parent'] : 0;
+ * TODO: $item_position      = isset($item['position']) ? $item['position'] : $index;
+ * TODO: $item_description   = isset($item['description']) ? __($item['description']) : '';
+ * TODO: $item_attr_title    = isset($item['attr_title']) ? __($item['attr_title']) : '';
+ * TODO: $item_xfn           = isset($item['xfn']) ? $item['xfn'] : '';
  */
 
 
@@ -42,6 +47,8 @@ array_push($mainMenuItems, ["object" => "example-template"]);
 array_push($menus, [
     'title' => "Main Menu",
     'items' => $mainMenuItems]);
+
+
 
 
 

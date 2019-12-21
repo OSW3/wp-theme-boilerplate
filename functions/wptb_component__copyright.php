@@ -1,15 +1,15 @@
 <?php
-
 /**
- * wptb_copyright
+ * WP Theme Boilerplate : functions/wptb_component__copyright
+ * 
+ * Generate the copyright sting
  * --
- * @param string $plugin the name of a plugin
- * @return bool true if the $plugin is actived
+ * @param string $since
  */
 
-if (!function_exists('wptb_copyright')) 
+if (!function_exists('wptb_component__copyright')) 
 {    
-    function wptb_copyright($since = null)
+    function wptb_component__copyright($since = null): string
     {
         $copyright = "&copy; ";
         $now = date('Y');

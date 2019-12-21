@@ -1,0 +1,18 @@
+.ie-stickyFooter { /* add .ie-stickyFooter to the <body> tag */
+	display:-ms-flexbox;
+	-ms-flex-direction:column;
+}
+
+.wrapper {
+	width:100%;
+	min-height:100vh;
+	display:-webkit-flex;
+	display:flex;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+}
+
+#main-content {
+	-webkit-flex-grow:1;
+	flex-grow:1;
+}

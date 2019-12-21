@@ -122,6 +122,24 @@ define("THEME_DIR", get_template_directory().DS);
 
 /**
  * Type: String
+ * Define the path of the current "theme assets" 
+ */
+define("ASSETS_DIR", THEME_DIR."assets".DS);
+
+/**
+ * Type: String
+ * Define the path of the current "assets script js" 
+ */
+define("SCRIPTS_DIR", ASSETS_DIR."js".DS);
+
+/**
+ * Type: String
+ * Define the path of the current "assets image" 
+ */
+define("IMAGES_DIR", ASSETS_DIR."images".DS);
+
+/**
+ * Type: String
  * Define the path of the functions directory of the current theme
  */
 define("FUNCTIONS_DIR", THEME_DIR."functions".DS);

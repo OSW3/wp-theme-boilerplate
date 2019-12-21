@@ -1,0 +1,36 @@
+<?php
+/**
+ * WP Theme Boilerplate : functions/wptb_menu__find_by_name
+ * 
+ * Retrieve a menu by his name
+ * --
+ * @param string $name the name of a menu
+ * @return array the array of items
+ */
+
+if (!function_exists('wptb_menu__find_by_name')) 
+{    
+    function wptb_menu__find_by_name(string $name): array
+    {
+        $locale = null;
+
+        if (function_exists('get_current_language')) 
+        {
+            $locale = get_current_language();
+        }
+
+        if (null != $locale) 
+        {
+            $name.= "-".$locale;
+        }
+
+        $menu = wp_get_nav_menu_items($name);
+
+        if (!$menu) 
+        {
+            return array();
+        }
+        
+        return $menu;
+    }
+}

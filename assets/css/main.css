@@ -1,0 +1,36 @@
+.wrapper {
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+/* TopBar */
+#main-topbar {
+    background-color: #333333;
+    color: #f0f8ff;
+    padding: 6px 0;
+    font-size: .8rem;
+}
+
+/* Header */
+#main-header {
+    background-color: #dddddd;
+    color: #484a4d;
+}
+
+/* Footer */
+#main-footer {
+    background-color: #333333;
+    color: #f0f8ff;
+    padding: 16px 0;
+    font-size: .8rem;
+}
+
+/* Content */
+#main-content {
+    padding: 16px 0;
+
+	flex-grow:1; /* 4 */
+}
+
+
