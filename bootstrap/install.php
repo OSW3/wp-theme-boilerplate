@@ -37,62 +37,79 @@ add_action('after_switch_theme', function () {
      * Create pages on theme activation
      */
 
-    $pages = array();
-
-    // Include pages configuration
-    if (file_exists(THEME_DIR."/config/pages.php")) 
+    if (isset($config_files['pages']))
     {
-        include_once THEME_DIR."/config/pages.php";
-    }
-
-    // For each pages defined on $pages array
-    foreach ($pages as $page) 
-    {
-        // Retrieve page settings
-        $page_title     = isset($page['title'])     ? __($page['title'])    : null;
-        $page_slug      = isset($page['slug'])      ? __($page['slug'])     : null;
-        $page_content   = isset($page['content'])   ? __($page['content'])  : '';
-        $page_template  = isset($page['template'])  ? $page['template']     : null;
-        $is_homepage    = isset($page['homepage'])  ? $page['homepage']     : false;
-
-        // Check if page exists
-        $page_exists    = get_page_by_title($page_title);
-        $page_id        = isset($page_exists->ID)   ? $page_exists->ID      : null;
-
-        // Reset page settings
-        $page = [
-            'post_type'     => 'page',
-            'post_title'    => $page_title,
-            'post_name'     => $page_slug,
-            'post_content'  => $page_content,
-            'post_status'   => 'publish',
-            'post_author'   => 1,
-        ];
-
-        // If page don't exists
-        if($page_id === null)
+        // Make sure $config_files['menus'] is an array
+        if (!is_array($config_files['pages']))
         {
-            // Add new page
-            $page_id = wp_insert_post($page);
+            $config_files['pages'] = array($config_files['pages']);
+        }
 
-            // Add page template
-            if(!empty($page_template))
+        foreach ($config_files['pages'] as $locale => $config_file)
+        {
+            
+            $pages = array();
+
+            // Include pages configuration
+            // if (file_exists(THEME_DIR."/config/pages.php")) 
+            // {
+            //     include_once THEME_DIR."/config/pages.php";
+            // }
+            if (file_exists($config_file)) 
             {
-                update_post_meta($page_id, '_wp_page_template', $page_template);
+                include_once $config_file;
             }
 
-            $page_exists = get_page_by_title($page_title);
-        }
+            // For each pages defined on $pages array
+            foreach ($pages as $page) 
+            {
+                // Retrieve page settings
+                $page_title     = isset($page['title'])     ? __($page['title'])    : null;
+                $page_slug      = isset($page['slug'])      ? __($page['slug'])     : null;
+                $page_content   = isset($page['content'])   ? __($page['content'])  : '';
+                $page_template  = isset($page['template'])  ? $page['template']     : null;
+                $is_homepage    = isset($page['homepage'])  ? $page['homepage']     : false;
 
-        // Define page as Homepage
-        if ($page_id != null && $is_homepage)
-        {
-            update_option( 'page_on_front', $page_id );
-            update_option( 'show_on_front', 'page' );
-        }
+                // Check if page exists
+                $page_exists    = get_page_by_title($page_title);
+                $page_id        = isset($page_exists->ID)   ? $page_exists->ID      : null;
 
-        // Free memory
-        unset($page);
+                // Reset page settings
+                $page = [
+                    'post_type'     => 'page',
+                    'post_title'    => $page_title,
+                    'post_name'     => $page_slug,
+                    'post_content'  => $page_content,
+                    'post_status'   => 'publish',
+                    'post_author'   => 1,
+                ];
+
+                // If page don't exists
+                if($page_id === null)
+                {
+                    // Add new page
+                    $page_id = wp_insert_post($page);
+
+                    // Add page template
+                    if(!empty($page_template))
+                    {
+                        update_post_meta($page_id, '_wp_page_template', $page_template);
+                    }
+
+                    $page_exists = get_page_by_title($page_title);
+                }
+
+                // Define page as Homepage
+                if ($page_id != null && $is_homepage)
+                {
+                    update_option( 'page_on_front', $page_id );
+                    update_option( 'show_on_front', 'page' );
+                }
+
+                // Free memory
+                unset($page);
+            }
+        }
     }
 
 
@@ -195,7 +212,7 @@ add_action('after_switch_theme', function () {
                     }
                 }
 
-                // Free memory
+                // prevent menu merge with next menu
                 unset($menu);
             }
         }

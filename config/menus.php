@@ -63,19 +63,19 @@ array_push($menus, [
 $socilaMenuItems = [];
 
 // Add menu item as "custom link"
-array_push($mainMenuItems, [
+array_push($socilaMenuItems, [
     'title'     => "Facebook",
     'classes'   => "social social-facebook",
     'url'       => "http://facebook.com/",
     'target'    => "_blank"]);
 
-array_push($mainMenuItems, [
+array_push($socilaMenuItems, [
     'title'     => "Twitter",
     'classes'   => "social social-twitter",
     'url'       => "http://twitter.com/",
     'target'    => "_blank"]);
 
-array_push($mainMenuItems, [
+array_push($socilaMenuItems, [
     'title'     => "Instagram",
     'classes'   => "social social-instagram",
     'url'       => "http://instagram.com/",

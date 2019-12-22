@@ -1,18 +1,20 @@
 <?php
 
 /**
- * get_home_url
+ * wptb_route__get_home_url
  * --
  * @return string Home URL
  */
 
-if (!function_exists('get_home_url')) 
+if (!function_exists('wptb_route__get_home_url')) 
 {    
-    function get_home_url( $path = null )
+    function wptb_route__get_home_url( $path = null )
     {
-        // if pll is define
-        // -> return pll_home_url
-        // else
+        if (function_exists('pll_home_url'))
+        {
+            return pll_home_url( $path );
+        }
+        
         return home_url( $path );
     }
 }

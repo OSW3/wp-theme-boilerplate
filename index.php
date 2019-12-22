@@ -1,5 +1,7 @@
 <?php
 /**
+ * Template Name: Index
+ * --
  * The main template file
  */
 
@@ -18,8 +20,28 @@ get_header(); ?>
 
     <pre><?php // print_r( wptb_plugins__get_active(['name','version','identifier']) ) ?></pre>
     <pre><?php // print_r( wptb_plugins__is_active("hello") ) ?></pre>
+    <pre><?php print_r( wptb_route__get_home_url() ) ?></pre>
     <pre><?php print_r( wptb_i18n__get_current_language() ) ?></pre>
-    <pre><?php // print_r( wptb_i18n__get_current_language('name') ) ?></pre>
+    <pre><?php print_r( wptb_i18n__get_current_language('name') ) ?></pre>
+    <pre><?php print_r( wptb_i18n__get_available_languages() ) ?></pre>
+
+</div>
+
+    <?php foreach (wptb_i18n__get_available_languages() as $slug => $name): ?>
+									<a class="dropdown-item" href="<?= is_home() ? pll_home_url($slug) : get_route(get_the_ID(), $slug); ?>"><?= $name; ?></a>
+								<?php endforeach; ?>
+
+    <hr>
+
+    <div class="btn-group">
+							<a class="dropdown-toggle top-bar-link" data-toggle="dropdown"><?= wptb_i18n__get_current_language('name'); ?></a>
+							<div class="dropdown-menu">
+								<?php foreach (wptb_i18n__get_available_languages() as $slug => $name): ?>
+									<a class="dropdown-item" href="<?= is_home() ? pll_home_url($slug) : get_route(get_the_ID(), $slug); ?>"><?= $name; ?></a>
+								<?php endforeach; ?>
+							</div>
+                        </div>
+                        
 
     <?= wptb_component__get_carousel([
         'name'      => null,

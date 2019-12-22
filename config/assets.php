@@ -34,7 +34,7 @@ array_push($assets["styles"], ["animate", THEME_STYLES_URI."animate.min.css"]);
  */
 
 // Add Scripts
-array_push($assets["scripts"], ["app", THEME_SCRIPTS_URI."app.js", "1", []]);
-array_push($assets["scripts"], ["bootstrap", THEME_SCRIPTS_URI."bootstrap.min.js", "4.4", ['jquery','popper.js'], true]);
-array_push($assets["scripts"], ["jquery", THEME_SCRIPTS_URI."jquery.min.js", "3.4.1", [], true]);
-array_push($assets["scripts"], ["popper.js", THEME_SCRIPTS_URI."popper.min.js", "1.16.0", [], true]);
+array_push($assets["scripts"], ["_app", THEME_SCRIPTS_URI."app.js", "1", ['_jquery']]);
+array_push($assets["scripts"], ["_bootstrap", THEME_SCRIPTS_URI."bootstrap.bundle.min.js", "4.4", ['_jquery','_popperjs']]);
+array_push($assets["scripts"], ["_jquery", THEME_SCRIPTS_URI."jquery.min.js", "3.4.1", []]);
+array_push($assets["scripts"], ["_popperjs", THEME_SCRIPTS_URI."popper.min.js", "1.16.0", []]);

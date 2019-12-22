@@ -51,3 +51,10 @@ if (!function_exists('wptb_post__get_path'))
         }
     }
 }
+
+
+
+function get_route($post_id, $slug=false) {
+	$slug = $slug ? $slug : pll_current_language("slug");
+	return get_permalink(pll_get_post_translations($post_id)[$slug]);
+}

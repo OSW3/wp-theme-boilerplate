@@ -33,16 +33,16 @@
 $mainMenuItems = [];
 
 // Add menu item as "custom link"
-array_push($mainMenuItems, [
-    'title'     => "Homepage",
-    'classes'   => null,
-    'url'       => "/",
-]);
+// array_push($mainMenuItems, [
+//     'title'     => "Accueil",
+//     'classes'   => null,
+//     'url'       => "/",
+// ]);
 
 // Add menu items as referenced "page"
 array_push($mainMenuItems, ["object" => "wptb-documentation"]);
-array_push($mainMenuItems, ["object" => "example-content"]);
-array_push($mainMenuItems, ["object" => "example-template"]);
+array_push($mainMenuItems, ["object" => "example-avec-contenu"]);
+array_push($mainMenuItems, ["object" => "exemple-avec-template"]);
 
 // Add items to the menu
 array_push($menus, [
@@ -63,19 +63,19 @@ array_push($menus, [
 $socilaMenuItems = [];
 
 // Add menu item as "custom link"
-array_push($mainMenuItems, [
+array_push($socilaMenuItems, [
     'title'     => "Facebook",
     'classes'   => "social social-facebook",
     'url'       => "http://facebook.com/",
     'target'    => "_blank"]);
 
-array_push($mainMenuItems, [
+array_push($socilaMenuItems, [
     'title'     => "Twitter",
     'classes'   => "social social-twitter",
     'url'       => "http://twitter.com/",
     'target'    => "_blank"]);
 
-array_push($mainMenuItems, [
+array_push($socilaMenuItems, [
     'title'     => "Instagram",
     'classes'   => "social social-instagram",
     'url'       => "http://instagram.com/",

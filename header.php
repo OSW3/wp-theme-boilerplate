@@ -34,7 +34,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
     
-                    <a class="navbar-brand brand" href="<?= get_home_url(); ?>">
+                    <a class="navbar-brand brand" href="<?= wptb_route__get_home_url(); ?>">
                         <?= wptb_assets__get_image("logo.png", true, get_bloginfo('name')) ?>
                     </a>
     
@@ -45,8 +45,8 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
     
                     <?= wptb_component__get_menu([
-                        // 'name'      => "main-menu",
-                        'name'      => "main-menu-fr",
+                        'name'      => "main-menu",
+                        // 'name'      => "main-menu-fr",
                         'component' => "default_menu",
                         'class'     => "navbar-nav ml-auto",
                         'item_class'=> "nav-item",

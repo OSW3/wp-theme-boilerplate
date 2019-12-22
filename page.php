@@ -1,5 +1,7 @@
 <?php
 /**
+ * Template Name: Default Posts
+ * --
  * The template for displaying by default
  */
 
@@ -15,6 +17,7 @@ get_header(); ?>
 <div class="page-content">
 
     <?php wptb_debug__pageinfo(__DIR__,__FILE__) ?>
+
 
 </div>
 

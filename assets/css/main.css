@@ -1,3 +1,8 @@
+body.dark {
+    background-color: #252527;
+    color: #f0f8ff;
+}
+
 .wrapper {
 	min-height:100vh;
 	display:flex;
