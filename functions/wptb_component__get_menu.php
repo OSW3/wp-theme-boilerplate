@@ -91,14 +91,17 @@ if (!function_exists('wptb_component__get_menu'))
             array_push($items, $item);
         }
 
+        // Build multidimenssional array
+        $items = wptb_menu__tree_builder($items);
+
 
         // Set $menu variables to the global environement
         // --
 
-        set_query_var( 'menu', (object) array(
+        set_query_var( 'menu', wptb_utils__array_to_object(array(
             'items' => $items,
             'class' => $options['class'],
-        ));
+        )));
 
 
         // Output

@@ -46,7 +46,6 @@
     
                     <?= wptb_component__get_menu([
                         'name'      => "main-menu",
-                        // 'name'      => "main-menu-fr",
                         'component' => "default_menu",
                         'class'     => "navbar-nav ml-auto",
                         'item_class'=> "nav-item",

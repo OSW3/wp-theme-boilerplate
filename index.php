@@ -27,22 +27,6 @@ get_header(); ?>
 
 </div>
 
-    <?php foreach (wptb_i18n__get_available_languages() as $slug => $name): ?>
-									<a class="dropdown-item" href="<?= is_home() ? pll_home_url($slug) : get_route(get_the_ID(), $slug); ?>"><?= $name; ?></a>
-								<?php endforeach; ?>
-
-    <hr>
-
-    <div class="btn-group">
-							<a class="dropdown-toggle top-bar-link" data-toggle="dropdown"><?= wptb_i18n__get_current_language('name'); ?></a>
-							<div class="dropdown-menu">
-								<?php foreach (wptb_i18n__get_available_languages() as $slug => $name): ?>
-									<a class="dropdown-item" href="<?= is_home() ? pll_home_url($slug) : get_route(get_the_ID(), $slug); ?>"><?= $name; ?></a>
-								<?php endforeach; ?>
-							</div>
-                        </div>
-                        
-
     <?= wptb_component__get_carousel([
         'name'      => null,
         'component' => "default_carousel",

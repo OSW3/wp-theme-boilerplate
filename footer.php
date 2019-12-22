@@ -16,16 +16,7 @@
                     </div>
                     <div class="ml-auto">
 
-                        <div class="dropdown dropup">
-                            <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                lang
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
+                        <?= wptb_component__get_i18n_switcher([]) ?>
 
                     </div>
                     
