@@ -1,0 +1,524 @@
+// Limerick
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/A0AF33
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$limerick: #A0AF33;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$limerick-shade-1: #808C29;
+$limerick-shade-2: #667021;
+$limerick-shade-3: #525A1A;
+$limerick-shade-4: #424815;
+$limerick-shade-5: #353A11;
+$limerick-shade-6: #2A2E0E;
+$limerick-shade-7: #22250B;
+$limerick-shade-8: #1B1E09;
+$limerick-shade-9: #161807;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$limerick-tint-1: #B3BF5C;
+$limerick-tint-2: #C2CC7D;
+$limerick-tint-3: #CED697;
+$limerick-tint-4: #D8DEAC;
+$limerick-tint-5: #E0E5BD;
+$limerick-tint-6: #E6EACA;
+$limerick-tint-7: #EBEED5;
+$limerick-tint-8: #EFF1DD;
+$limerick-tint-9: #F2F4E4;
+
+
+// 4. Variations
+// ------------------
+
+$limerick-variation-1: #A0AF33;
+$limerick-variation-2: #A033AF;
+$limerick-variation-3: #AFA033;
+$limerick-variation-4: #AF33A0;
+$limerick-variation-5: #33A0AF;
+$limerick-variation-6: #33AFA0;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$limerick-triad-1: #A0AF33;
+$limerick-triad-2: #33A0AF;
+$limerick-triad-3: #AF33A0;
+
+// Analogius color scheme
+$limerick-analogous-1: #62AF33;
+$limerick-analogous-2: #AF8033;
+
+// Split complementary
+$limerick-split-complementary-1: #3362AF;
+$limerick-split-complementary-2: #8033AF;
+
+// Complementary
+$limerick-complementary: #4233AF;
+
+// Monochromatic
+$limerick-monochromatic-1: #E7EACC;
+$limerick-monochromatic-2: #D0D79A;
+$limerick-monochromatic-3: #9CA173;
+$limerick-monochromatic-4: #788326;
+$limerick-monochromatic-5: #50571A;
+$limerick-monochromatic-6: #3C4113;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$limerick-100: rgba($limerick, 1);
+$limerick-95: rgba($limerick, .95);
+$limerick-90: rgba($limerick, .9);
+$limerick-85: rgba($limerick, .85);
+$limerick-80: rgba($limerick, .8);
+$limerick-75: rgba($limerick, .75);
+$limerick-70: rgba($limerick, .7);
+$limerick-65: rgba($limerick, .65);
+$limerick-60: rgba($limerick, .6);
+$limerick-55: rgba($limerick, .55);
+$limerick-50: rgba($limerick, .5);
+$limerick-45: rgba($limerick, .45);
+$limerick-40: rgba($limerick, .4);
+$limerick-35: rgba($limerick, .35);
+$limerick-30: rgba($limerick, .3);
+$limerick-25: rgba($limerick, .25);
+$limerick-20: rgba($limerick, .2);
+$limerick-15: rgba($limerick, .15);
+$limerick-10: rgba($limerick, .1);
+$limerick-05: rgba($limerick, .05);
+$limerick-00: rgba($limerick, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--limerick-shade-1() {
+    background: $limerick-shade-1;
+    background: -webkit-linear-gradient(right, $limerick-shade-1, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-1, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-1, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-2() {
+    background: $limerick-shade-2;
+    background: -webkit-linear-gradient(right, $limerick-shade-2, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-2, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-2, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-3() {
+    background: $limerick-shade-3;
+    background: -webkit-linear-gradient(right, $limerick-shade-3, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-3, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-3, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-4() {
+    background: $limerick-shade-4;
+    background: -webkit-linear-gradient(right, $limerick-shade-4, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-4, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-4, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-5() {
+    background: $limerick-shade-5;
+    background: -webkit-linear-gradient(right, $limerick-shade-5, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-5, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-5, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-6() {
+    background: $limerick-shade-6;
+    background: -webkit-linear-gradient(right, $limerick-shade-6, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-6, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-6, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-7() {
+    background: $limerick-shade-7;
+    background: -webkit-linear-gradient(right, $limerick-shade-7, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-7, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-7, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-8() {
+    background: $limerick-shade-8;
+    background: -webkit-linear-gradient(right, $limerick-shade-8, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-8, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-8, $limerick) !important;
+}
+@mixin bg-gradient--limerick-shade-9() {
+    background: $limerick-shade-9;
+    background: -webkit-linear-gradient(right, $limerick-shade-9, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-shade-9, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-shade-9, $limerick) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--limerick-tint-1() {
+    background: $limerick-tint-1;
+    background: -webkit-linear-gradient(right, $limerick-tint-1, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-1, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-1, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-2() {
+    background: $limerick-tint-2;
+    background: -webkit-linear-gradient(right, $limerick-tint-2, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-2, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-2, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-3() {
+    background: $limerick-tint-3;
+    background: -webkit-linear-gradient(right, $limerick-tint-3, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-3, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-3, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-4() {
+    background: $limerick-tint-4;
+    background: -webkit-linear-gradient(right, $limerick-tint-4, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-4, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-4, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-5() {
+    background: $limerick-tint-5;
+    background: -webkit-linear-gradient(right, $limerick-tint-5, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-5, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-5, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-6() {
+    background: $limerick-tint-6;
+    background: -webkit-linear-gradient(right, $limerick-tint-6, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-6, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-6, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-7() {
+    background: $limerick-tint-7;
+    background: -webkit-linear-gradient(right, $limerick-tint-7, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-7, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-7, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-8() {
+    background: $limerick-tint-8;
+    background: -webkit-linear-gradient(right, $limerick-tint-8, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-8, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-8, $limerick) !important;
+}
+@mixin bg-gradient--limerick-tint-9() {
+    background: $limerick-tint-9;
+    background: -webkit-linear-gradient(right, $limerick-tint-9, $limerick) !important;
+    background:    -moz-linear-gradient(right, $limerick-tint-9, $limerick) !important;
+    background:         linear-gradient(to left, $limerick-tint-9, $limerick) !important;
+}
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--limerick() {
+    color: #FFFFFF;
+    @include bg-gradient--limerick-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+
+
+// 1. Base color
+// ------------------
+
+.color--limerick { color: $limerick }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--limerick-shade-1 { color: $limerick-shade-1 }
+.color--limerick-shade-2 { color: $limerick-shade-2 }
+.color--limerick-shade-3 { color: $limerick-shade-3 }
+.color--limerick-shade-4 { color: $limerick-shade-4 }
+.color--limerick-shade-5 { color: $limerick-shade-5 }
+.color--limerick-shade-6 { color: $limerick-shade-6 }
+.color--limerick-shade-7 { color: $limerick-shade-7 }
+.color--limerick-shade-8 { color: $limerick-shade-8 }
+.color--limerick-shade-9 { color: $limerick-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--limerick-tint-1 { color: $limerick-tint-1 }
+.color--limerick-tint-2 { color: $limerick-tint-2 }
+.color--limerick-tint-3 { color: $limerick-tint-3 }
+.color--limerick-tint-4 { color: $limerick-tint-4 }
+.color--limerick-tint-5 { color: $limerick-tint-5 }
+.color--limerick-tint-6 { color: $limerick-tint-6 }
+.color--limerick-tint-7 { color: $limerick-tint-7 }
+.color--limerick-tint-8 { color: $limerick-tint-8 }
+.color--limerick-tint-9 { color: $limerick-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--limerick-variation-1 { color: $limerick-variation-1 }
+.color--limerick-variation-2 { color: $limerick-variation-2 }
+.color--limerick-variation-3 { color: $limerick-variation-3 }
+.color--limerick-variation-4 { color: $limerick-variation-4 }
+.color--limerick-variation-5 { color: $limerick-variation-5 }
+.color--limerick-variation-6 { color: $limerick-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--limerick-triad-1 { color: $limerick-triad-1 }
+.color--limerick-triad-2 { color: $limerick-triad-2 }
+.color--limerick-triad-3 { color: $limerick-triad-3 }
+
+// Analogius color scheme
+.color--limerick-analogous-1 { color: $limerick-analogous-1 }
+.color--limerick-analogous-2 { color: $limerick-analogous-2 }
+
+// Split complementary
+.color--limerick-split-complementary-1 { color: $limerick-split-complementary-1 }
+.color--limerick-split-complementary-2 { color: $limerick-split-complementary-2 }
+
+// Complementary
+.color--limerick-complementary { color: $limerick-complementary }
+
+// Monochromatic
+.color--limerick-monochromatic-1 { color: $limerick-monochromatic-1 }
+.color--limerick-monochromatic-2 { color: $limerick-monochromatic-2 }
+.color--limerick-monochromatic-3 { color: $limerick-monochromatic-3 }
+.color--limerick-monochromatic-4 { color: $limerick-monochromatic-4 }
+.color--limerick-monochromatic-5 { color: $limerick-monochromatic-5 }
+.color--limerick-monochromatic-6 { color: $limerick-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--limerick-alpha-100 { color: $limerick-100 }
+.color--limerick-alpha-95 { color: $limerick-95 }
+.color--limerick-alpha-90 { color: $limerick-90 }
+.color--limerick-alpha-85 { color: $limerick-85 }
+.color--limerick-alpha-80 { color: $limerick-80 }
+.color--limerick-alpha-75 { color: $limerick-75 }
+.color--limerick-alpha-70 { color: $limerick-70 }
+.color--limerick-alpha-65 { color: $limerick-65 }
+.color--limerick-alpha-60 { color: $limerick-60 }
+.color--limerick-alpha-55 { color: $limerick-55 }
+.color--limerick-alpha-50 { color: $limerick-50 }
+.color--limerick-alpha-45 { color: $limerick-45 }
+.color--limerick-alpha-40 { color: $limerick-40 }
+.color--limerick-alpha-35 { color: $limerick-35 }
+.color--limerick-alpha-30 { color: $limerick-30 }
+.color--limerick-alpha-25 { color: $limerick-25 }
+.color--limerick-alpha-20 { color: $limerick-20 }
+.color--limerick-alpha-15 { color: $limerick-15 }
+.color--limerick-alpha-10 { color: $limerick-10 }
+.color--limerick-alpha-05 { color: $limerick-05 }
+.color--limerick-alpha-00 { color: $limerick-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--limerick { background-color: $limerick }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--limerick-shade-1 { background-color: $limerick-shade-1 }
+.bg-color--limerick-shade-2 { background-color: $limerick-shade-2 }
+.bg-color--limerick-shade-3 { background-color: $limerick-shade-3 }
+.bg-color--limerick-shade-4 { background-color: $limerick-shade-4 }
+.bg-color--limerick-shade-5 { background-color: $limerick-shade-5 }
+.bg-color--limerick-shade-6 { background-color: $limerick-shade-6 }
+.bg-color--limerick-shade-7 { background-color: $limerick-shade-7 }
+.bg-color--limerick-shade-8 { background-color: $limerick-shade-8 }
+.bg-color--limerick-shade-9 { background-color: $limerick-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--limerick-tint-1 { background-color: $limerick-tint-1 }
+.bg-color--limerick-tint-2 { background-color: $limerick-tint-2 }
+.bg-color--limerick-tint-3 { background-color: $limerick-tint-3 }
+.bg-color--limerick-tint-4 { background-color: $limerick-tint-4 }
+.bg-color--limerick-tint-5 { background-color: $limerick-tint-5 }
+.bg-color--limerick-tint-6 { background-color: $limerick-tint-6 }
+.bg-color--limerick-tint-7 { background-color: $limerick-tint-7 }
+.bg-color--limerick-tint-8 { background-color: $limerick-tint-8 }
+.bg-color--limerick-tint-9 { background-color: $limerick-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--limerick-variation-1 { background-color: $limerick-variation-1 }
+.bg-color--limerick-variation-2 { background-color: $limerick-variation-2 }
+.bg-color--limerick-variation-3 { background-color: $limerick-variation-3 }
+.bg-color--limerick-variation-4 { background-color: $limerick-variation-4 }
+.bg-color--limerick-variation-5 { background-color: $limerick-variation-5 }
+.bg-color--limerick-variation-6 { background-color: $limerick-variation-6 }
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--limerick-triad-1 { background-color: $limerick-triad-1 }
+.bg-color--limerick-triad-2 { background-color: $limerick-triad-2 }
+.bg-color--limerick-triad-3 { background-color: $limerick-triad-3 }
+
+// Analogius color scheme
+.bg-color--limerick-analogous-1 { background-color: $limerick-analogous-1 }
+.bg-color--limerick-analogous-2 { background-color: $limerick-analogous-2 }
+
+// Split complementary
+.bg-color--limerick-split-complementary-1 { background-color: $limerick-split-complementary-1 }
+.bg-color--limerick-split-complementary-2 { background-color: $limerick-split-complementary-2 }
+
+// Complementary
+.bg-color--limerick-complementary { background-color: $limerick-complementary }
+
+// Monochromatic
+.bg-color--limerick-monochromatic-1 { background-color: $limerick-monochromatic-1 }
+.bg-color--limerick-monochromatic-2 { background-color: $limerick-monochromatic-2 }
+.bg-color--limerick-monochromatic-3 { background-color: $limerick-monochromatic-3 }
+.bg-color--limerick-monochromatic-4 { background-color: $limerick-monochromatic-4 }
+.bg-color--limerick-monochromatic-5 { background-color: $limerick-monochromatic-5 }
+.bg-color--limerick-monochromatic-6 { background-color: $limerick-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--limerick-alpha-100 { background-color: $limerick-100 }
+.bg-color--limerick-alpha-95 { background-color: $limerick-95 }
+.bg-color--limerick-alpha-90 { background-color: $limerick-90 }
+.bg-color--limerick-alpha-85 { background-color: $limerick-85 }
+.bg-color--limerick-alpha-80 { background-color: $limerick-80 }
+.bg-color--limerick-alpha-75 { background-color: $limerick-75 }
+.bg-color--limerick-alpha-70 { background-color: $limerick-70 }
+.bg-color--limerick-alpha-65 { background-color: $limerick-65 }
+.bg-color--limerick-alpha-60 { background-color: $limerick-60 }
+.bg-color--limerick-alpha-55 { background-color: $limerick-55 }
+.bg-color--limerick-alpha-50 { background-color: $limerick-50 }
+.bg-color--limerick-alpha-45 { background-color: $limerick-45 }
+.bg-color--limerick-alpha-40 { background-color: $limerick-40 }
+.bg-color--limerick-alpha-35 { background-color: $limerick-35 }
+.bg-color--limerick-alpha-30 { background-color: $limerick-30 }
+.bg-color--limerick-alpha-25 { background-color: $limerick-25 }
+.bg-color--limerick-alpha-20 { background-color: $limerick-20 }
+.bg-color--limerick-alpha-15 { background-color: $limerick-15 }
+.bg-color--limerick-alpha-10 { background-color: $limerick-10 }
+.bg-color--limerick-alpha-05 { background-color: $limerick-05 }
+.bg-color--limerick-alpha-00 { background-color: $limerick-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--limerick-shade-1 {
+    @include bg-gradient--limerick-shade-1();
+}
+.bg-gradient--limerick-shade-2 {
+    @include bg-gradient--limerick-shade-2();
+}
+.bg-gradient--limerick-shade-3 {
+    @include bg-gradient--limerick-shade-3();
+}
+.bg-gradient--limerick-shade-4 {
+    @include bg-gradient--limerick-shade-4();
+}
+.bg-gradient--limerick-shade-5 {
+    @include bg-gradient--limerick-shade-5();
+}
+.bg-gradient--limerick-shade-6 {
+    @include bg-gradient--limerick-shade-6();
+}
+.bg-gradient--limerick-shade-7 {
+    @include bg-gradient--limerick-shade-7();
+}
+.bg-gradient--limerick-shade-8 {
+    @include bg-gradient--limerick-shade-8();
+}
+.bg-gradient--limerick-shade-9 {
+    @include bg-gradient--limerick-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--limerick-tint-1 {
+    @include bg-gradient--limerick-tint-1();
+}
+.bg-gradient--limerick-tint-2 {
+    @include bg-gradient--limerick-tint-2();
+}
+.bg-gradient--limerick-tint-3 {
+    @include bg-gradient--limerick-tint-3();
+}
+.bg-gradient--limerick-tint-4 {
+    @include bg-gradient--limerick-tint-4();
+}
+.bg-gradient--limerick-tint-5 {
+    @include bg-gradient--limerick-tint-5();
+}
+.bg-gradient--limerick-tint-6 {
+    @include bg-gradient--limerick-tint-6();
+}
+.bg-gradient--limerick-tint-7 {
+    @include bg-gradient--limerick-tint-7();
+}
+.bg-gradient--limerick-tint-8 {
+    @include bg-gradient--limerick-tint-8();
+}
+.bg-gradient--limerick-tint-9 {
+    @include bg-gradient--limerick-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--limerick {
+    @include bg-gradient--limerick();
+}

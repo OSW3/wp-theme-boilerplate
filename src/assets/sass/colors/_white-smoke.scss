@@ -1,0 +1,524 @@
+// White-smoke
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/F5F5F5
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$white-smoke: #F5F5F5;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$white-smoke-shade-1: #C4C4C4;
+$white-smoke-shade-2: #9D9D9D;
+$white-smoke-shade-3: #7E7E7E;
+$white-smoke-shade-4: #656565;
+$white-smoke-shade-5: #515151;
+$white-smoke-shade-6: #414141;
+$white-smoke-shade-7: #343434;
+$white-smoke-shade-8: #2A2A2A;
+$white-smoke-shade-9: #222222;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$white-smoke-tint-1: #F7F7F7;
+$white-smoke-tint-2: #F9F9F9;
+$white-smoke-tint-3: #FAFAFA;
+$white-smoke-tint-4: #FBFBFB;
+$white-smoke-tint-5: #FCFCFC;
+$white-smoke-tint-6: #FDFDFD;
+$white-smoke-tint-7: #FDFDFD;
+$white-smoke-tint-8: #FDFDFD;
+$white-smoke-tint-9: #FDFDFD;
+
+
+// 4. Variations
+// ------------------
+
+$white-smoke-variation-1: #F5F5F5;
+$white-smoke-variation-2: #F5F5F5;
+$white-smoke-variation-3: #F5F5F5;
+$white-smoke-variation-4: #F5F5F5;
+$white-smoke-variation-5: #F5F5F5;
+$white-smoke-variation-6: #F5F5F5;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$white-smoke-triad-1: #F5F5F5;
+$white-smoke-triad-2: #F5F5F5;
+$white-smoke-triad-3: #F5F5F5;
+
+// Analogius color scheme
+$white-smoke-analogous-1: #F5F5F5;
+$white-smoke-analogous-2: #F5F5F5;
+
+// Split complementary
+$white-smoke-split-complementary-1: #F5F5F5;
+$white-smoke-split-complementary-2: #F5F5F5;
+
+// Complementary
+$white-smoke-complementary: #F5F5F5;
+
+// Monochromatic
+$white-smoke-monochromatic-1: #FCFCFC;
+$white-smoke-monochromatic-2: #FAFAFA;
+$white-smoke-monochromatic-3: #BBBBBB;
+$white-smoke-monochromatic-4: #B7B7B7;
+$white-smoke-monochromatic-5: #7A7A7A;
+$white-smoke-monochromatic-6: #5B5B5B;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$white-smoke-100: rgba($white-smoke, 1);
+$white-smoke-95: rgba($white-smoke, .95);
+$white-smoke-90: rgba($white-smoke, .9);
+$white-smoke-85: rgba($white-smoke, .85);
+$white-smoke-80: rgba($white-smoke, .8);
+$white-smoke-75: rgba($white-smoke, .75);
+$white-smoke-70: rgba($white-smoke, .7);
+$white-smoke-65: rgba($white-smoke, .65);
+$white-smoke-60: rgba($white-smoke, .6);
+$white-smoke-55: rgba($white-smoke, .55);
+$white-smoke-50: rgba($white-smoke, .5);
+$white-smoke-45: rgba($white-smoke, .45);
+$white-smoke-40: rgba($white-smoke, .4);
+$white-smoke-35: rgba($white-smoke, .35);
+$white-smoke-30: rgba($white-smoke, .3);
+$white-smoke-25: rgba($white-smoke, .25);
+$white-smoke-20: rgba($white-smoke, .2);
+$white-smoke-15: rgba($white-smoke, .15);
+$white-smoke-10: rgba($white-smoke, .1);
+$white-smoke-05: rgba($white-smoke, .05);
+$white-smoke-00: rgba($white-smoke, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--white-smoke-shade-1() {
+    background: $white-smoke-shade-1;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-1, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-1, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-1, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-2() {
+    background: $white-smoke-shade-2;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-2, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-2, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-2, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-3() {
+    background: $white-smoke-shade-3;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-3, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-3, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-3, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-4() {
+    background: $white-smoke-shade-4;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-4, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-4, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-4, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-5() {
+    background: $white-smoke-shade-5;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-5, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-5, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-5, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-6() {
+    background: $white-smoke-shade-6;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-6, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-6, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-6, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-7() {
+    background: $white-smoke-shade-7;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-7, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-7, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-7, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-8() {
+    background: $white-smoke-shade-8;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-8, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-8, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-8, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-shade-9() {
+    background: $white-smoke-shade-9;
+    background: -webkit-linear-gradient(right, $white-smoke-shade-9, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-shade-9, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-shade-9, $white-smoke) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--white-smoke-tint-1() {
+    background: $white-smoke-tint-1;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-1, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-1, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-1, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-2() {
+    background: $white-smoke-tint-2;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-2, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-2, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-2, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-3() {
+    background: $white-smoke-tint-3;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-3, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-3, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-3, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-4() {
+    background: $white-smoke-tint-4;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-4, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-4, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-4, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-5() {
+    background: $white-smoke-tint-5;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-5, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-5, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-5, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-6() {
+    background: $white-smoke-tint-6;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-6, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-6, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-6, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-7() {
+    background: $white-smoke-tint-7;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-7, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-7, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-7, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-8() {
+    background: $white-smoke-tint-8;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-8, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-8, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-8, $white-smoke) !important;
+}
+@mixin bg-gradient--white-smoke-tint-9() {
+    background: $white-smoke-tint-9;
+    background: -webkit-linear-gradient(right, $white-smoke-tint-9, $white-smoke) !important;
+    background:    -moz-linear-gradient(right, $white-smoke-tint-9, $white-smoke) !important;
+    background:         linear-gradient(to left, $white-smoke-tint-9, $white-smoke) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--white-smoke() {
+    color: #202020;
+    @include bg-gradient--white-smoke-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--white-smoke { color: $white-smoke }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--white-smoke-shade-1 { color: $white-smoke-shade-1 }
+.color--white-smoke-shade-2 { color: $white-smoke-shade-2 }
+.color--white-smoke-shade-3 { color: $white-smoke-shade-3 }
+.color--white-smoke-shade-4 { color: $white-smoke-shade-4 }
+.color--white-smoke-shade-5 { color: $white-smoke-shade-5 }
+.color--white-smoke-shade-6 { color: $white-smoke-shade-6 }
+.color--white-smoke-shade-7 { color: $white-smoke-shade-7 }
+.color--white-smoke-shade-8 { color: $white-smoke-shade-8 }
+.color--white-smoke-shade-9 { color: $white-smoke-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--white-smoke-tint-1 { color: $white-smoke-tint-1 }
+.color--white-smoke-tint-2 { color: $white-smoke-tint-2 }
+.color--white-smoke-tint-3 { color: $white-smoke-tint-3 }
+.color--white-smoke-tint-4 { color: $white-smoke-tint-4 }
+.color--white-smoke-tint-5 { color: $white-smoke-tint-5 }
+.color--white-smoke-tint-6 { color: $white-smoke-tint-6 }
+.color--white-smoke-tint-7 { color: $white-smoke-tint-7 }
+.color--white-smoke-tint-8 { color: $white-smoke-tint-8 }
+.color--white-smoke-tint-9 { color: $white-smoke-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--white-smoke-variation-1 { color: $white-smoke-variation-1 }
+.color--white-smoke-variation-2 { color: $white-smoke-variation-2 }
+.color--white-smoke-variation-3 { color: $white-smoke-variation-3 }
+.color--white-smoke-variation-4 { color: $white-smoke-variation-4 }
+.color--white-smoke-variation-5 { color: $white-smoke-variation-5 }
+.color--white-smoke-variation-6 { color: $white-smoke-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--white-smoke-triad-1 { color: $white-smoke-triad-1 }
+.color--white-smoke-triad-2 { color: $white-smoke-triad-2 }
+.color--white-smoke-triad-3 { color: $white-smoke-triad-3 }
+
+// Analogius color scheme
+.color--white-smoke-analogous-1 { color: $white-smoke-analogous-1 }
+.color--white-smoke-analogous-2 { color: $white-smoke-analogous-2 }
+
+// Split complementary
+.color--white-smoke-split-complementary-1 { color: $white-smoke-split-complementary-1 }
+.color--white-smoke-split-complementary-2 { color: $white-smoke-split-complementary-2 }
+
+// Complementary
+.color--white-smoke-complementary { color: $white-smoke-complementary }
+
+// Monochromatic
+.color--white-smoke-monochromatic-1 { color: $white-smoke-monochromatic-1 }
+.color--white-smoke-monochromatic-2 { color: $white-smoke-monochromatic-2 }
+.color--white-smoke-monochromatic-3 { color: $white-smoke-monochromatic-3 }
+.color--white-smoke-monochromatic-4 { color: $white-smoke-monochromatic-4 }
+.color--white-smoke-monochromatic-5 { color: $white-smoke-monochromatic-5 }
+.color--white-smoke-monochromatic-6 { color: $white-smoke-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--white-smoke-alpha-100 { color: $white-smoke-100 }
+.color--white-smoke-alpha-95 { color: $white-smoke-95 }
+.color--white-smoke-alpha-90 { color: $white-smoke-90 }
+.color--white-smoke-alpha-85 { color: $white-smoke-85 }
+.color--white-smoke-alpha-80 { color: $white-smoke-80 }
+.color--white-smoke-alpha-75 { color: $white-smoke-75 }
+.color--white-smoke-alpha-70 { color: $white-smoke-70 }
+.color--white-smoke-alpha-65 { color: $white-smoke-65 }
+.color--white-smoke-alpha-60 { color: $white-smoke-60 }
+.color--white-smoke-alpha-55 { color: $white-smoke-55 }
+.color--white-smoke-alpha-50 { color: $white-smoke-50 }
+.color--white-smoke-alpha-45 { color: $white-smoke-45 }
+.color--white-smoke-alpha-40 { color: $white-smoke-40 }
+.color--white-smoke-alpha-35 { color: $white-smoke-35 }
+.color--white-smoke-alpha-30 { color: $white-smoke-30 }
+.color--white-smoke-alpha-25 { color: $white-smoke-25 }
+.color--white-smoke-alpha-20 { color: $white-smoke-20 }
+.color--white-smoke-alpha-15 { color: $white-smoke-15 }
+.color--white-smoke-alpha-10 { color: $white-smoke-10 }
+.color--white-smoke-alpha-05 { color: $white-smoke-05 }
+.color--white-smoke-alpha-00 { color: $white-smoke-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--white-smoke { background-color: $white-smoke }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--white-smoke-shade-1 { background-color: $white-smoke-shade-1 }
+.bg-color--white-smoke-shade-2 { background-color: $white-smoke-shade-2 }
+.bg-color--white-smoke-shade-3 { background-color: $white-smoke-shade-3 }
+.bg-color--white-smoke-shade-4 { background-color: $white-smoke-shade-4 }
+.bg-color--white-smoke-shade-5 { background-color: $white-smoke-shade-5 }
+.bg-color--white-smoke-shade-6 { background-color: $white-smoke-shade-6 }
+.bg-color--white-smoke-shade-7 { background-color: $white-smoke-shade-7 }
+.bg-color--white-smoke-shade-8 { background-color: $white-smoke-shade-8 }
+.bg-color--white-smoke-shade-9 { background-color: $white-smoke-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--white-smoke-tint-1 { background-color: $white-smoke-tint-1 }
+.bg-color--white-smoke-tint-2 { background-color: $white-smoke-tint-2 }
+.bg-color--white-smoke-tint-3 { background-color: $white-smoke-tint-3 }
+.bg-color--white-smoke-tint-4 { background-color: $white-smoke-tint-4 }
+.bg-color--white-smoke-tint-5 { background-color: $white-smoke-tint-5 }
+.bg-color--white-smoke-tint-6 { background-color: $white-smoke-tint-6 }
+.bg-color--white-smoke-tint-7 { background-color: $white-smoke-tint-7 }
+.bg-color--white-smoke-tint-8 { background-color: $white-smoke-tint-8 }
+.bg-color--white-smoke-tint-9 { background-color: $white-smoke-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--white-smoke-variation-1 { background-color: $white-smoke-variation-1 }
+.bg-color--white-smoke-variation-2 { background-color: $white-smoke-variation-2 }
+.bg-color--white-smoke-variation-3 { background-color: $white-smoke-variation-3 }
+.bg-color--white-smoke-variation-4 { background-color: $white-smoke-variation-4 }
+.bg-color--white-smoke-variation-5 { background-color: $white-smoke-variation-5 }
+.bg-color--white-smoke-variation-6 { background-color: $white-smoke-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--white-smoke-triad-1 { background-color: $white-smoke-triad-1 }
+.bg-color--white-smoke-triad-2 { background-color: $white-smoke-triad-2 }
+.bg-color--white-smoke-triad-3 { background-color: $white-smoke-triad-3 }
+
+// Analogius color scheme
+.bg-color--white-smoke-analogous-1 { background-color: $white-smoke-analogous-1 }
+.bg-color--white-smoke-analogous-2 { background-color: $white-smoke-analogous-2 }
+
+// Split complementary
+.bg-color--white-smoke-split-complementary-1 { background-color: $white-smoke-split-complementary-1 }
+.bg-color--white-smoke-split-complementary-2 { background-color: $white-smoke-split-complementary-2 }
+
+// Complementary
+.bg-color--white-smoke-complementary { background-color: $white-smoke-complementary }
+
+// Monochromatic
+.bg-color--white-smoke-monochromatic-1 { background-color: $white-smoke-monochromatic-1 }
+.bg-color--white-smoke-monochromatic-2 { background-color: $white-smoke-monochromatic-2 }
+.bg-color--white-smoke-monochromatic-3 { background-color: $white-smoke-monochromatic-3 }
+.bg-color--white-smoke-monochromatic-4 { background-color: $white-smoke-monochromatic-4 }
+.bg-color--white-smoke-monochromatic-5 { background-color: $white-smoke-monochromatic-5 }
+.bg-color--white-smoke-monochromatic-6 { background-color: $white-smoke-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--white-smoke-alpha-100 { background-color: $white-smoke-100 }
+.bg-color--white-smoke-alpha-95 { background-color: $white-smoke-95 }
+.bg-color--white-smoke-alpha-90 { background-color: $white-smoke-90 }
+.bg-color--white-smoke-alpha-85 { background-color: $white-smoke-85 }
+.bg-color--white-smoke-alpha-80 { background-color: $white-smoke-80 }
+.bg-color--white-smoke-alpha-75 { background-color: $white-smoke-75 }
+.bg-color--white-smoke-alpha-70 { background-color: $white-smoke-70 }
+.bg-color--white-smoke-alpha-65 { background-color: $white-smoke-65 }
+.bg-color--white-smoke-alpha-60 { background-color: $white-smoke-60 }
+.bg-color--white-smoke-alpha-55 { background-color: $white-smoke-55 }
+.bg-color--white-smoke-alpha-50 { background-color: $white-smoke-50 }
+.bg-color--white-smoke-alpha-45 { background-color: $white-smoke-45 }
+.bg-color--white-smoke-alpha-40 { background-color: $white-smoke-40 }
+.bg-color--white-smoke-alpha-35 { background-color: $white-smoke-35 }
+.bg-color--white-smoke-alpha-30 { background-color: $white-smoke-30 }
+.bg-color--white-smoke-alpha-25 { background-color: $white-smoke-25 }
+.bg-color--white-smoke-alpha-20 { background-color: $white-smoke-20 }
+.bg-color--white-smoke-alpha-15 { background-color: $white-smoke-15 }
+.bg-color--white-smoke-alpha-10 { background-color: $white-smoke-10 }
+.bg-color--white-smoke-alpha-05 { background-color: $white-smoke-05 }
+.bg-color--white-smoke-alpha-00 { background-color: $white-smoke-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--white-smoke-shade-1 {
+    @include bg-gradient--white-smoke-shade-1();
+}
+.bg-gradient--white-smoke-shade-2 {
+    @include bg-gradient--white-smoke-shade-2();
+}
+.bg-gradient--white-smoke-shade-3 {
+    @include bg-gradient--white-smoke-shade-3();
+}
+.bg-gradient--white-smoke-shade-4 {
+    @include bg-gradient--white-smoke-shade-4();
+}
+.bg-gradient--white-smoke-shade-5 {
+    @include bg-gradient--white-smoke-shade-5();
+}
+.bg-gradient--white-smoke-shade-6 {
+    @include bg-gradient--white-smoke-shade-6();
+}
+.bg-gradient--white-smoke-shade-7 {
+    @include bg-gradient--white-smoke-shade-7();
+}
+.bg-gradient--white-smoke-shade-8 {
+    @include bg-gradient--white-smoke-shade-8();
+}
+.bg-gradient--white-smoke-shade-9 {
+    @include bg-gradient--white-smoke-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--white-smoke-tint-1 {
+    @include bg-gradient--white-smoke-tint-1();
+}
+.bg-gradient--white-smoke-tint-2 {
+    @include bg-gradient--white-smoke-tint-2();
+}
+.bg-gradient--white-smoke-tint-3 {
+    @include bg-gradient--white-smoke-tint-3();
+}
+.bg-gradient--white-smoke-tint-4 {
+    @include bg-gradient--white-smoke-tint-4();
+}
+.bg-gradient--white-smoke-tint-5 {
+    @include bg-gradient--white-smoke-tint-5();
+}
+.bg-gradient--white-smoke-tint-6 {
+    @include bg-gradient--white-smoke-tint-6();
+}
+.bg-gradient--white-smoke-tint-7 {
+    @include bg-gradient--white-smoke-tint-7();
+}
+.bg-gradient--white-smoke-tint-8 {
+    @include bg-gradient--white-smoke-tint-8();
+}
+.bg-gradient--white-smoke-tint-9 {
+    @include bg-gradient--white-smoke-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--white-smoke {
+    @include bg-gradient--white-smoke();
+}

@@ -1,0 +1,19 @@
+// SCSS Component: Tab
+// ------------------
+// @info: https://sass-guidelin.es/fr/#architecture
+// 
+// =============================================================================
+
+
+// Bootstrap Tab
+// https://getbootstrap.com/docs/5.0/components/navs-tabs/#tabs
+.nav-tabs
+{
+    margin-top: -1px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+.tab-pane 
+{
+    padding: 15px;
+}

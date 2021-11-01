@@ -1,0 +1,524 @@
+// Free-speech-red
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/CC0000
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$free-speech-red: #CC0000;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$free-speech-red-shade-1: #A30000;
+$free-speech-red-shade-2: #820000;
+$free-speech-red-shade-3: #680000;
+$free-speech-red-shade-4: #530000;
+$free-speech-red-shade-5: #420000;
+$free-speech-red-shade-6: #350000;
+$free-speech-red-shade-7: #2A0000;
+$free-speech-red-shade-8: #220000;
+$free-speech-red-shade-9: #1B0000;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$free-speech-red-tint-1: #D63333;
+$free-speech-red-tint-2: #DE5C5C;
+$free-speech-red-tint-3: #E57D7D;
+$free-speech-red-tint-4: #EA9797;
+$free-speech-red-tint-5: #EEACAC;
+$free-speech-red-tint-6: #F1BDBD;
+$free-speech-red-tint-7: #F4CACA;
+$free-speech-red-tint-8: #F6D5D5;
+$free-speech-red-tint-9: #F8DDDD;
+
+
+// 4. Variations
+// ------------------
+
+$free-speech-red-variation-1: #CC0000;
+$free-speech-red-variation-2: #CC0000;
+$free-speech-red-variation-3: #00CC00;
+$free-speech-red-variation-4: #0000CC;
+$free-speech-red-variation-5: #00CC00;
+$free-speech-red-variation-6: #0000CC;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$free-speech-red-triad-1: #CC0000;
+$free-speech-red-triad-2: #00CC00;
+$free-speech-red-triad-3: #0000CC;
+
+// Analogius color scheme
+$free-speech-red-analogous-1: #CC6600;
+$free-speech-red-analogous-2: #CC0066;
+
+// Split complementary
+$free-speech-red-split-complementary-1: #00CC66;
+$free-speech-red-split-complementary-2: #0066CC;
+
+// Complementary
+$free-speech-red-complementary: #00CCCC;
+
+// Monochromatic
+$free-speech-red-monochromatic-1: #F2BFBF;
+$free-speech-red-monochromatic-2: #E68080;
+$free-speech-red-monochromatic-3: #AC6060;
+$free-speech-red-monochromatic-4: #990000;
+$free-speech-red-monochromatic-5: #660000;
+$free-speech-red-monochromatic-6: #4C0000;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$free-speech-red-100: rgba($free-speech-red, 1);
+$free-speech-red-95: rgba($free-speech-red, .95);
+$free-speech-red-90: rgba($free-speech-red, .9);
+$free-speech-red-85: rgba($free-speech-red, .85);
+$free-speech-red-80: rgba($free-speech-red, .8);
+$free-speech-red-75: rgba($free-speech-red, .75);
+$free-speech-red-70: rgba($free-speech-red, .7);
+$free-speech-red-65: rgba($free-speech-red, .65);
+$free-speech-red-60: rgba($free-speech-red, .6);
+$free-speech-red-55: rgba($free-speech-red, .55);
+$free-speech-red-50: rgba($free-speech-red, .5);
+$free-speech-red-45: rgba($free-speech-red, .45);
+$free-speech-red-40: rgba($free-speech-red, .4);
+$free-speech-red-35: rgba($free-speech-red, .35);
+$free-speech-red-30: rgba($free-speech-red, .3);
+$free-speech-red-25: rgba($free-speech-red, .25);
+$free-speech-red-20: rgba($free-speech-red, .2);
+$free-speech-red-15: rgba($free-speech-red, .15);
+$free-speech-red-10: rgba($free-speech-red, .1);
+$free-speech-red-05: rgba($free-speech-red, .05);
+$free-speech-red-00: rgba($free-speech-red, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--free-speech-red-shade-1() {
+    background: $free-speech-red-shade-1;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-1, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-1, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-1, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-2() {
+    background: $free-speech-red-shade-2;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-2, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-2, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-2, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-3() {
+    background: $free-speech-red-shade-3;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-3, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-3, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-3, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-4() {
+    background: $free-speech-red-shade-4;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-4, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-4, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-4, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-5() {
+    background: $free-speech-red-shade-5;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-5, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-5, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-5, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-6() {
+    background: $free-speech-red-shade-6;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-6, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-6, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-6, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-7() {
+    background: $free-speech-red-shade-7;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-7, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-7, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-7, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-8() {
+    background: $free-speech-red-shade-8;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-8, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-8, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-8, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-shade-9() {
+    background: $free-speech-red-shade-9;
+    background: -webkit-linear-gradient(right, $free-speech-red-shade-9, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-shade-9, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-shade-9, $free-speech-red) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--free-speech-red-tint-1() {
+    background: $free-speech-red-tint-1;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-1, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-1, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-1, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-2() {
+    background: $free-speech-red-tint-2;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-2, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-2, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-2, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-3() {
+    background: $free-speech-red-tint-3;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-3, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-3, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-3, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-4() {
+    background: $free-speech-red-tint-4;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-4, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-4, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-4, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-5() {
+    background: $free-speech-red-tint-5;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-5, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-5, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-5, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-6() {
+    background: $free-speech-red-tint-6;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-6, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-6, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-6, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-7() {
+    background: $free-speech-red-tint-7;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-7, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-7, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-7, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-8() {
+    background: $free-speech-red-tint-8;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-8, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-8, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-8, $free-speech-red) !important;
+}
+@mixin bg-gradient--free-speech-red-tint-9() {
+    background: $free-speech-red-tint-9;
+    background: -webkit-linear-gradient(right, $free-speech-red-tint-9, $free-speech-red) !important;
+    background:    -moz-linear-gradient(right, $free-speech-red-tint-9, $free-speech-red) !important;
+    background:         linear-gradient(to left, $free-speech-red-tint-9, $free-speech-red) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--free-speech-red() {
+    color: #FFFFFF;
+    @include bg-gradient--free-speech-red-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--free-speech-red { color: $free-speech-red }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--free-speech-red-shade-1 { color: $free-speech-red-shade-1 }
+.color--free-speech-red-shade-2 { color: $free-speech-red-shade-2 }
+.color--free-speech-red-shade-3 { color: $free-speech-red-shade-3 }
+.color--free-speech-red-shade-4 { color: $free-speech-red-shade-4 }
+.color--free-speech-red-shade-5 { color: $free-speech-red-shade-5 }
+.color--free-speech-red-shade-6 { color: $free-speech-red-shade-6 }
+.color--free-speech-red-shade-7 { color: $free-speech-red-shade-7 }
+.color--free-speech-red-shade-8 { color: $free-speech-red-shade-8 }
+.color--free-speech-red-shade-9 { color: $free-speech-red-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--free-speech-red-tint-1 { color: $free-speech-red-tint-1 }
+.color--free-speech-red-tint-2 { color: $free-speech-red-tint-2 }
+.color--free-speech-red-tint-3 { color: $free-speech-red-tint-3 }
+.color--free-speech-red-tint-4 { color: $free-speech-red-tint-4 }
+.color--free-speech-red-tint-5 { color: $free-speech-red-tint-5 }
+.color--free-speech-red-tint-6 { color: $free-speech-red-tint-6 }
+.color--free-speech-red-tint-7 { color: $free-speech-red-tint-7 }
+.color--free-speech-red-tint-8 { color: $free-speech-red-tint-8 }
+.color--free-speech-red-tint-9 { color: $free-speech-red-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--free-speech-red-variation-1 { color: $free-speech-red-variation-1 }
+.color--free-speech-red-variation-2 { color: $free-speech-red-variation-2 }
+.color--free-speech-red-variation-3 { color: $free-speech-red-variation-3 }
+.color--free-speech-red-variation-4 { color: $free-speech-red-variation-4 }
+.color--free-speech-red-variation-5 { color: $free-speech-red-variation-5 }
+.color--free-speech-red-variation-6 { color: $free-speech-red-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--free-speech-red-triad-1 { color: $free-speech-red-triad-1 }
+.color--free-speech-red-triad-2 { color: $free-speech-red-triad-2 }
+.color--free-speech-red-triad-3 { color: $free-speech-red-triad-3 }
+
+// Analogius color scheme
+.color--free-speech-red-analogous-1 { color: $free-speech-red-analogous-1 }
+.color--free-speech-red-analogous-2 { color: $free-speech-red-analogous-2 }
+
+// Split complementary
+.color--free-speech-red-split-complementary-1 { color: $free-speech-red-split-complementary-1 }
+.color--free-speech-red-split-complementary-2 { color: $free-speech-red-split-complementary-2 }
+
+// Complementary
+.color--free-speech-red-complementary { color: $free-speech-red-complementary }
+
+// Monochromatic
+.color--free-speech-red-monochromatic-1 { color: $free-speech-red-monochromatic-1 }
+.color--free-speech-red-monochromatic-2 { color: $free-speech-red-monochromatic-2 }
+.color--free-speech-red-monochromatic-3 { color: $free-speech-red-monochromatic-3 }
+.color--free-speech-red-monochromatic-4 { color: $free-speech-red-monochromatic-4 }
+.color--free-speech-red-monochromatic-5 { color: $free-speech-red-monochromatic-5 }
+.color--free-speech-red-monochromatic-6 { color: $free-speech-red-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--free-speech-red-alpha-100 { color: $free-speech-red-100 }
+.color--free-speech-red-alpha-95 { color: $free-speech-red-95 }
+.color--free-speech-red-alpha-90 { color: $free-speech-red-90 }
+.color--free-speech-red-alpha-85 { color: $free-speech-red-85 }
+.color--free-speech-red-alpha-80 { color: $free-speech-red-80 }
+.color--free-speech-red-alpha-75 { color: $free-speech-red-75 }
+.color--free-speech-red-alpha-70 { color: $free-speech-red-70 }
+.color--free-speech-red-alpha-65 { color: $free-speech-red-65 }
+.color--free-speech-red-alpha-60 { color: $free-speech-red-60 }
+.color--free-speech-red-alpha-55 { color: $free-speech-red-55 }
+.color--free-speech-red-alpha-50 { color: $free-speech-red-50 }
+.color--free-speech-red-alpha-45 { color: $free-speech-red-45 }
+.color--free-speech-red-alpha-40 { color: $free-speech-red-40 }
+.color--free-speech-red-alpha-35 { color: $free-speech-red-35 }
+.color--free-speech-red-alpha-30 { color: $free-speech-red-30 }
+.color--free-speech-red-alpha-25 { color: $free-speech-red-25 }
+.color--free-speech-red-alpha-20 { color: $free-speech-red-20 }
+.color--free-speech-red-alpha-15 { color: $free-speech-red-15 }
+.color--free-speech-red-alpha-10 { color: $free-speech-red-10 }
+.color--free-speech-red-alpha-05 { color: $free-speech-red-05 }
+.color--free-speech-red-alpha-00 { color: $free-speech-red-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--free-speech-red { background-color: $free-speech-red }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--free-speech-red-shade-1 { background-color: $free-speech-red-shade-1 }
+.bg-color--free-speech-red-shade-2 { background-color: $free-speech-red-shade-2 }
+.bg-color--free-speech-red-shade-3 { background-color: $free-speech-red-shade-3 }
+.bg-color--free-speech-red-shade-4 { background-color: $free-speech-red-shade-4 }
+.bg-color--free-speech-red-shade-5 { background-color: $free-speech-red-shade-5 }
+.bg-color--free-speech-red-shade-6 { background-color: $free-speech-red-shade-6 }
+.bg-color--free-speech-red-shade-7 { background-color: $free-speech-red-shade-7 }
+.bg-color--free-speech-red-shade-8 { background-color: $free-speech-red-shade-8 }
+.bg-color--free-speech-red-shade-9 { background-color: $free-speech-red-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--free-speech-red-tint-1 { background-color: $free-speech-red-tint-1 }
+.bg-color--free-speech-red-tint-2 { background-color: $free-speech-red-tint-2 }
+.bg-color--free-speech-red-tint-3 { background-color: $free-speech-red-tint-3 }
+.bg-color--free-speech-red-tint-4 { background-color: $free-speech-red-tint-4 }
+.bg-color--free-speech-red-tint-5 { background-color: $free-speech-red-tint-5 }
+.bg-color--free-speech-red-tint-6 { background-color: $free-speech-red-tint-6 }
+.bg-color--free-speech-red-tint-7 { background-color: $free-speech-red-tint-7 }
+.bg-color--free-speech-red-tint-8 { background-color: $free-speech-red-tint-8 }
+.bg-color--free-speech-red-tint-9 { background-color: $free-speech-red-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--free-speech-red-variation-1 { background-color: $free-speech-red-variation-1 }
+.bg-color--free-speech-red-variation-2 { background-color: $free-speech-red-variation-2 }
+.bg-color--free-speech-red-variation-3 { background-color: $free-speech-red-variation-3 }
+.bg-color--free-speech-red-variation-4 { background-color: $free-speech-red-variation-4 }
+.bg-color--free-speech-red-variation-5 { background-color: $free-speech-red-variation-5 }
+.bg-color--free-speech-red-variation-6 { background-color: $free-speech-red-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--free-speech-red-triad-1 { background-color: $free-speech-red-triad-1 }
+.bg-color--free-speech-red-triad-2 { background-color: $free-speech-red-triad-2 }
+.bg-color--free-speech-red-triad-3 { background-color: $free-speech-red-triad-3 }
+
+// Analogius color scheme
+.bg-color--free-speech-red-analogous-1 { background-color: $free-speech-red-analogous-1 }
+.bg-color--free-speech-red-analogous-2 { background-color: $free-speech-red-analogous-2 }
+
+// Split complementary
+.bg-color--free-speech-red-split-complementary-1 { background-color: $free-speech-red-split-complementary-1 }
+.bg-color--free-speech-red-split-complementary-2 { background-color: $free-speech-red-split-complementary-2 }
+
+// Complementary
+.bg-color--free-speech-red-complementary { background-color: $free-speech-red-complementary }
+
+// Monochromatic
+.bg-color--free-speech-red-monochromatic-1 { background-color: $free-speech-red-monochromatic-1 }
+.bg-color--free-speech-red-monochromatic-2 { background-color: $free-speech-red-monochromatic-2 }
+.bg-color--free-speech-red-monochromatic-3 { background-color: $free-speech-red-monochromatic-3 }
+.bg-color--free-speech-red-monochromatic-4 { background-color: $free-speech-red-monochromatic-4 }
+.bg-color--free-speech-red-monochromatic-5 { background-color: $free-speech-red-monochromatic-5 }
+.bg-color--free-speech-red-monochromatic-6 { background-color: $free-speech-red-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--free-speech-red-alpha-100 { background-color: $free-speech-red-100 }
+.bg-color--free-speech-red-alpha-95 { background-color: $free-speech-red-95 }
+.bg-color--free-speech-red-alpha-90 { background-color: $free-speech-red-90 }
+.bg-color--free-speech-red-alpha-85 { background-color: $free-speech-red-85 }
+.bg-color--free-speech-red-alpha-80 { background-color: $free-speech-red-80 }
+.bg-color--free-speech-red-alpha-75 { background-color: $free-speech-red-75 }
+.bg-color--free-speech-red-alpha-70 { background-color: $free-speech-red-70 }
+.bg-color--free-speech-red-alpha-65 { background-color: $free-speech-red-65 }
+.bg-color--free-speech-red-alpha-60 { background-color: $free-speech-red-60 }
+.bg-color--free-speech-red-alpha-55 { background-color: $free-speech-red-55 }
+.bg-color--free-speech-red-alpha-50 { background-color: $free-speech-red-50 }
+.bg-color--free-speech-red-alpha-45 { background-color: $free-speech-red-45 }
+.bg-color--free-speech-red-alpha-40 { background-color: $free-speech-red-40 }
+.bg-color--free-speech-red-alpha-35 { background-color: $free-speech-red-35 }
+.bg-color--free-speech-red-alpha-30 { background-color: $free-speech-red-30 }
+.bg-color--free-speech-red-alpha-25 { background-color: $free-speech-red-25 }
+.bg-color--free-speech-red-alpha-20 { background-color: $free-speech-red-20 }
+.bg-color--free-speech-red-alpha-15 { background-color: $free-speech-red-15 }
+.bg-color--free-speech-red-alpha-10 { background-color: $free-speech-red-10 }
+.bg-color--free-speech-red-alpha-05 { background-color: $free-speech-red-05 }
+.bg-color--free-speech-red-alpha-00 { background-color: $free-speech-red-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--free-speech-red-shade-1 {
+    @include bg-gradient--free-speech-red-shade-1();
+}
+.bg-gradient--free-speech-red-shade-2 {
+    @include bg-gradient--free-speech-red-shade-2();
+}
+.bg-gradient--free-speech-red-shade-3 {
+    @include bg-gradient--free-speech-red-shade-3();
+}
+.bg-gradient--free-speech-red-shade-4 {
+    @include bg-gradient--free-speech-red-shade-4();
+}
+.bg-gradient--free-speech-red-shade-5 {
+    @include bg-gradient--free-speech-red-shade-5();
+}
+.bg-gradient--free-speech-red-shade-6 {
+    @include bg-gradient--free-speech-red-shade-6();
+}
+.bg-gradient--free-speech-red-shade-7 {
+    @include bg-gradient--free-speech-red-shade-7();
+}
+.bg-gradient--free-speech-red-shade-8 {
+    @include bg-gradient--free-speech-red-shade-8();
+}
+.bg-gradient--free-speech-red-shade-9 {
+    @include bg-gradient--free-speech-red-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--free-speech-red-tint-1 {
+    @include bg-gradient--free-speech-red-tint-1();
+}
+.bg-gradient--free-speech-red-tint-2 {
+    @include bg-gradient--free-speech-red-tint-2();
+}
+.bg-gradient--free-speech-red-tint-3 {
+    @include bg-gradient--free-speech-red-tint-3();
+}
+.bg-gradient--free-speech-red-tint-4 {
+    @include bg-gradient--free-speech-red-tint-4();
+}
+.bg-gradient--free-speech-red-tint-5 {
+    @include bg-gradient--free-speech-red-tint-5();
+}
+.bg-gradient--free-speech-red-tint-6 {
+    @include bg-gradient--free-speech-red-tint-6();
+}
+.bg-gradient--free-speech-red-tint-7 {
+    @include bg-gradient--free-speech-red-tint-7();
+}
+.bg-gradient--free-speech-red-tint-8 {
+    @include bg-gradient--free-speech-red-tint-8();
+}
+.bg-gradient--free-speech-red-tint-9 {
+    @include bg-gradient--free-speech-red-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--free-speech-red {
+    @include bg-gradient--free-speech-red();
+}

@@ -1,0 +1,524 @@
+// Dodger-blue
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/1F6BFF
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$dodger-blue: #1F6BFF;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$dodger-blue-shade-1: #1956CC;
+$dodger-blue-shade-2: #1445A3;
+$dodger-blue-shade-3: #103782;
+$dodger-blue-shade-4: #0D2C68;
+$dodger-blue-shade-5: #0A2353;
+$dodger-blue-shade-6: #081C42;
+$dodger-blue-shade-7: #061635;
+$dodger-blue-shade-8: #05122A;
+$dodger-blue-shade-9: #040E22;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$dodger-blue-tint-1: #4C89FF;
+$dodger-blue-tint-2: #70A1FF;
+$dodger-blue-tint-3: #8DB4FF;
+$dodger-blue-tint-4: #A4C3FF;
+$dodger-blue-tint-5: #B6CFFF;
+$dodger-blue-tint-6: #C5D9FF;
+$dodger-blue-tint-7: #D1E1FF;
+$dodger-blue-tint-8: #DAE7FF;
+$dodger-blue-tint-9: #E1ECFF;
+
+
+// 4. Variations
+// ------------------
+
+$dodger-blue-variation-1: #1F6BFF;
+$dodger-blue-variation-2: #1FFF6B;
+$dodger-blue-variation-3: #6B1FFF;
+$dodger-blue-variation-4: #6BFF1F;
+$dodger-blue-variation-5: #FF1F6B;
+$dodger-blue-variation-6: #FF6B1F;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$dodger-blue-triad-1: #1F6BFF;
+$dodger-blue-triad-2: #FF1F6B;
+$dodger-blue-triad-3: #6BFF1F;
+
+// Analogius color scheme
+$dodger-blue-analogous-1: #431FFF;
+$dodger-blue-analogous-2: #1FDBFF;
+
+// Split complementary
+$dodger-blue-split-complementary-1: #FF431F;
+$dodger-blue-split-complementary-2: #DBFF1F;
+
+// Complementary
+$dodger-blue-complementary: #FFB31F;
+
+// Monochromatic
+$dodger-blue-monochromatic-1: #C7DAFE;
+$dodger-blue-monochromatic-2: #90B6FF;
+$dodger-blue-monochromatic-3: #6C88BF;
+$dodger-blue-monochromatic-4: #1750BF;
+$dodger-blue-monochromatic-5: #10367F;
+$dodger-blue-monochromatic-6: #0C285F;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$dodger-blue-100: rgba($dodger-blue, 1);
+$dodger-blue-95: rgba($dodger-blue, .95);
+$dodger-blue-90: rgba($dodger-blue, .9);
+$dodger-blue-85: rgba($dodger-blue, .85);
+$dodger-blue-80: rgba($dodger-blue, .8);
+$dodger-blue-75: rgba($dodger-blue, .75);
+$dodger-blue-70: rgba($dodger-blue, .7);
+$dodger-blue-65: rgba($dodger-blue, .65);
+$dodger-blue-60: rgba($dodger-blue, .6);
+$dodger-blue-55: rgba($dodger-blue, .55);
+$dodger-blue-50: rgba($dodger-blue, .5);
+$dodger-blue-45: rgba($dodger-blue, .45);
+$dodger-blue-40: rgba($dodger-blue, .4);
+$dodger-blue-35: rgba($dodger-blue, .35);
+$dodger-blue-30: rgba($dodger-blue, .3);
+$dodger-blue-25: rgba($dodger-blue, .25);
+$dodger-blue-20: rgba($dodger-blue, .2);
+$dodger-blue-15: rgba($dodger-blue, .15);
+$dodger-blue-10: rgba($dodger-blue, .1);
+$dodger-blue-05: rgba($dodger-blue, .05);
+$dodger-blue-00: rgba($dodger-blue, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--dodger-blue-shade-1() {
+    background: $dodger-blue-shade-1;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-1, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-1, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-1, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-2() {
+    background: $dodger-blue-shade-2;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-2, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-2, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-2, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-3() {
+    background: $dodger-blue-shade-3;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-3, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-3, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-3, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-4() {
+    background: $dodger-blue-shade-4;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-4, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-4, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-4, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-5() {
+    background: $dodger-blue-shade-5;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-5, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-5, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-5, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-6() {
+    background: $dodger-blue-shade-6;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-6, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-6, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-6, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-7() {
+    background: $dodger-blue-shade-7;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-7, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-7, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-7, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-8() {
+    background: $dodger-blue-shade-8;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-8, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-8, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-8, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-shade-9() {
+    background: $dodger-blue-shade-9;
+    background: -webkit-linear-gradient(right, $dodger-blue-shade-9, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-shade-9, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-shade-9, $dodger-blue) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--dodger-blue-tint-1() {
+    background: $dodger-blue-tint-1;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-1, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-1, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-1, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-2() {
+    background: $dodger-blue-tint-2;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-2, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-2, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-2, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-3() {
+    background: $dodger-blue-tint-3;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-3, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-3, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-3, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-4() {
+    background: $dodger-blue-tint-4;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-4, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-4, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-4, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-5() {
+    background: $dodger-blue-tint-5;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-5, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-5, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-5, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-6() {
+    background: $dodger-blue-tint-6;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-6, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-6, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-6, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-7() {
+    background: $dodger-blue-tint-7;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-7, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-7, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-7, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-8() {
+    background: $dodger-blue-tint-8;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-8, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-8, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-8, $dodger-blue) !important;
+}
+@mixin bg-gradient--dodger-blue-tint-9() {
+    background: $dodger-blue-tint-9;
+    background: -webkit-linear-gradient(right, $dodger-blue-tint-9, $dodger-blue) !important;
+    background:    -moz-linear-gradient(right, $dodger-blue-tint-9, $dodger-blue) !important;
+    background:         linear-gradient(to left, $dodger-blue-tint-9, $dodger-blue) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--dodger-blue() {
+    color: #FFFFFF;
+    @include bg-gradient--dodger-blue-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--dodger-blue { color: $dodger-blue }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--dodger-blue-shade-1 { color: $dodger-blue-shade-1 }
+.color--dodger-blue-shade-2 { color: $dodger-blue-shade-2 }
+.color--dodger-blue-shade-3 { color: $dodger-blue-shade-3 }
+.color--dodger-blue-shade-4 { color: $dodger-blue-shade-4 }
+.color--dodger-blue-shade-5 { color: $dodger-blue-shade-5 }
+.color--dodger-blue-shade-6 { color: $dodger-blue-shade-6 }
+.color--dodger-blue-shade-7 { color: $dodger-blue-shade-7 }
+.color--dodger-blue-shade-8 { color: $dodger-blue-shade-8 }
+.color--dodger-blue-shade-9 { color: $dodger-blue-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--dodger-blue-tint-1 { color: $dodger-blue-tint-1 }
+.color--dodger-blue-tint-2 { color: $dodger-blue-tint-2 }
+.color--dodger-blue-tint-3 { color: $dodger-blue-tint-3 }
+.color--dodger-blue-tint-4 { color: $dodger-blue-tint-4 }
+.color--dodger-blue-tint-5 { color: $dodger-blue-tint-5 }
+.color--dodger-blue-tint-6 { color: $dodger-blue-tint-6 }
+.color--dodger-blue-tint-7 { color: $dodger-blue-tint-7 }
+.color--dodger-blue-tint-8 { color: $dodger-blue-tint-8 }
+.color--dodger-blue-tint-9 { color: $dodger-blue-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--dodger-blue-variation-1 { color: $dodger-blue-variation-1 }
+.color--dodger-blue-variation-2 { color: $dodger-blue-variation-2 }
+.color--dodger-blue-variation-3 { color: $dodger-blue-variation-3 }
+.color--dodger-blue-variation-4 { color: $dodger-blue-variation-4 }
+.color--dodger-blue-variation-5 { color: $dodger-blue-variation-5 }
+.color--dodger-blue-variation-6 { color: $dodger-blue-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--dodger-blue-triad-1 { color: $dodger-blue-triad-1 }
+.color--dodger-blue-triad-2 { color: $dodger-blue-triad-2 }
+.color--dodger-blue-triad-3 { color: $dodger-blue-triad-3 }
+
+// Analogius color scheme
+.color--dodger-blue-analogous-1 { color: $dodger-blue-analogous-1 }
+.color--dodger-blue-analogous-2 { color: $dodger-blue-analogous-2 }
+
+// Split complementary
+.color--dodger-blue-split-complementary-1 { color: $dodger-blue-split-complementary-1 }
+.color--dodger-blue-split-complementary-2 { color: $dodger-blue-split-complementary-2 }
+
+// Complementary
+.color--dodger-blue-complementary { color: $dodger-blue-complementary }
+
+// Monochromatic
+.color--dodger-blue-monochromatic-1 { color: $dodger-blue-monochromatic-1 }
+.color--dodger-blue-monochromatic-2 { color: $dodger-blue-monochromatic-2 }
+.color--dodger-blue-monochromatic-3 { color: $dodger-blue-monochromatic-3 }
+.color--dodger-blue-monochromatic-4 { color: $dodger-blue-monochromatic-4 }
+.color--dodger-blue-monochromatic-5 { color: $dodger-blue-monochromatic-5 }
+.color--dodger-blue-monochromatic-6 { color: $dodger-blue-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--dodger-blue-alpha-100 { color: $dodger-blue-100 }
+.color--dodger-blue-alpha-95 { color: $dodger-blue-95 }
+.color--dodger-blue-alpha-90 { color: $dodger-blue-90 }
+.color--dodger-blue-alpha-85 { color: $dodger-blue-85 }
+.color--dodger-blue-alpha-80 { color: $dodger-blue-80 }
+.color--dodger-blue-alpha-75 { color: $dodger-blue-75 }
+.color--dodger-blue-alpha-70 { color: $dodger-blue-70 }
+.color--dodger-blue-alpha-65 { color: $dodger-blue-65 }
+.color--dodger-blue-alpha-60 { color: $dodger-blue-60 }
+.color--dodger-blue-alpha-55 { color: $dodger-blue-55 }
+.color--dodger-blue-alpha-50 { color: $dodger-blue-50 }
+.color--dodger-blue-alpha-45 { color: $dodger-blue-45 }
+.color--dodger-blue-alpha-40 { color: $dodger-blue-40 }
+.color--dodger-blue-alpha-35 { color: $dodger-blue-35 }
+.color--dodger-blue-alpha-30 { color: $dodger-blue-30 }
+.color--dodger-blue-alpha-25 { color: $dodger-blue-25 }
+.color--dodger-blue-alpha-20 { color: $dodger-blue-20 }
+.color--dodger-blue-alpha-15 { color: $dodger-blue-15 }
+.color--dodger-blue-alpha-10 { color: $dodger-blue-10 }
+.color--dodger-blue-alpha-05 { color: $dodger-blue-05 }
+.color--dodger-blue-alpha-00 { color: $dodger-blue-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--dodger-blue { background-color: $dodger-blue }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--dodger-blue-shade-1 { background-color: $dodger-blue-shade-1 }
+.bg-color--dodger-blue-shade-2 { background-color: $dodger-blue-shade-2 }
+.bg-color--dodger-blue-shade-3 { background-color: $dodger-blue-shade-3 }
+.bg-color--dodger-blue-shade-4 { background-color: $dodger-blue-shade-4 }
+.bg-color--dodger-blue-shade-5 { background-color: $dodger-blue-shade-5 }
+.bg-color--dodger-blue-shade-6 { background-color: $dodger-blue-shade-6 }
+.bg-color--dodger-blue-shade-7 { background-color: $dodger-blue-shade-7 }
+.bg-color--dodger-blue-shade-8 { background-color: $dodger-blue-shade-8 }
+.bg-color--dodger-blue-shade-9 { background-color: $dodger-blue-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--dodger-blue-tint-1 { background-color: $dodger-blue-tint-1 }
+.bg-color--dodger-blue-tint-2 { background-color: $dodger-blue-tint-2 }
+.bg-color--dodger-blue-tint-3 { background-color: $dodger-blue-tint-3 }
+.bg-color--dodger-blue-tint-4 { background-color: $dodger-blue-tint-4 }
+.bg-color--dodger-blue-tint-5 { background-color: $dodger-blue-tint-5 }
+.bg-color--dodger-blue-tint-6 { background-color: $dodger-blue-tint-6 }
+.bg-color--dodger-blue-tint-7 { background-color: $dodger-blue-tint-7 }
+.bg-color--dodger-blue-tint-8 { background-color: $dodger-blue-tint-8 }
+.bg-color--dodger-blue-tint-9 { background-color: $dodger-blue-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--dodger-blue-variation-1 { background-color: $dodger-blue-variation-1 }
+.bg-color--dodger-blue-variation-2 { background-color: $dodger-blue-variation-2 }
+.bg-color--dodger-blue-variation-3 { background-color: $dodger-blue-variation-3 }
+.bg-color--dodger-blue-variation-4 { background-color: $dodger-blue-variation-4 }
+.bg-color--dodger-blue-variation-5 { background-color: $dodger-blue-variation-5 }
+.bg-color--dodger-blue-variation-6 { background-color: $dodger-blue-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--dodger-blue-triad-1 { background-color: $dodger-blue-triad-1 }
+.bg-color--dodger-blue-triad-2 { background-color: $dodger-blue-triad-2 }
+.bg-color--dodger-blue-triad-3 { background-color: $dodger-blue-triad-3 }
+
+// Analogius color scheme
+.bg-color--dodger-blue-analogous-1 { background-color: $dodger-blue-analogous-1 }
+.bg-color--dodger-blue-analogous-2 { background-color: $dodger-blue-analogous-2 }
+
+// Split complementary
+.bg-color--dodger-blue-split-complementary-1 { background-color: $dodger-blue-split-complementary-1 }
+.bg-color--dodger-blue-split-complementary-2 { background-color: $dodger-blue-split-complementary-2 }
+
+// Complementary
+.bg-color--dodger-blue-complementary { background-color: $dodger-blue-complementary }
+
+// Monochromatic
+.bg-color--dodger-blue-monochromatic-1 { background-color: $dodger-blue-monochromatic-1 }
+.bg-color--dodger-blue-monochromatic-2 { background-color: $dodger-blue-monochromatic-2 }
+.bg-color--dodger-blue-monochromatic-3 { background-color: $dodger-blue-monochromatic-3 }
+.bg-color--dodger-blue-monochromatic-4 { background-color: $dodger-blue-monochromatic-4 }
+.bg-color--dodger-blue-monochromatic-5 { background-color: $dodger-blue-monochromatic-5 }
+.bg-color--dodger-blue-monochromatic-6 { background-color: $dodger-blue-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--dodger-blue-alpha-100 { background-color: $dodger-blue-100 }
+.bg-color--dodger-blue-alpha-95 { background-color: $dodger-blue-95 }
+.bg-color--dodger-blue-alpha-90 { background-color: $dodger-blue-90 }
+.bg-color--dodger-blue-alpha-85 { background-color: $dodger-blue-85 }
+.bg-color--dodger-blue-alpha-80 { background-color: $dodger-blue-80 }
+.bg-color--dodger-blue-alpha-75 { background-color: $dodger-blue-75 }
+.bg-color--dodger-blue-alpha-70 { background-color: $dodger-blue-70 }
+.bg-color--dodger-blue-alpha-65 { background-color: $dodger-blue-65 }
+.bg-color--dodger-blue-alpha-60 { background-color: $dodger-blue-60 }
+.bg-color--dodger-blue-alpha-55 { background-color: $dodger-blue-55 }
+.bg-color--dodger-blue-alpha-50 { background-color: $dodger-blue-50 }
+.bg-color--dodger-blue-alpha-45 { background-color: $dodger-blue-45 }
+.bg-color--dodger-blue-alpha-40 { background-color: $dodger-blue-40 }
+.bg-color--dodger-blue-alpha-35 { background-color: $dodger-blue-35 }
+.bg-color--dodger-blue-alpha-30 { background-color: $dodger-blue-30 }
+.bg-color--dodger-blue-alpha-25 { background-color: $dodger-blue-25 }
+.bg-color--dodger-blue-alpha-20 { background-color: $dodger-blue-20 }
+.bg-color--dodger-blue-alpha-15 { background-color: $dodger-blue-15 }
+.bg-color--dodger-blue-alpha-10 { background-color: $dodger-blue-10 }
+.bg-color--dodger-blue-alpha-05 { background-color: $dodger-blue-05 }
+.bg-color--dodger-blue-alpha-00 { background-color: $dodger-blue-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--dodger-blue-shade-1 {
+    @include bg-gradient--dodger-blue-shade-1();
+}
+.bg-gradient--dodger-blue-shade-2 {
+    @include bg-gradient--dodger-blue-shade-2();
+}
+.bg-gradient--dodger-blue-shade-3 {
+    @include bg-gradient--dodger-blue-shade-3();
+}
+.bg-gradient--dodger-blue-shade-4 {
+    @include bg-gradient--dodger-blue-shade-4();
+}
+.bg-gradient--dodger-blue-shade-5 {
+    @include bg-gradient--dodger-blue-shade-5();
+}
+.bg-gradient--dodger-blue-shade-6 {
+    @include bg-gradient--dodger-blue-shade-6();
+}
+.bg-gradient--dodger-blue-shade-7 {
+    @include bg-gradient--dodger-blue-shade-7();
+}
+.bg-gradient--dodger-blue-shade-8 {
+    @include bg-gradient--dodger-blue-shade-8();
+}
+.bg-gradient--dodger-blue-shade-9 {
+    @include bg-gradient--dodger-blue-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--dodger-blue-tint-1 {
+    @include bg-gradient--dodger-blue-tint-1();
+}
+.bg-gradient--dodger-blue-tint-2 {
+    @include bg-gradient--dodger-blue-tint-2();
+}
+.bg-gradient--dodger-blue-tint-3 {
+    @include bg-gradient--dodger-blue-tint-3();
+}
+.bg-gradient--dodger-blue-tint-4 {
+    @include bg-gradient--dodger-blue-tint-4();
+}
+.bg-gradient--dodger-blue-tint-5 {
+    @include bg-gradient--dodger-blue-tint-5();
+}
+.bg-gradient--dodger-blue-tint-6 {
+    @include bg-gradient--dodger-blue-tint-6();
+}
+.bg-gradient--dodger-blue-tint-7 {
+    @include bg-gradient--dodger-blue-tint-7();
+}
+.bg-gradient--dodger-blue-tint-8 {
+    @include bg-gradient--dodger-blue-tint-8();
+}
+.bg-gradient--dodger-blue-tint-9 {
+    @include bg-gradient--dodger-blue-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--dodger-blue {
+    @include bg-gradient--dodger-blue();
+}

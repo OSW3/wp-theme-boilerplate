@@ -1,0 +1,16 @@
+/// SCSS Placeholders : background
+/// ------------------
+/// 
+/// @example
+/// .element {
+///     @extends %background-cover
+/// }
+/// 
+/// =============================================================================
+
+// Apply background properties for a banckground-size: cover
+%background-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

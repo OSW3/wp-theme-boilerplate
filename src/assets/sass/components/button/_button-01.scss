@@ -1,0 +1,1027 @@
+// SCSS Component : Button
+// ------------------
+// 
+// Buttons Base
+// --
+// 1. Import Bootstrap Base
+// 2. Button Close
+// 3. Button Block
+
+// Buttons Styles: Bootstrap
+// -- 
+// 4. Override Success
+// 5. Override Danger
+// 6. Override Warning
+// 7. Override Info
+// 8. Override Primary
+// 9. Override Secondary
+// 10. Override Light
+// 11. Override Dark
+// 12. Override Link
+
+// Buttons Styles: Form
+// -- 
+// 13. Override Submit
+// 14. Override Reset
+// 15. Override Sorter
+// 16. Override Totop
+
+// Buttons Styles: OAuth / Social
+// -- 
+// 17. Facebook button
+// 18. Twitter button
+// 19. Github button
+// 
+// Buttons Styles: Payment
+// -- 
+// 20. Paypal Button
+// 
+// =============================================================================
+
+
+// 1. Import Bootstrap Base
+// ----------
+// @import "node_modules/bootstrap/scss/buttons";
+// @import "node_modules/bootstrap/scss/button-group";
+// @import "node_modules/bootstrap/scss/close";
+
+// 2. Button Close
+// ------------------
+.btn-close {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Im0yNTYgMGMtMTQxLjQ5IDAtMjU2IDExNC41LTI1NiAyNTYgMCAxNDEuNDkgMTE0LjUgMjU2IDI1NiAyNTYgMTQxLjQ5IDAgMjU2LTExNC41IDI1Ni0yNTYgMC0xNDEuNDktMTE0LjUtMjU2LTI1Ni0yNTZ6bS0xMi4yODQgMzE3LjM5Ny01OC4xMjEgNTguMTMyYy02LjU2NSA2LjU1My0xNS4yODMgMTAuMTY2LTI0LjU1NyAxMC4xNjYtMTkuMTk2IDAtMzQuNzM0LTE1LjUyNi0zNC43MzQtMzQuNzM0IDAtOS4yNzQgMy42MTItMTcuOTkyIDEwLjE2Ni0yNC41NTdsNTguMTMyLTU4LjEyMWM2Ljc4NS02Ljc4NCA2Ljc4NS0xNy43ODMgMC0yNC41NjhsLTU4LjEzMi01OC4xMjFjLTYuNTUzLTYuNTY1LTEwLjE2Ni0xNS4yODMtMTAuMTY2LTI0LjU1NyAwLTE5LjE5NiAxNS41MjYtMzQuNzM0IDM0LjczNC0zNC43MzQgOS4yNzQgMCAxNy45OTIgMy42MTMgMjQuNTU3IDEwLjE2Nmw1OC4xMjEgNTguMTMyYzYuNzg1IDYuNzczIDE3Ljc4NCA2Ljc3MyAyNC41NjggMGw1OC4xMjEtNTguMTMyYzYuNTY1LTYuNTUzIDE1LjI4My0xMC4xNjYgMjQuNTU3LTEwLjE2NiAxOS4xOTYgMCAzNC43MzQgMTUuNTI2IDM0LjczNCAzNC43MzQgMCA5LjI3NC0zLjYxMiAxNy45OTItMTAuMTY2IDI0LjU1N2wtNTguMTMyIDU4LjEyMWMtNi43ODUgNi43ODQtNi43ODUgMTcuNzgzIDAgMjQuNTY4bDU4LjEzMiA1OC4xMjFjNi41NTMgNi41NjUgMTAuMTY2IDE1LjI4MyAxMC4xNjYgMjQuNTU3IDAgMTkuMTk2LTE1LjUyNiAzNC43MzQtMzQuNzM0IDM0LjczNC05LjI3NCAwLTE3Ljk5Mi0zLjYxMy0yNC41NTctMTAuMTY2bC01OC4xMjEtNTguMTMyYy02Ljc4NC02Ljc4NC0xNy43ODQtNi43NzMtMjQuNTY4IDB6IiAvPgo8L3N2Zz4=");
+}
+
+// 3. Button Block
+// ------------------
+.btn-block {
+    width: 100%;
+}
+.btn-block + .btn-block {
+    margin-top: 8px;
+}
+
+
+
+// // Buttons Styles: Bootstrap
+// // -- 
+
+// // 4. Override Success
+// // ------------------
+// .btn-success {
+//     @include property('color', 'component--button-success--text');
+//     @include property('background-color', 'component--button-success--background');
+//     @include property('border-color', 'component--button-success--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-success--hover--text');
+//         @include property('background-color', 'component--button-success--hover--background');
+//         @include property('border-color', 'component--button-success--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-success--active--text');
+//         @include property('background-color', 'component--button-success--active--background');
+//         @include property('border-color', 'component--button-success--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-success {
+//     @include property('color', 'component--button-success--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-success--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-success--hover--text');
+//         @include property('background-color', 'component--button-success--hover--background');
+//         @include property('border-color', 'component--button-success--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-success--active--text');
+//         @include property('background-color', 'component--button-success--active--background');
+//         @include property('border-color', 'component--button-success--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 5. Override Danger
+// // ------------------
+// .btn-danger {
+//     @include property('color', 'component--button-danger--text');
+//     @include property('background-color', 'component--button-danger--background');
+//     @include property('border-color', 'component--button-danger--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-danger--hover--text');
+//         @include property('background-color', 'component--button-danger--hover--background');
+//         @include property('border-color', 'component--button-danger--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-danger--active--text');
+//         @include property('background-color', 'component--button-danger--active--background');
+//         @include property('border-color', 'component--button-danger--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-danger {
+//     @include property('color', 'component--button-danger--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-danger--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-danger--hover--text');
+//         @include property('background-color', 'component--button-danger--hover--background');
+//         @include property('border-color', 'component--button-danger--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-danger--active--text');
+//         @include property('background-color', 'component--button-danger--active--background');
+//         @include property('border-color', 'component--button-danger--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 6. Override Warning
+// // ------------------
+// .btn-warning {
+//     @include property('color', 'component--button-warning--text');
+//     @include property('background-color', 'component--button-warning--background');
+//     @include property('border-color', 'component--button-warning--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-warning--hover--text');
+//         @include property('background-color', 'component--button-warning--hover--background');
+//         @include property('border-color', 'component--button-warning--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-warning--active--text');
+//         @include property('background-color', 'component--button-warning--active--background');
+//         @include property('border-color', 'component--button-warning--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-warning {
+//     @include property('color', 'component--button-warning--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-warning--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-warning--hover--text');
+//         @include property('background-color', 'component--button-warning--hover--background');
+//         @include property('border-color', 'component--button-warning--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-warning--active--text');
+//         @include property('background-color', 'component--button-warning--active--background');
+//         @include property('border-color', 'component--button-warning--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 7. Override Info
+// // ------------------
+// .btn-info {
+//     @include property('color', 'component--button-info--text');
+//     @include property('background-color', 'component--button-info--background');
+//     @include property('border-color', 'component--button-info--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-info--hover--text');
+//         @include property('background-color', 'component--button-info--hover--background');
+//         @include property('border-color', 'component--button-info--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-info--active--text');
+//         @include property('background-color', 'component--button-info--active--background');
+//         @include property('border-color', 'component--button-info--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-info {
+//     @include property('color', 'component--button-info--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-info--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-info--hover--text');
+//         @include property('background-color', 'component--button-info--hover--background');
+//         @include property('border-color', 'component--button-info--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-info--active--text');
+//         @include property('background-color', 'component--button-info--active--background');
+//         @include property('border-color', 'component--button-info--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 8. Override Primary
+// // ------------------
+// .btn-primary {
+//     @include property('color', 'component--button-primary--text');
+//     @include property('background-color', 'component--button-primary--background');
+//     @include property('border-color', 'component--button-primary--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-primary--hover--text');
+//         @include property('background-color', 'component--button-primary--hover--background');
+//         @include property('border-color', 'component--button-primary--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-primary--active--text');
+//         @include property('background-color', 'component--button-primary--active--background');
+//         @include property('border-color', 'component--button-primary--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-primary {
+//     @include property('color', 'component--button-primary--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-primary--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-primary--hover--text');
+//         @include property('background-color', 'component--button-primary--hover--background');
+//         @include property('border-color', 'component--button-primary--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-primary--active--text');
+//         @include property('background-color', 'component--button-primary--active--background');
+//         @include property('border-color', 'component--button-primary--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 9. Override Secondary
+// // ------------------
+// .btn-secondary {
+//     @include property('color', 'component--button-secondary--text');
+//     @include property('background-color', 'component--button-secondary--background');
+//     @include property('border-color', 'component--button-secondary--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-secondary--hover--text');
+//         @include property('background-color', 'component--button-secondary--hover--background');
+//         @include property('border-color', 'component--button-secondary--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-secondary--active--text');
+//         @include property('background-color', 'component--button-secondary--active--background');
+//         @include property('border-color', 'component--button-secondary--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-secondary {
+//     @include property('color', 'component--button-secondary--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-secondary--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-secondary--hover--text');
+//         @include property('background-color', 'component--button-secondary--hover--background');
+//         @include property('border-color', 'component--button-secondary--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-secondary--active--text');
+//         @include property('background-color', 'component--button-secondary--active--background');
+//         @include property('border-color', 'component--button-secondary--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 10. Override Light
+// // ------------------
+// .btn-light {
+//     @include property('color', 'component--button-light--text');
+//     @include property('background-color', 'component--button-light--background');
+//     @include property('border-color', 'component--button-light--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-light--hover--text');
+//         @include property('background-color', 'component--button-light--hover--background');
+//         @include property('border-color', 'component--button-light--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-light--active--text');
+//         @include property('background-color', 'component--button-light--active--background');
+//         @include property('border-color', 'component--button-light--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-light {
+//     @include property('color', 'component--button-light--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-light--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-light--hover--text');
+//         @include property('background-color', 'component--button-light--hover--background');
+//         @include property('border-color', 'component--button-light--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-light--active--text');
+//         @include property('background-color', 'component--button-light--active--background');
+//         @include property('border-color', 'component--button-light--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 11. Override Dark
+// // ------------------
+// .btn-dark {
+//     @include property('color', 'component--button-dark--text');
+//     @include property('background-color', 'component--button-dark--background');
+//     @include property('border-color', 'component--button-dark--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-dark--hover--text');
+//         @include property('background-color', 'component--button-dark--hover--background');
+//         @include property('border-color', 'component--button-dark--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-dark--active--text');
+//         @include property('background-color', 'component--button-dark--active--background');
+//         @include property('border-color', 'component--button-dark--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-dark {
+//     @include property('color', 'component--button-dark--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-dark--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-dark--hover--text');
+//         @include property('background-color', 'component--button-dark--hover--background');
+//         @include property('border-color', 'component--button-dark--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-dark--active--text');
+//         @include property('background-color', 'component--button-dark--active--background');
+//         @include property('border-color', 'component--button-dark--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 12. Override Link
+// // ------------------
+// .btn-link {
+//     @include property('color', 'component--button-link--text');
+//     @include property('background-color', 'component--button-link--background');
+//     @include property('border-color', 'component--button-link--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-link--hover--text');
+//         @include property('background-color', 'component--button-link--hover--background');
+//         @include property('border-color', 'component--button-link--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-link--active--text');
+//         @include property('background-color', 'component--button-link--active--background');
+//         @include property('border-color', 'component--button-link--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-link {
+//     @include property('color', 'component--button-link--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-link--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-link--hover--text');
+//         @include property('background-color', 'component--button-link--hover--background');
+//         @include property('border-color', 'component--button-link--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-link--active--text');
+//         @include property('background-color', 'component--button-link--active--background');
+//         @include property('border-color', 'component--button-link--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+
+
+// Buttons Styles: Form
+// -- 
+
+// 13. Override Submit
+// ------------------
+.btn-submit {
+    @include property('color', 'component--button-submit--text');
+    @include property('background-color', 'component--button-submit--background');
+    @include property('border-color', 'component--button-submit--border');
+
+    &:hover {
+        @include property('color', 'component--button-submit--hover--text');
+        @include property('background-color', 'component--button-submit--hover--background');
+        @include property('border-color', 'component--button-submit--hover--border');
+    }
+
+    &:not(:disabled):not(.disabled).active, 
+    &:not(:disabled):not(.disabled):active {
+        @include property('color', 'component--button-submit--active--text');
+        @include property('background-color', 'component--button-submit--active--background');
+        @include property('border-color', 'component--button-submit--active--border');
+    }
+
+    &.focus,
+    &:focus,
+    &:not(:disabled):not(.disabled).active:focus, 
+    &:not(:disabled):not(.disabled):active:focus {
+        box-shadow: none;
+    }
+}
+.btn-outline-submit {
+    @include property('color', 'component--button-submit--border');
+    @include property('background-color', 'transparent');
+    @include property('border-color', 'component--button-submit--border');
+
+    &:hover {
+        @include property('color', 'component--button-submit--hover--text');
+        @include property('background-color', 'component--button-submit--hover--background');
+        @include property('border-color', 'component--button-submit--hover--border');
+    }
+
+    &:not(:disabled):not(.disabled).active, 
+    &:not(:disabled):not(.disabled):active {
+        @include property('color', 'component--button-submit--active--text');
+        @include property('background-color', 'component--button-submit--active--background');
+        @include property('border-color', 'component--button-submit--active--border');
+    }
+
+    &.focus,
+    &:focus,
+    &:not(:disabled):not(.disabled).active:focus, 
+    &:not(:disabled):not(.disabled):active:focus {
+        box-shadow: none;
+    }
+}
+
+// // 14. Override Reset
+// // ------------------
+// .btn-reset {
+//     @include property('color', 'component--button-reset--text');
+//     @include property('background-color', 'component--button-reset--background');
+//     @include property('border-color', 'component--button-reset--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-reset--hover--text');
+//         @include property('background-color', 'component--button-reset--hover--background');
+//         @include property('border-color', 'component--button-reset--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-reset--active--text');
+//         @include property('background-color', 'component--button-reset--active--background');
+//         @include property('border-color', 'component--button-reset--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-reset {
+//     @include property('color', 'component--button-reset--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-reset--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-reset--hover--text');
+//         @include property('background-color', 'component--button-reset--hover--background');
+//         @include property('border-color', 'component--button-reset--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-reset--active--text');
+//         @include property('background-color', 'component--button-reset--active--background');
+//         @include property('border-color', 'component--button-reset--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 15. Override Sorter
+// // ------------------
+// .btn-sorter {
+//     @include property('color', 'component--button-sorter--text');
+//     @include property('background-color', 'component--button-sorter--background');
+//     @include property('border-color', 'component--button-sorter--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-sorter--hover--text');
+//         @include property('background-color', 'component--button-sorter--hover--background');
+//         @include property('border-color', 'component--button-sorter--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-sorter--active--text');
+//         @include property('background-color', 'component--button-sorter--active--background');
+//         @include property('border-color', 'component--button-sorter--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-sorter {
+//     @include property('color', 'component--button-sorter--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-sorter--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-sorter--hover--text');
+//         @include property('background-color', 'component--button-sorter--hover--background');
+//         @include property('border-color', 'component--button-sorter--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-sorter--active--text');
+//         @include property('background-color', 'component--button-sorter--active--background');
+//         @include property('border-color', 'component--button-sorter--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 16. Override Totop
+// // ------------------
+// .btn-totop {
+//     @include property('color', 'component--button-totop--text');
+//     @include property('background-color', 'component--button-totop--background');
+//     @include property('border-color', 'component--button-totop--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-totop--hover--text');
+//         @include property('background-color', 'component--button-totop--hover--background');
+//         @include property('border-color', 'component--button-totop--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-totop--active--text');
+//         @include property('background-color', 'component--button-totop--active--background');
+//         @include property('border-color', 'component--button-totop--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-totop {
+//     @include property('color', 'component--button-totop--border');
+//     @include property('background-color', 'transparent');
+//     @include property('border-color', 'component--button-totop--border');
+
+//     &:hover {
+//         @include property('color', 'component--button-totop--hover--text');
+//         @include property('background-color', 'component--button-totop--hover--background');
+//         @include property('border-color', 'component--button-totop--hover--border');
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         @include property('color', 'component--button-totop--active--text');
+//         @include property('background-color', 'component--button-totop--active--background');
+//         @include property('border-color', 'component--button-totop--active--border');
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+
+
+// // Buttons Styles: OAuth / Social
+// // --
+
+// // 17. Facebook button
+// // ------------------
+// .btn-facebook {
+//     color: #ffffff;
+//     background-color: #1877F2;
+//     border-color: #1877F2;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #1261c8;
+//         border-color: #1261c8;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #1261c8;
+//         border-color: #1261c8;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-facebook {
+//     color: #1877F2;
+//     background-color: #ffffff;
+//     border-color: #1877F2;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #1261c8;
+//         border-color: #1261c8;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #1261c8;
+//         border-color: #1261c8;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 18. Twitter button
+// // ------------------
+// .btn-twitter {
+//     color: #ffffff;
+//     background-color: #1DA1F2;
+//     border-color: #1DA1F2;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #137fc2;
+//         border-color: #137fc2;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #137fc2;
+//         border-color: #137fc2;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-twitter {
+//     color: #1DA1F2;
+//     background-color: #ffffff;
+//     border-color: #1DA1F2;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #137fc2;
+//         border-color: #137fc2;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #137fc2;
+//         border-color: #137fc2;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+// // 19. Github button
+// // ------------------
+// .btn-github {
+//     color: #ffffff;
+//     background-color: #414141;
+//     border-color: #414141;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #202020;
+//         border-color: #202020;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #202020;
+//         border-color: #202020;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-github {
+//     color: #414141;
+//     background-color: #ffffff;
+//     border-color: #414141;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #202020;
+//         border-color: #202020;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #202020;
+//         border-color: #202020;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+
+// // Buttons Styles: Payment
+// // -- 
+
+// // 20. Paypal Button
+// // ------------------
+// .btn-paypal {
+//     color: #ffffff;
+//     background-color: #0070BA;
+//     border-color: #0070BA;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #0069C1;
+//         border-color: #0069C1;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #0069C1;
+//         border-color: #0069C1;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+// .btn-outline-paypal {
+//     color: #0070BA;
+//     background-color: #ffffff;
+//     border-color: #414141;
+
+//     &:hover {
+//         color: #ffffff;
+//         background-color: #0069C1;
+//         border-color: #0069C1;
+//     }
+
+//     &:not(:disabled):not(.disabled).active, 
+//     &:not(:disabled):not(.disabled):active {
+//         color: #ffffff;
+//         background-color: #0069C1;
+//         border-color: #0069C1;
+//     }
+
+//     &.focus,
+//     &:focus,
+//     &:not(:disabled):not(.disabled).active:focus, 
+//     &:not(:disabled):not(.disabled):active:focus {
+//         box-shadow: none;
+//     }
+// }
+
+
+
+
+
+
+
+// // Scroll To Top button
+// // ----------
+
+// .back-to-top {
+// //     background-color: $app_content_btnToTop_background_color;
+// //     color: $app_content_btnToTop_color !important;
+//     cursor: pointer;
+
+//     border-radius: 50%;
+//     height: 30px;
+//     width: 30px;
+//     line-height: 30px;
+//     text-align: center;
+
+//     position: fixed;
+//     right: 20px;
+//     bottom: -40px;
+
+//     opacity: 0;
+
+//     // -webkit-box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.2);
+//     // box-shadow: 0 8px 10px 0 rgba(183, 192, 206, 0.2);
+
+//     z-index: 100 !important;
+//     @include transition();
+
+//     &:hover {
+//         // color: $app_content_btnToTop_color_hover !important;
+//         font-weight: 800;
+//     }
+// }
+
+// .scrolled {
+//     .back-to-top {
+//         bottom: $footer--height + 20px;
+//         opacity: 1;
+//     }
+// }
+

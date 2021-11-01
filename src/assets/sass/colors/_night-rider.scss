@@ -1,0 +1,523 @@
+// Night-rider
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/333333
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$night-rider: #333333;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$night-rider-shade-1: #292929;
+$night-rider-shade-2: #212121;
+$night-rider-shade-3: #1A1A1A;
+$night-rider-shade-4: #151515;
+$night-rider-shade-5: #111111;
+$night-rider-shade-6: #0E0E0E;
+$night-rider-shade-7: #0B0B0B;
+$night-rider-shade-8: #090909;
+$night-rider-shade-9: #070707;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$night-rider-tint-1: #5C5C5C;
+$night-rider-tint-2: #7D7D7D;
+$night-rider-tint-3: #979797;
+$night-rider-tint-4: #ACACAC;
+$night-rider-tint-5: #BDBDBD;
+$night-rider-tint-6: #CACACA;
+$night-rider-tint-7: #D5D5D5;
+$night-rider-tint-8: #DDDDDD;
+$night-rider-tint-9: #E4E4E4;
+
+
+// 4. Variations
+// ------------------
+
+$night-rider-variation-1: #333333;
+$night-rider-variation-2: #333333;
+$night-rider-variation-3: #333333;
+$night-rider-variation-4: #333333;
+$night-rider-variation-5: #333333;
+$night-rider-variation-6: #333333;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$night-rider-triad-1: #333333;
+$night-rider-triad-2: #333333;
+$night-rider-triad-3: #333333;
+
+// Analogius color scheme
+$night-rider-analogous-1: #333333;
+$night-rider-analogous-2: #333333;
+
+// Split complementary
+$night-rider-split-complementary-1: #333333;
+$night-rider-split-complementary-2: #333333;
+
+// Complementary
+$night-rider-complementary: #333333;
+
+// Monochromatic
+$night-rider-monochromatic-1: #CCCCCC;
+$night-rider-monochromatic-2: #9A9A9A;
+$night-rider-monochromatic-3: #737373;
+$night-rider-monochromatic-4: #262626;
+$night-rider-monochromatic-5: #1A1A1A;
+$night-rider-monochromatic-6: #131313;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$night-rider-100: rgba($night-rider, 1);
+$night-rider-95: rgba($night-rider, .95);
+$night-rider-90: rgba($night-rider, .9);
+$night-rider-85: rgba($night-rider, .85);
+$night-rider-80: rgba($night-rider, .8);
+$night-rider-75: rgba($night-rider, .75);
+$night-rider-70: rgba($night-rider, .7);
+$night-rider-65: rgba($night-rider, .65);
+$night-rider-60: rgba($night-rider, .6);
+$night-rider-55: rgba($night-rider, .55);
+$night-rider-50: rgba($night-rider, .5);
+$night-rider-45: rgba($night-rider, .45);
+$night-rider-40: rgba($night-rider, .4);
+$night-rider-35: rgba($night-rider, .35);
+$night-rider-30: rgba($night-rider, .3);
+$night-rider-25: rgba($night-rider, .25);
+$night-rider-20: rgba($night-rider, .2);
+$night-rider-15: rgba($night-rider, .15);
+$night-rider-10: rgba($night-rider, .1);
+$night-rider-05: rgba($night-rider, .05);
+$night-rider-00: rgba($night-rider, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--night-rider-shade-1() {
+    background: $night-rider-shade-1;
+    background: -webkit-linear-gradient(right, $night-rider-shade-1, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-1, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-1, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-2() {
+    background: $night-rider-shade-2;
+    background: -webkit-linear-gradient(right, $night-rider-shade-2, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-2, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-2, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-3() {
+    background: $night-rider-shade-3;
+    background: -webkit-linear-gradient(right, $night-rider-shade-3, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-3, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-3, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-4() {
+    background: $night-rider-shade-4;
+    background: -webkit-linear-gradient(right, $night-rider-shade-4, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-4, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-4, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-5() {
+    background: $night-rider-shade-5;
+    background: -webkit-linear-gradient(right, $night-rider-shade-5, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-5, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-5, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-6() {
+    background: $night-rider-shade-6;
+    background: -webkit-linear-gradient(right, $night-rider-shade-6, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-6, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-6, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-7() {
+    background: $night-rider-shade-7;
+    background: -webkit-linear-gradient(right, $night-rider-shade-7, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-7, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-7, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-8() {
+    background: $night-rider-shade-8;
+    background: -webkit-linear-gradient(right, $night-rider-shade-8, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-8, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-8, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-shade-9() {
+    background: $night-rider-shade-9;
+    background: -webkit-linear-gradient(right, $night-rider-shade-9, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-shade-9, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-shade-9, $night-rider) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--night-rider-tint-1() {
+    background: $night-rider-tint-1;
+    background: -webkit-linear-gradient(right, $night-rider-tint-1, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-1, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-1, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-2() {
+    background: $night-rider-tint-2;
+    background: -webkit-linear-gradient(right, $night-rider-tint-2, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-2, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-2, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-3() {
+    background: $night-rider-tint-3;
+    background: -webkit-linear-gradient(right, $night-rider-tint-3, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-3, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-3, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-4() {
+    background: $night-rider-tint-4;
+    background: -webkit-linear-gradient(right, $night-rider-tint-4, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-4, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-4, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-5() {
+    background: $night-rider-tint-5;
+    background: -webkit-linear-gradient(right, $night-rider-tint-5, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-5, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-5, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-6() {
+    background: $night-rider-tint-6;
+    background: -webkit-linear-gradient(right, $night-rider-tint-6, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-6, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-6, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-7() {
+    background: $night-rider-tint-7;
+    background: -webkit-linear-gradient(right, $night-rider-tint-7, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-7, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-7, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-8() {
+    background: $night-rider-tint-8;
+    background: -webkit-linear-gradient(right, $night-rider-tint-8, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-8, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-8, $night-rider) !important;
+}
+@mixin bg-gradient--night-rider-tint-9() {
+    background: $night-rider-tint-9;
+    background: -webkit-linear-gradient(right, $night-rider-tint-9, $night-rider) !important;
+    background:    -moz-linear-gradient(right, $night-rider-tint-9, $night-rider) !important;
+    background:         linear-gradient(to left, $night-rider-tint-9, $night-rider) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--night-rider() {
+    color: #FFFFFF;
+    @include bg-gradient--night-rider-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--night-rider { color: $night-rider }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--night-rider-shade-1 { color: $night-rider-shade-1 }
+.color--night-rider-shade-2 { color: $night-rider-shade-2 }
+.color--night-rider-shade-3 { color: $night-rider-shade-3 }
+.color--night-rider-shade-4 { color: $night-rider-shade-4 }
+.color--night-rider-shade-5 { color: $night-rider-shade-5 }
+.color--night-rider-shade-6 { color: $night-rider-shade-6 }
+.color--night-rider-shade-7 { color: $night-rider-shade-7 }
+.color--night-rider-shade-8 { color: $night-rider-shade-8 }
+.color--night-rider-shade-9 { color: $night-rider-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--night-rider-tint-1 { color: $night-rider-tint-1 }
+.color--night-rider-tint-2 { color: $night-rider-tint-2 }
+.color--night-rider-tint-3 { color: $night-rider-tint-3 }
+.color--night-rider-tint-4 { color: $night-rider-tint-4 }
+.color--night-rider-tint-5 { color: $night-rider-tint-5 }
+.color--night-rider-tint-6 { color: $night-rider-tint-6 }
+.color--night-rider-tint-7 { color: $night-rider-tint-7 }
+.color--night-rider-tint-8 { color: $night-rider-tint-8 }
+.color--night-rider-tint-9 { color: $night-rider-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--night-rider-variation-1 { color: $night-rider-variation-1 }
+.color--night-rider-variation-2 { color: $night-rider-variation-2 }
+.color--night-rider-variation-3 { color: $night-rider-variation-3 }
+.color--night-rider-variation-4 { color: $night-rider-variation-4 }
+.color--night-rider-variation-5 { color: $night-rider-variation-5 }
+.color--night-rider-variation-6 { color: $night-rider-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--night-rider-triad-1 { color: $night-rider-triad-1 }
+.color--night-rider-triad-2 { color: $night-rider-triad-2 }
+.color--night-rider-triad-3 { color: $night-rider-triad-3 }
+
+// Analogius color scheme
+.color--night-rider-analogous-1 { color: $night-rider-analogous-1 }
+.color--night-rider-analogous-2 { color: $night-rider-analogous-2 }
+
+// Split complementary
+.color--night-rider-split-complementary-1 { color: $night-rider-split-complementary-1 }
+.color--night-rider-split-complementary-2 { color: $night-rider-split-complementary-2 }
+
+// Complementary
+.color--night-rider-complementary { color: $night-rider-complementary }
+
+// Monochromatic
+.color--night-rider-monochromatic-1 { color: $night-rider-monochromatic-1 }
+.color--night-rider-monochromatic-2 { color: $night-rider-monochromatic-2 }
+.color--night-rider-monochromatic-3 { color: $night-rider-monochromatic-3 }
+.color--night-rider-monochromatic-4 { color: $night-rider-monochromatic-4 }
+.color--night-rider-monochromatic-5 { color: $night-rider-monochromatic-5 }
+.color--night-rider-monochromatic-6 { color: $night-rider-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--night-rider-alpha-100 { color: $night-rider-100 }
+.color--night-rider-alpha-95 { color: $night-rider-95 }
+.color--night-rider-alpha-90 { color: $night-rider-90 }
+.color--night-rider-alpha-85 { color: $night-rider-85 }
+.color--night-rider-alpha-80 { color: $night-rider-80 }
+.color--night-rider-alpha-75 { color: $night-rider-75 }
+.color--night-rider-alpha-70 { color: $night-rider-70 }
+.color--night-rider-alpha-65 { color: $night-rider-65 }
+.color--night-rider-alpha-60 { color: $night-rider-60 }
+.color--night-rider-alpha-55 { color: $night-rider-55 }
+.color--night-rider-alpha-50 { color: $night-rider-50 }
+.color--night-rider-alpha-45 { color: $night-rider-45 }
+.color--night-rider-alpha-40 { color: $night-rider-40 }
+.color--night-rider-alpha-35 { color: $night-rider-35 }
+.color--night-rider-alpha-30 { color: $night-rider-30 }
+.color--night-rider-alpha-25 { color: $night-rider-25 }
+.color--night-rider-alpha-20 { color: $night-rider-20 }
+.color--night-rider-alpha-15 { color: $night-rider-15 }
+.color--night-rider-alpha-10 { color: $night-rider-10 }
+.color--night-rider-alpha-05 { color: $night-rider-05 }
+.color--night-rider-alpha-00 { color: $night-rider-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--night-rider { background-color: $night-rider }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--night-rider-shade-1 { background-color: $night-rider-shade-1 }
+.bg-color--night-rider-shade-2 { background-color: $night-rider-shade-2 }
+.bg-color--night-rider-shade-3 { background-color: $night-rider-shade-3 }
+.bg-color--night-rider-shade-4 { background-color: $night-rider-shade-4 }
+.bg-color--night-rider-shade-5 { background-color: $night-rider-shade-5 }
+.bg-color--night-rider-shade-6 { background-color: $night-rider-shade-6 }
+.bg-color--night-rider-shade-7 { background-color: $night-rider-shade-7 }
+.bg-color--night-rider-shade-8 { background-color: $night-rider-shade-8 }
+.bg-color--night-rider-shade-9 { background-color: $night-rider-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--night-rider-tint-1 { background-color: $night-rider-tint-1 }
+.bg-color--night-rider-tint-2 { background-color: $night-rider-tint-2 }
+.bg-color--night-rider-tint-3 { background-color: $night-rider-tint-3 }
+.bg-color--night-rider-tint-4 { background-color: $night-rider-tint-4 }
+.bg-color--night-rider-tint-5 { background-color: $night-rider-tint-5 }
+.bg-color--night-rider-tint-6 { background-color: $night-rider-tint-6 }
+.bg-color--night-rider-tint-7 { background-color: $night-rider-tint-7 }
+.bg-color--night-rider-tint-8 { background-color: $night-rider-tint-8 }
+.bg-color--night-rider-tint-9 { background-color: $night-rider-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--night-rider-variation-1 { background-color: $night-rider-variation-1 }
+.bg-color--night-rider-variation-2 { background-color: $night-rider-variation-2 }
+.bg-color--night-rider-variation-3 { background-color: $night-rider-variation-3 }
+.bg-color--night-rider-variation-4 { background-color: $night-rider-variation-4 }
+.bg-color--night-rider-variation-5 { background-color: $night-rider-variation-5 }
+.bg-color--night-rider-variation-6 { background-color: $night-rider-variation-6 }
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--night-rider-triad-1 { background-color: $night-rider-triad-1 }
+.bg-color--night-rider-triad-2 { background-color: $night-rider-triad-2 }
+.bg-color--night-rider-triad-3 { background-color: $night-rider-triad-3 }
+
+// Analogius color scheme
+.bg-color--night-rider-analogous-1 { background-color: $night-rider-analogous-1 }
+.bg-color--night-rider-analogous-2 { background-color: $night-rider-analogous-2 }
+
+// Split complementary
+.bg-color--night-rider-split-complementary-1 { background-color: $night-rider-split-complementary-1 }
+.bg-color--night-rider-split-complementary-2 { background-color: $night-rider-split-complementary-2 }
+
+// Complementary
+.bg-color--night-rider-complementary { background-color: $night-rider-complementary }
+
+// Monochromatic
+.bg-color--night-rider-monochromatic-1 { background-color: $night-rider-monochromatic-1 }
+.bg-color--night-rider-monochromatic-2 { background-color: $night-rider-monochromatic-2 }
+.bg-color--night-rider-monochromatic-3 { background-color: $night-rider-monochromatic-3 }
+.bg-color--night-rider-monochromatic-4 { background-color: $night-rider-monochromatic-4 }
+.bg-color--night-rider-monochromatic-5 { background-color: $night-rider-monochromatic-5 }
+.bg-color--night-rider-monochromatic-6 { background-color: $night-rider-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--night-rider-alpha-100 { background-color: $night-rider-100 }
+.bg-color--night-rider-alpha-95 { background-color: $night-rider-95 }
+.bg-color--night-rider-alpha-90 { background-color: $night-rider-90 }
+.bg-color--night-rider-alpha-85 { background-color: $night-rider-85 }
+.bg-color--night-rider-alpha-80 { background-color: $night-rider-80 }
+.bg-color--night-rider-alpha-75 { background-color: $night-rider-75 }
+.bg-color--night-rider-alpha-70 { background-color: $night-rider-70 }
+.bg-color--night-rider-alpha-65 { background-color: $night-rider-65 }
+.bg-color--night-rider-alpha-60 { background-color: $night-rider-60 }
+.bg-color--night-rider-alpha-55 { background-color: $night-rider-55 }
+.bg-color--night-rider-alpha-50 { background-color: $night-rider-50 }
+.bg-color--night-rider-alpha-45 { background-color: $night-rider-45 }
+.bg-color--night-rider-alpha-40 { background-color: $night-rider-40 }
+.bg-color--night-rider-alpha-35 { background-color: $night-rider-35 }
+.bg-color--night-rider-alpha-30 { background-color: $night-rider-30 }
+.bg-color--night-rider-alpha-25 { background-color: $night-rider-25 }
+.bg-color--night-rider-alpha-20 { background-color: $night-rider-20 }
+.bg-color--night-rider-alpha-15 { background-color: $night-rider-15 }
+.bg-color--night-rider-alpha-10 { background-color: $night-rider-10 }
+.bg-color--night-rider-alpha-05 { background-color: $night-rider-05 }
+.bg-color--night-rider-alpha-00 { background-color: $night-rider-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--night-rider-shade-1 {
+    @include bg-gradient--night-rider-shade-1();
+}
+.bg-gradient--night-rider-shade-2 {
+    @include bg-gradient--night-rider-shade-2();
+}
+.bg-gradient--night-rider-shade-3 {
+    @include bg-gradient--night-rider-shade-3();
+}
+.bg-gradient--night-rider-shade-4 {
+    @include bg-gradient--night-rider-shade-4();
+}
+.bg-gradient--night-rider-shade-5 {
+    @include bg-gradient--night-rider-shade-5();
+}
+.bg-gradient--night-rider-shade-6 {
+    @include bg-gradient--night-rider-shade-6();
+}
+.bg-gradient--night-rider-shade-7 {
+    @include bg-gradient--night-rider-shade-7();
+}
+.bg-gradient--night-rider-shade-8 {
+    @include bg-gradient--night-rider-shade-8();
+}
+.bg-gradient--night-rider-shade-9 {
+    @include bg-gradient--night-rider-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--night-rider-tint-1 {
+    @include bg-gradient--night-rider-tint-1();
+}
+.bg-gradient--night-rider-tint-2 {
+    @include bg-gradient--night-rider-tint-2();
+}
+.bg-gradient--night-rider-tint-3 {
+    @include bg-gradient--night-rider-tint-3();
+}
+.bg-gradient--night-rider-tint-4 {
+    @include bg-gradient--night-rider-tint-4();
+}
+.bg-gradient--night-rider-tint-5 {
+    @include bg-gradient--night-rider-tint-5();
+}
+.bg-gradient--night-rider-tint-6 {
+    @include bg-gradient--night-rider-tint-6();
+}
+.bg-gradient--night-rider-tint-7 {
+    @include bg-gradient--night-rider-tint-7();
+}
+.bg-gradient--night-rider-tint-8 {
+    @include bg-gradient--night-rider-tint-8();
+}
+.bg-gradient--night-rider-tint-9 {
+    @include bg-gradient--night-rider-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--night-rider {
+    @include bg-gradient--night-rider();
+}

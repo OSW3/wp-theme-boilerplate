@@ -1,0 +1,524 @@
+// Oyster-bay
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/D1ECF1
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$oyster-bay: #D1ECF1;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$oyster-bay-shade-1: #A7BDC1;
+$oyster-bay-shade-2: #86979A;
+$oyster-bay-shade-3: #6B797B;
+$oyster-bay-shade-4: #566162;
+$oyster-bay-shade-5: #454E4E;
+$oyster-bay-shade-6: #373E3E;
+$oyster-bay-shade-7: #2C3232;
+$oyster-bay-shade-8: #232828;
+$oyster-bay-shade-9: #1C2020;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$oyster-bay-tint-1: #DAF0F4;
+$oyster-bay-tint-2: #E1F3F6;
+$oyster-bay-tint-3: #E7F5F8;
+$oyster-bay-tint-4: #ECF7F9;
+$oyster-bay-tint-5: #F0F9FA;
+$oyster-bay-tint-6: #F3FAFB;
+$oyster-bay-tint-7: #F5FBFC;
+$oyster-bay-tint-8: #F7FCFD;
+$oyster-bay-tint-9: #F9FDFD;
+
+
+// 4. Variations
+// ------------------
+
+$oyster-bay-variation-1: #D1ECF1;
+$oyster-bay-variation-2: #D1F1EC;
+$oyster-bay-variation-3: #ECD1F1;
+$oyster-bay-variation-4: #ECF1D1;
+$oyster-bay-variation-5: #F1D1EC;
+$oyster-bay-variation-6: #F1ECD1;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$oyster-bay-triad-1: #D1ECF1;
+$oyster-bay-triad-2: #F1D1EC;
+$oyster-bay-triad-3: #ECF1D1;
+
+// Analogius color scheme
+$oyster-bay-analogous-1: #D1DCF1;
+$oyster-bay-analogous-2: #D1F1E6;
+
+// Split complementary
+$oyster-bay-split-complementary-1: #F1D1DC;
+$oyster-bay-split-complementary-2: #F1E6D1;
+
+// Complementary
+$oyster-bay-complementary: #F1D6D1;
+
+// Monochromatic
+$oyster-bay-monochromatic-1: #F3FAFB;
+$oyster-bay-monochromatic-2: #E8F6F8;
+$oyster-bay-monochromatic-3: #AEB8BA;
+$oyster-bay-monochromatic-4: #9CB1B4;
+$oyster-bay-monochromatic-5: #687678;
+$oyster-bay-monochromatic-6: #4E585A;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$oyster-bay-100: rgba($oyster-bay, 1);
+$oyster-bay-95: rgba($oyster-bay, .95);
+$oyster-bay-90: rgba($oyster-bay, .9);
+$oyster-bay-85: rgba($oyster-bay, .85);
+$oyster-bay-80: rgba($oyster-bay, .8);
+$oyster-bay-75: rgba($oyster-bay, .75);
+$oyster-bay-70: rgba($oyster-bay, .7);
+$oyster-bay-65: rgba($oyster-bay, .65);
+$oyster-bay-60: rgba($oyster-bay, .6);
+$oyster-bay-55: rgba($oyster-bay, .55);
+$oyster-bay-50: rgba($oyster-bay, .5);
+$oyster-bay-45: rgba($oyster-bay, .45);
+$oyster-bay-40: rgba($oyster-bay, .4);
+$oyster-bay-35: rgba($oyster-bay, .35);
+$oyster-bay-30: rgba($oyster-bay, .3);
+$oyster-bay-25: rgba($oyster-bay, .25);
+$oyster-bay-20: rgba($oyster-bay, .2);
+$oyster-bay-15: rgba($oyster-bay, .15);
+$oyster-bay-10: rgba($oyster-bay, .1);
+$oyster-bay-05: rgba($oyster-bay, .05);
+$oyster-bay-00: rgba($oyster-bay, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--oyster-bay-shade-1() {
+    background: $oyster-bay-shade-1;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-1, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-1, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-1, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-2() {
+    background: $oyster-bay-shade-2;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-2, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-2, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-2, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-3() {
+    background: $oyster-bay-shade-3;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-3, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-3, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-3, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-4() {
+    background: $oyster-bay-shade-4;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-4, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-4, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-4, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-5() {
+    background: $oyster-bay-shade-5;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-5, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-5, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-5, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-6() {
+    background: $oyster-bay-shade-6;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-6, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-6, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-6, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-7() {
+    background: $oyster-bay-shade-7;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-7, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-7, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-7, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-8() {
+    background: $oyster-bay-shade-8;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-8, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-8, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-8, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-shade-9() {
+    background: $oyster-bay-shade-9;
+    background: -webkit-linear-gradient(right, $oyster-bay-shade-9, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-shade-9, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-shade-9, $oyster-bay) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--oyster-bay-tint-1() {
+    background: $oyster-bay-tint-1;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-1, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-1, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-1, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-2() {
+    background: $oyster-bay-tint-2;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-2, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-2, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-2, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-3() {
+    background: $oyster-bay-tint-3;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-3, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-3, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-3, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-4() {
+    background: $oyster-bay-tint-4;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-4, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-4, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-4, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-5() {
+    background: $oyster-bay-tint-5;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-5, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-5, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-5, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-6() {
+    background: $oyster-bay-tint-6;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-6, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-6, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-6, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-7() {
+    background: $oyster-bay-tint-7;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-7, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-7, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-7, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-8() {
+    background: $oyster-bay-tint-8;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-8, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-8, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-8, $oyster-bay) !important;
+}
+@mixin bg-gradient--oyster-bay-tint-9() {
+    background: $oyster-bay-tint-9;
+    background: -webkit-linear-gradient(right, $oyster-bay-tint-9, $oyster-bay) !important;
+    background:    -moz-linear-gradient(right, $oyster-bay-tint-9, $oyster-bay) !important;
+    background:         linear-gradient(to left, $oyster-bay-tint-9, $oyster-bay) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--oyster-bay() {
+    color: $oyster-bay-monochromatic-6;
+    @include bg-gradient--oyster-bay-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--oyster-bay { color: $oyster-bay }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--oyster-bay-shade-1 { color: $oyster-bay-shade-1 }
+.color--oyster-bay-shade-2 { color: $oyster-bay-shade-2 }
+.color--oyster-bay-shade-3 { color: $oyster-bay-shade-3 }
+.color--oyster-bay-shade-4 { color: $oyster-bay-shade-4 }
+.color--oyster-bay-shade-5 { color: $oyster-bay-shade-5 }
+.color--oyster-bay-shade-6 { color: $oyster-bay-shade-6 }
+.color--oyster-bay-shade-7 { color: $oyster-bay-shade-7 }
+.color--oyster-bay-shade-8 { color: $oyster-bay-shade-8 }
+.color--oyster-bay-shade-9 { color: $oyster-bay-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--oyster-bay-tint-1 { color: $oyster-bay-tint-1 }
+.color--oyster-bay-tint-2 { color: $oyster-bay-tint-2 }
+.color--oyster-bay-tint-3 { color: $oyster-bay-tint-3 }
+.color--oyster-bay-tint-4 { color: $oyster-bay-tint-4 }
+.color--oyster-bay-tint-5 { color: $oyster-bay-tint-5 }
+.color--oyster-bay-tint-6 { color: $oyster-bay-tint-6 }
+.color--oyster-bay-tint-7 { color: $oyster-bay-tint-7 }
+.color--oyster-bay-tint-8 { color: $oyster-bay-tint-8 }
+.color--oyster-bay-tint-9 { color: $oyster-bay-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--oyster-bay-variation-1 { color: $oyster-bay-variation-1 }
+.color--oyster-bay-variation-2 { color: $oyster-bay-variation-2 }
+.color--oyster-bay-variation-3 { color: $oyster-bay-variation-3 }
+.color--oyster-bay-variation-4 { color: $oyster-bay-variation-4 }
+.color--oyster-bay-variation-5 { color: $oyster-bay-variation-5 }
+.color--oyster-bay-variation-6 { color: $oyster-bay-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--oyster-bay-triad-1 { color: $oyster-bay-triad-1 }
+.color--oyster-bay-triad-2 { color: $oyster-bay-triad-2 }
+.color--oyster-bay-triad-3 { color: $oyster-bay-triad-3 }
+
+// Analogius color scheme
+.color--oyster-bay-analogous-1 { color: $oyster-bay-analogous-1 }
+.color--oyster-bay-analogous-2 { color: $oyster-bay-analogous-2 }
+
+// Split complementary
+.color--oyster-bay-split-complementary-1 { color: $oyster-bay-split-complementary-1 }
+.color--oyster-bay-split-complementary-2 { color: $oyster-bay-split-complementary-2 }
+
+// Complementary
+.color--oyster-bay-complementary { color: $oyster-bay-complementary }
+
+// Monochromatic
+.color--oyster-bay-monochromatic-1 { color: $oyster-bay-monochromatic-1 }
+.color--oyster-bay-monochromatic-2 { color: $oyster-bay-monochromatic-2 }
+.color--oyster-bay-monochromatic-3 { color: $oyster-bay-monochromatic-3 }
+.color--oyster-bay-monochromatic-4 { color: $oyster-bay-monochromatic-4 }
+.color--oyster-bay-monochromatic-5 { color: $oyster-bay-monochromatic-5 }
+.color--oyster-bay-monochromatic-6 { color: $oyster-bay-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--oyster-bay-alpha-100 { color: $oyster-bay-100 }
+.color--oyster-bay-alpha-95 { color: $oyster-bay-95 }
+.color--oyster-bay-alpha-90 { color: $oyster-bay-90 }
+.color--oyster-bay-alpha-85 { color: $oyster-bay-85 }
+.color--oyster-bay-alpha-80 { color: $oyster-bay-80 }
+.color--oyster-bay-alpha-75 { color: $oyster-bay-75 }
+.color--oyster-bay-alpha-70 { color: $oyster-bay-70 }
+.color--oyster-bay-alpha-65 { color: $oyster-bay-65 }
+.color--oyster-bay-alpha-60 { color: $oyster-bay-60 }
+.color--oyster-bay-alpha-55 { color: $oyster-bay-55 }
+.color--oyster-bay-alpha-50 { color: $oyster-bay-50 }
+.color--oyster-bay-alpha-45 { color: $oyster-bay-45 }
+.color--oyster-bay-alpha-40 { color: $oyster-bay-40 }
+.color--oyster-bay-alpha-35 { color: $oyster-bay-35 }
+.color--oyster-bay-alpha-30 { color: $oyster-bay-30 }
+.color--oyster-bay-alpha-25 { color: $oyster-bay-25 }
+.color--oyster-bay-alpha-20 { color: $oyster-bay-20 }
+.color--oyster-bay-alpha-15 { color: $oyster-bay-15 }
+.color--oyster-bay-alpha-10 { color: $oyster-bay-10 }
+.color--oyster-bay-alpha-05 { color: $oyster-bay-05 }
+.color--oyster-bay-alpha-00 { color: $oyster-bay-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--oyster-bay { background-color: $oyster-bay }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--oyster-bay-shade-1 { background-color: $oyster-bay-shade-1 }
+.bg-color--oyster-bay-shade-2 { background-color: $oyster-bay-shade-2 }
+.bg-color--oyster-bay-shade-3 { background-color: $oyster-bay-shade-3 }
+.bg-color--oyster-bay-shade-4 { background-color: $oyster-bay-shade-4 }
+.bg-color--oyster-bay-shade-5 { background-color: $oyster-bay-shade-5 }
+.bg-color--oyster-bay-shade-6 { background-color: $oyster-bay-shade-6 }
+.bg-color--oyster-bay-shade-7 { background-color: $oyster-bay-shade-7 }
+.bg-color--oyster-bay-shade-8 { background-color: $oyster-bay-shade-8 }
+.bg-color--oyster-bay-shade-9 { background-color: $oyster-bay-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--oyster-bay-tint-1 { background-color: $oyster-bay-tint-1 }
+.bg-color--oyster-bay-tint-2 { background-color: $oyster-bay-tint-2 }
+.bg-color--oyster-bay-tint-3 { background-color: $oyster-bay-tint-3 }
+.bg-color--oyster-bay-tint-4 { background-color: $oyster-bay-tint-4 }
+.bg-color--oyster-bay-tint-5 { background-color: $oyster-bay-tint-5 }
+.bg-color--oyster-bay-tint-6 { background-color: $oyster-bay-tint-6 }
+.bg-color--oyster-bay-tint-7 { background-color: $oyster-bay-tint-7 }
+.bg-color--oyster-bay-tint-8 { background-color: $oyster-bay-tint-8 }
+.bg-color--oyster-bay-tint-9 { background-color: $oyster-bay-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--oyster-bay-variation-1 { background-color: $oyster-bay-variation-1 }
+.bg-color--oyster-bay-variation-2 { background-color: $oyster-bay-variation-2 }
+.bg-color--oyster-bay-variation-3 { background-color: $oyster-bay-variation-3 }
+.bg-color--oyster-bay-variation-4 { background-color: $oyster-bay-variation-4 }
+.bg-color--oyster-bay-variation-5 { background-color: $oyster-bay-variation-5 }
+.bg-color--oyster-bay-variation-6 { background-color: $oyster-bay-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--oyster-bay-triad-1 { background-color: $oyster-bay-triad-1 }
+.bg-color--oyster-bay-triad-2 { background-color: $oyster-bay-triad-2 }
+.bg-color--oyster-bay-triad-3 { background-color: $oyster-bay-triad-3 }
+
+// Analogius color scheme
+.bg-color--oyster-bay-analogous-1 { background-color: $oyster-bay-analogous-1 }
+.bg-color--oyster-bay-analogous-2 { background-color: $oyster-bay-analogous-2 }
+
+// Split complementary
+.bg-color--oyster-bay-split-complementary-1 { background-color: $oyster-bay-split-complementary-1 }
+.bg-color--oyster-bay-split-complementary-2 { background-color: $oyster-bay-split-complementary-2 }
+
+// Complementary
+.bg-color--oyster-bay-complementary { background-color: $oyster-bay-complementary }
+
+// Monochromatic
+.bg-color--oyster-bay-monochromatic-1 { background-color: $oyster-bay-monochromatic-1 }
+.bg-color--oyster-bay-monochromatic-2 { background-color: $oyster-bay-monochromatic-2 }
+.bg-color--oyster-bay-monochromatic-3 { background-color: $oyster-bay-monochromatic-3 }
+.bg-color--oyster-bay-monochromatic-4 { background-color: $oyster-bay-monochromatic-4 }
+.bg-color--oyster-bay-monochromatic-5 { background-color: $oyster-bay-monochromatic-5 }
+.bg-color--oyster-bay-monochromatic-6 { background-color: $oyster-bay-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--oyster-bay-alpha-100 { background-color: $oyster-bay-100 }
+.bg-color--oyster-bay-alpha-95 { background-color: $oyster-bay-95 }
+.bg-color--oyster-bay-alpha-90 { background-color: $oyster-bay-90 }
+.bg-color--oyster-bay-alpha-85 { background-color: $oyster-bay-85 }
+.bg-color--oyster-bay-alpha-80 { background-color: $oyster-bay-80 }
+.bg-color--oyster-bay-alpha-75 { background-color: $oyster-bay-75 }
+.bg-color--oyster-bay-alpha-70 { background-color: $oyster-bay-70 }
+.bg-color--oyster-bay-alpha-65 { background-color: $oyster-bay-65 }
+.bg-color--oyster-bay-alpha-60 { background-color: $oyster-bay-60 }
+.bg-color--oyster-bay-alpha-55 { background-color: $oyster-bay-55 }
+.bg-color--oyster-bay-alpha-50 { background-color: $oyster-bay-50 }
+.bg-color--oyster-bay-alpha-45 { background-color: $oyster-bay-45 }
+.bg-color--oyster-bay-alpha-40 { background-color: $oyster-bay-40 }
+.bg-color--oyster-bay-alpha-35 { background-color: $oyster-bay-35 }
+.bg-color--oyster-bay-alpha-30 { background-color: $oyster-bay-30 }
+.bg-color--oyster-bay-alpha-25 { background-color: $oyster-bay-25 }
+.bg-color--oyster-bay-alpha-20 { background-color: $oyster-bay-20 }
+.bg-color--oyster-bay-alpha-15 { background-color: $oyster-bay-15 }
+.bg-color--oyster-bay-alpha-10 { background-color: $oyster-bay-10 }
+.bg-color--oyster-bay-alpha-05 { background-color: $oyster-bay-05 }
+.bg-color--oyster-bay-alpha-00 { background-color: $oyster-bay-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--oyster-bay-shade-1 {
+    @include bg-gradient--oyster-bay-shade-1();
+}
+.bg-gradient--oyster-bay-shade-2 {
+    @include bg-gradient--oyster-bay-shade-2();
+}
+.bg-gradient--oyster-bay-shade-3 {
+    @include bg-gradient--oyster-bay-shade-3();
+}
+.bg-gradient--oyster-bay-shade-4 {
+    @include bg-gradient--oyster-bay-shade-4();
+}
+.bg-gradient--oyster-bay-shade-5 {
+    @include bg-gradient--oyster-bay-shade-5();
+}
+.bg-gradient--oyster-bay-shade-6 {
+    @include bg-gradient--oyster-bay-shade-6();
+}
+.bg-gradient--oyster-bay-shade-7 {
+    @include bg-gradient--oyster-bay-shade-7();
+}
+.bg-gradient--oyster-bay-shade-8 {
+    @include bg-gradient--oyster-bay-shade-8();
+}
+.bg-gradient--oyster-bay-shade-9 {
+    @include bg-gradient--oyster-bay-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--oyster-bay-tint-1 {
+    @include bg-gradient--oyster-bay-tint-1();
+}
+.bg-gradient--oyster-bay-tint-2 {
+    @include bg-gradient--oyster-bay-tint-2();
+}
+.bg-gradient--oyster-bay-tint-3 {
+    @include bg-gradient--oyster-bay-tint-3();
+}
+.bg-gradient--oyster-bay-tint-4 {
+    @include bg-gradient--oyster-bay-tint-4();
+}
+.bg-gradient--oyster-bay-tint-5 {
+    @include bg-gradient--oyster-bay-tint-5();
+}
+.bg-gradient--oyster-bay-tint-6 {
+    @include bg-gradient--oyster-bay-tint-6();
+}
+.bg-gradient--oyster-bay-tint-7 {
+    @include bg-gradient--oyster-bay-tint-7();
+}
+.bg-gradient--oyster-bay-tint-8 {
+    @include bg-gradient--oyster-bay-tint-8();
+}
+.bg-gradient--oyster-bay-tint-9 {
+    @include bg-gradient--oyster-bay-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--oyster-bay {
+    @include bg-gradient--oyster-bay();
+}

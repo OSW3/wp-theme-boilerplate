@@ -1,0 +1,153 @@
+// SCSS Layout : Content
+// ------------------
+// 
+// 1. Main Content Container
+// 2. Page Header
+// 
+// =============================================================================
+
+// 1. Main Content Container
+// ------------------
+
+.main-content
+{
+    border: 10px solid blue;
+
+	flex-grow: 1;
+    
+    // // Calculate Position
+    // $position-top: $layout--header--height + $layout--header-tabs--height;
+    // $position-right: 0;
+    // $position-bottom: $layout--footer--height;
+    // $position-left: 0;
+    
+    // // Position
+    // @extend %flex-column;
+    // @include position(absolute, $position-top $position-right $position-bottom $position-right);
+
+    // // Theme
+    // @include property('background-color', 'layout--content--bg-color');
+
+    // // Animation
+    // @include transition-property(background-color padding-left);
+    // @include transition-duration($layout--sidebar--transition-duration);
+    
+    // overflow-x: auto;
+    // scroll-behavior: smooth;
+    // z-index: 200 !important;
+
+    // // border: 2px solid green;
+
+    // & .content-wrapper,
+    // & .page-tab-pane
+    // {
+    //     // Position
+    //     flex: 1;
+
+    //     // height: auto;
+    //     // min-height: 100%;
+    //     padding-top: 30px;
+    //     padding-right: 50px;
+    //     padding-bottom: 30px;
+    //     padding-left: 50px;
+    // }
+}
+
+
+// Sidebar Open
+// .main-sidebar-open .main-content 
+// {
+//     padding-left: $layout--content--padding-start--sidebar-open;
+// }
+
+// // Sidebar Minified
+// .main-sidebar-minify .main-content 
+// {
+//     padding-left: $layout--content--padding-start--sidebar-minify;
+// }
+
+// // Sidebar Closed
+// .main-sidebar-close .main-content 
+// {
+//     padding-left: $layout--content--padding-start--sidebar-close;
+// }
+
+
+
+// // 2. Page Header
+// // ------------------
+
+// .main-content .page-header
+// {
+//     // Position
+//     margin-bottom: 25px;
+
+//     & .breadcrumb {
+//         margin-bottom: 15px;
+//     }
+    
+//     & .page-header-wrapper
+//     {
+//         @extend %flex-row;
+
+//         & .page-header-title 
+//         {
+//             margin: 0;
+//             font-size: 1.5rem;
+//             font-weight: bold;
+
+//             .page-title {
+//                 margin: 0;
+//                 font-size: 1.5rem;
+//             }
+//         }
+//         & .page-header-actions
+//         {
+//             margin-left: auto;
+
+//             & .btn > i {
+//                 top: 2px;
+//             }
+//         }
+
+//         & .page-header-date
+//         {
+//             margin-left: auto;
+//             font-size: 1.5rem;
+//             color: lighten(#000000, 50%);
+//             font-weight: bold;
+//         }
+//     }
+// }
+
+
+
+// // 3. Page Content
+// // ------------------
+
+// .main-content .page-content
+// {
+//     // padding-top: 15px;
+//     // padding-right: 15px;
+//     // padding-bottom: 15px;
+//     // padding-left: 15px;
+
+//     // border: 5px solid rgb(255, 136, 0);
+
+//     & img.flag-icon {
+//         width: 20px;
+//     }
+// }
+
+
+
+// // 4. Page Footer
+// // ------------------
+
+// .main-content .page-footer
+// {
+//     // Position
+//     margin-top: 15px;
+    
+//     border: 1px solid red;
+// }

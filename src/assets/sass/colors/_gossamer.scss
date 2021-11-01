@@ -1,0 +1,524 @@
+// Gossamer
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/3EA78C
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$gossamer: #3EA78C;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$gossamer-shade-1: #328670;
+$gossamer-shade-2: #286B5A;
+$gossamer-shade-3: #205648;
+$gossamer-shade-4: #1A453A;
+$gossamer-shade-5: #15372E;
+$gossamer-shade-6: #112C25;
+$gossamer-shade-7: #0E231E;
+$gossamer-shade-8: #0B1C18;
+$gossamer-shade-9: #091613;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$gossamer-tint-1: #65B9A3;
+$gossamer-tint-2: #84C7B5;
+$gossamer-tint-3: #9DD2C4;
+$gossamer-tint-4: #B1DBD0;
+$gossamer-tint-5: #C1E2D9;
+$gossamer-tint-6: #CDE8E1;
+$gossamer-tint-7: #D7EDE7;
+$gossamer-tint-8: #DFF1EC;
+$gossamer-tint-9: #E5F4F0;
+
+
+// 4. Variations
+// ------------------
+
+$gossamer-variation-1: #3EA78C;
+$gossamer-variation-2: #3E8CA7;
+$gossamer-variation-3: #A73E8C;
+$gossamer-variation-4: #A78C3E;
+$gossamer-variation-5: #8C3EA7;
+$gossamer-variation-6: #8CA73E;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$gossamer-triad-1: #3EA78C;
+$gossamer-triad-2: #8C3EA7;
+$gossamer-triad-3: #A78C3E;
+
+// Analogius color scheme
+$gossamer-analogous-1: #3E8EA7;
+$gossamer-analogous-2: #3EA758;
+
+// Split complementary
+$gossamer-split-complementary-1: #A73E8E;
+$gossamer-split-complementary-2: #A7583E;
+
+// Complementary
+$gossamer-complementary: #A73E59;
+
+// Monochromatic
+$gossamer-monochromatic-1: #CFE8E2;
+$gossamer-monochromatic-2: #9FD3C6;
+$gossamer-monochromatic-3: #779E94;
+$gossamer-monochromatic-4: #2E7D69;
+$gossamer-monochromatic-5: #1F5346;
+$gossamer-monochromatic-6: #173E34;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$gossamer-100: rgba($gossamer, 1);
+$gossamer-95: rgba($gossamer, .95);
+$gossamer-90: rgba($gossamer, .9);
+$gossamer-85: rgba($gossamer, .85);
+$gossamer-80: rgba($gossamer, .8);
+$gossamer-75: rgba($gossamer, .75);
+$gossamer-70: rgba($gossamer, .7);
+$gossamer-65: rgba($gossamer, .65);
+$gossamer-60: rgba($gossamer, .6);
+$gossamer-55: rgba($gossamer, .55);
+$gossamer-50: rgba($gossamer, .5);
+$gossamer-45: rgba($gossamer, .45);
+$gossamer-40: rgba($gossamer, .4);
+$gossamer-35: rgba($gossamer, .35);
+$gossamer-30: rgba($gossamer, .3);
+$gossamer-25: rgba($gossamer, .25);
+$gossamer-20: rgba($gossamer, .2);
+$gossamer-15: rgba($gossamer, .15);
+$gossamer-10: rgba($gossamer, .1);
+$gossamer-05: rgba($gossamer, .05);
+$gossamer-00: rgba($gossamer, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--gossamer-shade-1() {
+    background: $gossamer-shade-1;
+    background: -webkit-linear-gradient(right, $gossamer-shade-1, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-1, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-1, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-2() {
+    background: $gossamer-shade-2;
+    background: -webkit-linear-gradient(right, $gossamer-shade-2, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-2, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-2, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-3() {
+    background: $gossamer-shade-3;
+    background: -webkit-linear-gradient(right, $gossamer-shade-3, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-3, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-3, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-4() {
+    background: $gossamer-shade-4;
+    background: -webkit-linear-gradient(right, $gossamer-shade-4, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-4, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-4, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-5() {
+    background: $gossamer-shade-5;
+    background: -webkit-linear-gradient(right, $gossamer-shade-5, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-5, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-5, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-6() {
+    background: $gossamer-shade-6;
+    background: -webkit-linear-gradient(right, $gossamer-shade-6, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-6, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-6, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-7() {
+    background: $gossamer-shade-7;
+    background: -webkit-linear-gradient(right, $gossamer-shade-7, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-7, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-7, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-8() {
+    background: $gossamer-shade-8;
+    background: -webkit-linear-gradient(right, $gossamer-shade-8, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-8, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-8, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-shade-9() {
+    background: $gossamer-shade-9;
+    background: -webkit-linear-gradient(right, $gossamer-shade-9, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-shade-9, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-shade-9, $gossamer) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--gossamer-tint-1() {
+    background: $gossamer-tint-1;
+    background: -webkit-linear-gradient(right, $gossamer-tint-1, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-1, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-1, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-2() {
+    background: $gossamer-tint-2;
+    background: -webkit-linear-gradient(right, $gossamer-tint-2, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-2, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-2, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-3() {
+    background: $gossamer-tint-3;
+    background: -webkit-linear-gradient(right, $gossamer-tint-3, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-3, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-3, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-4() {
+    background: $gossamer-tint-4;
+    background: -webkit-linear-gradient(right, $gossamer-tint-4, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-4, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-4, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-5() {
+    background: $gossamer-tint-5;
+    background: -webkit-linear-gradient(right, $gossamer-tint-5, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-5, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-5, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-6() {
+    background: $gossamer-tint-6;
+    background: -webkit-linear-gradient(right, $gossamer-tint-6, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-6, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-6, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-7() {
+    background: $gossamer-tint-7;
+    background: -webkit-linear-gradient(right, $gossamer-tint-7, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-7, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-7, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-8() {
+    background: $gossamer-tint-8;
+    background: -webkit-linear-gradient(right, $gossamer-tint-8, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-8, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-8, $gossamer) !important;
+}
+@mixin bg-gradient--gossamer-tint-9() {
+    background: $gossamer-tint-9;
+    background: -webkit-linear-gradient(right, $gossamer-tint-9, $gossamer) !important;
+    background:    -moz-linear-gradient(right, $gossamer-tint-9, $gossamer) !important;
+    background:         linear-gradient(to left, $gossamer-tint-9, $gossamer) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--gossamer() {
+    color: #FFFFFF;
+    @include bg-gradient--gossamer-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--gossamer { color: $gossamer }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--gossamer-shade-1 { color: $gossamer-shade-1 }
+.color--gossamer-shade-2 { color: $gossamer-shade-2 }
+.color--gossamer-shade-3 { color: $gossamer-shade-3 }
+.color--gossamer-shade-4 { color: $gossamer-shade-4 }
+.color--gossamer-shade-5 { color: $gossamer-shade-5 }
+.color--gossamer-shade-6 { color: $gossamer-shade-6 }
+.color--gossamer-shade-7 { color: $gossamer-shade-7 }
+.color--gossamer-shade-8 { color: $gossamer-shade-8 }
+.color--gossamer-shade-9 { color: $gossamer-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--gossamer-tint-1 { color: $gossamer-tint-1 }
+.color--gossamer-tint-2 { color: $gossamer-tint-2 }
+.color--gossamer-tint-3 { color: $gossamer-tint-3 }
+.color--gossamer-tint-4 { color: $gossamer-tint-4 }
+.color--gossamer-tint-5 { color: $gossamer-tint-5 }
+.color--gossamer-tint-6 { color: $gossamer-tint-6 }
+.color--gossamer-tint-7 { color: $gossamer-tint-7 }
+.color--gossamer-tint-8 { color: $gossamer-tint-8 }
+.color--gossamer-tint-9 { color: $gossamer-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--gossamer-variation-1 { color: $gossamer-variation-1 }
+.color--gossamer-variation-2 { color: $gossamer-variation-2 }
+.color--gossamer-variation-3 { color: $gossamer-variation-3 }
+.color--gossamer-variation-4 { color: $gossamer-variation-4 }
+.color--gossamer-variation-5 { color: $gossamer-variation-5 }
+.color--gossamer-variation-6 { color: $gossamer-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--gossamer-triad-1 { color: $gossamer-triad-1 }
+.color--gossamer-triad-2 { color: $gossamer-triad-2 }
+.color--gossamer-triad-3 { color: $gossamer-triad-3 }
+
+// Analogius color scheme
+.color--gossamer-analogous-1 { color: $gossamer-analogous-1 }
+.color--gossamer-analogous-2 { color: $gossamer-analogous-2 }
+
+// Split complementary
+.color--gossamer-split-complementary-1 { color: $gossamer-split-complementary-1 }
+.color--gossamer-split-complementary-2 { color: $gossamer-split-complementary-2 }
+
+// Complementary
+.color--gossamer-complementary { color: $gossamer-complementary }
+
+// Monochromatic
+.color--gossamer-monochromatic-1 { color: $gossamer-monochromatic-1 }
+.color--gossamer-monochromatic-2 { color: $gossamer-monochromatic-2 }
+.color--gossamer-monochromatic-3 { color: $gossamer-monochromatic-3 }
+.color--gossamer-monochromatic-4 { color: $gossamer-monochromatic-4 }
+.color--gossamer-monochromatic-5 { color: $gossamer-monochromatic-5 }
+.color--gossamer-monochromatic-6 { color: $gossamer-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--gossamer-alpha-100 { color: $gossamer-100 }
+.color--gossamer-alpha-95 { color: $gossamer-95 }
+.color--gossamer-alpha-90 { color: $gossamer-90 }
+.color--gossamer-alpha-85 { color: $gossamer-85 }
+.color--gossamer-alpha-80 { color: $gossamer-80 }
+.color--gossamer-alpha-75 { color: $gossamer-75 }
+.color--gossamer-alpha-70 { color: $gossamer-70 }
+.color--gossamer-alpha-65 { color: $gossamer-65 }
+.color--gossamer-alpha-60 { color: $gossamer-60 }
+.color--gossamer-alpha-55 { color: $gossamer-55 }
+.color--gossamer-alpha-50 { color: $gossamer-50 }
+.color--gossamer-alpha-45 { color: $gossamer-45 }
+.color--gossamer-alpha-40 { color: $gossamer-40 }
+.color--gossamer-alpha-35 { color: $gossamer-35 }
+.color--gossamer-alpha-30 { color: $gossamer-30 }
+.color--gossamer-alpha-25 { color: $gossamer-25 }
+.color--gossamer-alpha-20 { color: $gossamer-20 }
+.color--gossamer-alpha-15 { color: $gossamer-15 }
+.color--gossamer-alpha-10 { color: $gossamer-10 }
+.color--gossamer-alpha-05 { color: $gossamer-05 }
+.color--gossamer-alpha-00 { color: $gossamer-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--gossamer { background-color: $gossamer }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--gossamer-shade-1 { background-color: $gossamer-shade-1 }
+.bg-color--gossamer-shade-2 { background-color: $gossamer-shade-2 }
+.bg-color--gossamer-shade-3 { background-color: $gossamer-shade-3 }
+.bg-color--gossamer-shade-4 { background-color: $gossamer-shade-4 }
+.bg-color--gossamer-shade-5 { background-color: $gossamer-shade-5 }
+.bg-color--gossamer-shade-6 { background-color: $gossamer-shade-6 }
+.bg-color--gossamer-shade-7 { background-color: $gossamer-shade-7 }
+.bg-color--gossamer-shade-8 { background-color: $gossamer-shade-8 }
+.bg-color--gossamer-shade-9 { background-color: $gossamer-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--gossamer-tint-1 { background-color: $gossamer-tint-1 }
+.bg-color--gossamer-tint-2 { background-color: $gossamer-tint-2 }
+.bg-color--gossamer-tint-3 { background-color: $gossamer-tint-3 }
+.bg-color--gossamer-tint-4 { background-color: $gossamer-tint-4 }
+.bg-color--gossamer-tint-5 { background-color: $gossamer-tint-5 }
+.bg-color--gossamer-tint-6 { background-color: $gossamer-tint-6 }
+.bg-color--gossamer-tint-7 { background-color: $gossamer-tint-7 }
+.bg-color--gossamer-tint-8 { background-color: $gossamer-tint-8 }
+.bg-color--gossamer-tint-9 { background-color: $gossamer-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--gossamer-variation-1 { background-color: $gossamer-variation-1 }
+.bg-color--gossamer-variation-2 { background-color: $gossamer-variation-2 }
+.bg-color--gossamer-variation-3 { background-color: $gossamer-variation-3 }
+.bg-color--gossamer-variation-4 { background-color: $gossamer-variation-4 }
+.bg-color--gossamer-variation-5 { background-color: $gossamer-variation-5 }
+.bg-color--gossamer-variation-6 { background-color: $gossamer-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--gossamer-triad-1 { background-color: $gossamer-triad-1 }
+.bg-color--gossamer-triad-2 { background-color: $gossamer-triad-2 }
+.bg-color--gossamer-triad-3 { background-color: $gossamer-triad-3 }
+
+// Analogius color scheme
+.bg-color--gossamer-analogous-1 { background-color: $gossamer-analogous-1 }
+.bg-color--gossamer-analogous-2 { background-color: $gossamer-analogous-2 }
+
+// Split complementary
+.bg-color--gossamer-split-complementary-1 { background-color: $gossamer-split-complementary-1 }
+.bg-color--gossamer-split-complementary-2 { background-color: $gossamer-split-complementary-2 }
+
+// Complementary
+.bg-color--gossamer-complementary { background-color: $gossamer-complementary }
+
+// Monochromatic
+.bg-color--gossamer-monochromatic-1 { background-color: $gossamer-monochromatic-1 }
+.bg-color--gossamer-monochromatic-2 { background-color: $gossamer-monochromatic-2 }
+.bg-color--gossamer-monochromatic-3 { background-color: $gossamer-monochromatic-3 }
+.bg-color--gossamer-monochromatic-4 { background-color: $gossamer-monochromatic-4 }
+.bg-color--gossamer-monochromatic-5 { background-color: $gossamer-monochromatic-5 }
+.bg-color--gossamer-monochromatic-6 { background-color: $gossamer-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--gossamer-alpha-100 { background-color: $gossamer-100 }
+.bg-color--gossamer-alpha-95 { background-color: $gossamer-95 }
+.bg-color--gossamer-alpha-90 { background-color: $gossamer-90 }
+.bg-color--gossamer-alpha-85 { background-color: $gossamer-85 }
+.bg-color--gossamer-alpha-80 { background-color: $gossamer-80 }
+.bg-color--gossamer-alpha-75 { background-color: $gossamer-75 }
+.bg-color--gossamer-alpha-70 { background-color: $gossamer-70 }
+.bg-color--gossamer-alpha-65 { background-color: $gossamer-65 }
+.bg-color--gossamer-alpha-60 { background-color: $gossamer-60 }
+.bg-color--gossamer-alpha-55 { background-color: $gossamer-55 }
+.bg-color--gossamer-alpha-50 { background-color: $gossamer-50 }
+.bg-color--gossamer-alpha-45 { background-color: $gossamer-45 }
+.bg-color--gossamer-alpha-40 { background-color: $gossamer-40 }
+.bg-color--gossamer-alpha-35 { background-color: $gossamer-35 }
+.bg-color--gossamer-alpha-30 { background-color: $gossamer-30 }
+.bg-color--gossamer-alpha-25 { background-color: $gossamer-25 }
+.bg-color--gossamer-alpha-20 { background-color: $gossamer-20 }
+.bg-color--gossamer-alpha-15 { background-color: $gossamer-15 }
+.bg-color--gossamer-alpha-10 { background-color: $gossamer-10 }
+.bg-color--gossamer-alpha-05 { background-color: $gossamer-05 }
+.bg-color--gossamer-alpha-00 { background-color: $gossamer-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--gossamer-shade-1 {
+    @include bg-gradient--gossamer-shade-1();
+}
+.bg-gradient--gossamer-shade-2 {
+    @include bg-gradient--gossamer-shade-2();
+}
+.bg-gradient--gossamer-shade-3 {
+    @include bg-gradient--gossamer-shade-3();
+}
+.bg-gradient--gossamer-shade-4 {
+    @include bg-gradient--gossamer-shade-4();
+}
+.bg-gradient--gossamer-shade-5 {
+    @include bg-gradient--gossamer-shade-5();
+}
+.bg-gradient--gossamer-shade-6 {
+    @include bg-gradient--gossamer-shade-6();
+}
+.bg-gradient--gossamer-shade-7 {
+    @include bg-gradient--gossamer-shade-7();
+}
+.bg-gradient--gossamer-shade-8 {
+    @include bg-gradient--gossamer-shade-8();
+}
+.bg-gradient--gossamer-shade-9 {
+    @include bg-gradient--gossamer-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--gossamer-tint-1 {
+    @include bg-gradient--gossamer-tint-1();
+}
+.bg-gradient--gossamer-tint-2 {
+    @include bg-gradient--gossamer-tint-2();
+}
+.bg-gradient--gossamer-tint-3 {
+    @include bg-gradient--gossamer-tint-3();
+}
+.bg-gradient--gossamer-tint-4 {
+    @include bg-gradient--gossamer-tint-4();
+}
+.bg-gradient--gossamer-tint-5 {
+    @include bg-gradient--gossamer-tint-5();
+}
+.bg-gradient--gossamer-tint-6 {
+    @include bg-gradient--gossamer-tint-6();
+}
+.bg-gradient--gossamer-tint-7 {
+    @include bg-gradient--gossamer-tint-7();
+}
+.bg-gradient--gossamer-tint-8 {
+    @include bg-gradient--gossamer-tint-8();
+}
+.bg-gradient--gossamer-tint-9 {
+    @include bg-gradient--gossamer-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--gossamer {
+    @include bg-gradient--gossamer();
+}

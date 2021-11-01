@@ -1,0 +1,607 @@
+// SCSS Layout : Sidebar
+// ------------------
+// 
+// 1. -
+// 
+// =============================================================================
+
+
+/**
+ * Sidebar Positions
+ */
+
+@mixin sidebar-open {
+    left: 0;
+    width: $layout--sidebar--width-open;
+}
+
+@mixin sidebar-minify {
+    left: 0;
+    width: $layout--sidebar--width-minify;
+}
+
+@mixin sidebar-close {
+    left: $layout--sidebar--width-open * -1;
+    width: $layout--sidebar--width-open;
+}
+
+
+
+
+.main-sidebar 
+{
+    // Position
+    @include position(absolute, 0 null 0 0);
+    @include sizes($layout--sidebar--width-open, 100%);
+    left: $layout--sidebar--width-open * -1;
+
+    // Theme
+    @include property('background-color', 'layout--sidebar--bg-color');
+    @include shadow();
+
+    // Animation
+    @include transition-property(background-color left width);
+    @include transition-duration($layout--sidebar--transition-duration);
+
+    z-index: 400 !important;
+
+    & .sidebar-brand
+    {
+        // Position
+        @include position(absolute, 0 0 null 0);
+        @include sizes(100%, $layout--header--height);
+
+        // Theme
+        @extend %border-bottom-solid-1;
+        @include property('border-bottom-color', 'layout--brand--border-bottom-color');
+
+    }
+
+    & .sidebar-nav 
+    {
+        // Position
+        @include position(absolute, $layout--header--height 0 0 0);
+
+        // Theme
+        @include property('color', 'layout--sidebar--color');
+
+        // .nav-link {
+        //     @include property('color', 'layout--sidebar--color');
+        //     &:hover {
+        //         @include property('color', 'layout--sidebar--color-hover');
+        //     }
+        // }
+
+
+
+
+
+
+
+
+        & .sidebar-inner {
+            height: 100%;
+            width: 100%;
+        }
+
+        & .sidebar-header,
+        // & .sidebar-content, 
+        & .sidebar-footer 
+        {
+            padding: 0px 8px;
+        }
+
+
+        // Sidebar Header
+        // -- 
+
+        & .sidebar-header
+        {
+            // Position
+            @include position(absolute, 0 0 null 0);
+            @include sizes(100%, $layout--sidebar-header--height);
+            
+            z-index: 30 !important;
+
+            & .sidebar-inner {
+                @extend %flex-middle;
+                @extend %border-bottom-solid-1;
+                @include property('border-bottom-color', 'layout--sidebar-header--border-bottom-color');
+            }
+
+            // border: 3px solid yellow;
+        }
+
+
+        // Sidebar Footer
+        // -- 
+
+        & .sidebar-footer
+        {
+            // Position
+            @include position(absolute, null 0 0 0);
+            @include sizes(100%, $layout--sidebar-footer--height);
+
+            z-index: 20 !important;
+
+            & .dropdown-toggle::after {
+                display: none;
+            }
+
+
+            & .sidebar-inner {
+                @extend %flex-middle;
+                @extend %border-top-solid-1;
+                @include property('border-top-color', 'layout--sidebar-footer--border-top-color');
+            }
+
+            
+            & .navbar-nav {
+                @extend %flex-row;
+
+                margin-top: 0;
+                margin-left: auto;
+                margin-bottom: 0;
+                margin-right: auto;
+
+                padding-top: 0;
+                padding-left: 0;
+                padding-bottom: 0;
+                padding-right: 0;
+
+                > .nav-item {
+                    @extend %flex-middle;
+                    min-width: 30px;
+                    // float: left;
+
+                    // width: -moz-min-content;
+                    // width: min-content;
+
+
+                    & .d-large 
+                    {
+                        // visibility: visible;
+                        opacity: 1;
+
+                        // Animation
+                        @include transition-property(opacity);
+                        @include transition-duration(.5s);
+                    }
+        
+                    > .nav-link
+                    {
+                        // Position
+                        @include sizes(auto, 100%);
+
+                        // Theme
+                        // @include property('color', 'app-header--color');
+        
+                        // &:hover {
+                        //     @include property('color', 'app-header--color_hover');
+                        // }
+                    }
+                    > .nav-link,
+                    & button 
+                    {
+                        padding-top: 0;
+                        padding-right: 15px;
+                        padding-bottom: 0;
+                        padding-left: 15px;
+
+                        // Theme
+                        @include property('color', 'layout--sidebar--nav-link--color');
+                        &:hover {
+                            @include property('color', 'layout--sidebar--nav-link--color-hover');
+                        }
+                        background: transparent;
+                        border: 1px solid transparent;
+
+                        // Animation
+                        @include transition-property(color);
+                        @include transition-duration(.3s);
+
+                        // Font
+                        font-size: $font-size--sm;
+                    }
+                }
+            }
+
+        }
+
+
+        // Sidebar Content
+        // -- 
+
+        & .sidebar-content
+        {
+            // Position
+            @include position(absolute, $layout--sidebar-header--height null $layout--sidebar-footer--height 0);
+            @include sizes(100%, auto);
+
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            z-index: 10 !important;
+
+            & .nav
+            {
+                // Position
+                @extend %flex-column;
+                padding-top: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                margin-top: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+
+                // Group Title
+                // -- 
+
+                & .nav-title 
+                {
+                    // Position
+                    margin-top: 0;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+
+                    padding-top: 24px;
+                    padding-right: 15px;
+                    padding-bottom: 8px;
+                    padding-left: 15px;
+                    height: auto;
+    
+                    // Theme
+                    @include property('background-color', 'layout--sidebar--nav-title--bg-color');
+                    @include property('color', 'layout--sidebar--nav-title--color');
+                    cursor: default;
+
+                    // Animation
+                    @include transition-property(opacity height padding);
+                    @include transition-duration($layout--sidebar--transition-duration);
+
+                    // Font
+                    font-size: 9px;
+                    font-weight: 800;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    text-align: left;
+
+                    opacity: 1;
+
+                    &::after {
+                        content: "\22EF";
+    
+                        @include position(absolute, 0 (-$layout--sidebar--width-open) 0 null);
+                        @include sizes($layout--sidebar--width-minify, auto);
+                        @include transition();
+
+                        // border: 1px solid yellow;
+                        @include property('color', 'layout--sidebar--nav-link--color');
+
+                        line-height: 10px;
+                        font-size: 1rem;
+                        font-weight: 800;
+                        text-align: center;
+                        text-indent: initial !important;
+
+                        opacity: 0;
+
+                        // Animation
+                        @include transition-property(opacity left);
+                        @include transition-duration($layout--sidebar--transition-duration);
+                    }
+                }
+
+                & .nav-item 
+                {
+                    // border: 1px solid red;
+
+                    & .nav-link 
+                    {
+                        // border: 1px solid green;
+
+                        // Position
+                        @include sizes(100%);
+                        // @include padding(8px 15px);
+                        @include padding(10px 20px);
+                        display: flex;
+
+                        // Theme
+                        @include property('color', 'layout--sidebar--nav-link--color');
+                        // @include property('background-color', 'layout--sidebar--nav-link--bg-color');
+                        // @include rounded(8px);
+
+                        // Animation
+                        @include transition();
+
+
+                        &:hover //.nav-link 
+                        {
+                            @include property('color', 'layout--sidebar--nav-link--color-hover');
+                        }
+                        &.active //.nav-link
+                        {
+                            @include property('color', 'layout--sidebar--nav-link--color-hover');
+                            @include property('background-color', 'layout--sidebar--nav-link--bg-color-hover');
+                        }
+
+
+
+
+
+                        // Links (icon)
+                        // --
+
+                        & .nav-icon 
+                        {
+                            // Position
+                            @extend %flex-middle;
+                            @include sizes(16px, 16px);
+                            @include margin(0 8px 0 0);
+                            width: 14px;
+                            top: 3.5px;
+
+                            // Theme
+                            @include property('fill', 'layout--sidebar--nav-link--color');
+                            @include property('stroke', 'transparent');
+                            color: inherit;
+
+                            // Animation
+                            @include transition-property(margin);
+                            @include transition-duration(.3s);
+                        }
+
+                        // Links (label)
+                        // --
+
+                        & .nav-label 
+                        {
+                            flex: 1;
+                            @include transition-property(margin opacity text-indent);
+                            @include transition-duration(.2s);
+                    
+                            // visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+
+
+                    // &.active //.nav-link
+                    // {
+                    //     @include property('color', 'layout--sidebar--nav-link--color-hover');
+                    //     @include property('background-color', 'layout--sidebar--nav-link--bg-color-hover');
+                    // }
+                    // &:hover //.nav-link 
+                    // {
+                    //     @include property('color', 'layout--sidebar--nav-link--color-hover');
+                    // }
+
+                    &.active .nav-icon,
+                    &:hover .nav-icon  
+                    {
+                        @include property('fill', 'layout--sidebar--nav-link--color-hover');
+                        @include property('stroke', 'transparent');
+                    }
+                }
+
+                // Links (label & icon)
+                // --
+
+                // & .nav-link {
+
+                //     & .nav-label {
+                //         @include transition-property(all);
+                //         @include transition-duration(.2s);
+                
+                //         visibility: visible;
+                //         opacity: 1;
+                //     }
+                // }
+            }
+        }
+    }
+
+
+
+
+
+
+
+    @include media("<=phone") {
+        border: 10px solid gold;
+    }
+
+    @include media(">=landscape-phone") {
+        border: 10px solid red;
+    }
+
+    @include media(">=tablet") {
+        border: 10px solid pink;
+    }
+
+    @include media(">=815px", "<desktop") {
+        border: 10px solid green;
+    }
+}
+
+
+
+
+
+
+
+
+
+// Sidebar Open
+.main-sidebar-open .main-sidebar 
+{
+    @include sidebar-open;
+}
+
+// Sidebar Minified
+.main-sidebar-minify .main-sidebar 
+{
+    @include sidebar-minify;
+
+    .d-large
+    {
+        min-width: 0 !important;
+        width: 0 !important;
+        left: -50px;
+        top: 0;
+
+        opacity: 0;
+        // visibility: hidden;
+    }
+
+    & .sidebar-content 
+    {
+        overflow-x: visible;
+        overflow-y: auto;
+
+        & .nav
+        {
+            & .nav-title 
+            {
+                // display: none;
+                // height: 0;
+                padding: 0;
+                text-indent: -100px;
+                // opacity: 0;
+                // visibility: hidden;
+
+                &::after 
+                {
+                    @include position(absolute, 0 0 0 0);
+                    opacity: 1;
+                }
+            }
+            
+            & .nav-item .nav-link
+            {
+                // border: 1px solid red;
+
+                & .nav-icon 
+                {
+                    margin-left: 10px;
+                }
+
+                & .nav-label 
+                {
+                    margin-left: -30px;
+                    opacity: 0;
+                }
+
+                // &:hover
+                // {
+                //     width: $layout--sidebar--width-open + $layout--sidebar--width-minify;
+                //     @include property('background-color', 'layout--sidebar--bg-color');
+
+                //     & .nav-label 
+                //     {
+                //         display: block;
+                //         left: $layout--sidebar--width-minify;
+                //         opacity: 1;
+                //     }
+                // }
+
+    //             &.active 
+    //             {
+    //                 @include property('background-color', 'layout--sidebar--nav-link--bg-color-hover');
+    //                 // margin: 0 -8px;
+    
+    //                 & .nav-link 
+    //                 {
+    //                     // background-color: transparent !important;
+    //                 }
+    //             }
+        
+    //             & .nav-link 
+    //             {
+    //                 // @extend %flex-middle;
+    //                 justify-content: center;
+    
+    //                 & .nav-icon 
+    //                 {
+    //                     margin: 0;
+    //                 }
+    //                 & .nav-label 
+    //                 {
+    //                     // margin-left: -30px;
+    //                     // visibility: hidden !important;
+    //                     // opacity: 0 !important;
+    //                     display: none;
+    //                 }
+                    
+    //             }
+            }
+        }
+    }
+}
+
+// Sidebar Closed
+.main-sidebar-close .main-sidebar 
+{
+    @include sidebar-close;
+}
+
+/**
+ *
+ */
+
+
+
+
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//     .main-sidebar {
+
+//         @include sidebar-close;
+        
+//         border: 10px solid gold;
+//     }
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     .main-sidebar {
+
+//         @include sidebar-close;        
+
+//         border: 10px solid violet;
+//     }
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//     .main-sidebar {
+
+//         @include sidebar-minify();
+
+//         border: 10px solid brown;
+//     }
+// }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     .main-sidebar {
+
+//         @include sidebar-open;
+
+//         border: 10px solid blue;
+//     }
+// }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) {
+//     .main-sidebar {
+
+//         @include sidebar-open;
+
+//         border: 10px solid red;
+//     }
+// }

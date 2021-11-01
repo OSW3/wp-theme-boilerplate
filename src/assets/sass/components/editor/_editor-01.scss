@@ -1,0 +1,15 @@
+// SCSS Component: Editor
+// ------------------
+// @info: https://sass-guidelin.es/fr/#architecture
+// 
+// =============================================================================
+
+// Quill Editor
+// @import "node_modules/quill/dist/quill.core";
+// @import "node_modules/quill/dist/quill.snow";
+
+// Quill Container
+.ql-container {
+    height: 500px;
+    background-color: $white;
+}

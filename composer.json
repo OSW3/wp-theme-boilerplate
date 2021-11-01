@@ -1,0 +1,15 @@
+{
+    "name": "osw3/wp-theme-boilerplate",
+    "description": "Advanced boilerplate to build a WordPress theme.",
+    "type": "wordpress-bundle",
+    "authors": [
+        {
+            "name": "Project Contributors",
+            "homepage": "https://github.com/OSW3/wp-theme-boilerplate/graphs/contributors"
+        }
+    ],
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}

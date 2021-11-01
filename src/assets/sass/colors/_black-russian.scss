@@ -1,0 +1,524 @@
+// Black-russian
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/111723
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$black-russian: #111723;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$black-russian-shade-1: #0E121C;
+$black-russian-shade-2: #0B0E16;
+$black-russian-shade-3: #090B12;
+$black-russian-shade-4: #07090E;
+$black-russian-shade-5: #06070B;
+$black-russian-shade-6: #050609;
+$black-russian-shade-7: #040507;
+$black-russian-shade-8: #030406;
+$black-russian-shade-9: #020305;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$black-russian-tint-1: #41454F;
+$black-russian-tint-2: #676A72;
+$black-russian-tint-3: #85888E;
+$black-russian-tint-4: #9DA0A5;
+$black-russian-tint-5: #B1B3B7;
+$black-russian-tint-6: #C1C2C5;
+$black-russian-tint-7: #CDCED1;
+$black-russian-tint-8: #D7D8DA;
+$black-russian-tint-9: #DFE0E1;
+
+
+// 4. Variations
+// ------------------
+
+$black-russian-variation-1: #111723;
+$black-russian-variation-2: #112317;
+$black-russian-variation-3: #171123;
+$black-russian-variation-4: #172311;
+$black-russian-variation-5: #231117;
+$black-russian-variation-6: #231711;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$black-russian-triad-1: #111723;
+$black-russian-triad-2: #231117;
+$black-russian-triad-3: #172311;
+
+// Analogius color scheme
+$black-russian-analogous-1: #141123;
+$black-russian-analogous-2: #112023;
+
+// Split complementary
+$black-russian-split-complementary-1: #231411;
+$black-russian-split-complementary-2: #202311;
+
+// Complementary
+$black-russian-complementary: #231D11;
+
+// Monochromatic
+$black-russian-monochromatic-1: #C4C5C8;
+$black-russian-monochromatic-2: #898C92;
+$black-russian-monochromatic-3: #66696D;
+$black-russian-monochromatic-4: #0C111A;
+$black-russian-monochromatic-5: #090C12;
+$black-russian-monochromatic-6: #06090D;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$black-russian-100: rgba($black-russian, 1);
+$black-russian-95: rgba($black-russian, .95);
+$black-russian-90: rgba($black-russian, .9);
+$black-russian-85: rgba($black-russian, .85);
+$black-russian-80: rgba($black-russian, .8);
+$black-russian-75: rgba($black-russian, .75);
+$black-russian-70: rgba($black-russian, .7);
+$black-russian-65: rgba($black-russian, .65);
+$black-russian-60: rgba($black-russian, .6);
+$black-russian-55: rgba($black-russian, .55);
+$black-russian-50: rgba($black-russian, .5);
+$black-russian-45: rgba($black-russian, .45);
+$black-russian-40: rgba($black-russian, .4);
+$black-russian-35: rgba($black-russian, .35);
+$black-russian-30: rgba($black-russian, .3);
+$black-russian-25: rgba($black-russian, .25);
+$black-russian-20: rgba($black-russian, .2);
+$black-russian-15: rgba($black-russian, .15);
+$black-russian-10: rgba($black-russian, .1);
+$black-russian-05: rgba($black-russian, .05);
+$black-russian-00: rgba($black-russian, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--black-russian-shade-1() {
+    background: $black-russian-shade-1;
+    background: -webkit-linear-gradient(right, $black-russian-shade-1, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-1, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-1, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-2() {
+    background: $black-russian-shade-2;
+    background: -webkit-linear-gradient(right, $black-russian-shade-2, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-2, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-2, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-3() {
+    background: $black-russian-shade-3;
+    background: -webkit-linear-gradient(right, $black-russian-shade-3, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-3, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-3, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-4() {
+    background: $black-russian-shade-4;
+    background: -webkit-linear-gradient(right, $black-russian-shade-4, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-4, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-4, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-5() {
+    background: $black-russian-shade-5;
+    background: -webkit-linear-gradient(right, $black-russian-shade-5, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-5, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-5, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-6() {
+    background: $black-russian-shade-6;
+    background: -webkit-linear-gradient(right, $black-russian-shade-6, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-6, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-6, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-7() {
+    background: $black-russian-shade-7;
+    background: -webkit-linear-gradient(right, $black-russian-shade-7, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-7, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-7, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-8() {
+    background: $black-russian-shade-8;
+    background: -webkit-linear-gradient(right, $black-russian-shade-8, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-8, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-8, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-shade-9() {
+    background: $black-russian-shade-9;
+    background: -webkit-linear-gradient(right, $black-russian-shade-9, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-shade-9, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-shade-9, $black-russian) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--black-russian-tint-1() {
+    background: $black-russian-tint-1;
+    background: -webkit-linear-gradient(right, $black-russian-tint-1, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-1, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-1, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-2() {
+    background: $black-russian-tint-2;
+    background: -webkit-linear-gradient(right, $black-russian-tint-2, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-2, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-2, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-3() {
+    background: $black-russian-tint-3;
+    background: -webkit-linear-gradient(right, $black-russian-tint-3, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-3, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-3, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-4() {
+    background: $black-russian-tint-4;
+    background: -webkit-linear-gradient(right, $black-russian-tint-4, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-4, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-4, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-5() {
+    background: $black-russian-tint-5;
+    background: -webkit-linear-gradient(right, $black-russian-tint-5, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-5, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-5, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-6() {
+    background: $black-russian-tint-6;
+    background: -webkit-linear-gradient(right, $black-russian-tint-6, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-6, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-6, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-7() {
+    background: $black-russian-tint-7;
+    background: -webkit-linear-gradient(right, $black-russian-tint-7, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-7, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-7, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-8() {
+    background: $black-russian-tint-8;
+    background: -webkit-linear-gradient(right, $black-russian-tint-8, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-8, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-8, $black-russian) !important;
+}
+@mixin bg-gradient--black-russian-tint-9() {
+    background: $black-russian-tint-9;
+    background: -webkit-linear-gradient(right, $black-russian-tint-9, $black-russian) !important;
+    background:    -moz-linear-gradient(right, $black-russian-tint-9, $black-russian) !important;
+    background:         linear-gradient(to left, $black-russian-tint-9, $black-russian) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--black-russian() {
+    color: #FFFFFF;
+    @include bg-gradient--black-russian-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--black-russian { color: $black-russian }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--black-russian-shade-1 { color: $black-russian-shade-1 }
+.color--black-russian-shade-2 { color: $black-russian-shade-2 }
+.color--black-russian-shade-3 { color: $black-russian-shade-3 }
+.color--black-russian-shade-4 { color: $black-russian-shade-4 }
+.color--black-russian-shade-5 { color: $black-russian-shade-5 }
+.color--black-russian-shade-6 { color: $black-russian-shade-6 }
+.color--black-russian-shade-7 { color: $black-russian-shade-7 }
+.color--black-russian-shade-8 { color: $black-russian-shade-8 }
+.color--black-russian-shade-9 { color: $black-russian-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--black-russian-tint-1 { color: $black-russian-tint-1 }
+.color--black-russian-tint-2 { color: $black-russian-tint-2 }
+.color--black-russian-tint-3 { color: $black-russian-tint-3 }
+.color--black-russian-tint-4 { color: $black-russian-tint-4 }
+.color--black-russian-tint-5 { color: $black-russian-tint-5 }
+.color--black-russian-tint-6 { color: $black-russian-tint-6 }
+.color--black-russian-tint-7 { color: $black-russian-tint-7 }
+.color--black-russian-tint-8 { color: $black-russian-tint-8 }
+.color--black-russian-tint-9 { color: $black-russian-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--black-russian-variation-1 { color: $black-russian-variation-1 }
+.color--black-russian-variation-2 { color: $black-russian-variation-2 }
+.color--black-russian-variation-3 { color: $black-russian-variation-3 }
+.color--black-russian-variation-4 { color: $black-russian-variation-4 }
+.color--black-russian-variation-5 { color: $black-russian-variation-5 }
+.color--black-russian-variation-6 { color: $black-russian-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--black-russian-triad-1 { color: $black-russian-triad-1 }
+.color--black-russian-triad-2 { color: $black-russian-triad-2 }
+.color--black-russian-triad-3 { color: $black-russian-triad-3 }
+
+// Analogius color scheme
+.color--black-russian-analogous-1 { color: $black-russian-analogous-1 }
+.color--black-russian-analogous-2 { color: $black-russian-analogous-2 }
+
+// Split complementary
+.color--black-russian-split-complementary-1 { color: $black-russian-split-complementary-1 }
+.color--black-russian-split-complementary-2 { color: $black-russian-split-complementary-2 }
+
+// Complementary
+.color--black-russian-complementary { color: $black-russian-complementary }
+
+// Monochromatic
+.color--black-russian-monochromatic-1 { color: $black-russian-monochromatic-1 }
+.color--black-russian-monochromatic-2 { color: $black-russian-monochromatic-2 }
+.color--black-russian-monochromatic-3 { color: $black-russian-monochromatic-3 }
+.color--black-russian-monochromatic-4 { color: $black-russian-monochromatic-4 }
+.color--black-russian-monochromatic-5 { color: $black-russian-monochromatic-5 }
+.color--black-russian-monochromatic-6 { color: $black-russian-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--black-russian-alpha-100 { color: $black-russian-100 }
+.color--black-russian-alpha-95 { color: $black-russian-95 }
+.color--black-russian-alpha-90 { color: $black-russian-90 }
+.color--black-russian-alpha-85 { color: $black-russian-85 }
+.color--black-russian-alpha-80 { color: $black-russian-80 }
+.color--black-russian-alpha-75 { color: $black-russian-75 }
+.color--black-russian-alpha-70 { color: $black-russian-70 }
+.color--black-russian-alpha-65 { color: $black-russian-65 }
+.color--black-russian-alpha-60 { color: $black-russian-60 }
+.color--black-russian-alpha-55 { color: $black-russian-55 }
+.color--black-russian-alpha-50 { color: $black-russian-50 }
+.color--black-russian-alpha-45 { color: $black-russian-45 }
+.color--black-russian-alpha-40 { color: $black-russian-40 }
+.color--black-russian-alpha-35 { color: $black-russian-35 }
+.color--black-russian-alpha-30 { color: $black-russian-30 }
+.color--black-russian-alpha-25 { color: $black-russian-25 }
+.color--black-russian-alpha-20 { color: $black-russian-20 }
+.color--black-russian-alpha-15 { color: $black-russian-15 }
+.color--black-russian-alpha-10 { color: $black-russian-10 }
+.color--black-russian-alpha-05 { color: $black-russian-05 }
+.color--black-russian-alpha-00 { color: $black-russian-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--black-russian { background-color: $black-russian }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--black-russian-shade-1 { background-color: $black-russian-shade-1 }
+.bg-color--black-russian-shade-2 { background-color: $black-russian-shade-2 }
+.bg-color--black-russian-shade-3 { background-color: $black-russian-shade-3 }
+.bg-color--black-russian-shade-4 { background-color: $black-russian-shade-4 }
+.bg-color--black-russian-shade-5 { background-color: $black-russian-shade-5 }
+.bg-color--black-russian-shade-6 { background-color: $black-russian-shade-6 }
+.bg-color--black-russian-shade-7 { background-color: $black-russian-shade-7 }
+.bg-color--black-russian-shade-8 { background-color: $black-russian-shade-8 }
+.bg-color--black-russian-shade-9 { background-color: $black-russian-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--black-russian-tint-1 { background-color: $black-russian-tint-1 }
+.bg-color--black-russian-tint-2 { background-color: $black-russian-tint-2 }
+.bg-color--black-russian-tint-3 { background-color: $black-russian-tint-3 }
+.bg-color--black-russian-tint-4 { background-color: $black-russian-tint-4 }
+.bg-color--black-russian-tint-5 { background-color: $black-russian-tint-5 }
+.bg-color--black-russian-tint-6 { background-color: $black-russian-tint-6 }
+.bg-color--black-russian-tint-7 { background-color: $black-russian-tint-7 }
+.bg-color--black-russian-tint-8 { background-color: $black-russian-tint-8 }
+.bg-color--black-russian-tint-9 { background-color: $black-russian-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--black-russian-variation-1 { background-color: $black-russian-variation-1 }
+.bg-color--black-russian-variation-2 { background-color: $black-russian-variation-2 }
+.bg-color--black-russian-variation-3 { background-color: $black-russian-variation-3 }
+.bg-color--black-russian-variation-4 { background-color: $black-russian-variation-4 }
+.bg-color--black-russian-variation-5 { background-color: $black-russian-variation-5 }
+.bg-color--black-russian-variation-6 { background-color: $black-russian-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--black-russian-triad-1 { background-color: $black-russian-triad-1 }
+.bg-color--black-russian-triad-2 { background-color: $black-russian-triad-2 }
+.bg-color--black-russian-triad-3 { background-color: $black-russian-triad-3 }
+
+// Analogius color scheme
+.bg-color--black-russian-analogous-1 { background-color: $black-russian-analogous-1 }
+.bg-color--black-russian-analogous-2 { background-color: $black-russian-analogous-2 }
+
+// Split complementary
+.bg-color--black-russian-split-complementary-1 { background-color: $black-russian-split-complementary-1 }
+.bg-color--black-russian-split-complementary-2 { background-color: $black-russian-split-complementary-2 }
+
+// Complementary
+.bg-color--black-russian-complementary { background-color: $black-russian-complementary }
+
+// Monochromatic
+.bg-color--black-russian-monochromatic-1 { background-color: $black-russian-monochromatic-1 }
+.bg-color--black-russian-monochromatic-2 { background-color: $black-russian-monochromatic-2 }
+.bg-color--black-russian-monochromatic-3 { background-color: $black-russian-monochromatic-3 }
+.bg-color--black-russian-monochromatic-4 { background-color: $black-russian-monochromatic-4 }
+.bg-color--black-russian-monochromatic-5 { background-color: $black-russian-monochromatic-5 }
+.bg-color--black-russian-monochromatic-6 { background-color: $black-russian-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--black-russian-alpha-100 { background-color: $black-russian-100 }
+.bg-color--black-russian-alpha-95 { background-color: $black-russian-95 }
+.bg-color--black-russian-alpha-90 { background-color: $black-russian-90 }
+.bg-color--black-russian-alpha-85 { background-color: $black-russian-85 }
+.bg-color--black-russian-alpha-80 { background-color: $black-russian-80 }
+.bg-color--black-russian-alpha-75 { background-color: $black-russian-75 }
+.bg-color--black-russian-alpha-70 { background-color: $black-russian-70 }
+.bg-color--black-russian-alpha-65 { background-color: $black-russian-65 }
+.bg-color--black-russian-alpha-60 { background-color: $black-russian-60 }
+.bg-color--black-russian-alpha-55 { background-color: $black-russian-55 }
+.bg-color--black-russian-alpha-50 { background-color: $black-russian-50 }
+.bg-color--black-russian-alpha-45 { background-color: $black-russian-45 }
+.bg-color--black-russian-alpha-40 { background-color: $black-russian-40 }
+.bg-color--black-russian-alpha-35 { background-color: $black-russian-35 }
+.bg-color--black-russian-alpha-30 { background-color: $black-russian-30 }
+.bg-color--black-russian-alpha-25 { background-color: $black-russian-25 }
+.bg-color--black-russian-alpha-20 { background-color: $black-russian-20 }
+.bg-color--black-russian-alpha-15 { background-color: $black-russian-15 }
+.bg-color--black-russian-alpha-10 { background-color: $black-russian-10 }
+.bg-color--black-russian-alpha-05 { background-color: $black-russian-05 }
+.bg-color--black-russian-alpha-00 { background-color: $black-russian-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--black-russian-shade-1 {
+    @include bg-gradient--black-russian-shade-1();
+}
+.bg-gradient--black-russian-shade-2 {
+    @include bg-gradient--black-russian-shade-2();
+}
+.bg-gradient--black-russian-shade-3 {
+    @include bg-gradient--black-russian-shade-3();
+}
+.bg-gradient--black-russian-shade-4 {
+    @include bg-gradient--black-russian-shade-4();
+}
+.bg-gradient--black-russian-shade-5 {
+    @include bg-gradient--black-russian-shade-5();
+}
+.bg-gradient--black-russian-shade-6 {
+    @include bg-gradient--black-russian-shade-6();
+}
+.bg-gradient--black-russian-shade-7 {
+    @include bg-gradient--black-russian-shade-7();
+}
+.bg-gradient--black-russian-shade-8 {
+    @include bg-gradient--black-russian-shade-8();
+}
+.bg-gradient--black-russian-shade-9 {
+    @include bg-gradient--black-russian-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--black-russian-tint-1 {
+    @include bg-gradient--black-russian-tint-1();
+}
+.bg-gradient--black-russian-tint-2 {
+    @include bg-gradient--black-russian-tint-2();
+}
+.bg-gradient--black-russian-tint-3 {
+    @include bg-gradient--black-russian-tint-3();
+}
+.bg-gradient--black-russian-tint-4 {
+    @include bg-gradient--black-russian-tint-4();
+}
+.bg-gradient--black-russian-tint-5 {
+    @include bg-gradient--black-russian-tint-5();
+}
+.bg-gradient--black-russian-tint-6 {
+    @include bg-gradient--black-russian-tint-6();
+}
+.bg-gradient--black-russian-tint-7 {
+    @include bg-gradient--black-russian-tint-7();
+}
+.bg-gradient--black-russian-tint-8 {
+    @include bg-gradient--black-russian-tint-8();
+}
+.bg-gradient--black-russian-tint-9 {
+    @include bg-gradient--black-russian-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--black-russian {
+    @include bg-gradient--black-russian();
+}

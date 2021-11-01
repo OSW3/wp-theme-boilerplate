@@ -1,0 +1,532 @@
+// Free-speech-aquamarine
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/0AAB7B
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$free-speech-aquamarine: #0AAB7B;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$free-speech-aquamarine-shade-1: #088962;
+$free-speech-aquamarine-shade-2: #066E4E;
+$free-speech-aquamarine-shade-3: #05583E;
+$free-speech-aquamarine-shade-4: #044632;
+$free-speech-aquamarine-shade-5: #033828;
+$free-speech-aquamarine-shade-6: #022D20;
+$free-speech-aquamarine-shade-7: #02241A;
+$free-speech-aquamarine-shade-8: #021D15;
+$free-speech-aquamarine-shade-9: #021711;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$free-speech-aquamarine-tint-1: #3BBC95;
+$free-speech-aquamarine-tint-2: #62C9AA;
+$free-speech-aquamarine-tint-3: #81D4BB;
+$free-speech-aquamarine-tint-4: #9ADDC9;
+$free-speech-aquamarine-tint-5: #AEE4D4;
+$free-speech-aquamarine-tint-6: #BEE9DD;
+$free-speech-aquamarine-tint-7: #CBEDE4;
+$free-speech-aquamarine-tint-8: #D5F1E9;
+$free-speech-aquamarine-tint-9: #DDF4ED;
+
+
+// 4. Variations
+// ------------------
+
+$free-speech-aquamarine-variation-1: #0AAB7B;
+$free-speech-aquamarine-variation-2: #0AAB7B;
+$free-speech-aquamarine-variation-3: #0A7BAB;
+$free-speech-aquamarine-variation-4: #AB0A7B;
+$free-speech-aquamarine-variation-5: #AB7B0A;
+$free-speech-aquamarine-variation-6: #7B0AAB;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$free-speech-aquamarine-triad-1: #0AAB7B;
+$free-speech-aquamarine-triad-2: #7B0AAB;
+$free-speech-aquamarine-triad-3: #AB7B0A;
+
+// Analogius color scheme
+$free-speech-aquamarine-analogous-1: #0A8AAB;
+$free-speech-aquamarine-analogous-2: #0AAB2A;
+
+// Split complementary
+$free-speech-aquamarine-split-complementary-1: #AB0A8A;
+$free-speech-aquamarine-split-complementary-2: #AB2A0A;
+
+// Complementary
+$free-speech-aquamarine-complementary: #AB0A3A;
+
+// Monochromatic
+$free-speech-aquamarine-monochromatic-1: #C2E9DE;
+$free-speech-aquamarine-monochromatic-2: #85D5BE;
+$free-speech-aquamarine-monochromatic-3: #639F8E;
+$free-speech-aquamarine-monochromatic-4: #07805C;
+$free-speech-aquamarine-monochromatic-5: #05553E;
+$free-speech-aquamarine-monochromatic-6: #033F2E;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$free-speech-aquamarine-100: rgba($free-speech-aquamarine, 1);
+$free-speech-aquamarine-95: rgba($free-speech-aquamarine, .95);
+$free-speech-aquamarine-90: rgba($free-speech-aquamarine, .9);
+$free-speech-aquamarine-85: rgba($free-speech-aquamarine, .85);
+$free-speech-aquamarine-80: rgba($free-speech-aquamarine, .8);
+$free-speech-aquamarine-75: rgba($free-speech-aquamarine, .75);
+$free-speech-aquamarine-70: rgba($free-speech-aquamarine, .7);
+$free-speech-aquamarine-65: rgba($free-speech-aquamarine, .65);
+$free-speech-aquamarine-60: rgba($free-speech-aquamarine, .6);
+$free-speech-aquamarine-55: rgba($free-speech-aquamarine, .55);
+$free-speech-aquamarine-50: rgba($free-speech-aquamarine, .5);
+$free-speech-aquamarine-45: rgba($free-speech-aquamarine, .45);
+$free-speech-aquamarine-40: rgba($free-speech-aquamarine, .4);
+$free-speech-aquamarine-35: rgba($free-speech-aquamarine, .35);
+$free-speech-aquamarine-30: rgba($free-speech-aquamarine, .3);
+$free-speech-aquamarine-25: rgba($free-speech-aquamarine, .25);
+$free-speech-aquamarine-20: rgba($free-speech-aquamarine, .2);
+$free-speech-aquamarine-15: rgba($free-speech-aquamarine, .15);
+$free-speech-aquamarine-10: rgba($free-speech-aquamarine, .1);
+$free-speech-aquamarine-05: rgba($free-speech-aquamarine, .05);
+$free-speech-aquamarine-00: rgba($free-speech-aquamarine, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--free-speech-aquamarine-shade-1() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-1;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-1, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-1, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-1, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-2() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-2;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-2, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-2, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-2, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-3() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-3;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-3, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-3, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-3, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-4() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-4;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-4, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-4, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-4, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-5() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-5;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-5, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-5, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-5, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-6() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-6;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-6, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-6, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-6, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-7() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-7;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-7, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-7, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-7, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-8() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-8;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-8, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-8, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-8, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-shade-9() {
+    color: #FFFFFF;
+    background: $free-speech-aquamarine-shade-9;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-shade-9, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-shade-9, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-shade-9, $free-speech-aquamarine) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--free-speech-aquamarine-tint-1() {
+    background: $free-speech-aquamarine-tint-1;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-1, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-1, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-1, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-2() {
+    background: $free-speech-aquamarine-tint-2;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-2, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-2, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-2, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-3() {
+    background: $free-speech-aquamarine-tint-3;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-3, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-3, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-3, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-4() {
+    background: $free-speech-aquamarine-tint-4;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-4, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-4, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-4, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-5() {
+    background: $free-speech-aquamarine-tint-5;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-5, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-5, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-5, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-6() {
+    background: $free-speech-aquamarine-tint-6;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-6, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-6, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-6, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-7() {
+    background: $free-speech-aquamarine-tint-7;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-7, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-7, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-7, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-8() {
+    background: $free-speech-aquamarine-tint-8;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-8, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-8, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-8, $free-speech-aquamarine) !important;
+}
+@mixin bg-gradient--free-speech-aquamarine-tint-9() {
+    background: $free-speech-aquamarine-tint-9;
+    background: -webkit-linear-gradient(right, $free-speech-aquamarine-tint-9, $free-speech-aquamarine) !important;
+    background:    -moz-linear-gradient(right, $free-speech-aquamarine-tint-9, $free-speech-aquamarine) !important;
+    background:         linear-gradient(to left, $free-speech-aquamarine-tint-9, $free-speech-aquamarine) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--free-speech-aquamarine() {
+    color: #FFFFFF;
+    @include bg-gradient--free-speech-aquamarine-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--free-speech-aquamarine { color: $free-speech-aquamarine }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--free-speech-aquamarine-shade-1 { color: $free-speech-aquamarine-shade-1 }
+.color--free-speech-aquamarine-shade-2 { color: $free-speech-aquamarine-shade-2 }
+.color--free-speech-aquamarine-shade-3 { color: $free-speech-aquamarine-shade-3 }
+.color--free-speech-aquamarine-shade-4 { color: $free-speech-aquamarine-shade-4 }
+.color--free-speech-aquamarine-shade-5 { color: $free-speech-aquamarine-shade-5 }
+.color--free-speech-aquamarine-shade-6 { color: $free-speech-aquamarine-shade-6 }
+.color--free-speech-aquamarine-shade-7 { color: $free-speech-aquamarine-shade-7 }
+.color--free-speech-aquamarine-shade-8 { color: $free-speech-aquamarine-shade-8 }
+.color--free-speech-aquamarine-shade-9 { color: $free-speech-aquamarine-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--free-speech-aquamarine-tint-1 { color: $free-speech-aquamarine-tint-1 }
+.color--free-speech-aquamarine-tint-2 { color: $free-speech-aquamarine-tint-2 }
+.color--free-speech-aquamarine-tint-3 { color: $free-speech-aquamarine-tint-3 }
+.color--free-speech-aquamarine-tint-4 { color: $free-speech-aquamarine-tint-4 }
+.color--free-speech-aquamarine-tint-5 { color: $free-speech-aquamarine-tint-5 }
+.color--free-speech-aquamarine-tint-6 { color: $free-speech-aquamarine-tint-6 }
+.color--free-speech-aquamarine-tint-7 { color: $free-speech-aquamarine-tint-7 }
+.color--free-speech-aquamarine-tint-8 { color: $free-speech-aquamarine-tint-8 }
+.color--free-speech-aquamarine-tint-9 { color: $free-speech-aquamarine-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--free-speech-aquamarine-variation-1 { color: $free-speech-aquamarine-variation-1 }
+.color--free-speech-aquamarine-variation-2 { color: $free-speech-aquamarine-variation-2 }
+.color--free-speech-aquamarine-variation-3 { color: $free-speech-aquamarine-variation-3 }
+.color--free-speech-aquamarine-variation-4 { color: $free-speech-aquamarine-variation-4 }
+.color--free-speech-aquamarine-variation-5 { color: $free-speech-aquamarine-variation-5 }
+.color--free-speech-aquamarine-variation-6 { color: $free-speech-aquamarine-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--free-speech-aquamarine-triad-1 { color: $free-speech-aquamarine-triad-1 }
+.color--free-speech-aquamarine-triad-2 { color: $free-speech-aquamarine-triad-2 }
+.color--free-speech-aquamarine-triad-3 { color: $free-speech-aquamarine-triad-3 }
+
+// Analogius color scheme
+.color--free-speech-aquamarine-analogous-1 { color: $free-speech-aquamarine-analogous-1 }
+.color--free-speech-aquamarine-analogous-2 { color: $free-speech-aquamarine-analogous-2 }
+
+// Split complementary
+.color--free-speech-aquamarine-split-complementary-1 { color: $free-speech-aquamarine-split-complementary-1 }
+.color--free-speech-aquamarine-split-complementary-2 { color: $free-speech-aquamarine-split-complementary-2 }
+
+// Complementary
+.color--free-speech-aquamarine-complementary { color: $free-speech-aquamarine-complementary }
+
+// Monochromatic
+.color--free-speech-aquamarine-monochromatic-1 { color: $free-speech-aquamarine-monochromatic-1 }
+.color--free-speech-aquamarine-monochromatic-2 { color: $free-speech-aquamarine-monochromatic-2 }
+.color--free-speech-aquamarine-monochromatic-3 { color: $free-speech-aquamarine-monochromatic-3 }
+.color--free-speech-aquamarine-monochromatic-4 { color: $free-speech-aquamarine-monochromatic-4 }
+.color--free-speech-aquamarine-monochromatic-5 { color: $free-speech-aquamarine-monochromatic-5 }
+.color--free-speech-aquamarine-monochromatic-6 { color: $free-speech-aquamarine-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--free-speech-aquamarine-alpha-100 { color: $free-speech-aquamarine-100 }
+.color--free-speech-aquamarine-alpha-95 { color: $free-speech-aquamarine-95 }
+.color--free-speech-aquamarine-alpha-90 { color: $free-speech-aquamarine-90 }
+.color--free-speech-aquamarine-alpha-85 { color: $free-speech-aquamarine-85 }
+.color--free-speech-aquamarine-alpha-80 { color: $free-speech-aquamarine-80 }
+.color--free-speech-aquamarine-alpha-75 { color: $free-speech-aquamarine-75 }
+.color--free-speech-aquamarine-alpha-70 { color: $free-speech-aquamarine-70 }
+.color--free-speech-aquamarine-alpha-65 { color: $free-speech-aquamarine-65 }
+.color--free-speech-aquamarine-alpha-60 { color: $free-speech-aquamarine-60 }
+.color--free-speech-aquamarine-alpha-55 { color: $free-speech-aquamarine-55 }
+.color--free-speech-aquamarine-alpha-50 { color: $free-speech-aquamarine-50 }
+.color--free-speech-aquamarine-alpha-45 { color: $free-speech-aquamarine-45 }
+.color--free-speech-aquamarine-alpha-40 { color: $free-speech-aquamarine-40 }
+.color--free-speech-aquamarine-alpha-35 { color: $free-speech-aquamarine-35 }
+.color--free-speech-aquamarine-alpha-30 { color: $free-speech-aquamarine-30 }
+.color--free-speech-aquamarine-alpha-25 { color: $free-speech-aquamarine-25 }
+.color--free-speech-aquamarine-alpha-20 { color: $free-speech-aquamarine-20 }
+.color--free-speech-aquamarine-alpha-15 { color: $free-speech-aquamarine-15 }
+.color--free-speech-aquamarine-alpha-10 { color: $free-speech-aquamarine-10 }
+.color--free-speech-aquamarine-alpha-05 { color: $free-speech-aquamarine-05 }
+.color--free-speech-aquamarine-alpha-00 { color: $free-speech-aquamarine-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--free-speech-aquamarine { background-color: $free-speech-aquamarine }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--free-speech-aquamarine-shade-1 { background-color: $free-speech-aquamarine-shade-1 }
+.bg-color--free-speech-aquamarine-shade-2 { background-color: $free-speech-aquamarine-shade-2 }
+.bg-color--free-speech-aquamarine-shade-3 { background-color: $free-speech-aquamarine-shade-3 }
+.bg-color--free-speech-aquamarine-shade-4 { background-color: $free-speech-aquamarine-shade-4 }
+.bg-color--free-speech-aquamarine-shade-5 { background-color: $free-speech-aquamarine-shade-5 }
+.bg-color--free-speech-aquamarine-shade-6 { background-color: $free-speech-aquamarine-shade-6 }
+.bg-color--free-speech-aquamarine-shade-7 { background-color: $free-speech-aquamarine-shade-7 }
+.bg-color--free-speech-aquamarine-shade-8 { background-color: $free-speech-aquamarine-shade-8 }
+.bg-color--free-speech-aquamarine-shade-9 { background-color: $free-speech-aquamarine-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--free-speech-aquamarine-tint-1 { background-color: $free-speech-aquamarine-tint-1 }
+.bg-color--free-speech-aquamarine-tint-2 { background-color: $free-speech-aquamarine-tint-2 }
+.bg-color--free-speech-aquamarine-tint-3 { background-color: $free-speech-aquamarine-tint-3 }
+.bg-color--free-speech-aquamarine-tint-4 { background-color: $free-speech-aquamarine-tint-4 }
+.bg-color--free-speech-aquamarine-tint-5 { background-color: $free-speech-aquamarine-tint-5 }
+.bg-color--free-speech-aquamarine-tint-6 { background-color: $free-speech-aquamarine-tint-6 }
+.bg-color--free-speech-aquamarine-tint-7 { background-color: $free-speech-aquamarine-tint-7 }
+.bg-color--free-speech-aquamarine-tint-8 { background-color: $free-speech-aquamarine-tint-8 }
+.bg-color--free-speech-aquamarine-tint-9 { background-color: $free-speech-aquamarine-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--free-speech-aquamarine-variation-1 { background-color: $free-speech-aquamarine-variation-1 }
+.bg-color--free-speech-aquamarine-variation-2 { background-color: $free-speech-aquamarine-variation-2 }
+.bg-color--free-speech-aquamarine-variation-3 { background-color: $free-speech-aquamarine-variation-3 }
+.bg-color--free-speech-aquamarine-variation-4 { background-color: $free-speech-aquamarine-variation-4 }
+.bg-color--free-speech-aquamarine-variation-5 { background-color: $free-speech-aquamarine-variation-5 }
+.bg-color--free-speech-aquamarine-variation-6 { background-color: $free-speech-aquamarine-variation-6 }
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--free-speech-aquamarine-triad-1 { background-color: $free-speech-aquamarine-triad-1 }
+.bg-color--free-speech-aquamarine-triad-2 { background-color: $free-speech-aquamarine-triad-2 }
+.bg-color--free-speech-aquamarine-triad-3 { background-color: $free-speech-aquamarine-triad-3 }
+
+// Analogius color scheme
+.bg-color--free-speech-aquamarine-analogous-1 { background-color: $free-speech-aquamarine-analogous-1 }
+.bg-color--free-speech-aquamarine-analogous-2 { background-color: $free-speech-aquamarine-analogous-2 }
+
+// Split complementary
+.bg-color--free-speech-aquamarine-split-complementary-1 { background-color: $free-speech-aquamarine-split-complementary-1 }
+.bg-color--free-speech-aquamarine-split-complementary-2 { background-color: $free-speech-aquamarine-split-complementary-2 }
+
+// Complementary
+.bg-color--free-speech-aquamarine-complementary { background-color: $free-speech-aquamarine-complementary }
+
+// Monochromatic
+.bg-color--free-speech-aquamarine-monochromatic-1 { background-color: $free-speech-aquamarine-monochromatic-1 }
+.bg-color--free-speech-aquamarine-monochromatic-2 { background-color: $free-speech-aquamarine-monochromatic-2 }
+.bg-color--free-speech-aquamarine-monochromatic-3 { background-color: $free-speech-aquamarine-monochromatic-3 }
+.bg-color--free-speech-aquamarine-monochromatic-4 { background-color: $free-speech-aquamarine-monochromatic-4 }
+.bg-color--free-speech-aquamarine-monochromatic-5 { background-color: $free-speech-aquamarine-monochromatic-5 }
+.bg-color--free-speech-aquamarine-monochromatic-6 { background-color: $free-speech-aquamarine-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--free-speech-aquamarine-alpha-100 { background-color: $free-speech-aquamarine-100 }
+.bg-color--free-speech-aquamarine-alpha-95 { background-color: $free-speech-aquamarine-95 }
+.bg-color--free-speech-aquamarine-alpha-90 { background-color: $free-speech-aquamarine-90 }
+.bg-color--free-speech-aquamarine-alpha-85 { background-color: $free-speech-aquamarine-85 }
+.bg-color--free-speech-aquamarine-alpha-80 { background-color: $free-speech-aquamarine-80 }
+.bg-color--free-speech-aquamarine-alpha-75 { background-color: $free-speech-aquamarine-75 }
+.bg-color--free-speech-aquamarine-alpha-70 { background-color: $free-speech-aquamarine-70 }
+.bg-color--free-speech-aquamarine-alpha-65 { background-color: $free-speech-aquamarine-65 }
+.bg-color--free-speech-aquamarine-alpha-60 { background-color: $free-speech-aquamarine-60 }
+.bg-color--free-speech-aquamarine-alpha-55 { background-color: $free-speech-aquamarine-55 }
+.bg-color--free-speech-aquamarine-alpha-50 { background-color: $free-speech-aquamarine-50 }
+.bg-color--free-speech-aquamarine-alpha-45 { background-color: $free-speech-aquamarine-45 }
+.bg-color--free-speech-aquamarine-alpha-40 { background-color: $free-speech-aquamarine-40 }
+.bg-color--free-speech-aquamarine-alpha-35 { background-color: $free-speech-aquamarine-35 }
+.bg-color--free-speech-aquamarine-alpha-30 { background-color: $free-speech-aquamarine-30 }
+.bg-color--free-speech-aquamarine-alpha-25 { background-color: $free-speech-aquamarine-25 }
+.bg-color--free-speech-aquamarine-alpha-20 { background-color: $free-speech-aquamarine-20 }
+.bg-color--free-speech-aquamarine-alpha-15 { background-color: $free-speech-aquamarine-15 }
+.bg-color--free-speech-aquamarine-alpha-10 { background-color: $free-speech-aquamarine-10 }
+.bg-color--free-speech-aquamarine-alpha-05 { background-color: $free-speech-aquamarine-05 }
+.bg-color--free-speech-aquamarine-alpha-00 { background-color: $free-speech-aquamarine-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--free-speech-aquamarine-shade-1 {
+    @include bg-gradient--free-speech-aquamarine-shade-1();
+}
+.bg-gradient--free-speech-aquamarine-shade-2 {
+    @include bg-gradient--free-speech-aquamarine-shade-2();
+}
+.bg-gradient--free-speech-aquamarine-shade-3 {
+    @include bg-gradient--free-speech-aquamarine-shade-3();
+}
+.bg-gradient--free-speech-aquamarine-shade-4 {
+    @include bg-gradient--free-speech-aquamarine-shade-4();
+}
+.bg-gradient--free-speech-aquamarine-shade-5 {
+    @include bg-gradient--free-speech-aquamarine-shade-5();
+}
+.bg-gradient--free-speech-aquamarine-shade-6 {
+    @include bg-gradient--free-speech-aquamarine-shade-6();
+}
+.bg-gradient--free-speech-aquamarine-shade-7 {
+    @include bg-gradient--free-speech-aquamarine-shade-7();
+}
+.bg-gradient--free-speech-aquamarine-shade-8 {
+    @include bg-gradient--free-speech-aquamarine-shade-8();
+}
+.bg-gradient--free-speech-aquamarine-shade-9 {
+    @include bg-gradient--free-speech-aquamarine-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--free-speech-aquamarine-tint-1 {
+    @include bg-gradient--free-speech-aquamarine-tint-1();
+}
+.bg-gradient--free-speech-aquamarine-tint-2 {
+    @include bg-gradient--free-speech-aquamarine-tint-2();
+}
+.bg-gradient--free-speech-aquamarine-tint-3 {
+    @include bg-gradient--free-speech-aquamarine-tint-3();
+}
+.bg-gradient--free-speech-aquamarine-tint-4 {
+    @include bg-gradient--free-speech-aquamarine-tint-4();
+}
+.bg-gradient--free-speech-aquamarine-tint-5 {
+    @include bg-gradient--free-speech-aquamarine-tint-5();
+}
+.bg-gradient--free-speech-aquamarine-tint-6 {
+    @include bg-gradient--free-speech-aquamarine-tint-6();
+}
+.bg-gradient--free-speech-aquamarine-tint-7 {
+    @include bg-gradient--free-speech-aquamarine-tint-7();
+}
+.bg-gradient--free-speech-aquamarine-tint-8 {
+    @include bg-gradient--free-speech-aquamarine-tint-8();
+}
+.bg-gradient--free-speech-aquamarine-tint-9 {
+    @include bg-gradient--free-speech-aquamarine-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--free-speech-aquamarine {
+    @include bg-gradient--free-speech-aquamarine();
+}

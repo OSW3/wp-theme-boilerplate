@@ -1,0 +1,524 @@
+// Silver
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/BEBEBE
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$silver: #BEBEBE;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$silver-shade-1: #989898;
+$silver-shade-2: #7A7A7A;
+$silver-shade-3: #626262;
+$silver-shade-4: #4E4E4E;
+$silver-shade-5: #3E3E3E;
+$silver-shade-6: #323232;
+$silver-shade-7: #282828;
+$silver-shade-8: #202020;
+$silver-shade-9: #1A1A1A;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$silver-tint-1: #CBCBCB;
+$silver-tint-2: #D5D5D5;
+$silver-tint-3: #DDDDDD;
+$silver-tint-4: #E4E4E4;
+$silver-tint-5: #E9E9E9;
+$silver-tint-6: #EDEDED;
+$silver-tint-7: #F1F1F1;
+$silver-tint-8: #F4F4F4;
+$silver-tint-9: #F6F6F6;
+
+
+// 4. Variations
+// ------------------
+
+$silver-variation-1: #BEBEBE;
+$silver-variation-2: #BEBEBE;
+$silver-variation-3: #BEBEBE;
+$silver-variation-4: #BEBEBE;
+$silver-variation-5: #BEBEBE;
+$silver-variation-6: #BEBEBE;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$silver-triad-1: #BEBEBE;
+$silver-triad-2: #BEBEBE;
+$silver-triad-3: #BEBEBE;
+
+// Analogius color scheme
+$silver-analogous-1: #BEBEBE;
+$silver-analogous-2: #BEBEBE;
+
+// Split complementary
+$silver-split-complementary-1: #BEBEBE;
+$silver-split-complementary-2: #BEBEBE;
+
+// Complementary
+$silver-complementary: #BEBEBE;
+
+// Monochromatic
+$silver-monochromatic-1: #EEEEEE;
+$silver-monochromatic-2: #DFDFDF;
+$silver-monochromatic-3: #A7A7A7;
+$silver-monochromatic-4: #8E8E8E;
+$silver-monochromatic-5: #5F5F5F;
+$silver-monochromatic-6: #474747;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$silver-100: rgba($silver, 1);
+$silver-95: rgba($silver, .95);
+$silver-90: rgba($silver, .9);
+$silver-85: rgba($silver, .85);
+$silver-80: rgba($silver, .8);
+$silver-75: rgba($silver, .75);
+$silver-70: rgba($silver, .7);
+$silver-65: rgba($silver, .65);
+$silver-60: rgba($silver, .6);
+$silver-55: rgba($silver, .55);
+$silver-50: rgba($silver, .5);
+$silver-45: rgba($silver, .45);
+$silver-40: rgba($silver, .4);
+$silver-35: rgba($silver, .35);
+$silver-30: rgba($silver, .3);
+$silver-25: rgba($silver, .25);
+$silver-20: rgba($silver, .2);
+$silver-15: rgba($silver, .15);
+$silver-10: rgba($silver, .1);
+$silver-05: rgba($silver, .05);
+$silver-00: rgba($silver, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--silver-shade-1() {
+    background: $silver-shade-1;
+    background: -webkit-linear-gradient(right, $silver-shade-1, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-1, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-1, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-2() {
+    background: $silver-shade-2;
+    background: -webkit-linear-gradient(right, $silver-shade-2, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-2, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-2, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-3() {
+    background: $silver-shade-3;
+    background: -webkit-linear-gradient(right, $silver-shade-3, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-3, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-3, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-4() {
+    background: $silver-shade-4;
+    background: -webkit-linear-gradient(right, $silver-shade-4, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-4, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-4, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-5() {
+    background: $silver-shade-5;
+    background: -webkit-linear-gradient(right, $silver-shade-5, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-5, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-5, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-6() {
+    background: $silver-shade-6;
+    background: -webkit-linear-gradient(right, $silver-shade-6, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-6, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-6, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-7() {
+    background: $silver-shade-7;
+    background: -webkit-linear-gradient(right, $silver-shade-7, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-7, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-7, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-8() {
+    background: $silver-shade-8;
+    background: -webkit-linear-gradient(right, $silver-shade-8, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-8, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-8, $silver) !important;
+}
+@mixin bg-gradient--silver-shade-9() {
+    background: $silver-shade-9;
+    background: -webkit-linear-gradient(right, $silver-shade-9, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-shade-9, $silver) !important;
+    background:         linear-gradient(to left, $silver-shade-9, $silver) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--silver-tint-1() {
+    background: $silver-tint-1;
+    background: -webkit-linear-gradient(right, $silver-tint-1, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-1, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-1, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-2() {
+    background: $silver-tint-2;
+    background: -webkit-linear-gradient(right, $silver-tint-2, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-2, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-2, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-3() {
+    background: $silver-tint-3;
+    background: -webkit-linear-gradient(right, $silver-tint-3, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-3, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-3, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-4() {
+    background: $silver-tint-4;
+    background: -webkit-linear-gradient(right, $silver-tint-4, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-4, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-4, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-5() {
+    background: $silver-tint-5;
+    background: -webkit-linear-gradient(right, $silver-tint-5, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-5, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-5, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-6() {
+    background: $silver-tint-6;
+    background: -webkit-linear-gradient(right, $silver-tint-6, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-6, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-6, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-7() {
+    background: $silver-tint-7;
+    background: -webkit-linear-gradient(right, $silver-tint-7, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-7, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-7, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-8() {
+    background: $silver-tint-8;
+    background: -webkit-linear-gradient(right, $silver-tint-8, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-8, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-8, $silver) !important;
+}
+@mixin bg-gradient--silver-tint-9() {
+    background: $silver-tint-9;
+    background: -webkit-linear-gradient(right, $silver-tint-9, $silver) !important;
+    background:    -moz-linear-gradient(right, $silver-tint-9, $silver) !important;
+    background:         linear-gradient(to left, $silver-tint-9, $silver) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--silver() {
+    color: #202020;
+    @include bg-gradient--silver-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--silver { color: $silver }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--silver-shade-1 { color: $silver-shade-1 }
+.color--silver-shade-2 { color: $silver-shade-2 }
+.color--silver-shade-3 { color: $silver-shade-3 }
+.color--silver-shade-4 { color: $silver-shade-4 }
+.color--silver-shade-5 { color: $silver-shade-5 }
+.color--silver-shade-6 { color: $silver-shade-6 }
+.color--silver-shade-7 { color: $silver-shade-7 }
+.color--silver-shade-8 { color: $silver-shade-8 }
+.color--silver-shade-9 { color: $silver-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--silver-tint-1 { color: $silver-tint-1 }
+.color--silver-tint-2 { color: $silver-tint-2 }
+.color--silver-tint-3 { color: $silver-tint-3 }
+.color--silver-tint-4 { color: $silver-tint-4 }
+.color--silver-tint-5 { color: $silver-tint-5 }
+.color--silver-tint-6 { color: $silver-tint-6 }
+.color--silver-tint-7 { color: $silver-tint-7 }
+.color--silver-tint-8 { color: $silver-tint-8 }
+.color--silver-tint-9 { color: $silver-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--silver-variation-1 { color: $silver-variation-1 }
+.color--silver-variation-2 { color: $silver-variation-2 }
+.color--silver-variation-3 { color: $silver-variation-3 }
+.color--silver-variation-4 { color: $silver-variation-4 }
+.color--silver-variation-5 { color: $silver-variation-5 }
+.color--silver-variation-6 { color: $silver-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--silver-triad-1 { color: $silver-triad-1 }
+.color--silver-triad-2 { color: $silver-triad-2 }
+.color--silver-triad-3 { color: $silver-triad-3 }
+
+// Analogius color scheme
+.color--silver-analogous-1 { color: $silver-analogous-1 }
+.color--silver-analogous-2 { color: $silver-analogous-2 }
+
+// Split complementary
+.color--silver-split-complementary-1 { color: $silver-split-complementary-1 }
+.color--silver-split-complementary-2 { color: $silver-split-complementary-2 }
+
+// Complementary
+.color--silver-complementary { color: $silver-complementary }
+
+// Monochromatic
+.color--silver-monochromatic-1 { color: $silver-monochromatic-1 }
+.color--silver-monochromatic-2 { color: $silver-monochromatic-2 }
+.color--silver-monochromatic-3 { color: $silver-monochromatic-3 }
+.color--silver-monochromatic-4 { color: $silver-monochromatic-4 }
+.color--silver-monochromatic-5 { color: $silver-monochromatic-5 }
+.color--silver-monochromatic-6 { color: $silver-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--silver-alpha-100 { color: $silver-100 }
+.color--silver-alpha-95 { color: $silver-95 }
+.color--silver-alpha-90 { color: $silver-90 }
+.color--silver-alpha-85 { color: $silver-85 }
+.color--silver-alpha-80 { color: $silver-80 }
+.color--silver-alpha-75 { color: $silver-75 }
+.color--silver-alpha-70 { color: $silver-70 }
+.color--silver-alpha-65 { color: $silver-65 }
+.color--silver-alpha-60 { color: $silver-60 }
+.color--silver-alpha-55 { color: $silver-55 }
+.color--silver-alpha-50 { color: $silver-50 }
+.color--silver-alpha-45 { color: $silver-45 }
+.color--silver-alpha-40 { color: $silver-40 }
+.color--silver-alpha-35 { color: $silver-35 }
+.color--silver-alpha-30 { color: $silver-30 }
+.color--silver-alpha-25 { color: $silver-25 }
+.color--silver-alpha-20 { color: $silver-20 }
+.color--silver-alpha-15 { color: $silver-15 }
+.color--silver-alpha-10 { color: $silver-10 }
+.color--silver-alpha-05 { color: $silver-05 }
+.color--silver-alpha-00 { color: $silver-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--silver { background-color: $silver }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--silver-shade-1 { background-color: $silver-shade-1 }
+.bg-color--silver-shade-2 { background-color: $silver-shade-2 }
+.bg-color--silver-shade-3 { background-color: $silver-shade-3 }
+.bg-color--silver-shade-4 { background-color: $silver-shade-4 }
+.bg-color--silver-shade-5 { background-color: $silver-shade-5 }
+.bg-color--silver-shade-6 { background-color: $silver-shade-6 }
+.bg-color--silver-shade-7 { background-color: $silver-shade-7 }
+.bg-color--silver-shade-8 { background-color: $silver-shade-8 }
+.bg-color--silver-shade-9 { background-color: $silver-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--silver-tint-1 { background-color: $silver-tint-1 }
+.bg-color--silver-tint-2 { background-color: $silver-tint-2 }
+.bg-color--silver-tint-3 { background-color: $silver-tint-3 }
+.bg-color--silver-tint-4 { background-color: $silver-tint-4 }
+.bg-color--silver-tint-5 { background-color: $silver-tint-5 }
+.bg-color--silver-tint-6 { background-color: $silver-tint-6 }
+.bg-color--silver-tint-7 { background-color: $silver-tint-7 }
+.bg-color--silver-tint-8 { background-color: $silver-tint-8 }
+.bg-color--silver-tint-9 { background-color: $silver-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--silver-variation-1 { background-color: $silver-variation-1 }
+.bg-color--silver-variation-2 { background-color: $silver-variation-2 }
+.bg-color--silver-variation-3 { background-color: $silver-variation-3 }
+.bg-color--silver-variation-4 { background-color: $silver-variation-4 }
+.bg-color--silver-variation-5 { background-color: $silver-variation-5 }
+.bg-color--silver-variation-6 { background-color: $silver-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--silver-triad-1 { background-color: $silver-triad-1 }
+.bg-color--silver-triad-2 { background-color: $silver-triad-2 }
+.bg-color--silver-triad-3 { background-color: $silver-triad-3 }
+
+// Analogius color scheme
+.bg-color--silver-analogous-1 { background-color: $silver-analogous-1 }
+.bg-color--silver-analogous-2 { background-color: $silver-analogous-2 }
+
+// Split complementary
+.bg-color--silver-split-complementary-1 { background-color: $silver-split-complementary-1 }
+.bg-color--silver-split-complementary-2 { background-color: $silver-split-complementary-2 }
+
+// Complementary
+.bg-color--silver-complementary { background-color: $silver-complementary }
+
+// Monochromatic
+.bg-color--silver-monochromatic-1 { background-color: $silver-monochromatic-1 }
+.bg-color--silver-monochromatic-2 { background-color: $silver-monochromatic-2 }
+.bg-color--silver-monochromatic-3 { background-color: $silver-monochromatic-3 }
+.bg-color--silver-monochromatic-4 { background-color: $silver-monochromatic-4 }
+.bg-color--silver-monochromatic-5 { background-color: $silver-monochromatic-5 }
+.bg-color--silver-monochromatic-6 { background-color: $silver-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--silver-alpha-100 { background-color: $silver-100 }
+.bg-color--silver-alpha-95 { background-color: $silver-95 }
+.bg-color--silver-alpha-90 { background-color: $silver-90 }
+.bg-color--silver-alpha-85 { background-color: $silver-85 }
+.bg-color--silver-alpha-80 { background-color: $silver-80 }
+.bg-color--silver-alpha-75 { background-color: $silver-75 }
+.bg-color--silver-alpha-70 { background-color: $silver-70 }
+.bg-color--silver-alpha-65 { background-color: $silver-65 }
+.bg-color--silver-alpha-60 { background-color: $silver-60 }
+.bg-color--silver-alpha-55 { background-color: $silver-55 }
+.bg-color--silver-alpha-50 { background-color: $silver-50 }
+.bg-color--silver-alpha-45 { background-color: $silver-45 }
+.bg-color--silver-alpha-40 { background-color: $silver-40 }
+.bg-color--silver-alpha-35 { background-color: $silver-35 }
+.bg-color--silver-alpha-30 { background-color: $silver-30 }
+.bg-color--silver-alpha-25 { background-color: $silver-25 }
+.bg-color--silver-alpha-20 { background-color: $silver-20 }
+.bg-color--silver-alpha-15 { background-color: $silver-15 }
+.bg-color--silver-alpha-10 { background-color: $silver-10 }
+.bg-color--silver-alpha-05 { background-color: $silver-05 }
+.bg-color--silver-alpha-00 { background-color: $silver-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--silver-shade-1 {
+    @include bg-gradient--silver-shade-1();
+}
+.bg-gradient--silver-shade-2 {
+    @include bg-gradient--silver-shade-2();
+}
+.bg-gradient--silver-shade-3 {
+    @include bg-gradient--silver-shade-3();
+}
+.bg-gradient--silver-shade-4 {
+    @include bg-gradient--silver-shade-4();
+}
+.bg-gradient--silver-shade-5 {
+    @include bg-gradient--silver-shade-5();
+}
+.bg-gradient--silver-shade-6 {
+    @include bg-gradient--silver-shade-6();
+}
+.bg-gradient--silver-shade-7 {
+    @include bg-gradient--silver-shade-7();
+}
+.bg-gradient--silver-shade-8 {
+    @include bg-gradient--silver-shade-8();
+}
+.bg-gradient--silver-shade-9 {
+    @include bg-gradient--silver-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--silver-tint-1 {
+    @include bg-gradient--silver-tint-1();
+}
+.bg-gradient--silver-tint-2 {
+    @include bg-gradient--silver-tint-2();
+}
+.bg-gradient--silver-tint-3 {
+    @include bg-gradient--silver-tint-3();
+}
+.bg-gradient--silver-tint-4 {
+    @include bg-gradient--silver-tint-4();
+}
+.bg-gradient--silver-tint-5 {
+    @include bg-gradient--silver-tint-5();
+}
+.bg-gradient--silver-tint-6 {
+    @include bg-gradient--silver-tint-6();
+}
+.bg-gradient--silver-tint-7 {
+    @include bg-gradient--silver-tint-7();
+}
+.bg-gradient--silver-tint-8 {
+    @include bg-gradient--silver-tint-8();
+}
+.bg-gradient--silver-tint-9 {
+    @include bg-gradient--silver-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--silver {
+    @include bg-gradient--silver();
+}

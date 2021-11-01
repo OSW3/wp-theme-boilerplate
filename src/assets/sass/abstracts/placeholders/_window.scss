@@ -1,0 +1,12 @@
+/// SCSS Placeholders : window
+/// ------------------
+/// 
+/// @example
+/// 
+/// =============================================================================
+
+// Apply sizes of 100% of window height and width
+%window-size {
+    height: 100vh;
+    width: 100vw;
+}

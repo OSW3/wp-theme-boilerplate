@@ -1,0 +1,23 @@
+// Base Theme
+// ------------------
+// File : Theme switcher
+// 
+// 1. Import Theme files
+// 2. Themes Definition
+// 
+// =============================================================================
+
+
+// 1. Import definitions
+// ------------------
+@import "./../themes/default/font";
+@import "./../themes/default/light";
+@import "./../themes/default/dark";
+
+
+// 2. Themes Definition
+// ------------------
+$themes: (
+    'light': $theme-light,
+    'dark': $theme-dark
+);

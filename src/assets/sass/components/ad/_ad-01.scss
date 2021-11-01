@@ -1,0 +1,271 @@
+// SCSS Component Ad
+// ------------------
+// @info: https://sass-guidelin.es/fr/#architecture
+// 
+// 1. Ad Box Area placeholder definition
+// --
+// 2. Medium Rectangle **       .ad-box--area--medium-rectangle         Horizontal
+// 3. Leaderboard **            .ad-box--area--leaderboard              Horizontal
+// 4. Wide Skyscraper **        .ad-box--area--wide-skycsraper          Vertical
+// 5. Half Page                 .ad-box--area--half-page                Vertical
+// 6. Billboard                 .ad-box--area--billboard                Horizontal
+// 7. Large Rectangle           .ad-box--area--large-rectangle          Horizontal
+// 8. Banner                    .ad-box--area--banner                   Horizontal
+// 9. Half Banner               .ad-box--area--half-banner              Horizontal
+// 10. Skyscraper               .ad-box--area--skyscraper               Vertical
+// 11. Vertical Banner          .ad-box--area--vertical-banner          Vertical
+// 12. Portrait                 .ad-box--area--portrait                 Vertical
+// 13. Large Leaderboard        .ad-box--area--large-leaderboard        Horizontal
+// 14. Square                   .ad-box--area--square                   Square
+// 15. Small Square             .ad-box--area--small-square             Square
+// 16. Small Rectangle          .ad-box--area--small-rectangle          Horizontal
+// 17. Button                   .ad-box--area--button                   Square
+// --
+// 18. Mobile Leaderboard **    .ad-box--area--mobile-leaderboard       horizontal
+// 19. Mobile Full Page Flex    .ad-box--area--mobile-full-page         Square
+// 20. Large Mobile Banner      .ad-box--area--mobile-large-banner      Square
+// 21. Square                   .ad-box--area--mobile-square            Square
+// 22. Small Square             .ad-box--area--mobile-small-square      Square
+// 
+// =============================================================================
+
+// // 1. Ad Box Area
+// // ------------------
+// %ad-box--area 
+// {
+//     background-color: #cccccc;
+//     display: block !important;
+//     margin: 0 auto;
+// }
+
+
+// // Banner
+// %ad-box--area--banner {
+//     @extend %ad-box--area;
+//     width: 468px !important;
+//     height: 60px !important;
+// }
+// .aba-banner, .ad-box--area--banner {
+//     @extend %ad-box--area--banner;
+// }
+
+
+// // Billboard
+// %ad-box--area--billboard {
+//     @extend %ad-box--area;
+//     width: 970px !important;
+//     height: 250px !important;
+// }
+// .aba-billboard, .ad-box--area--billboard {
+//     @extend %ad-box--area--billboard;
+// }
+
+
+// // Button
+// %ad-box--area--button {
+//     @extend %ad-box--area;
+//     width: 125px !important;
+//     height: 125px !important;
+// }
+// .aba-button, .ad-box--area--button {
+//     @extend %ad-box--area--button;
+// }
+
+
+
+// // Half Banner
+// %ad-box--area--half-banner {
+//     @extend %ad-box--area;
+//     width: 234px !important;
+//     height: 60px !important;
+// }
+// .aba-half-banner, .ad-box--area--half-banner {
+//     @extend %ad-box--area--half-banner;
+// }
+
+
+// // Half Page
+// %ad-box--area--half-page {
+//     @extend %ad-box--area;
+//     width: 300px !important;
+//     height: 600px !important;
+// }
+// .aba-half-page, .ad-box--area--half-page {
+//     @extend %ad-box--area--half-page;
+// }
+
+
+// // Large Leaderboard
+// %ad-box--area--large-leaderboard {
+//     @extend %ad-box--area;
+//     width: 970px !important;
+//     height: 90px !important;
+// }
+// .aba-large-leaderboard, .ad-box--area--large-leaderboard {
+//     @extend %ad-box--area--large-leaderboard;
+// }
+
+
+// // Large Rectangle
+// %ad-box--area--large-rectangle {
+//     @extend %ad-box--area;
+//     width: 339px !important;
+//     height: 280px !important;
+// }
+// .aba-large-rectangle, .ad-box--area--large-rectangle {
+//     @extend %ad-box--area--large-rectangle;
+// }
+
+
+// // Leaderboard
+// %ad-box--area--leaderboard {
+//     @extend %ad-box--area;
+//     width: 728px !important;
+//     height: 90px !important;
+// }
+// .aba-leaderboard, .ad-box--area--leaderboard {
+//     @extend %ad-box--area--leaderboard;
+// }
+
+
+// // Medium Rectangle
+// %ad-box--area--medium-rectangle {
+//     @extend %ad-box--area;
+//     width: 300px !important;
+//     height: 250px !important;
+// }
+// .aba-medium-rectangle, .ad-box--area--medium-rectangle {
+//     @extend %ad-box--area--medium-rectangle;
+// }
+
+
+// // Mobile Full Page
+// %ad-box--area--mobile-full-page {
+//     @extend %ad-box--area;
+//     width: 125px !important;
+//     height: 125px !important;
+// }
+// .aba-mobile-full-page, .ad-box--area--mobile-full-page {
+//     @extend %ad-box--area--mobile-full-page;
+// }
+
+
+// // Mobile Large Banner
+// %ad-box--area--mobile-large-banner {
+//     @extend %ad-box--area;
+//     width: 320px !important;
+//     height: 100px !important;
+// }
+// .aba-mobile-large-banner, .ad-box--area--mobile-large-banner {
+//     @extend %ad-box--area--mobile-large-banner;
+// }
+
+
+// // Mobile Leaderboard
+// %ad-box--area--mobile-leaderboard {
+//     @extend %ad-box--area;
+//     width: 325px !important;
+//     height: 50px !important;
+// }
+// .aba-mobile-leaderboard, .ad-box--area--mobile-leaderboard {
+//     @extend %ad-box--area--mobile-leaderboard;
+// }
+
+
+// // Mobile Small Square
+// %ad-box--area--mobile-small-square {
+//     @extend %ad-box--area;
+//     width: 200px !important;
+//     height: 200px !important;
+// }
+// .aba-mobile-small-square, .ad-box--area--mobile-small-square {
+//     @extend %ad-box--area--mobile-small-square;
+// }
+
+
+// // Mobile Square
+// %ad-box--area--mobile-square {
+//     @extend %ad-box--area;
+//     width: 250px !important;
+//     height: 250px !important;
+// }
+// .aba-mobile-square, .ad-box--area--mobile-square {
+//     @extend %ad-box--area--mobile-square;
+// }
+
+
+// // Portrait
+// %ad-box--area--portrait {
+//     @extend %ad-box--area;
+//     width: 300px !important;
+//     height: 1050px !important;
+// }
+// .aba-portrait, .ad-box--area--portrait {
+//     @extend %ad-box--area--portrait;
+// }
+
+
+// // Skycraper
+// %ad-box--area--skyscraper {
+//     @extend %ad-box--area;
+//     width: 120px !important;
+//     height: 600px !important;
+// }
+// .aba-skyscraper, .ad-box--area--skyscraper {
+//     @extend %ad-box--area--skyscraper;
+// }
+
+
+// // Small Rectangle
+// %ad-box--area--small-rectangle {
+//     @extend %ad-box--area;
+//     width: 180px !important;
+//     height: 150px !important;
+// }
+// .aba-small-rectangle, .ad-box--area--small-rectangle {
+//     @extend %ad-box--area--small-rectangle;
+// }
+
+
+// // Small Square
+// %ad-box--area--small-square {
+//     @extend %ad-box--area;
+//     width: 200px !important;
+//     height: 200px !important;
+// }
+// .aba-small-square, .ad-box--area--small-square {
+//     @extend %ad-box--area--small-square;
+// }
+
+
+// // Square
+// %ad-box--area--square {
+//     @extend %ad-box--area;
+//     width: 250px !important;
+//     height: 250px !important;
+// }
+// .aba-square, .ad-box--area--square {
+//     @extend %ad-box--area--square;
+// }
+
+
+// // Vertical Banner
+// %ad-box--area--vertical-banner {
+//     @extend %ad-box--area;
+//     width: 120px !important;
+//     height: 240px !important;
+// }
+// .aba-vertical-banner, .ad-box--area--vertical-banner {
+//     @extend %ad-box--area--vertical-banner;
+// }
+
+
+// // Wide Skycraper
+// %ad-box--area--wide-skyscraper {
+//     @extend %ad-box--area;
+//     width: 160px !important;
+//     height: 600px !important;
+// }
+// .aba-wide-skyscraper, .ad-box--area--wide-skyscraper {
+//     @extend %ad-box--area--wide-skyscraper;
+// }

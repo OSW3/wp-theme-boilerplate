@@ -1,0 +1,45 @@
+{
+  "name": "wp-theme-boilerplate",
+  "version": "1.0.0",
+  "description": "## The structure",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config=webpack.config.js --watch",
+    "build": "webpack --config=webpack.config.js -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSW3/wp-theme-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OSW3/wp-theme-boilerplate/issues"
+  },
+  "homepage": "https://github.com/OSW3/wp-theme-boilerplate#readme",
+  "devDependencies": {
+    "bourbon": "^7.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "imagemin": "^8.0.1",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.38.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@hotwired/turbo": "^7.0.0-rc.3",
+    "bootstrap": "^5.1.0",
+    "remixicon": "^2.5.0",
+    "stimulus": "^2.0.0"
+  }
+}

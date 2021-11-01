@@ -1,0 +1,21 @@
+/// SCSS Mixins : shadow
+/// ------------------
+/// 
+/// @example
+/// .element {
+///     @include shadow()
+/// }
+/// 
+/// =============================================================================
+
+@mixin shadow($top: 0, $left: 0, $blur: 10px, $color: $black-50, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $left $top $blur $color;
+           -moz-box-shadow:inset $left $top $blur $color;
+                box-shadow:inset $left $top $blur $color;
+    } @else {
+        -webkit-box-shadow: $left $top $blur $color;
+           -moz-box-shadow: $left $top $blur $color;
+                box-shadow: $left $top $blur $color;
+    }
+}

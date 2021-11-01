@@ -1,0 +1,116 @@
+// SCSS Component : Input
+// ------------------
+// 
+// 1. Import Bootstrap Base
+// 
+// =============================================================================
+
+// 1. input
+// ------------------
+
+
+// 2. input[type=color]
+// ------------------
+input[type=color].form-control
+{
+    width: 40px;
+}
+
+
+// 2. input[type=file]
+// ------------------
+.custom-file {
+    
+    @include property('color', 'form--input--text');
+
+    .custom-file-label {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        color: inherit;
+
+        // @each $lang, $value in $custom-file-text {
+        //     &:lang(#{$lang}) ~ .custom-file-label::after {
+        //     content: $value;
+        //     }
+        // }
+
+        // ~ .custom-file-label[data-browse]::after {
+        //     content: attr(data-browse);
+        // }
+    }
+
+    &.is-empty {
+        @include property('color', 'form--placeholder--text');
+    }
+}
+
+
+// 3. input[type=tag]
+// ------------------
+.bootstrap-tagsinput {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    padding: 4px 6px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    width: 100%;
+    line-height: 22px;
+    cursor: text;
+
+    &.form-control input::-moz-placeholder {
+        color: #777;
+        opacity: 1;
+    }
+    &.form-control input:-ms-input-placeholder {
+        color: #777;
+    }
+    &.form-control input::-webkit-input-placeholder {
+        color: #777;
+    }
+
+    input {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background-color: transparent;
+        padding: 0 6px;
+        margin: 0;
+        width: auto;
+        max-width: inherit;
+
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .badge {
+        margin: 2px;
+        padding: 5px 8px;
+
+        [data-role="remove"] {
+            margin-left: 8px;
+            cursor: pointer;
+
+            &:after {
+                content: "×";
+                padding: 0px 4px;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                font-size: 13px
+            }
+
+            &:hover:after {
+                background-color: rgba(0, 0, 0, 0.62);
+            }
+
+            &:hover:active {
+                box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            }
+        }
+    }
+}

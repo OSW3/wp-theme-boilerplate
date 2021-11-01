@@ -1,0 +1,14 @@
+/// SCSS Mixins : sizes
+/// ------------------
+/// 
+/// @example
+/// .element {
+///     @include sizes(100%, 50px)
+/// }
+/// 
+/// =============================================================================
+
+@mixin sizes($width: initial, $height: initial) {
+    height: $height;
+    width: $width;
+}

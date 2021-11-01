@@ -1,0 +1,306 @@
+// Main SCSS
+// ------------------
+// Inspired by https://sass-guidelin.es/fr/#architecture
+// 
+// =============================================================================
+@charset 'utf-8';
+
+
+// 1. Vendors
+// ------------------
+
+// Import Bootstrap
+// @documentation: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+@import "bootstrap";
+
+// Import Bourbon
+// @documentation: https://www.bourbon.io/docs/latest/
+// @import 'node_modules/bourbon/core/bourbon';
+@import 'bourbon';
+
+
+
+// 2. Abstracts
+// ------------------
+
+// Import variables
+@import './abstracts/variables';
+
+// Import functions
+@import './abstracts/functions/_dir';
+
+// Import placeholders
+// @usage exemple: @extend: %background-cover
+@import './abstracts/placeholders/_dir';
+
+// Import mixins
+// @usage exemple: @include background-cover(url)
+@import './abstracts/mixins/_dir';
+
+
+
+// 3. Base
+// ------------------
+
+// Import Themes (light and dark)
+@import './base/theme';
+
+// Import Reset CSS
+// Use to reset bootstrap classes and document base
+@import './base/reset';
+
+// Import Grid
+// use to reset the bootstrap grid
+@import './base/grid';
+
+// Import animations
+// use to add animation keys
+@import './base/animations';
+
+
+
+// 4. Themed Layout
+// ------------------
+
+// Import the layout directory of Default theme
+// Used to define the layout properties
+@import './layout/default';
+
+
+
+// 5. Components
+// ------------------
+
+// Component : Accordion
+// use to reset bootstrap accordion
+// @documentation: https://getbootstrap.com/docs/5.1/components/accordion/
+@import './components/accordion/accordion-01';
+
+// Component : Ad
+@import './components/ad/ad-01';
+
+// Component : Alert
+// use to reset bootstrap alert
+// @documentation: https://getbootstrap.com/docs/5.1/components/alerts/
+@import './components/alert/alert-01';
+
+// Component : Badge
+// use to reset bootstrap badge
+// @documentation: https://getbootstrap.com/docs/5.1/components/badge/
+@import './components/badge/badge-01';
+
+// Component : Brand
+@import './components/brand/brand-01';
+
+// Component : Breadcrumb
+// use to reset bootstrap breadcrumb
+// @documentation: https://getbootstrap.com/docs/5.1/components/breadcrumb/
+@import './components/breadcrumb/breadcrumb-01';
+
+// Component : Button
+// use to reset bootstrap button
+// @documentation: https://getbootstrap.com/docs/5.1/components/buttons/
+// @documentation: https://getbootstrap.com/docs/5.1/components/button-group/
+@import './components/button/button-01';
+
+// Component : Calendar
+// @documentation: https://fullcalendar.io/
+@import './components/calendar/calendar-01';
+
+// Component : Card
+// use to reset bootstrap card
+// @documentation: https://getbootstrap.com/docs/5.1/components/card/
+@import './components/card/card-01';
+
+// Component : Code
+@import './components/code/code-01';
+
+// Component : Collapse
+// use to reset bootstrap collapse
+// @documentation: https://getbootstrap.com/docs/5.1/components/collapse/
+@import './components/collapse/collapse-01';
+
+// Component : Collection
+// use to define properties of collection form element
+@import './components/collection/collection-01';
+
+// Component : Dropdown
+// use to reset bootstrap dropdown
+// @documentation: https://getbootstrap.com/docs/5.1/components/dropdowns/
+@import './components/dropdown/dropdown-01';
+
+// Component : Editor
+// use to reset Editor like QuillJS
+// @documentation: https://quilljs.com/
+@import './components/editor/editor-01';
+
+// Component : Icon
+@import './components/icon/icon-01';
+
+// Component : Image
+@import './components/img/img-01';
+
+// Component : Input
+// Used to reset form input
+@import './components/input/input-01';
+
+// Component : Input Search
+@import './components/input/search-01';
+
+// Component : Jumbotron / Hero
+@import './components/hero/hero-01';
+
+// Component : List
+// use to reset bootstrap list
+// @documentation: https://getbootstrap.com/docs/5.1/components/list-group/
+@import './components/list/list-01';
+
+// Component : Map
+// Used to define properties of Map box
+// @documentation: https://leafletjs.com/
+@import './components/map/map-01';
+
+// Component : Modal
+// use to reset bootstrap modal
+// @documentation: https://getbootstrap.com/docs/5.1/components/modal/
+@import './components/modal/modal-01';
+
+// Component : Nav, Navbar
+// use to reset bootstrap nav
+// @documentation: https://getbootstrap.com/docs/5.1/components/navs-tabs/
+// @documentation: https://getbootstrap.com/docs/5.1/components/navbar/
+@import './components/nav/nav-01';
+
+// Component : Offcanvas
+// use to reset bootstrap offcanvas
+// @documentation: https://getbootstrap.com/docs/5.1/components/offcanvas/
+@import './components/offcanvas/offcanvas-01';
+
+// Component : Pagination
+// use to reset bootstrap pagination
+// @documentation: https://getbootstrap.com/docs/5.1/components/pagination/
+@import './components/pagination/pagination-01';
+
+// Component : Panel
+@import './components/panel/panel-01';
+
+// Component : Placeholder
+// use to reset bootstrap placeholder
+// @documentation: https://getbootstrap.com/docs/5.1/components/placeholders/
+@import './components/placeholder/placeholder-01';
+
+// Component : Popover
+// use to reset bootstrap popover
+// @documentation: https://getbootstrap.com/docs/5.1/components/popovers/
+@import './components/popover/popover-01';
+
+// Component : Progress
+// use to reset bootstrap progress
+// @documentation: https://getbootstrap.com/docs/5.1/components/progress/
+@import './components/progress/progress-01';
+
+// Component : Section
+@import './components/section/section-01';
+
+// Component : Select, Select2
+// @documentation: https://select2.org/
+@import './components/select/select-01';
+
+// Component : Slider
+// use to reset bootstrap carousel, Slick or Flickity
+// @documentation: https://getbootstrap.com/docs/5.1/components/carousel/
+// @documentation: https://kenwheeler.github.io/slick/
+// @documentation: https://flickity.metafizzy.co/
+@import './components/slider/slider-01';
+
+// Component : Tab
+// use to reset bootstrap tab
+// @documentation: https://getbootstrap.com/docs/5.1/components/navs-tabs/
+@import './components/tab/tab-01';
+
+// Component : Table, Vanilla DataTable
+// @documentation: https://getbootstrap.com/docs/5.1/content/tables/
+// @documentation: https://github.com/Mobius1/Vanilla-DataTables
+@import './components/table/table-01';
+
+// Component : Toast
+// use to reset bootstrap toast
+// @documentation: https://getbootstrap.com/docs/5.1/components/toasts/
+@import './components/toast/toast-01';
+
+// Component : Tooltip
+// use to reset bootstrap tooltip
+// @documentation: https://getbootstrap.com/docs/5.1/components/tooltips/
+@import './components/tooltip/tooltip-01';
+
+// Component : Widget
+@import './components/widget/widget-01';
+
+// Component : Workflow
+@import './components/workflow/workflow-01';
+
+
+// 6. Core Pages
+// ------------------
+
+// Page : Dashboard
+// @import './../../templates/core/dashboard/style';
+
+// Page : Search results
+// @import './../../templates/core/search/style';
+
+// Page : Account
+// @import './../../templates/core/account/style';
+
+// Page : Issue
+// @import './../../templates/core/issue/style';
+
+// Page : Calendar
+// @import './../../templates/core/calendar/style';
+
+// Page : Mailbox
+// @import './../../templates/core/mailbox/style';
+// @import './../../templates/core/mailbox/box/style';
+
+// Page : TodoList
+// @import './../../templates/core/todo/style';
+
+// Page : Message
+// @import './../../templates/core/message/style';
+
+// Page : Notification
+// @import './../../templates/core/notification/style';
+
+// Page : Customer
+// @import './../../templates/pages/customer/style';
+
+// Page : Support
+// @import './../../templates/pages/support/faq/style';
+// @import './../../templates/pages/support/legal/style';
+// @import './../../templates/pages/support/feedback/style';
+// @import './../../templates/pages/support/mailing-list/style';
+
+// Page : Settings
+// @import './../../templates/core/settings/style';
+
+// Page : Documentation
+// @import './../../templates/doc/style';
+
+
+
+// 7. Pages
+// ------------------
+
+// Page : Book
+// @import './../../templates/pages/book/book/style';
+
+// Page : Blog
+// @import './../../templates/pages/blog/category/style';
+// @import './../../templates/pages/blog/post/style';
+
+// Page : Shop
+
+
+// 8. Shames
+// ------------------
+@import './shames/shame';

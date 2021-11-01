@@ -1,0 +1,348 @@
+// Theme : Default (dark)
+// ------------------
+// File : Dark Theme Colors Stack definition
+// 
+// =============================================================================
+
+// 3. Colors
+// ------------------
+// @import './../../colors/black-russian';
+@import './../../colors/black';
+// @import './../../colors/bunker';
+// @import './../../colors/dodger-blue';
+// @import './../../colors/east-bay';
+// @import './../../colors/oyster-bay';
+// @import './../../colors/free-speech-aquamarine';
+// @import './../../colors/free-speech-red';
+// @import './../../colors/gossamer';
+@import './../../colors/grey';
+// @import './../../colors/gulf-blue';
+// @import './../../colors/limerick';
+@import './../../colors/nepal';
+// @import './../../colors/night-rider';
+@import './../../colors/persimmon';
+// @import './../../colors/razzmatazz';
+// @import './../../colors/shark';
+// @import './../../colors/shiraz';
+// @import './../../colors/silver';
+// @import './../../colors/whisper';
+// @import './../../colors/white-smoke';
+@import './../../colors/white';
+
+$theme-dark: (
+        
+    // BASE DEFINITION
+    // =====================================================================
+
+    // Success
+
+    // Danger
+
+    // Warning
+
+    // Info
+
+    // Primary
+
+    // Secondary
+
+    // Third
+
+    // White
+
+    // Light
+
+    // Dark
+
+    // Link
+
+    // Submit
+
+    // Reset
+    // Transparent
+    'transparent':                                      transparent,
+        
+        
+    // COMPONENTS
+    // =====================================================================
+
+
+    // Component: Alert
+    // --
+
+    // Success
+
+    // Danger
+
+    // Warning
+
+    // Info
+
+    // Primary
+
+    // Secondary
+
+    // Light
+
+    // Dark
+
+
+    // Component: Badge
+    // --
+
+    // Success
+
+    // Danger
+
+    // Warning
+
+    // Info
+
+    // Primary
+
+    // Secondary
+
+    // Light
+
+    // Dark
+    
+    
+    // Component: Brand
+    // --
+
+    'component--brand--bg-color':                       transparent,
+    'component--brand--bg-color-hover':                 $white-10,
+    'component--brand--primary-color':                  $white,
+    'component--brand--secondary-color':                $persimmon,
+
+    
+    // Component: Breadcrumb
+    // --
+
+    'breadcrumb--text': $grey,
+    'breadcrumb--text-hover': $white,
+    'breadcrumb--text-active': $white,
+    'breadcrumb--separator': $nepal,
+    
+    
+    // Component: Buttons
+    // --
+
+    // btn success
+
+    // btn danger
+
+    // btn warning
+
+    // btn info
+
+    // btn primary
+
+    // btn secondary
+
+    // btn light
+
+    // btn dark
+
+    // btn link
+
+    // btn submit
+
+    // btn reset
+
+    // btn sorter
+
+    // btn to top
+
+    
+    // Component: Calendar
+    // -- 
+
+    
+    // Component: Card
+    // -- 
+
+    
+    // Component: Carousel (sliders)
+    // -- 
+
+    
+    // Component: Collapse
+    // -- 
+
+    
+    // Component: Collection
+    // -- 
+
+    
+    // Component: Cookie Consent
+    // -- 
+
+    
+    // Component: Dropdown
+    // -- 
+
+    
+    // Component: Editor
+    // -- 
+
+    
+    // Component: Icon
+    // -- 
+
+    
+    // Component: Img
+    // -- 
+
+    
+    // Component: Input
+    // -- 
+
+    
+    // Component: Jumbotron
+    // -- 
+
+    
+    // Component: Lang
+    // -- 
+
+    
+    // Component: List
+    // -- 
+
+    
+    // Component: Media Object
+    // -- 
+
+    
+    // Component: Modal
+    // -- 
+
+    
+    // Component: Nav
+    // -- 
+
+    
+    // Component: Overlay
+    // -- 
+
+    
+    // Component: Pagination
+    // -- 
+
+    
+    // Component: Panel
+    // -- 
+
+    
+    // Component: Popover
+    // -- 
+
+    
+    // Component: Search
+    // -- 
+
+    'component--search--border-color':                  #4b545c,
+
+    
+    // Component: Section
+    // -- 
+
+    
+    // Component: Tab
+    // -- 
+
+    
+    // Component: Table
+    // -- 
+
+    
+    // Component: Toast
+    // -- 
+
+    
+    // Component: Tooltip
+    // -- 
+
+    
+    // Component: Widget
+    // -- 
+
+    
+    // Component: Workflow
+    // -- 
+    
+    
+    // LAYOUT
+    // =====================================================================
+    
+    
+    // Layout: Document
+    // --
+
+    'layout--document--bg-color':                        #aaaaaa,
+    
+    
+    // Layout: Header
+    // --
+
+    'layout--header--color':                            darken($white, 30%),
+    'layout--header--color-hover':                      $white,
+    'layout--header--bg-color':                         #343a40,
+    'layout--header--border-bottom-color':              #4b545c,
+
+    'layout--brand--border-bottom-color':               #4b545c,
+    
+    'layout--header-tabs--bg-color':                    #f4f6f9,
+
+    
+    // Layout: Tabbar
+    // --
+
+    'layout--tabbar--bg-color':                         #343a40,
+    'layout--tabbar--border-bottom-color':              #4b545c,
+
+    'layout--tabbar-tab--color':                        #6f7a83,
+    'layout--tabbar-tab--color-hover':                  #343a40,
+    'layout--tabbar-tab--bg-color':                     #4b545c,
+    'layout--tabbar-tab--bg-color-hover':               #6f7a83,
+
+    
+    // Layout: Footer
+    // --
+
+    'layout--footer--bg-color':                         #aaaaaa,
+    'layout--footer--border-top-color':                 #4b545c,
+    
+    
+    // Layout: Sidebar
+    // --
+
+    'layout--sidebar--bg-color':                        #343a40,
+    'layout--sidebar--color':                           #dae0e5,
+    'layout--sidebar--color-hover':                     #f4f6f9,
+
+    'layout--sidebar-header--border-bottom-color':      #4b545c,
+    'layout--sidebar-footer--border-top-color':         #4b545c,
+
+    
+    
+    // Layout: Content
+    // --
+
+    'layout--content--bg-color':                        #aaaaaa,
+    'layout--tab-pane-empty--color':                    #7e8a95,
+    
+    
+    // Layout: OffCanvas
+    // --
+    
+    
+    // Layout: Form
+    // --
+
+    // Valid Feedbacks
+
+    // Invalid Feedbacks
+    
+);

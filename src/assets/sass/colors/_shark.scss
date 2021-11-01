@@ -1,0 +1,524 @@
+// Shark
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/32353B
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$shark: #32353B;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$shark-shade-1: #282A2F;
+$shark-shade-2: #202226;
+$shark-shade-3: #1A1B1E;
+$shark-shade-4: #151618;
+$shark-shade-5: #111213;
+$shark-shade-6: #0E0E0F;
+$shark-shade-7: #0B0B0C;
+$shark-shade-8: #09090A;
+$shark-shade-9: #070708;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$shark-tint-1: #5B5D62;
+$shark-tint-2: #7C7D81;
+$shark-tint-3: #96979A;
+$shark-tint-4: #ABACAE;
+$shark-tint-5: #BCBDBE;
+$shark-tint-6: #C9CACB;
+$shark-tint-7: #D4D5D5;
+$shark-tint-8: #DDDDDD;
+$shark-tint-9: #E4E4E4;
+
+
+// 4. Variations
+// ------------------
+
+$shark-variation-1: #32353B;
+$shark-variation-2: #323B35;
+$shark-variation-3: #35323B;
+$shark-variation-4: #353B32;
+$shark-variation-5: #3B3235;
+$shark-variation-6: #3B3532;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$shark-triad-1: #32353B;
+$shark-triad-2: #3B3235;
+$shark-triad-3: #353B32;
+
+// Analogius color scheme
+$shark-analogous-1: #34323B;
+$shark-analogous-2: #323A3B;
+
+// Split complementary
+$shark-split-complementary-1: #3B3432;
+$shark-split-complementary-2: #3A3B32;
+
+// Complementary
+$shark-complementary: #3B3832;
+
+// Monochromatic
+$shark-monochromatic-1: #CCCDCE;
+$shark-monochromatic-2: #999B9E;
+$shark-monochromatic-3: #727476;
+$shark-monochromatic-4: #25272C;
+$shark-monochromatic-5: #191B1E;
+$shark-monochromatic-6: #121416;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$shark-100: rgba($shark, 1);
+$shark-95: rgba($shark, .95);
+$shark-90: rgba($shark, .9);
+$shark-85: rgba($shark, .85);
+$shark-80: rgba($shark, .8);
+$shark-75: rgba($shark, .75);
+$shark-70: rgba($shark, .7);
+$shark-65: rgba($shark, .65);
+$shark-60: rgba($shark, .6);
+$shark-55: rgba($shark, .55);
+$shark-50: rgba($shark, .5);
+$shark-45: rgba($shark, .45);
+$shark-40: rgba($shark, .4);
+$shark-35: rgba($shark, .35);
+$shark-30: rgba($shark, .3);
+$shark-25: rgba($shark, .25);
+$shark-20: rgba($shark, .2);
+$shark-15: rgba($shark, .15);
+$shark-10: rgba($shark, .1);
+$shark-05: rgba($shark, .05);
+$shark-00: rgba($shark, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--shark-shade-1() {
+    background: $shark-shade-1;
+    background: -webkit-linear-gradient(right, $shark-shade-1, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-1, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-1, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-2() {
+    background: $shark-shade-2;
+    background: -webkit-linear-gradient(right, $shark-shade-2, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-2, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-2, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-3() {
+    background: $shark-shade-3;
+    background: -webkit-linear-gradient(right, $shark-shade-3, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-3, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-3, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-4() {
+    background: $shark-shade-4;
+    background: -webkit-linear-gradient(right, $shark-shade-4, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-4, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-4, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-5() {
+    background: $shark-shade-5;
+    background: -webkit-linear-gradient(right, $shark-shade-5, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-5, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-5, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-6() {
+    background: $shark-shade-6;
+    background: -webkit-linear-gradient(right, $shark-shade-6, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-6, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-6, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-7() {
+    background: $shark-shade-7;
+    background: -webkit-linear-gradient(right, $shark-shade-7, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-7, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-7, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-8() {
+    background: $shark-shade-8;
+    background: -webkit-linear-gradient(right, $shark-shade-8, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-8, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-8, $shark) !important;
+}
+@mixin bg-gradient--shark-shade-9() {
+    background: $shark-shade-9;
+    background: -webkit-linear-gradient(right, $shark-shade-9, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-shade-9, $shark) !important;
+    background:         linear-gradient(to left, $shark-shade-9, $shark) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--shark-tint-1() {
+    background: $shark-tint-1;
+    background: -webkit-linear-gradient(right, $shark-tint-1, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-1, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-1, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-2() {
+    background: $shark-tint-2;
+    background: -webkit-linear-gradient(right, $shark-tint-2, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-2, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-2, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-3() {
+    background: $shark-tint-3;
+    background: -webkit-linear-gradient(right, $shark-tint-3, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-3, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-3, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-4() {
+    background: $shark-tint-4;
+    background: -webkit-linear-gradient(right, $shark-tint-4, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-4, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-4, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-5() {
+    background: $shark-tint-5;
+    background: -webkit-linear-gradient(right, $shark-tint-5, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-5, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-5, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-6() {
+    background: $shark-tint-6;
+    background: -webkit-linear-gradient(right, $shark-tint-6, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-6, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-6, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-7() {
+    background: $shark-tint-7;
+    background: -webkit-linear-gradient(right, $shark-tint-7, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-7, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-7, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-8() {
+    background: $shark-tint-8;
+    background: -webkit-linear-gradient(right, $shark-tint-8, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-8, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-8, $shark) !important;
+}
+@mixin bg-gradient--shark-tint-9() {
+    background: $shark-tint-9;
+    background: -webkit-linear-gradient(right, $shark-tint-9, $shark) !important;
+    background:    -moz-linear-gradient(right, $shark-tint-9, $shark) !important;
+    background:         linear-gradient(to left, $shark-tint-9, $shark) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--shark() {
+    color: #FFFFFF;
+    @include bg-gradient--shark-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--shark { color: $shark }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--shark-shade-1 { color: $shark-shade-1 }
+.color--shark-shade-2 { color: $shark-shade-2 }
+.color--shark-shade-3 { color: $shark-shade-3 }
+.color--shark-shade-4 { color: $shark-shade-4 }
+.color--shark-shade-5 { color: $shark-shade-5 }
+.color--shark-shade-6 { color: $shark-shade-6 }
+.color--shark-shade-7 { color: $shark-shade-7 }
+.color--shark-shade-8 { color: $shark-shade-8 }
+.color--shark-shade-9 { color: $shark-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--shark-tint-1 { color: $shark-tint-1 }
+.color--shark-tint-2 { color: $shark-tint-2 }
+.color--shark-tint-3 { color: $shark-tint-3 }
+.color--shark-tint-4 { color: $shark-tint-4 }
+.color--shark-tint-5 { color: $shark-tint-5 }
+.color--shark-tint-6 { color: $shark-tint-6 }
+.color--shark-tint-7 { color: $shark-tint-7 }
+.color--shark-tint-8 { color: $shark-tint-8 }
+.color--shark-tint-9 { color: $shark-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--shark-variation-1 { color: $shark-variation-1 }
+.color--shark-variation-2 { color: $shark-variation-2 }
+.color--shark-variation-3 { color: $shark-variation-3 }
+.color--shark-variation-4 { color: $shark-variation-4 }
+.color--shark-variation-5 { color: $shark-variation-5 }
+.color--shark-variation-6 { color: $shark-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--shark-triad-1 { color: $shark-triad-1 }
+.color--shark-triad-2 { color: $shark-triad-2 }
+.color--shark-triad-3 { color: $shark-triad-3 }
+
+// Analogius color scheme
+.color--shark-analogous-1 { color: $shark-analogous-1 }
+.color--shark-analogous-2 { color: $shark-analogous-2 }
+
+// Split complementary
+.color--shark-split-complementary-1 { color: $shark-split-complementary-1 }
+.color--shark-split-complementary-2 { color: $shark-split-complementary-2 }
+
+// Complementary
+.color--shark-complementary { color: $shark-complementary }
+
+// Monochromatic
+.color--shark-monochromatic-1 { color: $shark-monochromatic-1 }
+.color--shark-monochromatic-2 { color: $shark-monochromatic-2 }
+.color--shark-monochromatic-3 { color: $shark-monochromatic-3 }
+.color--shark-monochromatic-4 { color: $shark-monochromatic-4 }
+.color--shark-monochromatic-5 { color: $shark-monochromatic-5 }
+.color--shark-monochromatic-6 { color: $shark-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--shark-alpha-100 { color: $shark-100 }
+.color--shark-alpha-95 { color: $shark-95 }
+.color--shark-alpha-90 { color: $shark-90 }
+.color--shark-alpha-85 { color: $shark-85 }
+.color--shark-alpha-80 { color: $shark-80 }
+.color--shark-alpha-75 { color: $shark-75 }
+.color--shark-alpha-70 { color: $shark-70 }
+.color--shark-alpha-65 { color: $shark-65 }
+.color--shark-alpha-60 { color: $shark-60 }
+.color--shark-alpha-55 { color: $shark-55 }
+.color--shark-alpha-50 { color: $shark-50 }
+.color--shark-alpha-45 { color: $shark-45 }
+.color--shark-alpha-40 { color: $shark-40 }
+.color--shark-alpha-35 { color: $shark-35 }
+.color--shark-alpha-30 { color: $shark-30 }
+.color--shark-alpha-25 { color: $shark-25 }
+.color--shark-alpha-20 { color: $shark-20 }
+.color--shark-alpha-15 { color: $shark-15 }
+.color--shark-alpha-10 { color: $shark-10 }
+.color--shark-alpha-05 { color: $shark-05 }
+.color--shark-alpha-00 { color: $shark-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--shark { background-color: $shark }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--shark-shade-1 { background-color: $shark-shade-1 }
+.bg-color--shark-shade-2 { background-color: $shark-shade-2 }
+.bg-color--shark-shade-3 { background-color: $shark-shade-3 }
+.bg-color--shark-shade-4 { background-color: $shark-shade-4 }
+.bg-color--shark-shade-5 { background-color: $shark-shade-5 }
+.bg-color--shark-shade-6 { background-color: $shark-shade-6 }
+.bg-color--shark-shade-7 { background-color: $shark-shade-7 }
+.bg-color--shark-shade-8 { background-color: $shark-shade-8 }
+.bg-color--shark-shade-9 { background-color: $shark-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--shark-tint-1 { background-color: $shark-tint-1 }
+.bg-color--shark-tint-2 { background-color: $shark-tint-2 }
+.bg-color--shark-tint-3 { background-color: $shark-tint-3 }
+.bg-color--shark-tint-4 { background-color: $shark-tint-4 }
+.bg-color--shark-tint-5 { background-color: $shark-tint-5 }
+.bg-color--shark-tint-6 { background-color: $shark-tint-6 }
+.bg-color--shark-tint-7 { background-color: $shark-tint-7 }
+.bg-color--shark-tint-8 { background-color: $shark-tint-8 }
+.bg-color--shark-tint-9 { background-color: $shark-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--shark-variation-1 { background-color: $shark-variation-1 }
+.bg-color--shark-variation-2 { background-color: $shark-variation-2 }
+.bg-color--shark-variation-3 { background-color: $shark-variation-3 }
+.bg-color--shark-variation-4 { background-color: $shark-variation-4 }
+.bg-color--shark-variation-5 { background-color: $shark-variation-5 }
+.bg-color--shark-variation-6 { background-color: $shark-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--shark-triad-1 { background-color: $shark-triad-1 }
+.bg-color--shark-triad-2 { background-color: $shark-triad-2 }
+.bg-color--shark-triad-3 { background-color: $shark-triad-3 }
+
+// Analogius color scheme
+.bg-color--shark-analogous-1 { background-color: $shark-analogous-1 }
+.bg-color--shark-analogous-2 { background-color: $shark-analogous-2 }
+
+// Split complementary
+.bg-color--shark-split-complementary-1 { background-color: $shark-split-complementary-1 }
+.bg-color--shark-split-complementary-2 { background-color: $shark-split-complementary-2 }
+
+// Complementary
+.bg-color--shark-complementary { background-color: $shark-complementary }
+
+// Monochromatic
+.bg-color--shark-monochromatic-1 { background-color: $shark-monochromatic-1 }
+.bg-color--shark-monochromatic-2 { background-color: $shark-monochromatic-2 }
+.bg-color--shark-monochromatic-3 { background-color: $shark-monochromatic-3 }
+.bg-color--shark-monochromatic-4 { background-color: $shark-monochromatic-4 }
+.bg-color--shark-monochromatic-5 { background-color: $shark-monochromatic-5 }
+.bg-color--shark-monochromatic-6 { background-color: $shark-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--shark-alpha-100 { background-color: $shark-100 }
+.bg-color--shark-alpha-95 { background-color: $shark-95 }
+.bg-color--shark-alpha-90 { background-color: $shark-90 }
+.bg-color--shark-alpha-85 { background-color: $shark-85 }
+.bg-color--shark-alpha-80 { background-color: $shark-80 }
+.bg-color--shark-alpha-75 { background-color: $shark-75 }
+.bg-color--shark-alpha-70 { background-color: $shark-70 }
+.bg-color--shark-alpha-65 { background-color: $shark-65 }
+.bg-color--shark-alpha-60 { background-color: $shark-60 }
+.bg-color--shark-alpha-55 { background-color: $shark-55 }
+.bg-color--shark-alpha-50 { background-color: $shark-50 }
+.bg-color--shark-alpha-45 { background-color: $shark-45 }
+.bg-color--shark-alpha-40 { background-color: $shark-40 }
+.bg-color--shark-alpha-35 { background-color: $shark-35 }
+.bg-color--shark-alpha-30 { background-color: $shark-30 }
+.bg-color--shark-alpha-25 { background-color: $shark-25 }
+.bg-color--shark-alpha-20 { background-color: $shark-20 }
+.bg-color--shark-alpha-15 { background-color: $shark-15 }
+.bg-color--shark-alpha-10 { background-color: $shark-10 }
+.bg-color--shark-alpha-05 { background-color: $shark-05 }
+.bg-color--shark-alpha-00 { background-color: $shark-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--shark-shade-1 {
+    @include bg-gradient--shark-shade-1();
+}
+.bg-gradient--shark-shade-2 {
+    @include bg-gradient--shark-shade-2();
+}
+.bg-gradient--shark-shade-3 {
+    @include bg-gradient--shark-shade-3();
+}
+.bg-gradient--shark-shade-4 {
+    @include bg-gradient--shark-shade-4();
+}
+.bg-gradient--shark-shade-5 {
+    @include bg-gradient--shark-shade-5();
+}
+.bg-gradient--shark-shade-6 {
+    @include bg-gradient--shark-shade-6();
+}
+.bg-gradient--shark-shade-7 {
+    @include bg-gradient--shark-shade-7();
+}
+.bg-gradient--shark-shade-8 {
+    @include bg-gradient--shark-shade-8();
+}
+.bg-gradient--shark-shade-9 {
+    @include bg-gradient--shark-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--shark-tint-1 {
+    @include bg-gradient--shark-tint-1();
+}
+.bg-gradient--shark-tint-2 {
+    @include bg-gradient--shark-tint-2();
+}
+.bg-gradient--shark-tint-3 {
+    @include bg-gradient--shark-tint-3();
+}
+.bg-gradient--shark-tint-4 {
+    @include bg-gradient--shark-tint-4();
+}
+.bg-gradient--shark-tint-5 {
+    @include bg-gradient--shark-tint-5();
+}
+.bg-gradient--shark-tint-6 {
+    @include bg-gradient--shark-tint-6();
+}
+.bg-gradient--shark-tint-7 {
+    @include bg-gradient--shark-tint-7();
+}
+.bg-gradient--shark-tint-8 {
+    @include bg-gradient--shark-tint-8();
+}
+.bg-gradient--shark-tint-9 {
+    @include bg-gradient--shark-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--shark {
+    @include bg-gradient--shark();
+}

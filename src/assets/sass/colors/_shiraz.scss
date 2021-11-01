@@ -1,0 +1,524 @@
+// Shiraz
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/8D203B
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$shiraz: #8D203B;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$shiraz-shade-1: #711A2F;
+$shiraz-shade-2: #5A1526;
+$shiraz-shade-3: #48111E;
+$shiraz-shade-4: #3A0E18;
+$shiraz-shade-5: #2E0B13;
+$shiraz-shade-6: #25090F;
+$shiraz-shade-7: #1E070C;
+$shiraz-shade-8: #18060A;
+$shiraz-shade-9: #130508;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$shiraz-tint-1: #A44D62;
+$shiraz-tint-2: #B67181;
+$shiraz-tint-3: #C58D9A;
+$shiraz-tint-4: #D1A4AE;
+$shiraz-tint-5: #DAB6BE;
+$shiraz-tint-6: #E1C5CB;
+$shiraz-tint-7: #E7D1D5;
+$shiraz-tint-8: #ECDADD;
+$shiraz-tint-9: #F0E1E4;
+
+
+// 4. Variations
+// ------------------
+
+$shiraz-variation-1: #8D203B;
+$shiraz-variation-2: #8D3B20;
+$shiraz-variation-3: #208D3B;
+$shiraz-variation-4: #203B8D;
+$shiraz-variation-5: #3B8D20;
+$shiraz-variation-6: #3B208D;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$shiraz-triad-1: #8D203B;
+$shiraz-triad-2: #3B8D20;
+$shiraz-triad-3: #203B8D;
+
+// Analogius color scheme
+$shiraz-analogous-1: #8D3C20;
+$shiraz-analogous-2: #8D2072;
+
+// Split complementary
+$shiraz-split-complementary-1: #208D3C;
+$shiraz-split-complementary-2: #20728D;
+
+// Complementary
+$shiraz-complementary: #208D72;
+
+// Monochromatic
+$shiraz-monochromatic-1: #E2C7CE;
+$shiraz-monochromatic-2: #C6909E;
+$shiraz-monochromatic-3: #946C76;
+$shiraz-monochromatic-4: #69182C;
+$shiraz-monochromatic-5: #46101E;
+$shiraz-monochromatic-6: #340C16;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$shiraz-100: rgba($shiraz, 1);
+$shiraz-95: rgba($shiraz, .95);
+$shiraz-90: rgba($shiraz, .9);
+$shiraz-85: rgba($shiraz, .85);
+$shiraz-80: rgba($shiraz, .8);
+$shiraz-75: rgba($shiraz, .75);
+$shiraz-70: rgba($shiraz, .7);
+$shiraz-65: rgba($shiraz, .65);
+$shiraz-60: rgba($shiraz, .6);
+$shiraz-55: rgba($shiraz, .55);
+$shiraz-50: rgba($shiraz, .5);
+$shiraz-45: rgba($shiraz, .45);
+$shiraz-40: rgba($shiraz, .4);
+$shiraz-35: rgba($shiraz, .35);
+$shiraz-30: rgba($shiraz, .3);
+$shiraz-25: rgba($shiraz, .25);
+$shiraz-20: rgba($shiraz, .2);
+$shiraz-15: rgba($shiraz, .15);
+$shiraz-10: rgba($shiraz, .1);
+$shiraz-05: rgba($shiraz, .05);
+$shiraz-00: rgba($shiraz, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--shiraz-shade-1() {
+    background: $shiraz-shade-1;
+    background: -webkit-linear-gradient(right, $shiraz-shade-1, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-1, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-1, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-2() {
+    background: $shiraz-shade-2;
+    background: -webkit-linear-gradient(right, $shiraz-shade-2, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-2, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-2, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-3() {
+    background: $shiraz-shade-3;
+    background: -webkit-linear-gradient(right, $shiraz-shade-3, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-3, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-3, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-4() {
+    background: $shiraz-shade-4;
+    background: -webkit-linear-gradient(right, $shiraz-shade-4, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-4, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-4, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-5() {
+    background: $shiraz-shade-5;
+    background: -webkit-linear-gradient(right, $shiraz-shade-5, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-5, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-5, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-6() {
+    background: $shiraz-shade-6;
+    background: -webkit-linear-gradient(right, $shiraz-shade-6, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-6, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-6, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-7() {
+    background: $shiraz-shade-7;
+    background: -webkit-linear-gradient(right, $shiraz-shade-7, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-7, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-7, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-8() {
+    background: $shiraz-shade-8;
+    background: -webkit-linear-gradient(right, $shiraz-shade-8, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-8, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-8, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-shade-9() {
+    background: $shiraz-shade-9;
+    background: -webkit-linear-gradient(right, $shiraz-shade-9, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-shade-9, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-shade-9, $shiraz) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--shiraz-tint-1() {
+    background: $shiraz-tint-1;
+    background: -webkit-linear-gradient(right, $shiraz-tint-1, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-1, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-1, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-2() {
+    background: $shiraz-tint-2;
+    background: -webkit-linear-gradient(right, $shiraz-tint-2, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-2, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-2, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-3() {
+    background: $shiraz-tint-3;
+    background: -webkit-linear-gradient(right, $shiraz-tint-3, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-3, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-3, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-4() {
+    background: $shiraz-tint-4;
+    background: -webkit-linear-gradient(right, $shiraz-tint-4, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-4, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-4, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-5() {
+    background: $shiraz-tint-5;
+    background: -webkit-linear-gradient(right, $shiraz-tint-5, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-5, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-5, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-6() {
+    background: $shiraz-tint-6;
+    background: -webkit-linear-gradient(right, $shiraz-tint-6, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-6, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-6, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-7() {
+    background: $shiraz-tint-7;
+    background: -webkit-linear-gradient(right, $shiraz-tint-7, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-7, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-7, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-8() {
+    background: $shiraz-tint-8;
+    background: -webkit-linear-gradient(right, $shiraz-tint-8, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-8, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-8, $shiraz) !important;
+}
+@mixin bg-gradient--shiraz-tint-9() {
+    background: $shiraz-tint-9;
+    background: -webkit-linear-gradient(right, $shiraz-tint-9, $shiraz) !important;
+    background:    -moz-linear-gradient(right, $shiraz-tint-9, $shiraz) !important;
+    background:         linear-gradient(to left, $shiraz-tint-9, $shiraz) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--shiraz() {
+    color: #FFFFFF;
+    @include bg-gradient--shiraz-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--shiraz { color: $shiraz }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--shiraz-shade-1 { color: $shiraz-shade-1 }
+.color--shiraz-shade-2 { color: $shiraz-shade-2 }
+.color--shiraz-shade-3 { color: $shiraz-shade-3 }
+.color--shiraz-shade-4 { color: $shiraz-shade-4 }
+.color--shiraz-shade-5 { color: $shiraz-shade-5 }
+.color--shiraz-shade-6 { color: $shiraz-shade-6 }
+.color--shiraz-shade-7 { color: $shiraz-shade-7 }
+.color--shiraz-shade-8 { color: $shiraz-shade-8 }
+.color--shiraz-shade-9 { color: $shiraz-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--shiraz-tint-1 { color: $shiraz-tint-1 }
+.color--shiraz-tint-2 { color: $shiraz-tint-2 }
+.color--shiraz-tint-3 { color: $shiraz-tint-3 }
+.color--shiraz-tint-4 { color: $shiraz-tint-4 }
+.color--shiraz-tint-5 { color: $shiraz-tint-5 }
+.color--shiraz-tint-6 { color: $shiraz-tint-6 }
+.color--shiraz-tint-7 { color: $shiraz-tint-7 }
+.color--shiraz-tint-8 { color: $shiraz-tint-8 }
+.color--shiraz-tint-9 { color: $shiraz-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--shiraz-variation-1 { color: $shiraz-variation-1 }
+.color--shiraz-variation-2 { color: $shiraz-variation-2 }
+.color--shiraz-variation-3 { color: $shiraz-variation-3 }
+.color--shiraz-variation-4 { color: $shiraz-variation-4 }
+.color--shiraz-variation-5 { color: $shiraz-variation-5 }
+.color--shiraz-variation-6 { color: $shiraz-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--shiraz-triad-1 { color: $shiraz-triad-1 }
+.color--shiraz-triad-2 { color: $shiraz-triad-2 }
+.color--shiraz-triad-3 { color: $shiraz-triad-3 }
+
+// Analogius color scheme
+.color--shiraz-analogous-1 { color: $shiraz-analogous-1 }
+.color--shiraz-analogous-2 { color: $shiraz-analogous-2 }
+
+// Split complementary
+.color--shiraz-split-complementary-1 { color: $shiraz-split-complementary-1 }
+.color--shiraz-split-complementary-2 { color: $shiraz-split-complementary-2 }
+
+// Complementary
+.color--shiraz-complementary { color: $shiraz-complementary }
+
+// Monochromatic
+.color--shiraz-monochromatic-1 { color: $shiraz-monochromatic-1 }
+.color--shiraz-monochromatic-2 { color: $shiraz-monochromatic-2 }
+.color--shiraz-monochromatic-3 { color: $shiraz-monochromatic-3 }
+.color--shiraz-monochromatic-4 { color: $shiraz-monochromatic-4 }
+.color--shiraz-monochromatic-5 { color: $shiraz-monochromatic-5 }
+.color--shiraz-monochromatic-6 { color: $shiraz-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--shiraz-alpha-100 { color: $shiraz-100 }
+.color--shiraz-alpha-95 { color: $shiraz-95 }
+.color--shiraz-alpha-90 { color: $shiraz-90 }
+.color--shiraz-alpha-85 { color: $shiraz-85 }
+.color--shiraz-alpha-80 { color: $shiraz-80 }
+.color--shiraz-alpha-75 { color: $shiraz-75 }
+.color--shiraz-alpha-70 { color: $shiraz-70 }
+.color--shiraz-alpha-65 { color: $shiraz-65 }
+.color--shiraz-alpha-60 { color: $shiraz-60 }
+.color--shiraz-alpha-55 { color: $shiraz-55 }
+.color--shiraz-alpha-50 { color: $shiraz-50 }
+.color--shiraz-alpha-45 { color: $shiraz-45 }
+.color--shiraz-alpha-40 { color: $shiraz-40 }
+.color--shiraz-alpha-35 { color: $shiraz-35 }
+.color--shiraz-alpha-30 { color: $shiraz-30 }
+.color--shiraz-alpha-25 { color: $shiraz-25 }
+.color--shiraz-alpha-20 { color: $shiraz-20 }
+.color--shiraz-alpha-15 { color: $shiraz-15 }
+.color--shiraz-alpha-10 { color: $shiraz-10 }
+.color--shiraz-alpha-05 { color: $shiraz-05 }
+.color--shiraz-alpha-00 { color: $shiraz-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--shiraz { background-color: $shiraz }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--shiraz-shade-1 { background-color: $shiraz-shade-1 }
+.bg-color--shiraz-shade-2 { background-color: $shiraz-shade-2 }
+.bg-color--shiraz-shade-3 { background-color: $shiraz-shade-3 }
+.bg-color--shiraz-shade-4 { background-color: $shiraz-shade-4 }
+.bg-color--shiraz-shade-5 { background-color: $shiraz-shade-5 }
+.bg-color--shiraz-shade-6 { background-color: $shiraz-shade-6 }
+.bg-color--shiraz-shade-7 { background-color: $shiraz-shade-7 }
+.bg-color--shiraz-shade-8 { background-color: $shiraz-shade-8 }
+.bg-color--shiraz-shade-9 { background-color: $shiraz-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--shiraz-tint-1 { background-color: $shiraz-tint-1 }
+.bg-color--shiraz-tint-2 { background-color: $shiraz-tint-2 }
+.bg-color--shiraz-tint-3 { background-color: $shiraz-tint-3 }
+.bg-color--shiraz-tint-4 { background-color: $shiraz-tint-4 }
+.bg-color--shiraz-tint-5 { background-color: $shiraz-tint-5 }
+.bg-color--shiraz-tint-6 { background-color: $shiraz-tint-6 }
+.bg-color--shiraz-tint-7 { background-color: $shiraz-tint-7 }
+.bg-color--shiraz-tint-8 { background-color: $shiraz-tint-8 }
+.bg-color--shiraz-tint-9 { background-color: $shiraz-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--shiraz-variation-1 { background-color: $shiraz-variation-1 }
+.bg-color--shiraz-variation-2 { background-color: $shiraz-variation-2 }
+.bg-color--shiraz-variation-3 { background-color: $shiraz-variation-3 }
+.bg-color--shiraz-variation-4 { background-color: $shiraz-variation-4 }
+.bg-color--shiraz-variation-5 { background-color: $shiraz-variation-5 }
+.bg-color--shiraz-variation-6 { background-color: $shiraz-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--shiraz-triad-1 { background-color: $shiraz-triad-1 }
+.bg-color--shiraz-triad-2 { background-color: $shiraz-triad-2 }
+.bg-color--shiraz-triad-3 { background-color: $shiraz-triad-3 }
+
+// Analogius color scheme
+.bg-color--shiraz-analogous-1 { background-color: $shiraz-analogous-1 }
+.bg-color--shiraz-analogous-2 { background-color: $shiraz-analogous-2 }
+
+// Split complementary
+.bg-color--shiraz-split-complementary-1 { background-color: $shiraz-split-complementary-1 }
+.bg-color--shiraz-split-complementary-2 { background-color: $shiraz-split-complementary-2 }
+
+// Complementary
+.bg-color--shiraz-complementary { background-color: $shiraz-complementary }
+
+// Monochromatic
+.bg-color--shiraz-monochromatic-1 { background-color: $shiraz-monochromatic-1 }
+.bg-color--shiraz-monochromatic-2 { background-color: $shiraz-monochromatic-2 }
+.bg-color--shiraz-monochromatic-3 { background-color: $shiraz-monochromatic-3 }
+.bg-color--shiraz-monochromatic-4 { background-color: $shiraz-monochromatic-4 }
+.bg-color--shiraz-monochromatic-5 { background-color: $shiraz-monochromatic-5 }
+.bg-color--shiraz-monochromatic-6 { background-color: $shiraz-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--shiraz-alpha-100 { background-color: $shiraz-100 }
+.bg-color--shiraz-alpha-95 { background-color: $shiraz-95 }
+.bg-color--shiraz-alpha-90 { background-color: $shiraz-90 }
+.bg-color--shiraz-alpha-85 { background-color: $shiraz-85 }
+.bg-color--shiraz-alpha-80 { background-color: $shiraz-80 }
+.bg-color--shiraz-alpha-75 { background-color: $shiraz-75 }
+.bg-color--shiraz-alpha-70 { background-color: $shiraz-70 }
+.bg-color--shiraz-alpha-65 { background-color: $shiraz-65 }
+.bg-color--shiraz-alpha-60 { background-color: $shiraz-60 }
+.bg-color--shiraz-alpha-55 { background-color: $shiraz-55 }
+.bg-color--shiraz-alpha-50 { background-color: $shiraz-50 }
+.bg-color--shiraz-alpha-45 { background-color: $shiraz-45 }
+.bg-color--shiraz-alpha-40 { background-color: $shiraz-40 }
+.bg-color--shiraz-alpha-35 { background-color: $shiraz-35 }
+.bg-color--shiraz-alpha-30 { background-color: $shiraz-30 }
+.bg-color--shiraz-alpha-25 { background-color: $shiraz-25 }
+.bg-color--shiraz-alpha-20 { background-color: $shiraz-20 }
+.bg-color--shiraz-alpha-15 { background-color: $shiraz-15 }
+.bg-color--shiraz-alpha-10 { background-color: $shiraz-10 }
+.bg-color--shiraz-alpha-05 { background-color: $shiraz-05 }
+.bg-color--shiraz-alpha-00 { background-color: $shiraz-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--shiraz-shade-1 {
+    @include bg-gradient--shiraz-shade-1();
+}
+.bg-gradient--shiraz-shade-2 {
+    @include bg-gradient--shiraz-shade-2();
+}
+.bg-gradient--shiraz-shade-3 {
+    @include bg-gradient--shiraz-shade-3();
+}
+.bg-gradient--shiraz-shade-4 {
+    @include bg-gradient--shiraz-shade-4();
+}
+.bg-gradient--shiraz-shade-5 {
+    @include bg-gradient--shiraz-shade-5();
+}
+.bg-gradient--shiraz-shade-6 {
+    @include bg-gradient--shiraz-shade-6();
+}
+.bg-gradient--shiraz-shade-7 {
+    @include bg-gradient--shiraz-shade-7();
+}
+.bg-gradient--shiraz-shade-8 {
+    @include bg-gradient--shiraz-shade-8();
+}
+.bg-gradient--shiraz-shade-9 {
+    @include bg-gradient--shiraz-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--shiraz-tint-1 {
+    @include bg-gradient--shiraz-tint-1();
+}
+.bg-gradient--shiraz-tint-2 {
+    @include bg-gradient--shiraz-tint-2();
+}
+.bg-gradient--shiraz-tint-3 {
+    @include bg-gradient--shiraz-tint-3();
+}
+.bg-gradient--shiraz-tint-4 {
+    @include bg-gradient--shiraz-tint-4();
+}
+.bg-gradient--shiraz-tint-5 {
+    @include bg-gradient--shiraz-tint-5();
+}
+.bg-gradient--shiraz-tint-6 {
+    @include bg-gradient--shiraz-tint-6();
+}
+.bg-gradient--shiraz-tint-7 {
+    @include bg-gradient--shiraz-tint-7();
+}
+.bg-gradient--shiraz-tint-8 {
+    @include bg-gradient--shiraz-tint-8();
+}
+.bg-gradient--shiraz-tint-9 {
+    @include bg-gradient--shiraz-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--shiraz {
+    @include bg-gradient--shiraz();
+}

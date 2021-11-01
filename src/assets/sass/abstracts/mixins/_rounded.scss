@@ -1,0 +1,13 @@
+/// SCSS Mixins : rounded
+/// ------------------
+/// 
+/// @example
+/// .element {
+///     @include rounded(5px)
+/// }
+/// 
+/// =============================================================================
+
+@mixin rounded($radius) {
+    @include prefixer(border-radius, $radius, ("webkit", "moz"));
+}

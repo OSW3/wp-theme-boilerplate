@@ -1,0 +1,65 @@
+// SCSS Base: Reset
+// ------------------
+// @info: https://sass-guidelin.es/fr/#architecture
+// 
+// =============================================================================
+
+
+
+
+// Reset all position
+// ------------------
+
+* {
+    position: relative;
+}
+
+
+// Roots element
+// ------------------
+
+html {
+    // border: 10px solid yellow;
+    // @include property('background-color', 'layout--document--bg-color');
+    @extend %window-size;
+    // min-height: 500px;
+    // min-width: 500px;
+    // overflow: hidden;
+}
+
+body {
+    border: 10px solid brown;
+    // @include property('background-color', 'layout--document--bg-color');
+    @extend %window-size;
+    // min-height: inherit;
+    // min-width: inherit;
+    // overflow: inherit;
+    // font-size: $font-size--md;
+
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+// Outline on focus
+// ------------------
+
+:focus {
+    outline: transparent auto 0 !important;
+    box-shadow: inherit !important;
+}
+
+
+// Link tags
+// ------------------
+
+a, .nav-link {
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: inherit;
+    }
+}

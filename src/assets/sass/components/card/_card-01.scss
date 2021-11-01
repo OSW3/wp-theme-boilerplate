@@ -1,0 +1,145 @@
+// SCSS Component : Card
+// ------------------
+// 
+// 1. Import Bootstrap Base
+// 
+// =============================================================================
+
+// 1. Import Bootstrap Base
+// ------------------
+// @import 'node_modules/bootstrap/scss/card';
+
+
+// div.card-img-top {
+//     height: 180px;
+
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+
+.card {
+    @include rounded(10px);
+
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     min-width: 0;
+//     word-wrap: break-word;
+//     background-color: #fff;
+//     background-clip: border-box;
+//     // border: 1px solid #f2f4f9;
+//     // border-radius: 0.25rem;
+
+//     // -webkit-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+//     //    -moz-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+//     //     -ms-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+//     //         box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+
+//     // height: 100%;
+}
+
+.card + .card {
+    margin-top: 30px;
+}
+
+.card-header {
+    background-color: transparent;
+    // border: none;
+    // padding-bottom: 0;
+
+    display: flex;
+
+    & .card-title
+    {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+// .card-body {
+//     background-color: #fff;
+//     border: none;
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+// 	/* flex-grow:1; */
+// }
+.card-footer {
+    display: flex;
+//     background-color: #fff;
+//     border: none;
+//     padding-top: 0;
+}
+
+// .card-title {
+//     margin: 0;
+//     /* padding-bottom: 1rem;
+//     border-bottom: 1px solid #f2f4f9; */
+
+//     color: #000;
+//     /* margin-bottom: 1.2rem; */
+//     text-transform: uppercase;
+//     font-size: .875rem;
+//     font-weight: 600;
+// }
+
+// .card-action .card-action-btn {
+
+//     color: #222c36;
+// }
+// .card-action.show .card-action-btn {
+//     position: relative;
+//     z-index: 2;
+// }
+
+// .card-action-icon {
+//     -webkit-transition: all .3s ease;
+//     transition: all .3s ease;
+// }
+// .card-action.show .card-action-btn[aria-expanded="true"] .card-action-icon {
+//     -webkit-transform: rotate(90deg);
+//     transform: rotate(90deg);
+// }
+// .card-action .dropdown-menu {
+
+//     /* background-color: #f9fafb; */
+//     max-width: 280px;
+//     position: absolute;
+//     /* right: -20px; */
+//     left: auto;
+//     /* bottom: -1px; */
+//     border-radius: 0;
+//     margin-top: -20px;
+//     margin-right: -10px;
+//     padding-top: 20px;
+//     /* border-top: none;
+//     border-left: 1px solid #f2f4f9;
+//     border-right: 1px solid #f2f4f9;
+//     border-bottom: 1px solid #f2f4f9; */
+//     border: 1px solid #f2f4f9;
+//     box-shadow: 0 5px 10px 0 rgba(183, 192, 206, 0.2);
+//     font-size: .875rem;
+
+//     z-index: 1;
+// }
+
+
+
+
+// // // .card {
+// //     background-color: $white;
+    
+// //     @include padding(15px);
+// //     @include margin(0 0 30px 0);
+// //     @include rounded(15px);
+
+// //     .card-body {
+// //         & > .table {
+// //             @include margin(0);
+
+// //             th {
+// //                 border-top: none;
+// //             }
+// //         }
+// //     }
+// // }

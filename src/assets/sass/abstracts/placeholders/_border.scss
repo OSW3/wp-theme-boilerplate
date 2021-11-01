@@ -1,0 +1,73 @@
+/// SCSS Placeholders : border
+/// ------------------
+/// 
+/// @example
+/// .element {
+///     @extends %border-solid
+/// }
+/// 
+/// =============================================================================
+
+// Border Style : Solid
+%border-solid {
+    @extend %border-top-solid;
+    @extend %border-right-solid;
+    @extend %border-bottom-solid;
+    @extend %border-left-solid;
+}
+%border-top-solid {
+    border-top-style: solid;
+}
+%border-right-solid {
+    border-right-style: solid;
+}
+%border-bottom-solid {
+    border-bottom-style: solid;
+}
+%border-left-solid {
+    border-left-style: solid;
+}
+
+
+// Border Width : 1px
+%border-width-1 {
+    @extend %border-top-width-1;
+    @extend %border-right-width-1;
+    @extend %border-bottom-width-1;
+    @extend %border-left-width-1;
+}
+%border-top-width-1 {
+    border-top-width: 1px;
+}
+%border-right-width-1 {
+    border-right-width: 1px;
+}
+%border-bottom-width-1 {
+    border-bottom-width: 1px;
+}
+%border-left-width-1 {
+    border-left-width: 1px;
+}
+
+
+// Apply a solid border of 1px
+%border-solid-1 {
+    @extend %border-solid;
+    @extend %border-width-1;
+}
+%border-top-solid-1 {
+    @extend %border-top-solid;
+    @extend %border-top-width-1;
+}
+%border-right-solid-1 {
+    @extend %border-right-solid;
+    @extend %border-right-width-1;
+}
+%border-bottom-solid-1 {
+    @extend %border-bottom-solid;
+    @extend %border-bottom-width-1;
+}
+%border-left-solid-1 {
+    @extend %border-left-solid;
+    @extend %border-left-width-1;
+}

@@ -1,0 +1,524 @@
+// Grey
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/858585
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$grey: #858585;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$grey-shade-1: #6A6A6A;
+$grey-shade-2: #555555;
+$grey-shade-3: #444444;
+$grey-shade-4: #363636;
+$grey-shade-5: #2B2B2B;
+$grey-shade-6: #222222;
+$grey-shade-7: #1B1B1B;
+$grey-shade-8: #161616;
+$grey-shade-9: #121212;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$grey-tint-1: #9D9D9D;
+$grey-tint-2: #B1B1B1;
+$grey-tint-3: #C1C1C1;
+$grey-tint-4: #CDCDCD;
+$grey-tint-5: #D7D7D7;
+$grey-tint-6: #DFDFDF;
+$grey-tint-7: #E5E5E5;
+$grey-tint-8: #EAEAEA;
+$grey-tint-9: #EEEEEE;
+
+
+// 4. Variations
+// ------------------
+
+$grey-variation-1: #858585;
+$grey-variation-2: #858585;
+$grey-variation-3: #858585;
+$grey-variation-4: #858585;
+$grey-variation-5: #858585;
+$grey-variation-6: #858585;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$grey-triad-1: #858585;
+$grey-triad-2: #858585;
+$grey-triad-3: #858585;
+
+// Analogius color scheme
+$grey-analogous-1: #858585;
+$grey-analogous-2: #858585;
+
+// Split complementary
+$grey-split-complementary-1: #858585;
+$grey-split-complementary-2: #858585;
+
+// Complementary
+$grey-complementary: #858585;
+
+// Monochromatic
+$grey-monochromatic-1: #E0E0E0;
+$grey-monochromatic-2: #C2C2C2;
+$grey-monochromatic-3: #919191;
+$grey-monochromatic-4: #636363;
+$grey-monochromatic-5: #424242;
+$grey-monochromatic-6: #313131;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$grey-100: rgba($grey, 1);
+$grey-95: rgba($grey, .95);
+$grey-90: rgba($grey, .9);
+$grey-85: rgba($grey, .85);
+$grey-80: rgba($grey, .8);
+$grey-75: rgba($grey, .75);
+$grey-70: rgba($grey, .7);
+$grey-65: rgba($grey, .65);
+$grey-60: rgba($grey, .6);
+$grey-55: rgba($grey, .55);
+$grey-50: rgba($grey, .5);
+$grey-45: rgba($grey, .45);
+$grey-40: rgba($grey, .4);
+$grey-35: rgba($grey, .35);
+$grey-30: rgba($grey, .3);
+$grey-25: rgba($grey, .25);
+$grey-20: rgba($grey, .2);
+$grey-15: rgba($grey, .15);
+$grey-10: rgba($grey, .1);
+$grey-05: rgba($grey, .05);
+$grey-00: rgba($grey, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--grey-shade-1() {
+    background: $grey-shade-1;
+    background: -webkit-linear-gradient(right, $grey-shade-1, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-1, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-1, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-2() {
+    background: $grey-shade-2;
+    background: -webkit-linear-gradient(right, $grey-shade-2, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-2, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-2, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-3() {
+    background: $grey-shade-3;
+    background: -webkit-linear-gradient(right, $grey-shade-3, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-3, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-3, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-4() {
+    background: $grey-shade-4;
+    background: -webkit-linear-gradient(right, $grey-shade-4, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-4, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-4, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-5() {
+    background: $grey-shade-5;
+    background: -webkit-linear-gradient(right, $grey-shade-5, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-5, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-5, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-6() {
+    background: $grey-shade-6;
+    background: -webkit-linear-gradient(right, $grey-shade-6, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-6, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-6, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-7() {
+    background: $grey-shade-7;
+    background: -webkit-linear-gradient(right, $grey-shade-7, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-7, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-7, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-8() {
+    background: $grey-shade-8;
+    background: -webkit-linear-gradient(right, $grey-shade-8, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-8, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-8, $grey) !important;
+}
+@mixin bg-gradient--grey-shade-9() {
+    background: $grey-shade-9;
+    background: -webkit-linear-gradient(right, $grey-shade-9, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-shade-9, $grey) !important;
+    background:         linear-gradient(to left, $grey-shade-9, $grey) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--grey-tint-1() {
+    background: $grey-tint-1;
+    background: -webkit-linear-gradient(right, $grey-tint-1, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-1, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-1, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-2() {
+    background: $grey-tint-2;
+    background: -webkit-linear-gradient(right, $grey-tint-2, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-2, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-2, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-3() {
+    background: $grey-tint-3;
+    background: -webkit-linear-gradient(right, $grey-tint-3, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-3, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-3, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-4() {
+    background: $grey-tint-4;
+    background: -webkit-linear-gradient(right, $grey-tint-4, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-4, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-4, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-5() {
+    background: $grey-tint-5;
+    background: -webkit-linear-gradient(right, $grey-tint-5, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-5, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-5, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-6() {
+    background: $grey-tint-6;
+    background: -webkit-linear-gradient(right, $grey-tint-6, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-6, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-6, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-7() {
+    background: $grey-tint-7;
+    background: -webkit-linear-gradient(right, $grey-tint-7, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-7, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-7, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-8() {
+    background: $grey-tint-8;
+    background: -webkit-linear-gradient(right, $grey-tint-8, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-8, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-8, $grey) !important;
+}
+@mixin bg-gradient--grey-tint-9() {
+    background: $grey-tint-9;
+    background: -webkit-linear-gradient(right, $grey-tint-9, $grey) !important;
+    background:    -moz-linear-gradient(right, $grey-tint-9, $grey) !important;
+    background:         linear-gradient(to left, $grey-tint-9, $grey) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--grey() {
+    color: #FFFFFF;
+    @include bg-gradient--grey-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--grey { color: $grey }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--grey-shade-1 { color: $grey-shade-1 }
+.color--grey-shade-2 { color: $grey-shade-2 }
+.color--grey-shade-3 { color: $grey-shade-3 }
+.color--grey-shade-4 { color: $grey-shade-4 }
+.color--grey-shade-5 { color: $grey-shade-5 }
+.color--grey-shade-6 { color: $grey-shade-6 }
+.color--grey-shade-7 { color: $grey-shade-7 }
+.color--grey-shade-8 { color: $grey-shade-8 }
+.color--grey-shade-9 { color: $grey-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--grey-tint-1 { color: $grey-tint-1 }
+.color--grey-tint-2 { color: $grey-tint-2 }
+.color--grey-tint-3 { color: $grey-tint-3 }
+.color--grey-tint-4 { color: $grey-tint-4 }
+.color--grey-tint-5 { color: $grey-tint-5 }
+.color--grey-tint-6 { color: $grey-tint-6 }
+.color--grey-tint-7 { color: $grey-tint-7 }
+.color--grey-tint-8 { color: $grey-tint-8 }
+.color--grey-tint-9 { color: $grey-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--grey-variation-1 { color: $grey-variation-1 }
+.color--grey-variation-2 { color: $grey-variation-2 }
+.color--grey-variation-3 { color: $grey-variation-3 }
+.color--grey-variation-4 { color: $grey-variation-4 }
+.color--grey-variation-5 { color: $grey-variation-5 }
+.color--grey-variation-6 { color: $grey-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--grey-triad-1 { color: $grey-triad-1 }
+.color--grey-triad-2 { color: $grey-triad-2 }
+.color--grey-triad-3 { color: $grey-triad-3 }
+
+// Analogius color scheme
+.color--grey-analogous-1 { color: $grey-analogous-1 }
+.color--grey-analogous-2 { color: $grey-analogous-2 }
+
+// Split complementary
+.color--grey-split-complementary-1 { color: $grey-split-complementary-1 }
+.color--grey-split-complementary-2 { color: $grey-split-complementary-2 }
+
+// Complementary
+.color--grey-complementary { color: $grey-complementary }
+
+// Monochromatic
+.color--grey-monochromatic-1 { color: $grey-monochromatic-1 }
+.color--grey-monochromatic-2 { color: $grey-monochromatic-2 }
+.color--grey-monochromatic-3 { color: $grey-monochromatic-3 }
+.color--grey-monochromatic-4 { color: $grey-monochromatic-4 }
+.color--grey-monochromatic-5 { color: $grey-monochromatic-5 }
+.color--grey-monochromatic-6 { color: $grey-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--grey-alpha-100 { color: $grey-100 }
+.color--grey-alpha-95 { color: $grey-95 }
+.color--grey-alpha-90 { color: $grey-90 }
+.color--grey-alpha-85 { color: $grey-85 }
+.color--grey-alpha-80 { color: $grey-80 }
+.color--grey-alpha-75 { color: $grey-75 }
+.color--grey-alpha-70 { color: $grey-70 }
+.color--grey-alpha-65 { color: $grey-65 }
+.color--grey-alpha-60 { color: $grey-60 }
+.color--grey-alpha-55 { color: $grey-55 }
+.color--grey-alpha-50 { color: $grey-50 }
+.color--grey-alpha-45 { color: $grey-45 }
+.color--grey-alpha-40 { color: $grey-40 }
+.color--grey-alpha-35 { color: $grey-35 }
+.color--grey-alpha-30 { color: $grey-30 }
+.color--grey-alpha-25 { color: $grey-25 }
+.color--grey-alpha-20 { color: $grey-20 }
+.color--grey-alpha-15 { color: $grey-15 }
+.color--grey-alpha-10 { color: $grey-10 }
+.color--grey-alpha-05 { color: $grey-05 }
+.color--grey-alpha-00 { color: $grey-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--grey { background-color: $grey }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--grey-shade-1 { background-color: $grey-shade-1 }
+.bg-color--grey-shade-2 { background-color: $grey-shade-2 }
+.bg-color--grey-shade-3 { background-color: $grey-shade-3 }
+.bg-color--grey-shade-4 { background-color: $grey-shade-4 }
+.bg-color--grey-shade-5 { background-color: $grey-shade-5 }
+.bg-color--grey-shade-6 { background-color: $grey-shade-6 }
+.bg-color--grey-shade-7 { background-color: $grey-shade-7 }
+.bg-color--grey-shade-8 { background-color: $grey-shade-8 }
+.bg-color--grey-shade-9 { background-color: $grey-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--grey-tint-1 { background-color: $grey-tint-1 }
+.bg-color--grey-tint-2 { background-color: $grey-tint-2 }
+.bg-color--grey-tint-3 { background-color: $grey-tint-3 }
+.bg-color--grey-tint-4 { background-color: $grey-tint-4 }
+.bg-color--grey-tint-5 { background-color: $grey-tint-5 }
+.bg-color--grey-tint-6 { background-color: $grey-tint-6 }
+.bg-color--grey-tint-7 { background-color: $grey-tint-7 }
+.bg-color--grey-tint-8 { background-color: $grey-tint-8 }
+.bg-color--grey-tint-9 { background-color: $grey-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--grey-variation-1 { background-color: $grey-variation-1 }
+.bg-color--grey-variation-2 { background-color: $grey-variation-2 }
+.bg-color--grey-variation-3 { background-color: $grey-variation-3 }
+.bg-color--grey-variation-4 { background-color: $grey-variation-4 }
+.bg-color--grey-variation-5 { background-color: $grey-variation-5 }
+.bg-color--grey-variation-6 { background-color: $grey-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--grey-triad-1 { background-color: $grey-triad-1 }
+.bg-color--grey-triad-2 { background-color: $grey-triad-2 }
+.bg-color--grey-triad-3 { background-color: $grey-triad-3 }
+
+// Analogius color scheme
+.bg-color--grey-analogous-1 { background-color: $grey-analogous-1 }
+.bg-color--grey-analogous-2 { background-color: $grey-analogous-2 }
+
+// Split complementary
+.bg-color--grey-split-complementary-1 { background-color: $grey-split-complementary-1 }
+.bg-color--grey-split-complementary-2 { background-color: $grey-split-complementary-2 }
+
+// Complementary
+.bg-color--grey-complementary { background-color: $grey-complementary }
+
+// Monochromatic
+.bg-color--grey-monochromatic-1 { background-color: $grey-monochromatic-1 }
+.bg-color--grey-monochromatic-2 { background-color: $grey-monochromatic-2 }
+.bg-color--grey-monochromatic-3 { background-color: $grey-monochromatic-3 }
+.bg-color--grey-monochromatic-4 { background-color: $grey-monochromatic-4 }
+.bg-color--grey-monochromatic-5 { background-color: $grey-monochromatic-5 }
+.bg-color--grey-monochromatic-6 { background-color: $grey-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--grey-alpha-100 { background-color: $grey-100 }
+.bg-color--grey-alpha-95 { background-color: $grey-95 }
+.bg-color--grey-alpha-90 { background-color: $grey-90 }
+.bg-color--grey-alpha-85 { background-color: $grey-85 }
+.bg-color--grey-alpha-80 { background-color: $grey-80 }
+.bg-color--grey-alpha-75 { background-color: $grey-75 }
+.bg-color--grey-alpha-70 { background-color: $grey-70 }
+.bg-color--grey-alpha-65 { background-color: $grey-65 }
+.bg-color--grey-alpha-60 { background-color: $grey-60 }
+.bg-color--grey-alpha-55 { background-color: $grey-55 }
+.bg-color--grey-alpha-50 { background-color: $grey-50 }
+.bg-color--grey-alpha-45 { background-color: $grey-45 }
+.bg-color--grey-alpha-40 { background-color: $grey-40 }
+.bg-color--grey-alpha-35 { background-color: $grey-35 }
+.bg-color--grey-alpha-30 { background-color: $grey-30 }
+.bg-color--grey-alpha-25 { background-color: $grey-25 }
+.bg-color--grey-alpha-20 { background-color: $grey-20 }
+.bg-color--grey-alpha-15 { background-color: $grey-15 }
+.bg-color--grey-alpha-10 { background-color: $grey-10 }
+.bg-color--grey-alpha-05 { background-color: $grey-05 }
+.bg-color--grey-alpha-00 { background-color: $grey-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--grey-shade-1 {
+    @include bg-gradient--grey-shade-1();
+}
+.bg-gradient--grey-shade-2 {
+    @include bg-gradient--grey-shade-2();
+}
+.bg-gradient--grey-shade-3 {
+    @include bg-gradient--grey-shade-3();
+}
+.bg-gradient--grey-shade-4 {
+    @include bg-gradient--grey-shade-4();
+}
+.bg-gradient--grey-shade-5 {
+    @include bg-gradient--grey-shade-5();
+}
+.bg-gradient--grey-shade-6 {
+    @include bg-gradient--grey-shade-6();
+}
+.bg-gradient--grey-shade-7 {
+    @include bg-gradient--grey-shade-7();
+}
+.bg-gradient--grey-shade-8 {
+    @include bg-gradient--grey-shade-8();
+}
+.bg-gradient--grey-shade-9 {
+    @include bg-gradient--grey-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--grey-tint-1 {
+    @include bg-gradient--grey-tint-1();
+}
+.bg-gradient--grey-tint-2 {
+    @include bg-gradient--grey-tint-2();
+}
+.bg-gradient--grey-tint-3 {
+    @include bg-gradient--grey-tint-3();
+}
+.bg-gradient--grey-tint-4 {
+    @include bg-gradient--grey-tint-4();
+}
+.bg-gradient--grey-tint-5 {
+    @include bg-gradient--grey-tint-5();
+}
+.bg-gradient--grey-tint-6 {
+    @include bg-gradient--grey-tint-6();
+}
+.bg-gradient--grey-tint-7 {
+    @include bg-gradient--grey-tint-7();
+}
+.bg-gradient--grey-tint-8 {
+    @include bg-gradient--grey-tint-8();
+}
+.bg-gradient--grey-tint-9 {
+    @include bg-gradient--grey-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--grey {
+    @include bg-gradient--grey();
+}

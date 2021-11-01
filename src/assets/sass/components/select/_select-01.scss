@@ -1,0 +1,24 @@
+// SCSS Component : Select
+// ------------------
+// 
+// 1. select
+// 2. select2
+// 
+// =============================================================================
+
+// 1. select
+// ------------------
+select.form-control,
+.form-select {
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTIzLjk1OSAxMjMuOTU4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KCTxwYXRoIGQ9Ik0xMTcuOTc5LDI4LjAxN2gtMTEyYy01LjMsMC04LDYuNC00LjIsMTAuMmw1Niw1NmMyLjMsMi4zLDYuMSwyLjMsOC40MDEsMGw1Ni01NiBDMTI1Ljk3OSwzNC40MTcsMTIzLjI3OSwyOC4wMTcsMTE3Ljk3OSwyOC4wMTd6Ii8+DQo8L3N2Zz4NCg==);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+
+
+// 2. select2
+// ------------------
+// @import "node_modules/select2/src/scss/core.scss";
+// @import "node_modules/@ttskch/select2-bootstrap4-theme/src/layout.scss";

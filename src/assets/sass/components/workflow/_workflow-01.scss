@@ -1,0 +1,46 @@
+// SCSS Component: Workflow
+// ------------------
+// @info: https://sass-guidelin.es/fr/#architecture
+// 
+// =============================================================================
+
+
+.modal-workflow 
+{
+    & .modal-header 
+    {
+        justify-content: center;
+    }
+
+    & .modal-body
+    {
+        text-align: center;
+    }
+
+    & .modal-footer 
+    {
+        justify-content: center;
+    }
+}
+
+.workflow-buttons
+{
+    // .btn-to_publish
+    // {
+    //     // width: 100%;
+    //     flex-shrink: 0;
+    //     margin-bottom: 4px;
+    // }
+    // .btn-to_edit
+    // {
+    //     // width: 50%;
+    //     flex-shrink: 1;
+    //     margin-bottom: 4px;
+    // }
+    // .btn-to_delete
+    // {
+    //     // width: 50%;
+    //     flex-shrink: 2;
+    //     margin-bottom: 4px;
+    // }
+}

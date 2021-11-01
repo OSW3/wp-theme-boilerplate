@@ -1,0 +1,524 @@
+// Nepal
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/9aa7af
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$nepal: #9aa7af;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$nepal-shade-1: #7B868C;
+$nepal-shade-2: #626B70;
+$nepal-shade-3: #4E565A;
+$nepal-shade-4: #3E4548;
+$nepal-shade-5: #32373A;
+$nepal-shade-6: #282C2E;
+$nepal-shade-7: #202325;
+$nepal-shade-8: #1A1C1E;
+$nepal-shade-9: #151618;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$nepal-tint-1: #AEB9BF;
+$nepal-tint-2: #BEC7CC;
+$nepal-tint-3: #CBD2D6;
+$nepal-tint-4: #D5DBDE;
+$nepal-tint-5: #DDE2E5;
+$nepal-tint-6: #E4E8EA;
+$nepal-tint-7: #E9EDEE;
+$nepal-tint-8: #EDF1F1;
+$nepal-tint-9: #F1F4F4;
+
+
+// 4. Variations
+// ------------------
+
+$nepal-variation-1: #9AA7AF;
+$nepal-variation-2: #9AAFA7;
+$nepal-variation-3: #A79AAF;
+$nepal-variation-4: #A7AF9A;
+$nepal-variation-5: #AF9AA7;
+$nepal-variation-6: #AFA79A;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$nepal-triad-1: #9aa7af;
+$nepal-triad-2: #AF9AA7;
+$nepal-triad-3: #A7AF9A;
+
+// Analogius color scheme
+$nepal-analogous-1: #9A9CAF;
+$nepal-analogous-2: #9AAFAC;
+
+// Split complementary
+$nepal-split-complementary-1: #AF9A9C;
+$nepal-split-complementary-2: #AFAC9A;
+
+// Complementary
+$nepal-complementary: #AFA29A;
+
+// Monochromatic
+$nepal-monochromatic-1: #E5E8EA;
+$nepal-monochromatic-2: #CDD3D7;
+$nepal-monochromatic-3: #999EA1;
+$nepal-monochromatic-4: #737D83;
+$nepal-monochromatic-5: #4D5357;
+$nepal-monochromatic-6: #393E41;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$nepal-100: rgba($nepal, 1);
+$nepal-95: rgba($nepal, .95);
+$nepal-90: rgba($nepal, .9);
+$nepal-85: rgba($nepal, .85);
+$nepal-80: rgba($nepal, .8);
+$nepal-75: rgba($nepal, .75);
+$nepal-70: rgba($nepal, .7);
+$nepal-65: rgba($nepal, .65);
+$nepal-60: rgba($nepal, .6);
+$nepal-55: rgba($nepal, .55);
+$nepal-50: rgba($nepal, .5);
+$nepal-45: rgba($nepal, .45);
+$nepal-40: rgba($nepal, .4);
+$nepal-35: rgba($nepal, .35);
+$nepal-30: rgba($nepal, .3);
+$nepal-25: rgba($nepal, .25);
+$nepal-20: rgba($nepal, .2);
+$nepal-15: rgba($nepal, .15);
+$nepal-10: rgba($nepal, .1);
+$nepal-05: rgba($nepal, .05);
+$nepal-00: rgba($nepal, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--nepal-shade-1() {
+    background: $nepal-shade-1;
+    background: -webkit-linear-gradient(right, $nepal-shade-1, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-1, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-1, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-2() {
+    background: $nepal-shade-2;
+    background: -webkit-linear-gradient(right, $nepal-shade-2, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-2, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-2, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-3() {
+    background: $nepal-shade-3;
+    background: -webkit-linear-gradient(right, $nepal-shade-3, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-3, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-3, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-4() {
+    background: $nepal-shade-4;
+    background: -webkit-linear-gradient(right, $nepal-shade-4, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-4, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-4, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-5() {
+    background: $nepal-shade-5;
+    background: -webkit-linear-gradient(right, $nepal-shade-5, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-5, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-5, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-6() {
+    background: $nepal-shade-6;
+    background: -webkit-linear-gradient(right, $nepal-shade-6, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-6, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-6, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-7() {
+    background: $nepal-shade-7;
+    background: -webkit-linear-gradient(right, $nepal-shade-7, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-7, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-7, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-8() {
+    background: $nepal-shade-8;
+    background: -webkit-linear-gradient(right, $nepal-shade-8, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-8, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-8, $nepal) !important;
+}
+@mixin bg-gradient--nepal-shade-9() {
+    background: $nepal-shade-9;
+    background: -webkit-linear-gradient(right, $nepal-shade-9, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-shade-9, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-shade-9, $nepal) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--nepal-tint-1() {
+    background: $nepal-tint-1;
+    background: -webkit-linear-gradient(right, $nepal-tint-1, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-1, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-1, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-2() {
+    background: $nepal-tint-2;
+    background: -webkit-linear-gradient(right, $nepal-tint-2, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-2, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-2, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-3() {
+    background: $nepal-tint-3;
+    background: -webkit-linear-gradient(right, $nepal-tint-3, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-3, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-3, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-4() {
+    background: $nepal-tint-4;
+    background: -webkit-linear-gradient(right, $nepal-tint-4, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-4, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-4, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-5() {
+    background: $nepal-tint-5;
+    background: -webkit-linear-gradient(right, $nepal-tint-5, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-5, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-5, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-6() {
+    background: $nepal-tint-6;
+    background: -webkit-linear-gradient(right, $nepal-tint-6, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-6, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-6, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-7() {
+    background: $nepal-tint-7;
+    background: -webkit-linear-gradient(right, $nepal-tint-7, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-7, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-7, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-8() {
+    background: $nepal-tint-8;
+    background: -webkit-linear-gradient(right, $nepal-tint-8, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-8, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-8, $nepal) !important;
+}
+@mixin bg-gradient--nepal-tint-9() {
+    background: $nepal-tint-9;
+    background: -webkit-linear-gradient(right, $nepal-tint-9, $nepal) !important;
+    background:    -moz-linear-gradient(right, $nepal-tint-9, $nepal) !important;
+    background:         linear-gradient(to left, $nepal-tint-9, $nepal) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--nepal() {
+    color: #FFFFFF;
+    @include bg-gradient--nepal-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--nepal { color: $nepal }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--nepal-shade-1 { color: $nepal-shade-1 }
+.color--nepal-shade-2 { color: $nepal-shade-2 }
+.color--nepal-shade-3 { color: $nepal-shade-3 }
+.color--nepal-shade-4 { color: $nepal-shade-4 }
+.color--nepal-shade-5 { color: $nepal-shade-5 }
+.color--nepal-shade-6 { color: $nepal-shade-6 }
+.color--nepal-shade-7 { color: $nepal-shade-7 }
+.color--nepal-shade-8 { color: $nepal-shade-8 }
+.color--nepal-shade-9 { color: $nepal-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--nepal-tint-1 { color: $nepal-tint-1 }
+.color--nepal-tint-2 { color: $nepal-tint-2 }
+.color--nepal-tint-3 { color: $nepal-tint-3 }
+.color--nepal-tint-4 { color: $nepal-tint-4 }
+.color--nepal-tint-5 { color: $nepal-tint-5 }
+.color--nepal-tint-6 { color: $nepal-tint-6 }
+.color--nepal-tint-7 { color: $nepal-tint-7 }
+.color--nepal-tint-8 { color: $nepal-tint-8 }
+.color--nepal-tint-9 { color: $nepal-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--nepal-variation-1 { color: $nepal-variation-1 }
+.color--nepal-variation-2 { color: $nepal-variation-2 }
+.color--nepal-variation-3 { color: $nepal-variation-3 }
+.color--nepal-variation-4 { color: $nepal-variation-4 }
+.color--nepal-variation-5 { color: $nepal-variation-5 }
+.color--nepal-variation-6 { color: $nepal-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--nepal-triad-1 { color: $nepal-triad-1 }
+.color--nepal-triad-2 { color: $nepal-triad-2 }
+.color--nepal-triad-3 { color: $nepal-triad-3 }
+
+// Analogius color scheme
+.color--nepal-analogous-1 { color: $nepal-analogous-1 }
+.color--nepal-analogous-2 { color: $nepal-analogous-2 }
+
+// Split complementary
+.color--nepal-split-complementary-1 { color: $nepal-split-complementary-1 }
+.color--nepal-split-complementary-2 { color: $nepal-split-complementary-2 }
+
+// Complementary
+.color--nepal-complementary { color: $nepal-complementary }
+
+// Monochromatic
+.color--nepal-monochromatic-1 { color: $nepal-monochromatic-1 }
+.color--nepal-monochromatic-2 { color: $nepal-monochromatic-2 }
+.color--nepal-monochromatic-3 { color: $nepal-monochromatic-3 }
+.color--nepal-monochromatic-4 { color: $nepal-monochromatic-4 }
+.color--nepal-monochromatic-5 { color: $nepal-monochromatic-5 }
+.color--nepal-monochromatic-6 { color: $nepal-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--nepal-alpha-100 { color: $nepal-100 }
+.color--nepal-alpha-95 { color: $nepal-95 }
+.color--nepal-alpha-90 { color: $nepal-90 }
+.color--nepal-alpha-85 { color: $nepal-85 }
+.color--nepal-alpha-80 { color: $nepal-80 }
+.color--nepal-alpha-75 { color: $nepal-75 }
+.color--nepal-alpha-70 { color: $nepal-70 }
+.color--nepal-alpha-65 { color: $nepal-65 }
+.color--nepal-alpha-60 { color: $nepal-60 }
+.color--nepal-alpha-55 { color: $nepal-55 }
+.color--nepal-alpha-50 { color: $nepal-50 }
+.color--nepal-alpha-45 { color: $nepal-45 }
+.color--nepal-alpha-40 { color: $nepal-40 }
+.color--nepal-alpha-35 { color: $nepal-35 }
+.color--nepal-alpha-30 { color: $nepal-30 }
+.color--nepal-alpha-25 { color: $nepal-25 }
+.color--nepal-alpha-20 { color: $nepal-20 }
+.color--nepal-alpha-15 { color: $nepal-15 }
+.color--nepal-alpha-10 { color: $nepal-10 }
+.color--nepal-alpha-05 { color: $nepal-05 }
+.color--nepal-alpha-00 { color: $nepal-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--nepal { background-color: $nepal }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--nepal-shade-1 { background-color: $nepal-shade-1 }
+.bg-color--nepal-shade-2 { background-color: $nepal-shade-2 }
+.bg-color--nepal-shade-3 { background-color: $nepal-shade-3 }
+.bg-color--nepal-shade-4 { background-color: $nepal-shade-4 }
+.bg-color--nepal-shade-5 { background-color: $nepal-shade-5 }
+.bg-color--nepal-shade-6 { background-color: $nepal-shade-6 }
+.bg-color--nepal-shade-7 { background-color: $nepal-shade-7 }
+.bg-color--nepal-shade-8 { background-color: $nepal-shade-8 }
+.bg-color--nepal-shade-9 { background-color: $nepal-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--nepal-tint-1 { background-color: $nepal-tint-1 }
+.bg-color--nepal-tint-2 { background-color: $nepal-tint-2 }
+.bg-color--nepal-tint-3 { background-color: $nepal-tint-3 }
+.bg-color--nepal-tint-4 { background-color: $nepal-tint-4 }
+.bg-color--nepal-tint-5 { background-color: $nepal-tint-5 }
+.bg-color--nepal-tint-6 { background-color: $nepal-tint-6 }
+.bg-color--nepal-tint-7 { background-color: $nepal-tint-7 }
+.bg-color--nepal-tint-8 { background-color: $nepal-tint-8 }
+.bg-color--nepal-tint-9 { background-color: $nepal-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--nepal-variation-1 { background-color: $nepal-variation-1 }
+.bg-color--nepal-variation-2 { background-color: $nepal-variation-2 }
+.bg-color--nepal-variation-3 { background-color: $nepal-variation-3 }
+.bg-color--nepal-variation-4 { background-color: $nepal-variation-4 }
+.bg-color--nepal-variation-5 { background-color: $nepal-variation-5 }
+.bg-color--nepal-variation-6 { background-color: $nepal-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--nepal-triad-1 { background-color: $nepal-triad-1 }
+.bg-color--nepal-triad-2 { background-color: $nepal-triad-2 }
+.bg-color--nepal-triad-3 { background-color: $nepal-triad-3 }
+
+// Analogius color scheme
+.bg-color--nepal-analogous-1 { background-color: $nepal-analogous-1 }
+.bg-color--nepal-analogous-2 { background-color: $nepal-analogous-2 }
+
+// Split complementary
+.bg-color--nepal-split-complementary-1 { background-color: $nepal-split-complementary-1 }
+.bg-color--nepal-split-complementary-2 { background-color: $nepal-split-complementary-2 }
+
+// Complementary
+.bg-color--nepal-complementary { background-color: $nepal-complementary }
+
+// Monochromatic
+.bg-color--nepal-monochromatic-1 { background-color: $nepal-monochromatic-1 }
+.bg-color--nepal-monochromatic-2 { background-color: $nepal-monochromatic-2 }
+.bg-color--nepal-monochromatic-3 { background-color: $nepal-monochromatic-3 }
+.bg-color--nepal-monochromatic-4 { background-color: $nepal-monochromatic-4 }
+.bg-color--nepal-monochromatic-5 { background-color: $nepal-monochromatic-5 }
+.bg-color--nepal-monochromatic-6 { background-color: $nepal-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--nepal-alpha-100 { background-color: $nepal-100 }
+.bg-color--nepal-alpha-95 { background-color: $nepal-95 }
+.bg-color--nepal-alpha-90 { background-color: $nepal-90 }
+.bg-color--nepal-alpha-85 { background-color: $nepal-85 }
+.bg-color--nepal-alpha-80 { background-color: $nepal-80 }
+.bg-color--nepal-alpha-75 { background-color: $nepal-75 }
+.bg-color--nepal-alpha-70 { background-color: $nepal-70 }
+.bg-color--nepal-alpha-65 { background-color: $nepal-65 }
+.bg-color--nepal-alpha-60 { background-color: $nepal-60 }
+.bg-color--nepal-alpha-55 { background-color: $nepal-55 }
+.bg-color--nepal-alpha-50 { background-color: $nepal-50 }
+.bg-color--nepal-alpha-45 { background-color: $nepal-45 }
+.bg-color--nepal-alpha-40 { background-color: $nepal-40 }
+.bg-color--nepal-alpha-35 { background-color: $nepal-35 }
+.bg-color--nepal-alpha-30 { background-color: $nepal-30 }
+.bg-color--nepal-alpha-25 { background-color: $nepal-25 }
+.bg-color--nepal-alpha-20 { background-color: $nepal-20 }
+.bg-color--nepal-alpha-15 { background-color: $nepal-15 }
+.bg-color--nepal-alpha-10 { background-color: $nepal-10 }
+.bg-color--nepal-alpha-05 { background-color: $nepal-05 }
+.bg-color--nepal-alpha-00 { background-color: $nepal-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--nepal-shade-1 {
+    @include bg-gradient--nepal-shade-1();
+}
+.bg-gradient--nepal-shade-2 {
+    @include bg-gradient--nepal-shade-2();
+}
+.bg-gradient--nepal-shade-3 {
+    @include bg-gradient--nepal-shade-3();
+}
+.bg-gradient--nepal-shade-4 {
+    @include bg-gradient--nepal-shade-4();
+}
+.bg-gradient--nepal-shade-5 {
+    @include bg-gradient--nepal-shade-5();
+}
+.bg-gradient--nepal-shade-6 {
+    @include bg-gradient--nepal-shade-6();
+}
+.bg-gradient--nepal-shade-7 {
+    @include bg-gradient--nepal-shade-7();
+}
+.bg-gradient--nepal-shade-8 {
+    @include bg-gradient--nepal-shade-8();
+}
+.bg-gradient--nepal-shade-9 {
+    @include bg-gradient--nepal-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--nepal-tint-1 {
+    @include bg-gradient--nepal-tint-1();
+}
+.bg-gradient--nepal-tint-2 {
+    @include bg-gradient--nepal-tint-2();
+}
+.bg-gradient--nepal-tint-3 {
+    @include bg-gradient--nepal-tint-3();
+}
+.bg-gradient--nepal-tint-4 {
+    @include bg-gradient--nepal-tint-4();
+}
+.bg-gradient--nepal-tint-5 {
+    @include bg-gradient--nepal-tint-5();
+}
+.bg-gradient--nepal-tint-6 {
+    @include bg-gradient--nepal-tint-6();
+}
+.bg-gradient--nepal-tint-7 {
+    @include bg-gradient--nepal-tint-7();
+}
+.bg-gradient--nepal-tint-8 {
+    @include bg-gradient--nepal-tint-8();
+}
+.bg-gradient--nepal-tint-9 {
+    @include bg-gradient--nepal-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--nepal {
+    @include bg-gradient--nepal();
+}

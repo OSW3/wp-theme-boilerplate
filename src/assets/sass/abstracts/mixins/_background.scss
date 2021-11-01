@@ -1,0 +1,14 @@
+/// SCSS Mixins : background
+/// ------------------
+/// 
+/// @example
+/// .element {
+///     @include background-cover(url)
+/// }
+/// 
+/// =============================================================================
+
+@mixin background-cover($url: null) {
+    @extend %background-cover;
+    @if ($url) { background-image: url($url) };
+}

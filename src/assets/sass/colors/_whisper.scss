@@ -1,0 +1,524 @@
+// Whisper
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/EDEDED
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$whisper: #EDEDED;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$whisper-shade-1: #BEBEBE;
+$whisper-shade-2: #989898;
+$whisper-shade-3: #7A7A7A;
+$whisper-shade-4: #626262;
+$whisper-shade-5: #4E4E4E;
+$whisper-shade-6: #3E3E3E;
+$whisper-shade-7: #323232;
+$whisper-shade-8: #282828;
+$whisper-shade-9: #202020;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$whisper-tint-1: #F1F1F1;
+$whisper-tint-2: #F4F4F4;
+$whisper-tint-3: #F6F6F6;
+$whisper-tint-4: #F8F8F8;
+$whisper-tint-5: #F9F9F9;
+$whisper-tint-6: #FAFAFA;
+$whisper-tint-7: #FBFBFB;
+$whisper-tint-8: #FCFCFC;
+$whisper-tint-9: #FDFDFD;
+
+
+// 4. Variations
+// ------------------
+
+$whisper-variation-1: #EDEDED;
+$whisper-variation-2: #EDEDED;
+$whisper-variation-3: #EDEDED;
+$whisper-variation-4: #EDEDED;
+$whisper-variation-5: #EDEDED;
+$whisper-variation-6: #EDEDED;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$whisper-triad-1: #EDEDED;
+$whisper-triad-2: #EDEDED;
+$whisper-triad-3: #EDEDED;
+
+// Analogius color scheme
+$whisper-analogous-1: #EDEDED;
+$whisper-analogous-2: #EDEDED;
+
+// Split complementary
+$whisper-split-complementary-1: #EDEDED;
+$whisper-split-complementary-2: #EDEDED;
+
+// Complementary
+$whisper-complementary: #EDEDED;
+
+// Monochromatic
+$whisper-monochromatic-1: #FAFAFA;
+$whisper-monochromatic-2: #F6F6F6;
+$whisper-monochromatic-3: #B8B8B8;
+$whisper-monochromatic-4: #B1B1B1;
+$whisper-monochromatic-5: #767676;
+$whisper-monochromatic-6: #585858;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$whisper-100: rgba($whisper, 1);
+$whisper-95: rgba($whisper, .95);
+$whisper-90: rgba($whisper, .9);
+$whisper-85: rgba($whisper, .85);
+$whisper-80: rgba($whisper, .8);
+$whisper-75: rgba($whisper, .75);
+$whisper-70: rgba($whisper, .7);
+$whisper-65: rgba($whisper, .65);
+$whisper-60: rgba($whisper, .6);
+$whisper-55: rgba($whisper, .55);
+$whisper-50: rgba($whisper, .5);
+$whisper-45: rgba($whisper, .45);
+$whisper-40: rgba($whisper, .4);
+$whisper-35: rgba($whisper, .35);
+$whisper-30: rgba($whisper, .3);
+$whisper-25: rgba($whisper, .25);
+$whisper-20: rgba($whisper, .2);
+$whisper-15: rgba($whisper, .15);
+$whisper-10: rgba($whisper, .1);
+$whisper-05: rgba($whisper, .05);
+$whisper-00: rgba($whisper, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--whisper-shade-1() {
+    background: $whisper-shade-1;
+    background: -webkit-linear-gradient(right, $whisper-shade-1, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-1, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-1, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-2() {
+    background: $whisper-shade-2;
+    background: -webkit-linear-gradient(right, $whisper-shade-2, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-2, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-2, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-3() {
+    background: $whisper-shade-3;
+    background: -webkit-linear-gradient(right, $whisper-shade-3, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-3, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-3, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-4() {
+    background: $whisper-shade-4;
+    background: -webkit-linear-gradient(right, $whisper-shade-4, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-4, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-4, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-5() {
+    background: $whisper-shade-5;
+    background: -webkit-linear-gradient(right, $whisper-shade-5, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-5, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-5, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-6() {
+    background: $whisper-shade-6;
+    background: -webkit-linear-gradient(right, $whisper-shade-6, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-6, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-6, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-7() {
+    background: $whisper-shade-7;
+    background: -webkit-linear-gradient(right, $whisper-shade-7, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-7, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-7, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-8() {
+    background: $whisper-shade-8;
+    background: -webkit-linear-gradient(right, $whisper-shade-8, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-8, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-8, $whisper) !important;
+}
+@mixin bg-gradient--whisper-shade-9() {
+    background: $whisper-shade-9;
+    background: -webkit-linear-gradient(right, $whisper-shade-9, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-shade-9, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-shade-9, $whisper) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--whisper-tint-1() {
+    background: $whisper-tint-1;
+    background: -webkit-linear-gradient(right, $whisper-tint-1, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-1, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-1, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-2() {
+    background: $whisper-tint-2;
+    background: -webkit-linear-gradient(right, $whisper-tint-2, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-2, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-2, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-3() {
+    background: $whisper-tint-3;
+    background: -webkit-linear-gradient(right, $whisper-tint-3, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-3, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-3, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-4() {
+    background: $whisper-tint-4;
+    background: -webkit-linear-gradient(right, $whisper-tint-4, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-4, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-4, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-5() {
+    background: $whisper-tint-5;
+    background: -webkit-linear-gradient(right, $whisper-tint-5, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-5, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-5, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-6() {
+    background: $whisper-tint-6;
+    background: -webkit-linear-gradient(right, $whisper-tint-6, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-6, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-6, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-7() {
+    background: $whisper-tint-7;
+    background: -webkit-linear-gradient(right, $whisper-tint-7, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-7, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-7, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-8() {
+    background: $whisper-tint-8;
+    background: -webkit-linear-gradient(right, $whisper-tint-8, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-8, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-8, $whisper) !important;
+}
+@mixin bg-gradient--whisper-tint-9() {
+    background: $whisper-tint-9;
+    background: -webkit-linear-gradient(right, $whisper-tint-9, $whisper) !important;
+    background:    -moz-linear-gradient(right, $whisper-tint-9, $whisper) !important;
+    background:         linear-gradient(to left, $whisper-tint-9, $whisper) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--whisper() {
+    color: #202020;
+    @include bg-gradient--whisper-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--whisper { color: $whisper }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--whisper-shade-1 { color: $whisper-shade-1 }
+.color--whisper-shade-2 { color: $whisper-shade-2 }
+.color--whisper-shade-3 { color: $whisper-shade-3 }
+.color--whisper-shade-4 { color: $whisper-shade-4 }
+.color--whisper-shade-5 { color: $whisper-shade-5 }
+.color--whisper-shade-6 { color: $whisper-shade-6 }
+.color--whisper-shade-7 { color: $whisper-shade-7 }
+.color--whisper-shade-8 { color: $whisper-shade-8 }
+.color--whisper-shade-9 { color: $whisper-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--whisper-tint-1 { color: $whisper-tint-1 }
+.color--whisper-tint-2 { color: $whisper-tint-2 }
+.color--whisper-tint-3 { color: $whisper-tint-3 }
+.color--whisper-tint-4 { color: $whisper-tint-4 }
+.color--whisper-tint-5 { color: $whisper-tint-5 }
+.color--whisper-tint-6 { color: $whisper-tint-6 }
+.color--whisper-tint-7 { color: $whisper-tint-7 }
+.color--whisper-tint-8 { color: $whisper-tint-8 }
+.color--whisper-tint-9 { color: $whisper-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--whisper-variation-1 { color: $whisper-variation-1 }
+.color--whisper-variation-2 { color: $whisper-variation-2 }
+.color--whisper-variation-3 { color: $whisper-variation-3 }
+.color--whisper-variation-4 { color: $whisper-variation-4 }
+.color--whisper-variation-5 { color: $whisper-variation-5 }
+.color--whisper-variation-6 { color: $whisper-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--whisper-triad-1 { color: $whisper-triad-1 }
+.color--whisper-triad-2 { color: $whisper-triad-2 }
+.color--whisper-triad-3 { color: $whisper-triad-3 }
+
+// Analogius color scheme
+.color--whisper-analogous-1 { color: $whisper-analogous-1 }
+.color--whisper-analogous-2 { color: $whisper-analogous-2 }
+
+// Split complementary
+.color--whisper-split-complementary-1 { color: $whisper-split-complementary-1 }
+.color--whisper-split-complementary-2 { color: $whisper-split-complementary-2 }
+
+// Complementary
+.color--whisper-complementary { color: $whisper-complementary }
+
+// Monochromatic
+.color--whisper-monochromatic-1 { color: $whisper-monochromatic-1 }
+.color--whisper-monochromatic-2 { color: $whisper-monochromatic-2 }
+.color--whisper-monochromatic-3 { color: $whisper-monochromatic-3 }
+.color--whisper-monochromatic-4 { color: $whisper-monochromatic-4 }
+.color--whisper-monochromatic-5 { color: $whisper-monochromatic-5 }
+.color--whisper-monochromatic-6 { color: $whisper-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--whisper-alpha-100 { color: $whisper-100 }
+.color--whisper-alpha-95 { color: $whisper-95 }
+.color--whisper-alpha-90 { color: $whisper-90 }
+.color--whisper-alpha-85 { color: $whisper-85 }
+.color--whisper-alpha-80 { color: $whisper-80 }
+.color--whisper-alpha-75 { color: $whisper-75 }
+.color--whisper-alpha-70 { color: $whisper-70 }
+.color--whisper-alpha-65 { color: $whisper-65 }
+.color--whisper-alpha-60 { color: $whisper-60 }
+.color--whisper-alpha-55 { color: $whisper-55 }
+.color--whisper-alpha-50 { color: $whisper-50 }
+.color--whisper-alpha-45 { color: $whisper-45 }
+.color--whisper-alpha-40 { color: $whisper-40 }
+.color--whisper-alpha-35 { color: $whisper-35 }
+.color--whisper-alpha-30 { color: $whisper-30 }
+.color--whisper-alpha-25 { color: $whisper-25 }
+.color--whisper-alpha-20 { color: $whisper-20 }
+.color--whisper-alpha-15 { color: $whisper-15 }
+.color--whisper-alpha-10 { color: $whisper-10 }
+.color--whisper-alpha-05 { color: $whisper-05 }
+.color--whisper-alpha-00 { color: $whisper-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--whisper { background-color: $whisper }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--whisper-shade-1 { background-color: $whisper-shade-1 }
+.bg-color--whisper-shade-2 { background-color: $whisper-shade-2 }
+.bg-color--whisper-shade-3 { background-color: $whisper-shade-3 }
+.bg-color--whisper-shade-4 { background-color: $whisper-shade-4 }
+.bg-color--whisper-shade-5 { background-color: $whisper-shade-5 }
+.bg-color--whisper-shade-6 { background-color: $whisper-shade-6 }
+.bg-color--whisper-shade-7 { background-color: $whisper-shade-7 }
+.bg-color--whisper-shade-8 { background-color: $whisper-shade-8 }
+.bg-color--whisper-shade-9 { background-color: $whisper-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--whisper-tint-1 { background-color: $whisper-tint-1 }
+.bg-color--whisper-tint-2 { background-color: $whisper-tint-2 }
+.bg-color--whisper-tint-3 { background-color: $whisper-tint-3 }
+.bg-color--whisper-tint-4 { background-color: $whisper-tint-4 }
+.bg-color--whisper-tint-5 { background-color: $whisper-tint-5 }
+.bg-color--whisper-tint-6 { background-color: $whisper-tint-6 }
+.bg-color--whisper-tint-7 { background-color: $whisper-tint-7 }
+.bg-color--whisper-tint-8 { background-color: $whisper-tint-8 }
+.bg-color--whisper-tint-9 { background-color: $whisper-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--whisper-variation-1 { background-color: $whisper-variation-1 }
+.bg-color--whisper-variation-2 { background-color: $whisper-variation-2 }
+.bg-color--whisper-variation-3 { background-color: $whisper-variation-3 }
+.bg-color--whisper-variation-4 { background-color: $whisper-variation-4 }
+.bg-color--whisper-variation-5 { background-color: $whisper-variation-5 }
+.bg-color--whisper-variation-6 { background-color: $whisper-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--whisper-triad-1 { background-color: $whisper-triad-1 }
+.bg-color--whisper-triad-2 { background-color: $whisper-triad-2 }
+.bg-color--whisper-triad-3 { background-color: $whisper-triad-3 }
+
+// Analogius color scheme
+.bg-color--whisper-analogous-1 { background-color: $whisper-analogous-1 }
+.bg-color--whisper-analogous-2 { background-color: $whisper-analogous-2 }
+
+// Split complementary
+.bg-color--whisper-split-complementary-1 { background-color: $whisper-split-complementary-1 }
+.bg-color--whisper-split-complementary-2 { background-color: $whisper-split-complementary-2 }
+
+// Complementary
+.bg-color--whisper-complementary { background-color: $whisper-complementary }
+
+// Monochromatic
+.bg-color--whisper-monochromatic-1 { background-color: $whisper-monochromatic-1 }
+.bg-color--whisper-monochromatic-2 { background-color: $whisper-monochromatic-2 }
+.bg-color--whisper-monochromatic-3 { background-color: $whisper-monochromatic-3 }
+.bg-color--whisper-monochromatic-4 { background-color: $whisper-monochromatic-4 }
+.bg-color--whisper-monochromatic-5 { background-color: $whisper-monochromatic-5 }
+.bg-color--whisper-monochromatic-6 { background-color: $whisper-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--whisper-alpha-100 { background-color: $whisper-100 }
+.bg-color--whisper-alpha-95 { background-color: $whisper-95 }
+.bg-color--whisper-alpha-90 { background-color: $whisper-90 }
+.bg-color--whisper-alpha-85 { background-color: $whisper-85 }
+.bg-color--whisper-alpha-80 { background-color: $whisper-80 }
+.bg-color--whisper-alpha-75 { background-color: $whisper-75 }
+.bg-color--whisper-alpha-70 { background-color: $whisper-70 }
+.bg-color--whisper-alpha-65 { background-color: $whisper-65 }
+.bg-color--whisper-alpha-60 { background-color: $whisper-60 }
+.bg-color--whisper-alpha-55 { background-color: $whisper-55 }
+.bg-color--whisper-alpha-50 { background-color: $whisper-50 }
+.bg-color--whisper-alpha-45 { background-color: $whisper-45 }
+.bg-color--whisper-alpha-40 { background-color: $whisper-40 }
+.bg-color--whisper-alpha-35 { background-color: $whisper-35 }
+.bg-color--whisper-alpha-30 { background-color: $whisper-30 }
+.bg-color--whisper-alpha-25 { background-color: $whisper-25 }
+.bg-color--whisper-alpha-20 { background-color: $whisper-20 }
+.bg-color--whisper-alpha-15 { background-color: $whisper-15 }
+.bg-color--whisper-alpha-10 { background-color: $whisper-10 }
+.bg-color--whisper-alpha-05 { background-color: $whisper-05 }
+.bg-color--whisper-alpha-00 { background-color: $whisper-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--whisper-shade-1 {
+    @include bg-gradient--whisper-shade-1();
+}
+.bg-gradient--whisper-shade-2 {
+    @include bg-gradient--whisper-shade-2();
+}
+.bg-gradient--whisper-shade-3 {
+    @include bg-gradient--whisper-shade-3();
+}
+.bg-gradient--whisper-shade-4 {
+    @include bg-gradient--whisper-shade-4();
+}
+.bg-gradient--whisper-shade-5 {
+    @include bg-gradient--whisper-shade-5();
+}
+.bg-gradient--whisper-shade-6 {
+    @include bg-gradient--whisper-shade-6();
+}
+.bg-gradient--whisper-shade-7 {
+    @include bg-gradient--whisper-shade-7();
+}
+.bg-gradient--whisper-shade-8 {
+    @include bg-gradient--whisper-shade-8();
+}
+.bg-gradient--whisper-shade-9 {
+    @include bg-gradient--whisper-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--whisper-tint-1 {
+    @include bg-gradient--whisper-tint-1();
+}
+.bg-gradient--whisper-tint-2 {
+    @include bg-gradient--whisper-tint-2();
+}
+.bg-gradient--whisper-tint-3 {
+    @include bg-gradient--whisper-tint-3();
+}
+.bg-gradient--whisper-tint-4 {
+    @include bg-gradient--whisper-tint-4();
+}
+.bg-gradient--whisper-tint-5 {
+    @include bg-gradient--whisper-tint-5();
+}
+.bg-gradient--whisper-tint-6 {
+    @include bg-gradient--whisper-tint-6();
+}
+.bg-gradient--whisper-tint-7 {
+    @include bg-gradient--whisper-tint-7();
+}
+.bg-gradient--whisper-tint-8 {
+    @include bg-gradient--whisper-tint-8();
+}
+.bg-gradient--whisper-tint-9 {
+    @include bg-gradient--whisper-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--whisper {
+    @include bg-gradient--whisper();
+}

@@ -1,0 +1,524 @@
+// Persimmon
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/F16000
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$persimmon: #F16000;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$persimmon-shade-1: #C14D00;
+$persimmon-shade-2: #9A3E00;
+$persimmon-shade-3: #7B3200;
+$persimmon-shade-4: #622800;
+$persimmon-shade-5: #4E2000;
+$persimmon-shade-6: #3E1A00;
+$persimmon-shade-7: #321500;
+$persimmon-shade-8: #281100;
+$persimmon-shade-9: #200E00;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$persimmon-tint-1: #F48033;
+$persimmon-tint-2: #F6995C;
+$persimmon-tint-3: #F8AD7D;
+$persimmon-tint-4: #F9BD97;
+$persimmon-tint-5: #FACAAC;
+$persimmon-tint-6: #FBD5BD;
+$persimmon-tint-7: #FCDDCA;
+$persimmon-tint-8: #FDE4D5;
+$persimmon-tint-9: #FDE9DD;
+
+
+// 4. Variations
+// ------------------
+
+$persimmon-variation-1: #F16000;
+$persimmon-variation-2: #F10060;
+$persimmon-variation-3: #60F100;
+$persimmon-variation-4: #6000F1;
+$persimmon-variation-5: #00F160;
+$persimmon-variation-6: #0060F1;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$persimmon-triad-1: #F16000;
+$persimmon-triad-2: #00F160;
+$persimmon-triad-3: #6000F1;
+
+// Analogius color scheme
+$persimmon-analogous-1: #F1D800;
+$persimmon-analogous-2: #F10018;
+
+// Split complementary
+$persimmon-split-complementary-1: #00F1D8;
+$persimmon-split-complementary-2: #0018F1;
+
+// Complementary
+$persimmon-complementary: #0091F1;
+
+// Monochromatic
+$persimmon-monochromatic-1: #FBD7BF;
+$persimmon-monochromatic-2: #F8B080;
+$persimmon-monochromatic-3: #BA8460;
+$persimmon-monochromatic-4: #B44800;
+$persimmon-monochromatic-5: #783000;
+$persimmon-monochromatic-6: #5A2400;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$persimmon-100: rgba($persimmon, 1);
+$persimmon-95: rgba($persimmon, .95);
+$persimmon-90: rgba($persimmon, .9);
+$persimmon-85: rgba($persimmon, .85);
+$persimmon-80: rgba($persimmon, .8);
+$persimmon-75: rgba($persimmon, .75);
+$persimmon-70: rgba($persimmon, .7);
+$persimmon-65: rgba($persimmon, .65);
+$persimmon-60: rgba($persimmon, .6);
+$persimmon-55: rgba($persimmon, .55);
+$persimmon-50: rgba($persimmon, .5);
+$persimmon-45: rgba($persimmon, .45);
+$persimmon-40: rgba($persimmon, .4);
+$persimmon-35: rgba($persimmon, .35);
+$persimmon-30: rgba($persimmon, .3);
+$persimmon-25: rgba($persimmon, .25);
+$persimmon-20: rgba($persimmon, .2);
+$persimmon-15: rgba($persimmon, .15);
+$persimmon-10: rgba($persimmon, .1);
+$persimmon-05: rgba($persimmon, .05);
+$persimmon-00: rgba($persimmon, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--persimmon-shade-1() {
+    background: $persimmon-shade-1;
+    background: -webkit-linear-gradient(right, $persimmon-shade-1, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-1, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-1, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-2() {
+    background: $persimmon-shade-2;
+    background: -webkit-linear-gradient(right, $persimmon-shade-2, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-2, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-2, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-3() {
+    background: $persimmon-shade-3;
+    background: -webkit-linear-gradient(right, $persimmon-shade-3, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-3, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-3, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-4() {
+    background: $persimmon-shade-4;
+    background: -webkit-linear-gradient(right, $persimmon-shade-4, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-4, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-4, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-5() {
+    background: $persimmon-shade-5;
+    background: -webkit-linear-gradient(right, $persimmon-shade-5, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-5, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-5, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-6() {
+    background: $persimmon-shade-6;
+    background: -webkit-linear-gradient(right, $persimmon-shade-6, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-6, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-6, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-7() {
+    background: $persimmon-shade-7;
+    background: -webkit-linear-gradient(right, $persimmon-shade-7, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-7, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-7, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-8() {
+    background: $persimmon-shade-8;
+    background: -webkit-linear-gradient(right, $persimmon-shade-8, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-8, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-8, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-shade-9() {
+    background: $persimmon-shade-9;
+    background: -webkit-linear-gradient(right, $persimmon-shade-9, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-shade-9, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-shade-9, $persimmon) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--persimmon-tint-1() {
+    background: $persimmon-tint-1;
+    background: -webkit-linear-gradient(right, $persimmon-tint-1, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-1, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-1, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-2() {
+    background: $persimmon-tint-2;
+    background: -webkit-linear-gradient(right, $persimmon-tint-2, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-2, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-2, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-3() {
+    background: $persimmon-tint-3;
+    background: -webkit-linear-gradient(right, $persimmon-tint-3, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-3, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-3, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-4() {
+    background: $persimmon-tint-4;
+    background: -webkit-linear-gradient(right, $persimmon-tint-4, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-4, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-4, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-5() {
+    background: $persimmon-tint-5;
+    background: -webkit-linear-gradient(right, $persimmon-tint-5, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-5, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-5, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-6() {
+    background: $persimmon-tint-6;
+    background: -webkit-linear-gradient(right, $persimmon-tint-6, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-6, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-6, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-7() {
+    background: $persimmon-tint-7;
+    background: -webkit-linear-gradient(right, $persimmon-tint-7, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-7, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-7, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-8() {
+    background: $persimmon-tint-8;
+    background: -webkit-linear-gradient(right, $persimmon-tint-8, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-8, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-8, $persimmon) !important;
+}
+@mixin bg-gradient--persimmon-tint-9() {
+    background: $persimmon-tint-9;
+    background: -webkit-linear-gradient(right, $persimmon-tint-9, $persimmon) !important;
+    background:    -moz-linear-gradient(right, $persimmon-tint-9, $persimmon) !important;
+    background:         linear-gradient(to left, $persimmon-tint-9, $persimmon) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--persimmon() {
+    color: #FFFFFF;
+    @include bg-gradient--persimmon-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--persimmon { color: $persimmon }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--persimmon-shade-1 { color: $persimmon-shade-1 }
+.color--persimmon-shade-2 { color: $persimmon-shade-2 }
+.color--persimmon-shade-3 { color: $persimmon-shade-3 }
+.color--persimmon-shade-4 { color: $persimmon-shade-4 }
+.color--persimmon-shade-5 { color: $persimmon-shade-5 }
+.color--persimmon-shade-6 { color: $persimmon-shade-6 }
+.color--persimmon-shade-7 { color: $persimmon-shade-7 }
+.color--persimmon-shade-8 { color: $persimmon-shade-8 }
+.color--persimmon-shade-9 { color: $persimmon-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--persimmon-tint-1 { color: $persimmon-tint-1 }
+.color--persimmon-tint-2 { color: $persimmon-tint-2 }
+.color--persimmon-tint-3 { color: $persimmon-tint-3 }
+.color--persimmon-tint-4 { color: $persimmon-tint-4 }
+.color--persimmon-tint-5 { color: $persimmon-tint-5 }
+.color--persimmon-tint-6 { color: $persimmon-tint-6 }
+.color--persimmon-tint-7 { color: $persimmon-tint-7 }
+.color--persimmon-tint-8 { color: $persimmon-tint-8 }
+.color--persimmon-tint-9 { color: $persimmon-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--persimmon-variation-1 { color: $persimmon-variation-1 }
+.color--persimmon-variation-2 { color: $persimmon-variation-2 }
+.color--persimmon-variation-3 { color: $persimmon-variation-3 }
+.color--persimmon-variation-4 { color: $persimmon-variation-4 }
+.color--persimmon-variation-5 { color: $persimmon-variation-5 }
+.color--persimmon-variation-6 { color: $persimmon-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--persimmon-triad-1 { color: $persimmon-triad-1 }
+.color--persimmon-triad-2 { color: $persimmon-triad-2 }
+.color--persimmon-triad-3 { color: $persimmon-triad-3 }
+
+// Analogius color scheme
+.color--persimmon-analogous-1 { color: $persimmon-analogous-1 }
+.color--persimmon-analogous-2 { color: $persimmon-analogous-2 }
+
+// Split complementary
+.color--persimmon-split-complementary-1 { color: $persimmon-split-complementary-1 }
+.color--persimmon-split-complementary-2 { color: $persimmon-split-complementary-2 }
+
+// Complementary
+.color--persimmon-complementary { color: $persimmon-complementary }
+
+// Monochromatic
+.color--persimmon-monochromatic-1 { color: $persimmon-monochromatic-1 }
+.color--persimmon-monochromatic-2 { color: $persimmon-monochromatic-2 }
+.color--persimmon-monochromatic-3 { color: $persimmon-monochromatic-3 }
+.color--persimmon-monochromatic-4 { color: $persimmon-monochromatic-4 }
+.color--persimmon-monochromatic-5 { color: $persimmon-monochromatic-5 }
+.color--persimmon-monochromatic-6 { color: $persimmon-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--persimmon-alpha-100 { color: $persimmon-100 }
+.color--persimmon-alpha-95 { color: $persimmon-95 }
+.color--persimmon-alpha-90 { color: $persimmon-90 }
+.color--persimmon-alpha-85 { color: $persimmon-85 }
+.color--persimmon-alpha-80 { color: $persimmon-80 }
+.color--persimmon-alpha-75 { color: $persimmon-75 }
+.color--persimmon-alpha-70 { color: $persimmon-70 }
+.color--persimmon-alpha-65 { color: $persimmon-65 }
+.color--persimmon-alpha-60 { color: $persimmon-60 }
+.color--persimmon-alpha-55 { color: $persimmon-55 }
+.color--persimmon-alpha-50 { color: $persimmon-50 }
+.color--persimmon-alpha-45 { color: $persimmon-45 }
+.color--persimmon-alpha-40 { color: $persimmon-40 }
+.color--persimmon-alpha-35 { color: $persimmon-35 }
+.color--persimmon-alpha-30 { color: $persimmon-30 }
+.color--persimmon-alpha-25 { color: $persimmon-25 }
+.color--persimmon-alpha-20 { color: $persimmon-20 }
+.color--persimmon-alpha-15 { color: $persimmon-15 }
+.color--persimmon-alpha-10 { color: $persimmon-10 }
+.color--persimmon-alpha-05 { color: $persimmon-05 }
+.color--persimmon-alpha-00 { color: $persimmon-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--persimmon { background-color: $persimmon }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--persimmon-shade-1 { background-color: $persimmon-shade-1 }
+.bg-color--persimmon-shade-2 { background-color: $persimmon-shade-2 }
+.bg-color--persimmon-shade-3 { background-color: $persimmon-shade-3 }
+.bg-color--persimmon-shade-4 { background-color: $persimmon-shade-4 }
+.bg-color--persimmon-shade-5 { background-color: $persimmon-shade-5 }
+.bg-color--persimmon-shade-6 { background-color: $persimmon-shade-6 }
+.bg-color--persimmon-shade-7 { background-color: $persimmon-shade-7 }
+.bg-color--persimmon-shade-8 { background-color: $persimmon-shade-8 }
+.bg-color--persimmon-shade-9 { background-color: $persimmon-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--persimmon-tint-1 { background-color: $persimmon-tint-1 }
+.bg-color--persimmon-tint-2 { background-color: $persimmon-tint-2 }
+.bg-color--persimmon-tint-3 { background-color: $persimmon-tint-3 }
+.bg-color--persimmon-tint-4 { background-color: $persimmon-tint-4 }
+.bg-color--persimmon-tint-5 { background-color: $persimmon-tint-5 }
+.bg-color--persimmon-tint-6 { background-color: $persimmon-tint-6 }
+.bg-color--persimmon-tint-7 { background-color: $persimmon-tint-7 }
+.bg-color--persimmon-tint-8 { background-color: $persimmon-tint-8 }
+.bg-color--persimmon-tint-9 { background-color: $persimmon-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--persimmon-variation-1 { background-color: $persimmon-variation-1 }
+.bg-color--persimmon-variation-2 { background-color: $persimmon-variation-2 }
+.bg-color--persimmon-variation-3 { background-color: $persimmon-variation-3 }
+.bg-color--persimmon-variation-4 { background-color: $persimmon-variation-4 }
+.bg-color--persimmon-variation-5 { background-color: $persimmon-variation-5 }
+.bg-color--persimmon-variation-6 { background-color: $persimmon-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--persimmon-triad-1 { background-color: $persimmon-triad-1 }
+.bg-color--persimmon-triad-2 { background-color: $persimmon-triad-2 }
+.bg-color--persimmon-triad-3 { background-color: $persimmon-triad-3 }
+
+// Analogius color scheme
+.bg-color--persimmon-analogous-1 { background-color: $persimmon-analogous-1 }
+.bg-color--persimmon-analogous-2 { background-color: $persimmon-analogous-2 }
+
+// Split complementary
+.bg-color--persimmon-split-complementary-1 { background-color: $persimmon-split-complementary-1 }
+.bg-color--persimmon-split-complementary-2 { background-color: $persimmon-split-complementary-2 }
+
+// Complementary
+.bg-color--persimmon-complementary { background-color: $persimmon-complementary }
+
+// Monochromatic
+.bg-color--persimmon-monochromatic-1 { background-color: $persimmon-monochromatic-1 }
+.bg-color--persimmon-monochromatic-2 { background-color: $persimmon-monochromatic-2 }
+.bg-color--persimmon-monochromatic-3 { background-color: $persimmon-monochromatic-3 }
+.bg-color--persimmon-monochromatic-4 { background-color: $persimmon-monochromatic-4 }
+.bg-color--persimmon-monochromatic-5 { background-color: $persimmon-monochromatic-5 }
+.bg-color--persimmon-monochromatic-6 { background-color: $persimmon-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--persimmon-alpha-100 { background-color: $persimmon-100 }
+.bg-color--persimmon-alpha-95 { background-color: $persimmon-95 }
+.bg-color--persimmon-alpha-90 { background-color: $persimmon-90 }
+.bg-color--persimmon-alpha-85 { background-color: $persimmon-85 }
+.bg-color--persimmon-alpha-80 { background-color: $persimmon-80 }
+.bg-color--persimmon-alpha-75 { background-color: $persimmon-75 }
+.bg-color--persimmon-alpha-70 { background-color: $persimmon-70 }
+.bg-color--persimmon-alpha-65 { background-color: $persimmon-65 }
+.bg-color--persimmon-alpha-60 { background-color: $persimmon-60 }
+.bg-color--persimmon-alpha-55 { background-color: $persimmon-55 }
+.bg-color--persimmon-alpha-50 { background-color: $persimmon-50 }
+.bg-color--persimmon-alpha-45 { background-color: $persimmon-45 }
+.bg-color--persimmon-alpha-40 { background-color: $persimmon-40 }
+.bg-color--persimmon-alpha-35 { background-color: $persimmon-35 }
+.bg-color--persimmon-alpha-30 { background-color: $persimmon-30 }
+.bg-color--persimmon-alpha-25 { background-color: $persimmon-25 }
+.bg-color--persimmon-alpha-20 { background-color: $persimmon-20 }
+.bg-color--persimmon-alpha-15 { background-color: $persimmon-15 }
+.bg-color--persimmon-alpha-10 { background-color: $persimmon-10 }
+.bg-color--persimmon-alpha-05 { background-color: $persimmon-05 }
+.bg-color--persimmon-alpha-00 { background-color: $persimmon-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--persimmon-shade-1 {
+    @include bg-gradient--persimmon-shade-1();
+}
+.bg-gradient--persimmon-shade-2 {
+    @include bg-gradient--persimmon-shade-2();
+}
+.bg-gradient--persimmon-shade-3 {
+    @include bg-gradient--persimmon-shade-3();
+}
+.bg-gradient--persimmon-shade-4 {
+    @include bg-gradient--persimmon-shade-4();
+}
+.bg-gradient--persimmon-shade-5 {
+    @include bg-gradient--persimmon-shade-5();
+}
+.bg-gradient--persimmon-shade-6 {
+    @include bg-gradient--persimmon-shade-6();
+}
+.bg-gradient--persimmon-shade-7 {
+    @include bg-gradient--persimmon-shade-7();
+}
+.bg-gradient--persimmon-shade-8 {
+    @include bg-gradient--persimmon-shade-8();
+}
+.bg-gradient--persimmon-shade-9 {
+    @include bg-gradient--persimmon-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--persimmon-tint-1 {
+    @include bg-gradient--persimmon-tint-1();
+}
+.bg-gradient--persimmon-tint-2 {
+    @include bg-gradient--persimmon-tint-2();
+}
+.bg-gradient--persimmon-tint-3 {
+    @include bg-gradient--persimmon-tint-3();
+}
+.bg-gradient--persimmon-tint-4 {
+    @include bg-gradient--persimmon-tint-4();
+}
+.bg-gradient--persimmon-tint-5 {
+    @include bg-gradient--persimmon-tint-5();
+}
+.bg-gradient--persimmon-tint-6 {
+    @include bg-gradient--persimmon-tint-6();
+}
+.bg-gradient--persimmon-tint-7 {
+    @include bg-gradient--persimmon-tint-7();
+}
+.bg-gradient--persimmon-tint-8 {
+    @include bg-gradient--persimmon-tint-8();
+}
+.bg-gradient--persimmon-tint-9 {
+    @include bg-gradient--persimmon-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--persimmon {
+    @include bg-gradient--persimmon();
+}

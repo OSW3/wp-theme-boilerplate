@@ -1,0 +1,101 @@
+// SCSS Component : Alert
+// ------------------
+// 
+// 1. Import Bootstrap Base
+// 2. Override Success
+// 3. Override Danger
+// 4. Override Warning
+// 5. Override Info
+// 6. Override Primary
+// 7. Override Secondary
+// 8. Override Light
+// 9. Override Dark
+// 
+// =============================================================================
+
+// 1. Import Bootstrap Base
+// ------------------
+// @import 'node_modules/bootstrap/scss/alert';
+
+
+.alert {
+    border: none;
+    border-radius: 0;
+}
+
+
+// 2. Override Success
+// ------------------
+.alert-success {
+    @include property('color', 'component--alert-success--text');
+    @include property('background-color', 'component--alert-success--background');
+    @include property('border-color', 'component--alert-success--border');
+}
+
+// 3. Override Danger
+// ------------------
+.alert-danger {
+    @include property('color', 'component--alert-danger--text');
+    @include property('background-color', 'component--alert-danger--background');
+    @include property('border-color', 'component--alert-danger--border');
+}
+
+// 4. Override Warning
+// ------------------
+.alert-warning {
+    @include property('color', 'component--alert-warning--text');
+    @include property('background-color', 'component--alert-warning--background');
+    @include property('border-color', 'component--alert-warning--border');
+}
+
+// 5. Override Info
+// ------------------
+.alert-info {
+    @include property('color', 'component--alert-info--text');
+    @include property('background-color', 'component--alert-info--background');
+    @include property('border-color', 'component--alert-info--border');
+}
+
+// 6. Override Primary
+// ------------------
+.alert-primary {
+    @include property('color', 'component--alert-primary--text');
+    @include property('background-color', 'component--alert-primary--background');
+    @include property('border-color', 'component--alert-primary--border');
+}
+
+// 7. Override Secondary
+// ------------------
+.alert-secondary {
+    @include property('color', 'component--alert-secondary--text');
+    @include property('background-color', 'component--alert-secondary--background');
+    @include property('border-color', 'component--alert-secondary--border');
+}
+
+// 8. Override Light
+// ------------------
+.alert-light {
+    @include property('color', 'component--alert-light--text');
+    @include property('background-color', 'component--alert-light--background');
+    @include property('border-color', 'component--alert-light--border');
+}
+
+// 9. Override Dark
+// ------------------
+.alert-dark {
+    @include property('color', 'component--alert-dark--text');
+    @include property('background-color', 'component--alert-dark--background');
+    @include property('border-color', 'component--alert-dark--border');
+}
+
+
+// Alert position for Tabbed navigation
+// ------------------
+.page-tab-pane > .alert {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 900;
+}

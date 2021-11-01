@@ -1,0 +1,82 @@
+// SCSS Component : Badge
+// ------------------
+// 
+// 1. Import Bootstrap Base
+// 2. Override Success
+// 3. Override Danger
+// 4. Override Warning
+// 5. Override Info
+// 6. Override Primary
+// 7. Override Secondary
+// 8. Override Light
+// 9. Override Dark
+// 
+// =============================================================================
+
+// 1. Import Bootstrap Base
+// ------------------
+// @import 'node_modules/bootstrap/scss/badge';
+
+// // 2. Override Success
+// // ------------------
+// .badge-success {
+//     @include property('color', 'success--text');
+//     @include property('background-color', 'success--background');
+//     @include property('border-color', 'success--border');
+// }
+
+// // 3. Override Danger
+// // ------------------
+// .badge-danger {
+//     @include property('color', 'danger--text');
+//     @include property('background-color', 'danger--background');
+//     @include property('border-color', 'danger--border');
+// }
+
+// // 4. Override Warning
+// // ------------------
+// .badge-warning {
+//     @include property('color', 'badge-warning--text');
+//     @include property('background-color', 'badge-warning--background');
+//     @include property('border-color', 'badge-warning--border');
+// }
+
+// // 5. Override Info
+// // ------------------
+// .badge-info {
+//     @include property('color', 'badge-info--text');
+//     @include property('background-color', 'badge-info--background');
+//     @include property('border-color', 'badge-info--border');
+// }
+
+// // 6. Override Primary
+// // ------------------
+// .badge-primary {
+//     @include property('color', 'badge-primary--text');
+//     @include property('background-color', 'badge-primary--background');
+//     @include property('border-color', 'badge-primary--border');
+// }
+
+// // 7. Override Secondary
+// // ------------------
+// .badge-secondary {
+//     @include property('color', 'badge-secondary--text');
+//     @include property('background-color', 'badge-secondary--background');
+//     @include property('border-color', 'badge-secondary--border');
+// }
+
+// // 8. Override Light
+// // ------------------
+// .badge-light {
+//     @include property('color', 'badge-light--text');
+//     @include property('background-color', 'badge-light--background');
+//     @include property('border-color', 'badge-light--border');
+// }
+
+// // 9. Override Dark
+// // ------------------
+// .badge-dark {
+//     @include property('color', 'badge-dark--text');
+//     @include property('background-color', 'badge-dark--background');
+//     @include property('border-color', 'badge-dark--border');
+// }

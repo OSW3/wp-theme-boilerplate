@@ -1,0 +1,528 @@
+// Theme : Default (light)
+// ------------------
+// File : Light Theme Colors Stack definition
+// 
+// =============================================================================
+
+
+// 3. Colors
+// ------------------
+// @import './../../colors/black-russian';
+@import './../../colors/black';
+// @import './../../colors/bunker';
+// @import './../../colors/dodger-blue';
+// @import './../../colors/east-bay';
+// @import './../../colors/oyster-bay';
+// @import './../../colors/free-speech-aquamarine';
+// @import './../../colors/free-speech-red';
+// @import './../../colors/gossamer';
+@import './../../colors/grey';
+// @import './../../colors/gulf-blue';
+// @import './../../colors/limerick';
+@import './../../colors/nepal';
+// @import './../../colors/night-rider';
+@import './../../colors/persimmon';
+// @import './../../colors/razzmatazz';
+// @import './../../colors/shark';
+// @import './../../colors/shiraz';
+// @import './../../colors/silver';
+// @import './../../colors/whisper';
+// @import './../../colors/white-smoke';
+@import './../../colors/white';
+
+$theme-light: (
+        
+    // BASE DEFINITION
+    // =====================================================================
+
+    // Success
+
+    // Danger
+
+    // Warning
+
+    // Info
+
+    // Primary
+
+    // Secondary
+
+    // Third
+
+    // White
+
+    // Light
+
+    // Dark
+
+    // Link
+
+    // Submit
+
+    // Reset
+    // Transparent
+    'transparent':                                      transparent,
+        
+        
+    // COMPONENTS
+    // =====================================================================
+
+
+    // Component: Alert
+    // --
+
+    // Success
+    'component--alert-success--text': #155724,
+    'component--alert-success--background': #d4edda,
+    'component--alert-success--border': #c3e6cb,
+
+    // Danger
+    'component--alert-danger--text': #ffffff,//#721c24,
+    'component--alert-danger--background': rgb(199, 51, 5),//#f8d7da,
+    'component--alert-danger--border': #f5c6cb,
+
+    // Warning
+    'component--alert-warning--text': #856404,
+    'component--alert-warning--background': #fff3cd,
+    'component--alert-warning--border': #ffeeba,
+
+    // Info
+    'component--alert-info--text': #0c5460,
+    'component--alert-info--background': #d1ecf1,
+    'component--alert-info--border': #bee5eb,
+
+    // Primary
+    'component--alert-primary--text': #004085,
+    'component--alert-primary--background': #cce5ff,
+    'component--alert-primary--border': #b8daff,
+
+    // Secondary
+    'component--alert-secondary--text': #383d41,
+    'component--alert-secondary--background': #e2e3e5,
+    'component--alert-secondary--border': #d6d8db,
+
+    // Light
+    'component--alert-light--text': #818182,
+    'component--alert-light--background': #f8f9fa,
+    'component--alert-light--border': #fdfdfe,
+
+    // Dark
+    'component--alert-dark--text': #1b1e21,
+    'component--alert-dark--background': #d6d8d9,
+    'component--alert-dark--border': #c6c8ca,
+
+
+    // Component: Badge
+    // --
+
+    // Success
+
+    // Danger
+
+    // Warning
+
+    // Info
+
+    // Primary
+
+    // Secondary
+
+    // Light
+
+    // Dark
+    
+    
+    // Component: Brand
+    // --
+
+    'component--brand--bg-color':                       transparent,
+    'component--brand--bg-color-hover':                 $white-10,
+    'component--brand--primary-color':                  $white,
+    'component--brand--secondary-color':                $persimmon,
+
+    
+    
+    // Component: Breadcrumb
+    // --
+
+    'component--breadcrumb--text':                      lighten(#657eae, 20%),
+    'component--breadcrumb--text-hover':                #657eae,
+    'component--breadcrumb--text-active':               #657eae,
+    'component--breadcrumb--separator':                 $nepal,
+    
+    
+    // Component: Buttons
+    // --
+
+    // btn success
+    'component--button-success--text':                             $white,
+    'component--button-success--background':                       #28a745,
+    'component--button-success--border':                           #28a745,
+
+    'component--button-success--hover--text':                      $white,
+    'component--button-success--hover--background':                #218838,
+    'component--button-success--hover--border':                    #218838,
+    
+    'component--button-success--active--text':                     $white,
+    'component--button-success--active--background':               #1e7e34,
+    'component--button-success--active--border':                   #1e7e34,
+
+    // btn danger
+    'component--button-danger--text':                              $white,
+    'component--button-danger--background':                        #dc3545,
+    'component--button-danger--border':                            #dc3545,
+
+    'component--button-danger--hover--text':                       $white,
+    'component--button-danger--hover--background':                 #c82333,
+    'component--button-danger--hover--border':                     #c82333,
+    
+    'component--button-danger--active--text':                      $white,
+    'component--button-danger--active--background':                #bd2130,
+    'component--button-danger--active--border':                    #bd2130,
+
+    // btn warning
+    'component--button-warning--text':                             #212529,
+    'component--button-warning--background':                       #ffc107,
+    'component--button-warning--border':                           #ffc107,
+
+    'component--button-warning--hover--text':                      #212529,
+    'component--button-warning--hover--background':                #e0a800,
+    'component--button-warning--hover--border':                    #e0a800,
+
+    'component--button-warning--active--text':                     #212529,
+    'component--button-warning--active--background':               #d39e00,
+    'component--button-warning--active--border':                   #d39e00,
+
+    // btn info
+    'component--button-info--text':                                $white,
+    'component--button-info--background':                          #17a2b8,
+    'component--button-info--border':                              #17a2b8,
+
+    'component--button-info--hover--text':                         $white,
+    'component--button-info--hover--background':                   #138496,
+    'component--button-info--hover--border':                       #138496,
+
+    'component--button-info--active--text':                        $white,
+    'component--button-info--active--background':                  #117a8b,
+    'component--button-info--active--border':                      #117a8b,
+
+    // btn primary
+    'component--button-primary--text':                             $white,
+    'component--button-primary--background':                       #007bff,
+    'component--button-primary--border':                           #007bff,
+
+    'component--button-primary--hover--text':                      $white,
+    'component--button-primary--hover--background':                #0069d9,
+    'component--button-primary--hover--border':                    #0069d9,
+
+    'component--button-primary--active--text':                     $white,
+    'component--button-primary--active--background':               #0062cc,
+    'component--button-primary--active--border':                   #0062cc,
+
+    // btn secondary
+    'component--button-secondary--text':                           $white,
+    'component--button-secondary--background':                     #6c757d,
+    'component--button-secondary--border':                         #6c757d,
+
+    'component--button-secondary--hover--text':                    $white,
+    'component--button-secondary--hover--background':              #5a6268,
+    'component--button-secondary--hover--border':                  #5a6268,
+
+    'component--button-secondary--active--text':                   $white,
+    'component--button-secondary--active--background':             #545b62,
+    'component--button-secondary--active--border':                 #545b62,
+
+    // btn light
+    'component--button-light--text':                               #212529,
+    'component--button-light--background':                         #f8f9fa,
+    'component--button-light--border':                             #f8f9fa,
+
+    'component--button-light--hover--text':                        $white,
+    'component--button-light--hover--background':                  #e2e6ea,
+    'component--button-light--hover--border':                      #dae0e5,
+
+    'component--button-light--active--text':                       $white,
+    'component--button-light--active--background':                 #dae0e5,
+    'component--button-light--active--border':                     #d3d9df,
+
+    // btn dark
+    'component--button-dark--text':                                $white,
+    'component--button-dark--background':                          #343a40,
+    'component--button-dark--border':                              #343a40,
+
+    'component--button-dark--hover--text':                         $white,
+    'component--button-dark--hover--background':                   #23272b,
+    'component--button-dark--hover--border':                       #1d2124,
+
+    'component--button-dark--active--text':                        $white,
+    'component--button-dark--active--background':                  #1d2124,
+    'component--button-dark--active--border':                      #171a1d,
+
+    // btn link
+    'component--button-link--text':                                #007bff,
+    'component--button-link--background':                          transparent,
+    'component--button-link--border':                              transparent,
+
+    'component--button-link--hover--text':                         #0056b3,
+    'component--button-link--hover--background':                   transparent,
+    'component--button-link--hover--border':                       transparent,
+
+    'component--button-link--active--text':                        #0056b3,
+    'component--button-link--active--background':                  transparent,
+    'component--button-link--active--border':                      transparent,
+
+    // btn submit
+    'component--button-submit--text':                              $white,
+    'component--button-submit--background':                        #333333,
+    'component--button-submit--border':                            #333333,
+
+    'component--button-submit--hover--text':                       $white,
+    'component--button-submit--hover--background':                 #000000,
+    'component--button-submit--hover--border':                     #000000,
+
+    'component--button-submit--active--text':                      $white,
+    'component--button-submit--active--background':                #000000,
+    'component--button-submit--active--border':                    #000000,
+
+    // btn reset
+    'component--button-reset--text':                               $white,
+    'component--button-reset--background':                         #c0c0c0,
+    'component--button-reset--border':                             #c0c0c0,
+
+    'component--button-reset--hover--text':                        $white,
+    'component--button-reset--hover--background':                  #c0c0c0,
+    'component--button-reset--hover--border':                      #c0c0c0,
+
+    'component--button-reset--active--text':                       $white,
+    'component--button-reset--active--background':                 #c0c0c0,
+    'component--button-reset--active--border':                     #c0c0c0,
+
+    // btn sorter
+    'component--button-sorter--text':                              $white,
+    'component--button-sorter--background':                        #c0c0c0,
+    'component--button-sorter--border':                            #c0c0c0,
+
+    'component--button-sorter--hover--text':                       $white,
+    'component--button-sorter--hover--background':                 #c0c0c0,
+    'component--button-sorter--hover--border':                     #c0c0c0,
+
+    'component--button-sorter--active--text':                      $white,
+    'component--button-sorter--active--background':                #c0c0c0,
+    'component--button-sorter--active--border':                    #c0c0c0,
+
+    // btn to top
+    'component--button-totop--text':                               $white,
+    'component--button-totop--background':                         #343a40,
+    'component--button-totop--border':                             #343a40,
+    
+    'component--button-totop--hover--text':                        $white,
+    'component--button-totop--hover--background':                  #000000,
+    'component--button-totop--hover--border':                      #000000,
+
+    'component--button-totop--active--text':                       $white,
+    'component--button-totop--active--background':                 #000000,
+    'component--button-totop--active--border':                     #000000,
+
+    
+    // Component: Calendar
+    // -- 
+
+    
+    // Component: Card
+    // -- 
+
+    
+    // Component: Carousel (sliders)
+    // -- 
+
+    
+    // Component: Collapse
+    // -- 
+
+    
+    // Component: Collection
+    // -- 
+
+    
+    // Component: Cookie Consent
+    // -- 
+
+    
+    // Component: Dropdown
+    // -- 
+
+    
+    // Component: Editor
+    // -- 
+
+    
+    // Component: Icon
+    // -- 
+
+    
+    // Component: Img
+    // -- 
+
+    
+    // Component: Input
+    // -- 
+
+    
+    // Component: Jumbotron
+    // -- 
+
+    
+    // Component: Lang
+    // -- 
+
+    
+    // Component: List
+    // -- 
+
+    
+    // Component: Media Object
+    // -- 
+
+    
+    // Component: Modal
+    // -- 
+
+    
+    // Component: Nav
+    // -- 
+
+    
+    // Component: Overlay
+    // -- 
+
+    
+    // Component: Pagination
+    // -- 
+
+    
+    // Component: Panel
+    // -- 
+
+    
+    // Component: Popover
+    // -- 
+
+    
+    // Component: Search
+    // -- 
+
+    'component--search--bg-color':                      #f4f6f9,
+    'component--search--border-color':                  #4b545c,
+
+    
+    // Component: Section
+    // -- 
+
+    
+    // Component: Tab
+    // -- 
+
+    
+    // Component: Table
+    // -- 
+
+    
+    // Component: Toast
+    // -- 
+
+    
+    // Component: Tooltip
+    // -- 
+
+    
+    // Component: Widget
+    // -- 
+
+    
+    // Component: Workflow
+    // -- 
+    
+    
+    // LAYOUT
+    // =====================================================================
+    
+    
+    // Layout: Document
+    // --
+
+    'layout--document--bg-color':                        #f4f6f9,
+    
+    
+    // Layout: Header
+    // --
+
+    'layout--header--color':                            lighten($black, 60%),
+    'layout--header--color-hover':                      $black,
+    'layout--header--bg-color':                         #ffffff,
+    'layout--header--border-bottom-color':              #d0d4d6,
+
+    'layout--brand--border-bottom-color':               #4b545c,
+
+    'layout--header-tabs--bg-color':                    #f4f6f9,
+    'layout--header-tabs--tab-control--bg-color':       #f4f6f9,
+    'layout--header-tabs--tab-control--bg-color-hover': #dae0e5,
+    'layout--header-tabs--tab-action--bg-color':        #f4f6f9,
+    'layout--header-tabs--tab-action--bg-color-hover':  #dae0e5,
+    
+    
+    // Layout: Tabbar
+    // --
+
+    'layout--tabbar--bg-color':                         #ffffff,
+    'layout--tabbar--border-bottom-color':              #d0d4d6,
+
+    'layout--tabbar-tab--color':                        lighten(#343a40, 40%) ,
+    'layout--tabbar-tab--color-hover':                  #343a40,
+    'layout--tabbar-tab--bg-color':                     #dae0e5,
+    'layout--tabbar-tab--bg-color-hover':               #f4f6f9,
+
+    
+    // Layout: Footer
+    // --
+
+    'layout--footer--color':                            lighten(#343a40, 40%) ,
+    'layout--footer--bg-color':                         #ffffff,
+    'layout--footer--border-top-color':                 #d0d4d6,
+    
+    
+    // Layout: Sidebar
+    // --
+
+    'layout--sidebar--bg-color':                        #343a40,
+
+    'layout--sidebar--nav-title--color':                $white-60,
+    'layout--sidebar--nav-title--bg-color':             transparent,
+
+    'layout--sidebar--nav-link--color':                 darken(#f4f6f9, 30%),
+    'layout--sidebar--nav-link--color-hover':           #f4f6f9,
+    'layout--sidebar--nav-link--bg-color':              transparent,
+    'layout--sidebar--nav-link--bg-color-hover':        $white-10,
+
+    'layout--sidebar-header--border-bottom-color':      #4b545c,
+    'layout--sidebar-footer--border-top-color':         #4b545c,
+
+    
+    // Layout: Content
+    // --
+
+    'layout--content--bg-color':                        #f4f6f9,
+    'layout--tab-pane-empty--color':                    #9dabb8,
+    
+    
+    // Layout: OffCanvas
+    // --
+    
+    
+    // Layout: Form
+    // --
+
+    // Valid Feedbacks
+
+    // Invalid Feedbacks
+
+);

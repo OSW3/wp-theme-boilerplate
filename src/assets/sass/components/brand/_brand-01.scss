@@ -1,0 +1,191 @@
+// SCSS Component: Brand
+// ------------------
+// @info: https://sass-guidelin.es/fr/#architecture
+// 
+// E.g.: <div class="main-brand">My<span>Brand</span></div>
+// E.g.: <div class="main-brand"><img src="..."></div>
+// E.g.: <div class="main-brand"><svg></svg></div>
+// 
+// 1. Main Brand
+// 
+// =============================================================================
+
+.brand-link
+{
+    // Position
+    padding-left: 15px;
+    padding-right: 15px;
+
+    // Theme
+    @include property('color', 'component--brand--primary-color');
+    @include property('background-color', 'component--brand--bg-color');
+
+    // Animation
+    @include transition-property(background-color);
+    @include transition-duration(.3s);
+    
+    // Font
+    font-size: $font-size--xl;
+
+    &:hover
+    {
+        @include property('background-color', 'component--brand--bg-color-hover');
+    }
+
+    // Type 1 : Icon + Text
+    & .brand-icon
+    {
+        // Position
+        @extend %flex-middle;
+        justify-content: center;
+        height: 33px;
+        width: 33px;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: -3px;
+
+        // Theme
+        background-color: darken(#FFFFFF, 30%);
+        @include rounded(50%);
+
+        // Animation
+        @include transition-property(all);
+        @include transition-duration(.3s);
+
+        z-index: 2;
+    }
+    & .brand-text 
+    {
+        // Theme
+        // @include property('color', 'component--brand--primary-color');
+
+        // Brand secondary color
+        .secondary-color {
+            @include property('color', 'component--brand--secondary-color');
+        }
+
+        // Animation
+        @include transition-property(all);
+        @include transition-duration(.2s);
+
+        visibility: visible;
+        z-index: 1;
+    }
+
+    // Type 2 : Image
+    & img 
+    {
+        height: 33px;
+        width: auto;
+    }
+
+}
+
+.sidebar-brand .brand-link
+{
+    @extend %flex-middle;
+    @include sizes(100%, 100%);
+}
+// // Minified sidebar
+
+.main-sidebar-minify .brand-link .brand-text {
+    margin-left: -30px;
+    visibility: hidden;
+}
+
+
+
+// // 1. Main Brand
+// // ------------------
+
+// .main-brand
+// {
+//     @include property('color', 'brand--primary-color');
+
+//     font-family: $font-stack--primary;
+//     font-size: $font-size--xl;
+//     font-weight: 500;
+
+//     letter-spacing: 1px;
+//     text-transform: lowercase;
+
+//     margin-left: 15px;
+    
+//     // Fixe the brand Height if it's an image
+//     img, svg {
+//         height: 22px;
+//         width: auto !important;
+//     }
+
+//     // Brand secondary color
+//     .secondary-color {
+//         @include property('color', 'brand--secondary-color');
+//     }
+// }
+
+
+// .brand-link_
+// {
+//     @extend %flex-middle;
+//     @include sizes(100%, $header--height);
+
+
+//     display: block;
+//     font-size: $brand-content--font-size;
+//     line-height: $header-content--line-height;
+//     letter-spacing: 1px;
+//     text-transform: lowercase;
+//     padding: $header-content--padding;
+    
+//     @extend %border-bottom-solid-1;
+//     @include property('border-bottom-color', 'layout--brand--border-bottom-color');
+
+//     & .brand-image {
+//         @extend %flex-middle;
+//         justify-content: center;      
+      
+//         float: left;
+//         line-height: .8;
+//         margin-left: .8rem;
+//         margin-right: .5rem;
+//         margin-top: -3px;
+//         height: 33px;
+//         width: 33px;
+//         background-color: darken(#FFFFFF, 60%);
+//         @include rounded(50%);
+//         z-index: 2;
+//     }
+//     & .brand-text {
+//         @include transition-property(all);
+//         @include transition-duration(.2s);
+//         @include property('color', 'component--brand--primary-color');
+
+//         // -webkit-animation-name: fadeIn;
+//         // animation-name: fadeIn;
+//         // -webkit-animation-duration: .2s;
+//         // animation-duration: .2s;
+//         // -webkit-animation-fill-mode: both;
+//         // animation-fill-mode: both;
+//         visibility: visible;
+//         z-index: 1;
+//     }
+
+//     &:hover .brand-text {
+//         @include property('color', 'component--brand--primary-color-hover');
+//     }
+
+// }
+
+// // Minified sidebar
+
+// // .brand-link:hover .brand-text,
+// .main-sidebar-minify  .brand-text {
+//     margin-left: -30px;
+//     // -webkit-animation-name: fadeOut;
+//     // animation-name: fadeOut;
+//     // -webkit-animation-duration: .2s;
+//     // animation-duration: .2s;
+//     // -webkit-animation-fill-mode: both;
+//     // animation-fill-mode: both;
+//     visibility: hidden;
+// }

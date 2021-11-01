@@ -1,0 +1,48 @@
+/// SCSS Mixins : transition
+/// ------------------
+/// 
+/// @example
+/// .element {
+///     @include transition()
+///     @include transition-property(all)
+///     @include transition-duration(.3s)
+///     @include transition-timing-function(linear)
+///     @include transition-delay(0s)
+/// }
+/// 
+/// =============================================================================
+
+@mixin transition($property: all, $duration: .3s, $timing-function: linear, $delay: 0s) {
+    @include transition-property($property);
+    @include transition-duration($duration);
+    @include transition-timing-function($timing-function);
+    @include transition-delay($delay);
+}
+@mixin transition-property($property: all) {
+    -webkit-transition-property: $property;
+       -moz-transition-property: $property;
+        -ms-transition-property: $property;
+         -o-transition-property: $property;
+            transition-property: $property;
+}
+@mixin transition-duration($duration: .3s) {
+    -webkit-transition-duration: $duration;
+       -moz-transition-duration: $duration;
+        -ms-transition-duration: $duration;
+         -o-transition-duration: $duration;
+            transition-duration: $duration;
+}
+@mixin transition-timing-function($timing-function: linear) {
+    -webkit-transition-timing-function: $timing-function;
+       -moz-transition-timing-function: $timing-function;
+        -ms-transition-timing-function: $timing-function;
+         -o-transition-timing-function: $timing-function;
+            transition-timing-function: $timing-function;
+}
+@mixin transition-delay($delay: 0s) {
+    -webkit-transition-delay: $delay;
+       -moz-transition-delay: $delay;
+        -ms-transition-delay: $delay;
+         -o-transition-delay: $delay;
+            transition-delay: $delay;
+}

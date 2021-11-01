@@ -1,0 +1,524 @@
+// Gulf-blue
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/374760
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$gulf-blue: #374760;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$gulf-blue-shade-1: #2C394D;
+$gulf-blue-shade-2: #232E3E;
+$gulf-blue-shade-3: #1C2532;
+$gulf-blue-shade-4: #161E28;
+$gulf-blue-shade-5: #121820;
+$gulf-blue-shade-6: #0E131A;
+$gulf-blue-shade-7: #0B0F15;
+$gulf-blue-shade-8: #090C11;
+$gulf-blue-shade-9: #070A0E;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$gulf-blue-tint-1: #5F6C80;
+$gulf-blue-tint-2: #7F8999;
+$gulf-blue-tint-3: #99A1AD;
+$gulf-blue-tint-4: #ADB4BD;
+$gulf-blue-tint-5: #BDC3CA;
+$gulf-blue-tint-6: #CACFD5;
+$gulf-blue-tint-7: #D5D9DD;
+$gulf-blue-tint-8: #DDE1E4;
+$gulf-blue-tint-9: #E4E7E9;
+
+
+// 4. Variations
+// ------------------
+
+$gulf-blue-variation-1: #374760;
+$gulf-blue-variation-2: #376047;
+$gulf-blue-variation-3: #473760;
+$gulf-blue-variation-4: #476037;
+$gulf-blue-variation-5: #603747;
+$gulf-blue-variation-6: #604737;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$gulf-blue-triad-1: #374760;
+$gulf-blue-triad-2: #603747;
+$gulf-blue-triad-3: #476037;
+
+// Analogius color scheme
+$gulf-blue-analogous-1: #3C3760;
+$gulf-blue-analogous-2: #375C60;
+
+// Split complementary
+$gulf-blue-split-complementary-1: #603C37;
+$gulf-blue-split-complementary-2: #5C6037;
+
+// Complementary
+$gulf-blue-complementary: #605037;
+
+// Monochromatic
+$gulf-blue-monochromatic-1: #CDD1D7;
+$gulf-blue-monochromatic-2: #9CA4B0;
+$gulf-blue-monochromatic-3: #757B84;
+$gulf-blue-monochromatic-4: #293548;
+$gulf-blue-monochromatic-5: #1C2430;
+$gulf-blue-monochromatic-6: #151B24;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$gulf-blue-100: rgba($gulf-blue, 1);
+$gulf-blue-95: rgba($gulf-blue, .95);
+$gulf-blue-90: rgba($gulf-blue, .9);
+$gulf-blue-85: rgba($gulf-blue, .85);
+$gulf-blue-80: rgba($gulf-blue, .8);
+$gulf-blue-75: rgba($gulf-blue, .75);
+$gulf-blue-70: rgba($gulf-blue, .7);
+$gulf-blue-65: rgba($gulf-blue, .65);
+$gulf-blue-60: rgba($gulf-blue, .6);
+$gulf-blue-55: rgba($gulf-blue, .55);
+$gulf-blue-50: rgba($gulf-blue, .5);
+$gulf-blue-45: rgba($gulf-blue, .45);
+$gulf-blue-40: rgba($gulf-blue, .4);
+$gulf-blue-35: rgba($gulf-blue, .35);
+$gulf-blue-30: rgba($gulf-blue, .3);
+$gulf-blue-25: rgba($gulf-blue, .25);
+$gulf-blue-20: rgba($gulf-blue, .2);
+$gulf-blue-15: rgba($gulf-blue, .15);
+$gulf-blue-10: rgba($gulf-blue, .1);
+$gulf-blue-05: rgba($gulf-blue, .05);
+$gulf-blue-00: rgba($gulf-blue, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--gulf-blue-shade-1() {
+    background: $gulf-blue-shade-1;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-1, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-1, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-1, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-2() {
+    background: $gulf-blue-shade-2;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-2, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-2, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-2, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-3() {
+    background: $gulf-blue-shade-3;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-3, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-3, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-3, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-4() {
+    background: $gulf-blue-shade-4;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-4, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-4, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-4, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-5() {
+    background: $gulf-blue-shade-5;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-5, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-5, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-5, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-6() {
+    background: $gulf-blue-shade-6;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-6, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-6, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-6, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-7() {
+    background: $gulf-blue-shade-7;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-7, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-7, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-7, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-8() {
+    background: $gulf-blue-shade-8;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-8, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-8, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-8, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-shade-9() {
+    background: $gulf-blue-shade-9;
+    background: -webkit-linear-gradient(right, $gulf-blue-shade-9, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-shade-9, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-shade-9, $gulf-blue) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--gulf-blue-tint-1() {
+    background: $gulf-blue-tint-1;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-1, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-1, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-1, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-2() {
+    background: $gulf-blue-tint-2;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-2, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-2, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-2, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-3() {
+    background: $gulf-blue-tint-3;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-3, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-3, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-3, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-4() {
+    background: $gulf-blue-tint-4;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-4, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-4, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-4, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-5() {
+    background: $gulf-blue-tint-5;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-5, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-5, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-5, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-6() {
+    background: $gulf-blue-tint-6;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-6, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-6, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-6, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-7() {
+    background: $gulf-blue-tint-7;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-7, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-7, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-7, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-8() {
+    background: $gulf-blue-tint-8;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-8, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-8, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-8, $gulf-blue) !important;
+}
+@mixin bg-gradient--gulf-blue-tint-9() {
+    background: $gulf-blue-tint-9;
+    background: -webkit-linear-gradient(right, $gulf-blue-tint-9, $gulf-blue) !important;
+    background:    -moz-linear-gradient(right, $gulf-blue-tint-9, $gulf-blue) !important;
+    background:         linear-gradient(to left, $gulf-blue-tint-9, $gulf-blue) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--gulf-blue() {
+    color: #FFFFFF;
+    @include bg-gradient--gulf-blue-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--gulf-blue { color: $gulf-blue }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--gulf-blue-shade-1 { color: $gulf-blue-shade-1 }
+.color--gulf-blue-shade-2 { color: $gulf-blue-shade-2 }
+.color--gulf-blue-shade-3 { color: $gulf-blue-shade-3 }
+.color--gulf-blue-shade-4 { color: $gulf-blue-shade-4 }
+.color--gulf-blue-shade-5 { color: $gulf-blue-shade-5 }
+.color--gulf-blue-shade-6 { color: $gulf-blue-shade-6 }
+.color--gulf-blue-shade-7 { color: $gulf-blue-shade-7 }
+.color--gulf-blue-shade-8 { color: $gulf-blue-shade-8 }
+.color--gulf-blue-shade-9 { color: $gulf-blue-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--gulf-blue-tint-1 { color: $gulf-blue-tint-1 }
+.color--gulf-blue-tint-2 { color: $gulf-blue-tint-2 }
+.color--gulf-blue-tint-3 { color: $gulf-blue-tint-3 }
+.color--gulf-blue-tint-4 { color: $gulf-blue-tint-4 }
+.color--gulf-blue-tint-5 { color: $gulf-blue-tint-5 }
+.color--gulf-blue-tint-6 { color: $gulf-blue-tint-6 }
+.color--gulf-blue-tint-7 { color: $gulf-blue-tint-7 }
+.color--gulf-blue-tint-8 { color: $gulf-blue-tint-8 }
+.color--gulf-blue-tint-9 { color: $gulf-blue-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--gulf-blue-variation-1 { color: $gulf-blue-variation-1 }
+.color--gulf-blue-variation-2 { color: $gulf-blue-variation-2 }
+.color--gulf-blue-variation-3 { color: $gulf-blue-variation-3 }
+.color--gulf-blue-variation-4 { color: $gulf-blue-variation-4 }
+.color--gulf-blue-variation-5 { color: $gulf-blue-variation-5 }
+.color--gulf-blue-variation-6 { color: $gulf-blue-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--gulf-blue-triad-1 { color: $gulf-blue-triad-1 }
+.color--gulf-blue-triad-2 { color: $gulf-blue-triad-2 }
+.color--gulf-blue-triad-3 { color: $gulf-blue-triad-3 }
+
+// Analogius color scheme
+.color--gulf-blue-analogous-1 { color: $gulf-blue-analogous-1 }
+.color--gulf-blue-analogous-2 { color: $gulf-blue-analogous-2 }
+
+// Split complementary
+.color--gulf-blue-split-complementary-1 { color: $gulf-blue-split-complementary-1 }
+.color--gulf-blue-split-complementary-2 { color: $gulf-blue-split-complementary-2 }
+
+// Complementary
+.color--gulf-blue-complementary { color: $gulf-blue-complementary }
+
+// Monochromatic
+.color--gulf-blue-monochromatic-1 { color: $gulf-blue-monochromatic-1 }
+.color--gulf-blue-monochromatic-2 { color: $gulf-blue-monochromatic-2 }
+.color--gulf-blue-monochromatic-3 { color: $gulf-blue-monochromatic-3 }
+.color--gulf-blue-monochromatic-4 { color: $gulf-blue-monochromatic-4 }
+.color--gulf-blue-monochromatic-5 { color: $gulf-blue-monochromatic-5 }
+.color--gulf-blue-monochromatic-6 { color: $gulf-blue-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--gulf-blue-alpha-100 { color: $gulf-blue-100 }
+.color--gulf-blue-alpha-95 { color: $gulf-blue-95 }
+.color--gulf-blue-alpha-90 { color: $gulf-blue-90 }
+.color--gulf-blue-alpha-85 { color: $gulf-blue-85 }
+.color--gulf-blue-alpha-80 { color: $gulf-blue-80 }
+.color--gulf-blue-alpha-75 { color: $gulf-blue-75 }
+.color--gulf-blue-alpha-70 { color: $gulf-blue-70 }
+.color--gulf-blue-alpha-65 { color: $gulf-blue-65 }
+.color--gulf-blue-alpha-60 { color: $gulf-blue-60 }
+.color--gulf-blue-alpha-55 { color: $gulf-blue-55 }
+.color--gulf-blue-alpha-50 { color: $gulf-blue-50 }
+.color--gulf-blue-alpha-45 { color: $gulf-blue-45 }
+.color--gulf-blue-alpha-40 { color: $gulf-blue-40 }
+.color--gulf-blue-alpha-35 { color: $gulf-blue-35 }
+.color--gulf-blue-alpha-30 { color: $gulf-blue-30 }
+.color--gulf-blue-alpha-25 { color: $gulf-blue-25 }
+.color--gulf-blue-alpha-20 { color: $gulf-blue-20 }
+.color--gulf-blue-alpha-15 { color: $gulf-blue-15 }
+.color--gulf-blue-alpha-10 { color: $gulf-blue-10 }
+.color--gulf-blue-alpha-05 { color: $gulf-blue-05 }
+.color--gulf-blue-alpha-00 { color: $gulf-blue-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--gulf-blue { background-color: $gulf-blue }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--gulf-blue-shade-1 { background-color: $gulf-blue-shade-1 }
+.bg-color--gulf-blue-shade-2 { background-color: $gulf-blue-shade-2 }
+.bg-color--gulf-blue-shade-3 { background-color: $gulf-blue-shade-3 }
+.bg-color--gulf-blue-shade-4 { background-color: $gulf-blue-shade-4 }
+.bg-color--gulf-blue-shade-5 { background-color: $gulf-blue-shade-5 }
+.bg-color--gulf-blue-shade-6 { background-color: $gulf-blue-shade-6 }
+.bg-color--gulf-blue-shade-7 { background-color: $gulf-blue-shade-7 }
+.bg-color--gulf-blue-shade-8 { background-color: $gulf-blue-shade-8 }
+.bg-color--gulf-blue-shade-9 { background-color: $gulf-blue-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--gulf-blue-tint-1 { background-color: $gulf-blue-tint-1 }
+.bg-color--gulf-blue-tint-2 { background-color: $gulf-blue-tint-2 }
+.bg-color--gulf-blue-tint-3 { background-color: $gulf-blue-tint-3 }
+.bg-color--gulf-blue-tint-4 { background-color: $gulf-blue-tint-4 }
+.bg-color--gulf-blue-tint-5 { background-color: $gulf-blue-tint-5 }
+.bg-color--gulf-blue-tint-6 { background-color: $gulf-blue-tint-6 }
+.bg-color--gulf-blue-tint-7 { background-color: $gulf-blue-tint-7 }
+.bg-color--gulf-blue-tint-8 { background-color: $gulf-blue-tint-8 }
+.bg-color--gulf-blue-tint-9 { background-color: $gulf-blue-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--gulf-blue-variation-1 { background-color: $gulf-blue-variation-1 }
+.bg-color--gulf-blue-variation-2 { background-color: $gulf-blue-variation-2 }
+.bg-color--gulf-blue-variation-3 { background-color: $gulf-blue-variation-3 }
+.bg-color--gulf-blue-variation-4 { background-color: $gulf-blue-variation-4 }
+.bg-color--gulf-blue-variation-5 { background-color: $gulf-blue-variation-5 }
+.bg-color--gulf-blue-variation-6 { background-color: $gulf-blue-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--gulf-blue-triad-1 { background-color: $gulf-blue-triad-1 }
+.bg-color--gulf-blue-triad-2 { background-color: $gulf-blue-triad-2 }
+.bg-color--gulf-blue-triad-3 { background-color: $gulf-blue-triad-3 }
+
+// Analogius color scheme
+.bg-color--gulf-blue-analogous-1 { background-color: $gulf-blue-analogous-1 }
+.bg-color--gulf-blue-analogous-2 { background-color: $gulf-blue-analogous-2 }
+
+// Split complementary
+.bg-color--gulf-blue-split-complementary-1 { background-color: $gulf-blue-split-complementary-1 }
+.bg-color--gulf-blue-split-complementary-2 { background-color: $gulf-blue-split-complementary-2 }
+
+// Complementary
+.bg-color--gulf-blue-complementary { background-color: $gulf-blue-complementary }
+
+// Monochromatic
+.bg-color--gulf-blue-monochromatic-1 { background-color: $gulf-blue-monochromatic-1 }
+.bg-color--gulf-blue-monochromatic-2 { background-color: $gulf-blue-monochromatic-2 }
+.bg-color--gulf-blue-monochromatic-3 { background-color: $gulf-blue-monochromatic-3 }
+.bg-color--gulf-blue-monochromatic-4 { background-color: $gulf-blue-monochromatic-4 }
+.bg-color--gulf-blue-monochromatic-5 { background-color: $gulf-blue-monochromatic-5 }
+.bg-color--gulf-blue-monochromatic-6 { background-color: $gulf-blue-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--gulf-blue-alpha-100 { background-color: $gulf-blue-100 }
+.bg-color--gulf-blue-alpha-95 { background-color: $gulf-blue-95 }
+.bg-color--gulf-blue-alpha-90 { background-color: $gulf-blue-90 }
+.bg-color--gulf-blue-alpha-85 { background-color: $gulf-blue-85 }
+.bg-color--gulf-blue-alpha-80 { background-color: $gulf-blue-80 }
+.bg-color--gulf-blue-alpha-75 { background-color: $gulf-blue-75 }
+.bg-color--gulf-blue-alpha-70 { background-color: $gulf-blue-70 }
+.bg-color--gulf-blue-alpha-65 { background-color: $gulf-blue-65 }
+.bg-color--gulf-blue-alpha-60 { background-color: $gulf-blue-60 }
+.bg-color--gulf-blue-alpha-55 { background-color: $gulf-blue-55 }
+.bg-color--gulf-blue-alpha-50 { background-color: $gulf-blue-50 }
+.bg-color--gulf-blue-alpha-45 { background-color: $gulf-blue-45 }
+.bg-color--gulf-blue-alpha-40 { background-color: $gulf-blue-40 }
+.bg-color--gulf-blue-alpha-35 { background-color: $gulf-blue-35 }
+.bg-color--gulf-blue-alpha-30 { background-color: $gulf-blue-30 }
+.bg-color--gulf-blue-alpha-25 { background-color: $gulf-blue-25 }
+.bg-color--gulf-blue-alpha-20 { background-color: $gulf-blue-20 }
+.bg-color--gulf-blue-alpha-15 { background-color: $gulf-blue-15 }
+.bg-color--gulf-blue-alpha-10 { background-color: $gulf-blue-10 }
+.bg-color--gulf-blue-alpha-05 { background-color: $gulf-blue-05 }
+.bg-color--gulf-blue-alpha-00 { background-color: $gulf-blue-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--gulf-blue-shade-1 {
+    @include bg-gradient--gulf-blue-shade-1();
+}
+.bg-gradient--gulf-blue-shade-2 {
+    @include bg-gradient--gulf-blue-shade-2();
+}
+.bg-gradient--gulf-blue-shade-3 {
+    @include bg-gradient--gulf-blue-shade-3();
+}
+.bg-gradient--gulf-blue-shade-4 {
+    @include bg-gradient--gulf-blue-shade-4();
+}
+.bg-gradient--gulf-blue-shade-5 {
+    @include bg-gradient--gulf-blue-shade-5();
+}
+.bg-gradient--gulf-blue-shade-6 {
+    @include bg-gradient--gulf-blue-shade-6();
+}
+.bg-gradient--gulf-blue-shade-7 {
+    @include bg-gradient--gulf-blue-shade-7();
+}
+.bg-gradient--gulf-blue-shade-8 {
+    @include bg-gradient--gulf-blue-shade-8();
+}
+.bg-gradient--gulf-blue-shade-9 {
+    @include bg-gradient--gulf-blue-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--gulf-blue-tint-1 {
+    @include bg-gradient--gulf-blue-tint-1();
+}
+.bg-gradient--gulf-blue-tint-2 {
+    @include bg-gradient--gulf-blue-tint-2();
+}
+.bg-gradient--gulf-blue-tint-3 {
+    @include bg-gradient--gulf-blue-tint-3();
+}
+.bg-gradient--gulf-blue-tint-4 {
+    @include bg-gradient--gulf-blue-tint-4();
+}
+.bg-gradient--gulf-blue-tint-5 {
+    @include bg-gradient--gulf-blue-tint-5();
+}
+.bg-gradient--gulf-blue-tint-6 {
+    @include bg-gradient--gulf-blue-tint-6();
+}
+.bg-gradient--gulf-blue-tint-7 {
+    @include bg-gradient--gulf-blue-tint-7();
+}
+.bg-gradient--gulf-blue-tint-8 {
+    @include bg-gradient--gulf-blue-tint-8();
+}
+.bg-gradient--gulf-blue-tint-9 {
+    @include bg-gradient--gulf-blue-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--gulf-blue {
+    @include bg-gradient--gulf-blue();
+}

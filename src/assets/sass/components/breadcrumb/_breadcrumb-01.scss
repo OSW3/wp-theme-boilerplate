@@ -1,0 +1,56 @@
+// SCSS Component : Breadcrumb
+// ------------------
+// 
+// 1. Import Bootstrap Base
+// 2. Divider
+// 3. Override
+// 
+// =============================================================================
+
+// 1. Import Bootstrap Base
+// ------------------
+// @import 'node_modules/bootstrap/scss/breadcrumb';
+
+
+// 2. Divider
+// ------------------
+$breadcrumb-divider: "\002F";
+
+.breadcrumb-item + .breadcrumb-item::before {
+    @include property('color', 'breadcrumb--divider');
+    content: $breadcrumb-divider;
+}
+
+
+// 3. Custom override
+// ------------------
+.breadcrumb {
+    background: none;
+    margin-bottom: 0;
+    @include rounded(0);
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    li {
+        // font-family: $breadcrumb--font-stack;
+        @include property('color', 'component--breadcrumb--text');
+
+        a {
+            font-family: inherit;
+            color: inherit;
+
+            @include transition();
+
+            &:hover {
+                @include property('color', 'component--breadcrumb--text-hover');
+                text-decoration: none;
+            }
+        }
+
+        &.active {
+            @include property('color', 'component--breadcrumb--text-active');
+        }
+    }
+}

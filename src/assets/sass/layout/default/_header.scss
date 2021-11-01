@@ -1,0 +1,209 @@
+// SCSS Layout : Header
+// ------------------
+// 
+// 1. -
+// 
+// =============================================================================
+
+.main-header
+{
+    border: 10px solid red;
+
+    @import './../../../../../templates/components/topbar/topbar-01';
+    @import './../../../../../templates/components/navbar/navbar-01';
+
+    // // Position
+    // @include position(absolute, 0 0 null 0);
+    // // @include sizes(100%, $layout--header--height);
+
+    // // Theme
+    // @include property('background-color', 'layout--header--bg-color');
+
+    // // Animation
+    // @include transition-property(background-color padding-left);
+    // @include transition-duration($layout--sidebar--transition-duration);
+    
+    // z-index: 300 !important;
+
+    // & .header-nav 
+    // {
+    //     // Position
+    //     @extend %flex-middle;
+    //     @include sizes(100%, $layout--header--height);
+    //     @include padding(auto 15px auto 15px);
+    //     height: $layout--header--height;
+
+    //     // Theme
+    //     @extend %border-bottom-solid-1;
+    //     @include property('border-bottom-color', 'layout--header--border-bottom-color');
+
+    //     .nav-item 
+    //     {
+    //         // Position
+    //         @extend %flex-middle;
+    //         min-width: 30px;
+
+    //         > .nav-link 
+    //         {
+    //             // Position
+    //             @include padding(6px 15px);
+
+    //             // Theme
+    //             @extend %border-solid-1;
+    //             @include property('border-color', 'transparent');
+    //             @include property('color', 'layout--header--color');
+    //             background: none;
+
+    //             &:hover {
+    //                 @include property('color', 'layout--header--color-hover');
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+// // Sidebar open
+// .main-sidebar-open .main-header
+// {
+//     padding-left: $layout--header--padding-start--sidebar-open;
+// }
+
+// // Sidebar Minified
+// .main-sidebar-minify .main-header 
+// {
+//     padding-left: $layout--header--padding-start--sidebar-minify;
+// }
+
+// // Sidebar Closed
+// .main-sidebar-close .main-header 
+// {
+//     padding-left: $layout--header--padding-start--sidebar-close;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+.main-header_
+{
+
+
+    // @include property('background-color', 'layout--header--bg-color');
+    // @include position(absolute, 0 0 null 0);
+    // @include transition-property(background-color padding-left);
+    // @include transition-duration($sidebar--transition--duration);
+    
+    // padding-left: $header--left--sidebar-open;
+    // z-index: 300 !important;
+
+    .header-nav {
+        @extend %flex-middle;
+        // @include position(absolute, 0 0 0 0);
+        // @include transition();
+        z-index: 10 !important;
+        // border: 3px solid red;
+        // @include sizes(100%, $header--height);
+        @extend %border-bottom-solid-1;
+        @include property('border-bottom-color', 'layout--header--border-bottom-color');    
+    // }
+
+    // & .navbar {
+    //     @extend %flex-middle;
+        
+    //     font-size: $header-content--font-size;
+    //     line-height: $header-content--line-height;
+    //     // padding: $header-content--padding;
+
+
+        .navbar-nav {
+            @extend %flex-row;
+            @include margin(0);
+            @include padding(0);
+    
+            > .nav-item {
+                @extend %flex-middle;
+                min-width: 30px;
+    
+                // Add transition if .nav-item have not .dropdown,
+                &:not(.dropdown) {
+                    .nav-link {
+                        @include transition();
+                    }
+                }
+    
+                // keep contrast of color of main .nav-link of the dropdown
+                // &:hover .nav-link,
+                // &:hover .nav-link,
+                // &.active .nav-link,
+                // &.show .nav-link,
+                // &.show .nav-link:hover {
+                //     @include property('color', 'app-header--dropdown-color');
+                // }
+    
+                > .nav-link {
+                    @include padding(6px 15px);
+                    @include property('color', 'layout--header--color');
+                    border: 1px solid transparent;
+                    background: none;
+                    
+                    &.active,
+                    &:hover {
+                        @include property('color', 'layout--header--color-hover');
+                    }
+                }
+    
+                // Dropdown menu
+                &.dropdown.show .nav-link {
+                    color: #000000;
+                    // @include property('background-color', 'app-header--dropdown-background-color');
+    
+                    transition: none !important;
+                }
+                &.dropdown-border.show .nav-link {
+                    // @include border-color($app_header_dropdown_border_color $app_header_dropdown_border_color null $app_header_dropdown_border_color);
+                    @include border-style(solid solid null solid);
+                    @include border-width(1px 1px null 1px);
+    
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+    
+                    // transition: none;
+                    z-index: 2;
+                }
+                &.dropdown .dropdown-menu {
+                    // @include border-color(null $app_header_dropdown_border_color $app_header_dropdown_border_color $app_header_dropdown_border_color);
+                    @include border-style(null solid solid solid);
+                    @include border-width(null 1px 1px 1px);
+    
+                    // @if $app_header_dropdown_shadow {
+                    //     @include shadow($app_header_dropdown_shadow, 0, 2px, 5px, 0);
+                    // }
+    
+                    // @include property('background-color', 'app-header--dropdown-background-color');
+    
+                    max-width: 280px;
+    
+                    position: absolute;
+                    left: auto;
+                    border-radius: 0;
+                    margin-top: -2px;
+    
+                    // font-size: $app_header_dropdown_font_size;
+    
+                    z-index: 1;
+    
+                    .dropdown-divider {
+                        // border-color: $app_header_dropdown_border_color;
+                    }
+                }
+            }
+        }
+    }
+}

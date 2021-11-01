@@ -1,0 +1,21 @@
+// SCSS Abstracts : mixins
+// ------------------
+// 
+// 1. Import Bootstrap Base
+// 2. Import Mixins Libray
+// 
+// =============================================================================
+
+// 1. Import Bootstrap Base
+// ------------------
+// @import 'node_modules/bootstrap/scss/mixins';
+
+// 2. Import Mixins Libray
+// ------------------
+@import './background';
+@import './googleFont';
+@import './rounded';
+@import './shadow';
+@import './sizes';
+@import './theme';
+@import './transition';

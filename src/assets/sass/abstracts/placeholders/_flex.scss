@@ -1,0 +1,37 @@
+/// SCSS Placeholders : flex
+/// ------------------
+/// 
+/// @example
+/// 
+/// =============================================================================
+
+// Apply a display flew with a column direction
+%flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @include prefixer(flex-direction, column, ("webkit", "moz", "ms"));
+}
+
+// Apply a display flew with an align center
+%flex-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+}
+
+// Apply a display flew with a row direction
+%flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @include prefixer(flex-direction, row, ("webkit", "moz", "ms"));
+}

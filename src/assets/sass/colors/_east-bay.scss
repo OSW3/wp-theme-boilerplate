@@ -1,0 +1,524 @@
+// East-bay
+// ------------------
+// @info: https://www.htmlcsscolor.com/hex/4c5667
+// 
+// 1. Base color
+// 2. shades
+// 3. tints
+// 4. Variations
+// 5. Harmonies
+// 6. Opactity (alpha)
+// 7. Shades gradients
+// 8. Tints gradients
+// 9. Default gradient
+// 
+// =============================================================================
+
+// 1. Base color
+// ------------------
+
+$east-bay: #4c5667;
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+$east-bay-shade-1: #3D4552;
+$east-bay-shade-2: #313742;
+$east-bay-shade-3: #272C35;
+$east-bay-shade-4: #1F232A;
+$east-bay-shade-5: #191C22;
+$east-bay-shade-6: #14161B;
+$east-bay-shade-7: #101216;
+$east-bay-shade-8: #0D0E12;
+$east-bay-shade-9: #0A0B0E;
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+$east-bay-tint-1: #707885;
+$east-bay-tint-2: #8D939D;
+$east-bay-tint-3: #A4A9B1;
+$east-bay-tint-4: #B6BAC1;
+$east-bay-tint-5: #C5C8CD;
+$east-bay-tint-6: #D1D3D7;
+$east-bay-tint-7: #DADCDF;
+$east-bay-tint-8: #E1E3E5;
+$east-bay-tint-9: #E7E9EA;
+
+
+// 4. Variations
+// ------------------
+
+$east-bay-variation-1: #4C5667;
+$east-bay-variation-2: #4C6756;
+$east-bay-variation-3: #564C67;
+$east-bay-variation-4: #56674C;
+$east-bay-variation-5: #674C56;
+$east-bay-variation-6: #67564C;
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+$east-bay-triad-1: #4c5667;
+$east-bay-triad-2: #674C56;
+$east-bay-triad-3: #56674C;
+
+// Analogius color scheme
+$east-bay-analogous-1: #504C67;
+$east-bay-analogous-2: #4C6467;
+
+// Split complementary
+$east-bay-split-complementary-1: #67504C;
+$east-bay-split-complementary-2: #64674C;
+
+// Complementary
+$east-bay-complementary: #675D4C;
+
+// Monochromatic
+$east-bay-monochromatic-1: #D2D5D9;
+$east-bay-monochromatic-2: #A6ABB4;
+$east-bay-monochromatic-3: #7C8087;
+$east-bay-monochromatic-4: #39404D;
+$east-bay-monochromatic-5: #262B34;
+$east-bay-monochromatic-6: #1C2027;
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+$east-bay-100: rgba($east-bay, 1);
+$east-bay-95: rgba($east-bay, .95);
+$east-bay-90: rgba($east-bay, .9);
+$east-bay-85: rgba($east-bay, .85);
+$east-bay-80: rgba($east-bay, .8);
+$east-bay-75: rgba($east-bay, .75);
+$east-bay-70: rgba($east-bay, .7);
+$east-bay-65: rgba($east-bay, .65);
+$east-bay-60: rgba($east-bay, .6);
+$east-bay-55: rgba($east-bay, .55);
+$east-bay-50: rgba($east-bay, .5);
+$east-bay-45: rgba($east-bay, .45);
+$east-bay-40: rgba($east-bay, .4);
+$east-bay-35: rgba($east-bay, .35);
+$east-bay-30: rgba($east-bay, .3);
+$east-bay-25: rgba($east-bay, .25);
+$east-bay-20: rgba($east-bay, .2);
+$east-bay-15: rgba($east-bay, .15);
+$east-bay-10: rgba($east-bay, .1);
+$east-bay-05: rgba($east-bay, .05);
+$east-bay-00: rgba($east-bay, .0);
+
+
+// 7. Shades gradient
+// ------------------
+
+@mixin bg-gradient--east-bay-shade-1() {
+    background: $east-bay-shade-1;
+    background: -webkit-linear-gradient(right, $east-bay-shade-1, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-1, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-1, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-2() {
+    background: $east-bay-shade-2;
+    background: -webkit-linear-gradient(right, $east-bay-shade-2, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-2, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-2, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-3() {
+    background: $east-bay-shade-3;
+    background: -webkit-linear-gradient(right, $east-bay-shade-3, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-3, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-3, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-4() {
+    background: $east-bay-shade-4;
+    background: -webkit-linear-gradient(right, $east-bay-shade-4, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-4, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-4, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-5() {
+    background: $east-bay-shade-5;
+    background: -webkit-linear-gradient(right, $east-bay-shade-5, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-5, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-5, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-6() {
+    background: $east-bay-shade-6;
+    background: -webkit-linear-gradient(right, $east-bay-shade-6, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-6, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-6, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-7() {
+    background: $east-bay-shade-7;
+    background: -webkit-linear-gradient(right, $east-bay-shade-7, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-7, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-7, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-8() {
+    background: $east-bay-shade-8;
+    background: -webkit-linear-gradient(right, $east-bay-shade-8, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-8, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-8, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-shade-9() {
+    background: $east-bay-shade-9;
+    background: -webkit-linear-gradient(right, $east-bay-shade-9, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-shade-9, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-shade-9, $east-bay) !important;
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+@mixin bg-gradient--east-bay-tint-1() {
+    background: $east-bay-tint-1;
+    background: -webkit-linear-gradient(right, $east-bay-tint-1, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-1, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-1, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-2() {
+    background: $east-bay-tint-2;
+    background: -webkit-linear-gradient(right, $east-bay-tint-2, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-2, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-2, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-3() {
+    background: $east-bay-tint-3;
+    background: -webkit-linear-gradient(right, $east-bay-tint-3, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-3, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-3, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-4() {
+    background: $east-bay-tint-4;
+    background: -webkit-linear-gradient(right, $east-bay-tint-4, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-4, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-4, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-5() {
+    background: $east-bay-tint-5;
+    background: -webkit-linear-gradient(right, $east-bay-tint-5, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-5, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-5, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-6() {
+    background: $east-bay-tint-6;
+    background: -webkit-linear-gradient(right, $east-bay-tint-6, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-6, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-6, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-7() {
+    background: $east-bay-tint-7;
+    background: -webkit-linear-gradient(right, $east-bay-tint-7, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-7, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-7, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-8() {
+    background: $east-bay-tint-8;
+    background: -webkit-linear-gradient(right, $east-bay-tint-8, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-8, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-8, $east-bay) !important;
+}
+@mixin bg-gradient--east-bay-tint-9() {
+    background: $east-bay-tint-9;
+    background: -webkit-linear-gradient(right, $east-bay-tint-9, $east-bay) !important;
+    background:    -moz-linear-gradient(right, $east-bay-tint-9, $east-bay) !important;
+    background:         linear-gradient(to left, $east-bay-tint-9, $east-bay) !important;
+}
+
+
+// 9. Default gradient
+// ------------------
+
+@mixin bg-gradient--east-bay() {
+    color: #FFFFFF;
+    @include bg-gradient--east-bay-tint-1();
+}
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.color--east-bay { color: $east-bay }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.color--east-bay-shade-1 { color: $east-bay-shade-1 }
+.color--east-bay-shade-2 { color: $east-bay-shade-2 }
+.color--east-bay-shade-3 { color: $east-bay-shade-3 }
+.color--east-bay-shade-4 { color: $east-bay-shade-4 }
+.color--east-bay-shade-5 { color: $east-bay-shade-5 }
+.color--east-bay-shade-6 { color: $east-bay-shade-6 }
+.color--east-bay-shade-7 { color: $east-bay-shade-7 }
+.color--east-bay-shade-8 { color: $east-bay-shade-8 }
+.color--east-bay-shade-9 { color: $east-bay-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.color--east-bay-tint-1 { color: $east-bay-tint-1 }
+.color--east-bay-tint-2 { color: $east-bay-tint-2 }
+.color--east-bay-tint-3 { color: $east-bay-tint-3 }
+.color--east-bay-tint-4 { color: $east-bay-tint-4 }
+.color--east-bay-tint-5 { color: $east-bay-tint-5 }
+.color--east-bay-tint-6 { color: $east-bay-tint-6 }
+.color--east-bay-tint-7 { color: $east-bay-tint-7 }
+.color--east-bay-tint-8 { color: $east-bay-tint-8 }
+.color--east-bay-tint-9 { color: $east-bay-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.color--east-bay-variation-1 { color: $east-bay-variation-1 }
+.color--east-bay-variation-2 { color: $east-bay-variation-2 }
+.color--east-bay-variation-3 { color: $east-bay-variation-3 }
+.color--east-bay-variation-4 { color: $east-bay-variation-4 }
+.color--east-bay-variation-5 { color: $east-bay-variation-5 }
+.color--east-bay-variation-6 { color: $east-bay-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.color--east-bay-triad-1 { color: $east-bay-triad-1 }
+.color--east-bay-triad-2 { color: $east-bay-triad-2 }
+.color--east-bay-triad-3 { color: $east-bay-triad-3 }
+
+// Analogius color scheme
+.color--east-bay-analogous-1 { color: $east-bay-analogous-1 }
+.color--east-bay-analogous-2 { color: $east-bay-analogous-2 }
+
+// Split complementary
+.color--east-bay-split-complementary-1 { color: $east-bay-split-complementary-1 }
+.color--east-bay-split-complementary-2 { color: $east-bay-split-complementary-2 }
+
+// Complementary
+.color--east-bay-complementary { color: $east-bay-complementary }
+
+// Monochromatic
+.color--east-bay-monochromatic-1 { color: $east-bay-monochromatic-1 }
+.color--east-bay-monochromatic-2 { color: $east-bay-monochromatic-2 }
+.color--east-bay-monochromatic-3 { color: $east-bay-monochromatic-3 }
+.color--east-bay-monochromatic-4 { color: $east-bay-monochromatic-4 }
+.color--east-bay-monochromatic-5 { color: $east-bay-monochromatic-5 }
+.color--east-bay-monochromatic-6 { color: $east-bay-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.color--east-bay-alpha-100 { color: $east-bay-100 }
+.color--east-bay-alpha-95 { color: $east-bay-95 }
+.color--east-bay-alpha-90 { color: $east-bay-90 }
+.color--east-bay-alpha-85 { color: $east-bay-85 }
+.color--east-bay-alpha-80 { color: $east-bay-80 }
+.color--east-bay-alpha-75 { color: $east-bay-75 }
+.color--east-bay-alpha-70 { color: $east-bay-70 }
+.color--east-bay-alpha-65 { color: $east-bay-65 }
+.color--east-bay-alpha-60 { color: $east-bay-60 }
+.color--east-bay-alpha-55 { color: $east-bay-55 }
+.color--east-bay-alpha-50 { color: $east-bay-50 }
+.color--east-bay-alpha-45 { color: $east-bay-45 }
+.color--east-bay-alpha-40 { color: $east-bay-40 }
+.color--east-bay-alpha-35 { color: $east-bay-35 }
+.color--east-bay-alpha-30 { color: $east-bay-30 }
+.color--east-bay-alpha-25 { color: $east-bay-25 }
+.color--east-bay-alpha-20 { color: $east-bay-20 }
+.color--east-bay-alpha-15 { color: $east-bay-15 }
+.color--east-bay-alpha-10 { color: $east-bay-10 }
+.color--east-bay-alpha-05 { color: $east-bay-05 }
+.color--east-bay-alpha-00 { color: $east-bay-00 }
+
+
+
+
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
+
+// 1. Base color
+// ------------------
+
+.bg-color--east-bay { background-color: $east-bay }
+
+
+// 2. Shades (from light to dark)
+// ------------------
+
+.bg-color--east-bay-shade-1 { background-color: $east-bay-shade-1 }
+.bg-color--east-bay-shade-2 { background-color: $east-bay-shade-2 }
+.bg-color--east-bay-shade-3 { background-color: $east-bay-shade-3 }
+.bg-color--east-bay-shade-4 { background-color: $east-bay-shade-4 }
+.bg-color--east-bay-shade-5 { background-color: $east-bay-shade-5 }
+.bg-color--east-bay-shade-6 { background-color: $east-bay-shade-6 }
+.bg-color--east-bay-shade-7 { background-color: $east-bay-shade-7 }
+.bg-color--east-bay-shade-8 { background-color: $east-bay-shade-8 }
+.bg-color--east-bay-shade-9 { background-color: $east-bay-shade-9 }
+
+
+// 3. Tints (from dark to light)
+// ------------------
+
+.bg-color--east-bay-tint-1 { background-color: $east-bay-tint-1 }
+.bg-color--east-bay-tint-2 { background-color: $east-bay-tint-2 }
+.bg-color--east-bay-tint-3 { background-color: $east-bay-tint-3 }
+.bg-color--east-bay-tint-4 { background-color: $east-bay-tint-4 }
+.bg-color--east-bay-tint-5 { background-color: $east-bay-tint-5 }
+.bg-color--east-bay-tint-6 { background-color: $east-bay-tint-6 }
+.bg-color--east-bay-tint-7 { background-color: $east-bay-tint-7 }
+.bg-color--east-bay-tint-8 { background-color: $east-bay-tint-8 }
+.bg-color--east-bay-tint-9 { background-color: $east-bay-tint-9 }
+
+
+// 4. Variations
+// ------------------
+
+.bg-color--east-bay-variation-1 { background-color: $east-bay-variation-1 }
+.bg-color--east-bay-variation-2 { background-color: $east-bay-variation-2 }
+.bg-color--east-bay-variation-3 { background-color: $east-bay-variation-3 }
+.bg-color--east-bay-variation-4 { background-color: $east-bay-variation-4 }
+.bg-color--east-bay-variation-5 { background-color: $east-bay-variation-5 }
+.bg-color--east-bay-variation-6 { background-color: $east-bay-variation-6 }
+
+
+// 5. Harmonies
+// ------------------
+
+// Triad color scheme
+.bg-color--east-bay-triad-1 { background-color: $east-bay-triad-1 }
+.bg-color--east-bay-triad-2 { background-color: $east-bay-triad-2 }
+.bg-color--east-bay-triad-3 { background-color: $east-bay-triad-3 }
+
+// Analogius color scheme
+.bg-color--east-bay-analogous-1 { background-color: $east-bay-analogous-1 }
+.bg-color--east-bay-analogous-2 { background-color: $east-bay-analogous-2 }
+
+// Split complementary
+.bg-color--east-bay-split-complementary-1 { background-color: $east-bay-split-complementary-1 }
+.bg-color--east-bay-split-complementary-2 { background-color: $east-bay-split-complementary-2 }
+
+// Complementary
+.bg-color--east-bay-complementary { background-color: $east-bay-complementary }
+
+// Monochromatic
+.bg-color--east-bay-monochromatic-1 { background-color: $east-bay-monochromatic-1 }
+.bg-color--east-bay-monochromatic-2 { background-color: $east-bay-monochromatic-2 }
+.bg-color--east-bay-monochromatic-3 { background-color: $east-bay-monochromatic-3 }
+.bg-color--east-bay-monochromatic-4 { background-color: $east-bay-monochromatic-4 }
+.bg-color--east-bay-monochromatic-5 { background-color: $east-bay-monochromatic-5 }
+.bg-color--east-bay-monochromatic-6 { background-color: $east-bay-monochromatic-6 }
+
+
+// 6. Opacity (alpha)
+// ------------------
+
+.bg-color--east-bay-alpha-100 { background-color: $east-bay-100 }
+.bg-color--east-bay-alpha-95 { background-color: $east-bay-95 }
+.bg-color--east-bay-alpha-90 { background-color: $east-bay-90 }
+.bg-color--east-bay-alpha-85 { background-color: $east-bay-85 }
+.bg-color--east-bay-alpha-80 { background-color: $east-bay-80 }
+.bg-color--east-bay-alpha-75 { background-color: $east-bay-75 }
+.bg-color--east-bay-alpha-70 { background-color: $east-bay-70 }
+.bg-color--east-bay-alpha-65 { background-color: $east-bay-65 }
+.bg-color--east-bay-alpha-60 { background-color: $east-bay-60 }
+.bg-color--east-bay-alpha-55 { background-color: $east-bay-55 }
+.bg-color--east-bay-alpha-50 { background-color: $east-bay-50 }
+.bg-color--east-bay-alpha-45 { background-color: $east-bay-45 }
+.bg-color--east-bay-alpha-40 { background-color: $east-bay-40 }
+.bg-color--east-bay-alpha-35 { background-color: $east-bay-35 }
+.bg-color--east-bay-alpha-30 { background-color: $east-bay-30 }
+.bg-color--east-bay-alpha-25 { background-color: $east-bay-25 }
+.bg-color--east-bay-alpha-20 { background-color: $east-bay-20 }
+.bg-color--east-bay-alpha-15 { background-color: $east-bay-15 }
+.bg-color--east-bay-alpha-10 { background-color: $east-bay-10 }
+.bg-color--east-bay-alpha-05 { background-color: $east-bay-05 }
+.bg-color--east-bay-alpha-00 { background-color: $east-bay-00 }
+
+
+// 7. Shades gradient
+// ------------------
+
+.bg-gradient--east-bay-shade-1 {
+    @include bg-gradient--east-bay-shade-1();
+}
+.bg-gradient--east-bay-shade-2 {
+    @include bg-gradient--east-bay-shade-2();
+}
+.bg-gradient--east-bay-shade-3 {
+    @include bg-gradient--east-bay-shade-3();
+}
+.bg-gradient--east-bay-shade-4 {
+    @include bg-gradient--east-bay-shade-4();
+}
+.bg-gradient--east-bay-shade-5 {
+    @include bg-gradient--east-bay-shade-5();
+}
+.bg-gradient--east-bay-shade-6 {
+    @include bg-gradient--east-bay-shade-6();
+}
+.bg-gradient--east-bay-shade-7 {
+    @include bg-gradient--east-bay-shade-7();
+}
+.bg-gradient--east-bay-shade-8 {
+    @include bg-gradient--east-bay-shade-8();
+}
+.bg-gradient--east-bay-shade-9 {
+    @include bg-gradient--east-bay-shade-9();
+}
+
+
+// 8. Tints gradient
+// ------------------
+
+.bg-gradient--east-bay-tint-1 {
+    @include bg-gradient--east-bay-tint-1();
+}
+.bg-gradient--east-bay-tint-2 {
+    @include bg-gradient--east-bay-tint-2();
+}
+.bg-gradient--east-bay-tint-3 {
+    @include bg-gradient--east-bay-tint-3();
+}
+.bg-gradient--east-bay-tint-4 {
+    @include bg-gradient--east-bay-tint-4();
+}
+.bg-gradient--east-bay-tint-5 {
+    @include bg-gradient--east-bay-tint-5();
+}
+.bg-gradient--east-bay-tint-6 {
+    @include bg-gradient--east-bay-tint-6();
+}
+.bg-gradient--east-bay-tint-7 {
+    @include bg-gradient--east-bay-tint-7();
+}
+.bg-gradient--east-bay-tint-8 {
+    @include bg-gradient--east-bay-tint-8();
+}
+.bg-gradient--east-bay-tint-9 {
+    @include bg-gradient--east-bay-tint-9();
+}
+
+
+// 9. Default gradient
+// ------------------
+
+.bg-gradient--east-bay {
+    @include bg-gradient--east-bay();
+}
