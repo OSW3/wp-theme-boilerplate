@@ -1,24 +1,19 @@
 <?php
-//======================================================================
-//  WordPress Theme Boilerplate by OSW3
-//======================================================================
-
-// File: ./config/menus.php
-// Use this file to define the menus that will be created when installing the theme
-
-// required: recommended
-
-//======================================================================
-
-// Check the ABSPATH constant for security
-// if the ABSPATH constant don't exists, this theme will be not executed
-if (!defined( 'ABSPATH' )) exit;
-
-//======================================================================
+/**
+ * =====================================================================
+ * WordPress Theme Boilerplate by OSW3
+ * =====================================================================
+ * 
+ * Use this file to define the menus that will be created when installing the
+ * theme.
+ * 
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
 
-
-// 2. Create a menu with post object
+// The main menu
 wptb_addMenu("Main Menu", [
     [
         'title'     => "Accueil",  // Override the title of the page
@@ -57,3 +52,25 @@ wptb_addMenu("Social Menu", [
         'target'    => "_blank"
     ]
 ]);
+
+
+
+
+
+
+
+
+ 
+//  * .
+//  * 
+//  * Use the wptb_addMenu function to register a new menu.
+//  * e.g.: wptb_addMenu(string $name, array $options)
+//  * 
+//  * 
+//  * Params
+//  * --
+//  * 
+//  * @param string $name The name of the new menu.
+//  * @param array $options List of menu items.
+//  * 
+//  */ if (!defined( 'ABSPATH' )) exit;

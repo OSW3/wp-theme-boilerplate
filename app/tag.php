@@ -4,7 +4,7 @@
  * WordPress Theme Boilerplate by OSW3
  * =====================================================================
  * 
- * More info at https://developer.wordpress.org/themes/template-files-section/post-template-files/#category-php-tag-php-and-taxonomy-php
+ * @see https://developer.wordpress.org/themes/template-files-section/post-template-files/#category-php-tag-php-and-taxonomy-php
  * 
  * Template Name: Category Tag
  * Template Type: Post Template
@@ -15,5 +15,4 @@
 
 /**
  * Include the file from the template directory
- */
-wptb_include( WPTB_DIR__TEMPLATES . "pages/tag.php" );
+ */ wptb__include(WPTB_DIR__TEMPLATES. "pages/tag.php");

@@ -8,7 +8,15 @@
 
 .main-footer
 {
-    border: 10px solid green;
+    background-image: url(http://wgl-demo.net/atlets/wp-content/uploads/2020/07/footer_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #001322;
+    // background-color: #49321c;
+
+    @import "./../../components/footer/footer";
+
     // // Position
     // @include position(absolute, null 0 0 0);
     // @include sizes(100%, $layout--footer--height);

@@ -1,19 +1,15 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * File: ./config/admin.php
  * Use this file to define the admin configuration.
  * 
- * required: recommended
- */
-
-/**
- * Check if this file is executed in WordPress environment.
- * if the ABSPATH constant don't exists, this theme will be not executed
- */
-if (!defined( 'ABSPATH' )) exit;
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
 
 /**

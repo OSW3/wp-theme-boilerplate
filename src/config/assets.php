@@ -1,19 +1,16 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * File: ./config/assets.php
- * Use this file to define the assets that will be integrated when the theme is initialized
+ * Use this file to define the assets (css & js) that will be integrated when
+ * the theme is initialized.
  * 
- * required: recommended
- */
-
-/**
- * Check if this file is executed in WordPress environment.
- * if the ABSPATH constant don't exists, this theme will be not executed
- */
-if (!defined( 'ABSPATH' )) exit;
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
 
 // Load Stylesheets
@@ -22,7 +19,7 @@ if (!defined( 'ABSPATH' )) exit;
 /**
  * Load the main Stylesheet
  */
-wptb_loadStylesheet([
+wptb__register_stylesheet([
     'handle' => "main",
     'source' => "main.css",
 ]);
@@ -30,7 +27,7 @@ wptb_loadStylesheet([
 /**
  * Load the Bootstrap Stylesheet
  */
-// wptb_loadStylesheet([
+// wptb__register_stylesheet([
 //     'handle' => "bootstrap",
 //     'source' => "bootstrap.min.css",
 // ]);
@@ -38,7 +35,7 @@ wptb_loadStylesheet([
 /**
  * Load the Animate Stylesheet
  */
-// wptb_loadStylesheet([
+// wptb__register_stylesheet([
 //     'handle' => "animate",
 //     'source' => "animate.min.css",
 // ]);
@@ -50,7 +47,7 @@ wptb_loadStylesheet([
 /**
  * Load the main script
  */
-wptb_loadScript([
+wptb__register_script([
     'handle'        => "_main",
     'source'        => "main.js",
     'version'       => "1",
@@ -60,7 +57,7 @@ wptb_loadScript([
 /**
  * Load the Bootstrap library
  */
-// wptb_loadScript([
+// wptb__register_script([
 //     'handle'        => "_bootstrap",
 //     'source'        => "bootstrap.min.js",
 //     'version'       => "4.5.2",
@@ -70,7 +67,7 @@ wptb_loadScript([
 /**
  * Load the jQuery library
  */
-// wptb_loadScript([
+// wptb__register_script([
 //     'handle'        => "_jquery",
 //     'source'        => "jquery.min.js",
 //     'version'       => "3.5.1",
@@ -79,7 +76,7 @@ wptb_loadScript([
 /**
  * Load the Popper JS
  */
-// wptb_loadScript([
+// wptb__register_script([
 //     'handle'        => "_popperjs",
 //     'source'        => "popper.min.js",
 //     'version'       => "1.16.0",

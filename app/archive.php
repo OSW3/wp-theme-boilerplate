@@ -4,7 +4,7 @@
  * WordPress Theme Boilerplate by OSW3
  * =====================================================================
  * 
- * More info at https://developer.wordpress.org/themes/template-files-section/post-template-files/#archive-php
+ * @see https://developer.wordpress.org/themes/template-files-section/post-template-files/#archive-php
  * 
  * Template Name: Default Archives
  * Template Type: Post Template
@@ -15,5 +15,4 @@
 
 /**
  * Include the file from the template directory
- */
-wptb_include( WPTB_DIR__TEMPLATES . "pages/archive.php" );
+ */ wptb__include(WPTB_DIR__TEMPLATES. "pages/archive.php");

@@ -1,24 +1,16 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * File: ./app/boot.php
- * This file is the root of the theme app installation
+ * This file is the root of the theme app installation.
  * 
- * --
+ * @since: 1.0.0
+ * @version: 1.0.0
  * 
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- */
+ */ if (!defined('ABSPATH')) exit;
 
-/**
- * Check if this file is executed in WordPress environment.
- * if the ABSPATH constant don't exists, this theme will be not executed
- */
-if (!defined( 'ABSPATH' )) exit;
 
 /**
  * Directory separator shortcut definition

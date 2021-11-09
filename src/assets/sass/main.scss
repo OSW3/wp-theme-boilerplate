@@ -74,7 +74,7 @@
 // Component : Accordion
 // use to reset bootstrap accordion
 // @documentation: https://getbootstrap.com/docs/5.1/components/accordion/
-@import './components/accordion/accordion-01';
+@import './components/accordion/accordion';
 
 // Component : Ad
 @import './components/ad/ad-01';
@@ -124,6 +124,10 @@
 // use to define properties of collection form element
 @import './components/collection/collection-01';
 
+// Component : Copyright
+// use to set Copyright banner style
+@import './components/copyright/copyright';
+
 // Component : Dropdown
 // use to reset bootstrap dropdown
 // @documentation: https://getbootstrap.com/docs/5.1/components/dropdowns/
@@ -133,6 +137,10 @@
 // use to reset Editor like QuillJS
 // @documentation: https://quilljs.com/
 @import './components/editor/editor-01';
+
+// Component : Gallery
+// Use to set gallery style
+@import './components/gallery/gallery';
 
 // Component : Icon
 @import './components/icon/icon-01';
@@ -171,6 +179,14 @@
 // @documentation: https://getbootstrap.com/docs/5.1/components/navbar/
 @import './components/nav/nav-01';
 
+// Component : Navbar
+// use to set the newsletter banner style
+@import './components/navbar/navbar';
+
+// Component : Newsletter
+// use to set the newsletter banner style
+@import './components/newsletter/newsletter';
+
 // Component : Offcanvas
 // use to reset bootstrap offcanvas
 // @documentation: https://getbootstrap.com/docs/5.1/components/offcanvas/
@@ -200,7 +216,7 @@
 @import './components/progress/progress-01';
 
 // Component : Section
-@import './components/section/section-01';
+@import './components/section/section';
 
 // Component : Select, Select2
 // @documentation: https://select2.org/
@@ -232,6 +248,10 @@
 // use to reset bootstrap tooltip
 // @documentation: https://getbootstrap.com/docs/5.1/components/tooltips/
 @import './components/tooltip/tooltip-01';
+
+// Component : TopBar
+// use to set the top bar style
+@import './components/topbar/topbar';
 
 // Component : Widget
 @import './components/widget/widget-01';

@@ -1,14 +1,15 @@
 <?php
-//======================================================================
-//  WordPress Theme Boilerplate by OSW3
-//======================================================================
-
-// File: ./app/posttypes.php
-// This file autoload post types of the theme
-
-// required: yes
-
-//======================================================================
+/**
+ * =====================================================================
+ * WordPress Theme Boilerplate by OSW3
+ * =====================================================================
+ * 
+ * This file autoload post types of the theme.
+ * 
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
 // return;
 
@@ -17,6 +18,6 @@
 //     foreach ( scandir( WP_POSTTYPES_DIR ) as $posttype )
 //     {
 //         $filename = WP_POSTTYPES_DIR . DS . $posttype . DS . $posttype . ".php";
-//         wptb_render($filename);
+//         wptb__render($filename);
 //     }
 // }

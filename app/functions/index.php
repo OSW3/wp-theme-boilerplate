@@ -1,11 +1,11 @@
 <?php 
-//======================================================================
-//  WordPress Theme Boilerplate by OSW3
-//======================================================================
-
-// Directory: ./functions/
-// This directory is used to store all php functions of this theme
-
-// required: yes
-
-//======================================================================
+/**
+ * =====================================================================
+ * WordPress Theme Boilerplate by OSW3
+ * =====================================================================
+ * 
+ * @author http://osw3.net
+ * @version: 1.0.0
+ * @since: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;

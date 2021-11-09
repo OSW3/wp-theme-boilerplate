@@ -1,18 +1,15 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * This file contain the process of the setup of this theme
+ * This file contain the process of the setup of this theme.
  * 
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- */
-if (!defined( 'ABSPATH' )) exit;
-
-
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
 
 //-----------------------------------------------------
@@ -60,6 +57,38 @@ function wptb_setup__init()
     });
 }
 add_action('init', "wptb_setup__init");
+
+
+function wptb_setup__post_excerpt(int $post_id) 
+{
+    if (!wp_is_post_revision($post_id) && defined('WPTB_GENERATE_EXCERPT') && WPTB_GENERATE_EXCERPT === true)
+    {
+        // unhook this function so it doesn't loop infinitely
+        remove_action('save_post', 'wptb_setup__post_excerpt');
+     
+        $post = get_post($post_id);
+
+        $excerpt_length = defined(WPTB_EXCERPT_LENGTH) ? WPTB_EXCERPT_LENGTH : 50;
+
+        $excerpt = strip_tags($post->post_content);
+        // $excerpt = explode(" ", $excerpt);
+        // $excerpt = array_slice($excerpt, 0, $excerpt_length);
+        // $excerpt = implode(" ", $excerpt);
+        $excerpt = substr($excerpt, 0, $excerpt_length);
+        $excerpt.= WPTB_EXCERPT_MORE;
+
+        // update the post, which calls save_post again
+        wp_update_post( [
+            'ID' => $post_id,
+            'post_excerpt' => trim($excerpt),
+        ] );
+ 
+        // re-hook this function
+        add_action('save_post', 'wptb_setup__post_excerpt');
+    }
+}
+add_action('save_post', 'wptb_setup__post_excerpt' );
+
 
 /**
  * Add action on theme is loaded
@@ -109,6 +138,28 @@ function wptb_setup__favicon()
 }
 add_action( 'wp_head', 'wptb_setup__favicon');
 
+/**
+ * Minify HTM
+ */
+function wptb_setup___html_minify_start()
+{
+    global $env;
+
+    if ($env != "dev")
+    {
+        ob_start('wptb_setup___html_minyfy_finish');
+    }
+}
+function wptb_setup___html_minyfy_finish( $html )
+{
+    $html = preg_replace('/<!--(?!s*(?:[if [^]]+]|!|>))(?:(?!-->).)*-->/s', '', $html);
+    $html = str_replace(array("\r\n", "\r", "\n", "\t"), '', $html);
+    while (stristr($html, '  ')) 
+    $html = str_replace('  ', ' ', $html);
+    return $html;
+}
+add_action('get_header', 'wptb_setup___html_minify_start');
+
 
 //-----------------------------------------------------
 // Filters
@@ -137,125 +188,3 @@ function new_excerpt_more(string $more): string
     return defined('WPTB_EXCERPT_MORE') ? WPTB_EXCERPT_MORE : $more;
 }
 add_filter('excerpt_more', 'new_excerpt_more', 999);
-
-
-
-
-
-// add_action( 'admin_init', function ()
-// {
-//     // Get all pages in order to change the template paths to subfolder
-//     $args = [
-//         'post_type'      => 'page',
-//         'posts_per_page' => -1,
-//         'fields'         => 'ids',
-//         'meta_query'     => [
-//             [
-//                 'key' => '_wp_page_template',
-//                 'value' => ['front-page.php','template.php'] // Set all the templates you have moved into an array
-//             ]
-//         ]
-//     ];
-//     $q = get_posts( $args );
-
-//     if ( !$q )
-//         return;
-
-//     foreach ( $q as $id ) {
-//         // Get the current template name saved
-//         $template = get_post_meta( $id, '_wp_page_template', true );
-//         // The name of the subfolder with trailing slash
-//         $subfolder_name = 'pages/';
-//         // Update the templates to add the subfolder name. Change name as needed
-//         update_post_meta( 
-//             $id, // Page ID
-//             '_wp_page_template', //Meta key under which the page template name is saved
-//             $subfolder_name . $template, //the new value of the template name, in this case subfolder/{$template}.php
-//             $template // Old value of the template name
-//         );
-//     }
-// });
-
-
-
-
-// function yourFunction($string) {
-//     //Modify the string here
-//     // $string = WPTB_DIR__TEMPLATES;
-
-//     // echo $string;
-//     // exit;
-
-//     return $string;
-// }
-// add_filter('template_directory', 'yourFunction', 10, 2);
-
-// add_filter( 'template_include', 'portfolio_page_template', 99 );
-function portfolio_page_template( $template ) {
-
-
-    echo "ertyuio";
-    exit;
-    // $scandir = scandir(WPTB_DIR__TEMPLATES."pages/");
-
-    // print_r($scandir);
-
-
-    // if ( is_page( 'portfolio' )  ) {
-        $new_template = locate_template([
-            '../templates/pages/portfolio-page-template.php',
-            // '../templates/pages/front-page.php',
-        ]);
-        // $new_template = locate_template( array( '../templates/pages/front-page.php' ) );
-        // $new_template = locate_template( array( WPTB_DIR__TEMPLATES."portfolio-page-template.php" ) );
-
-        return $new_template;
-        // echo $new_template;
-        // exit;
-
-    // if ( '' != $new_template ) {
-    //     return $new_template ;
-    // }
-    // // }
-    // return $template;
-}
-
-/**
-* multiple custom routing with one page
-*/
-// add_filter( 'template_include', 'wpdocs_include_template_files_on_page' );
- 
-// function wpdocs_include_template_files_on_page( $template ) {
- 
-//     $action = isset( $_GET['action'] ) ? $_GET['action'] : 'list';
-
- 
-//     switch ( $action ) {
- 
-//         case 'add-list' :
-//             $template = __DIR__ . '/views/address-new.php';
-//             break;
- 
-//         case 'edit-list' :
-//             $template = __DIR__ . '/views/address-edit.php';
-//             break;
- 
-//         case 'view-list' :
-//             $template = __DIR__ . '/views/address-view.php';
-//             break;
- 
-//         default :
-//             // $template = __DIR__ . '/views/address-list.php';
-
-//             // $template = __DIR__ . '../templates/pages/portfolio-page-template.php';
-//             $template = __DIR__ . '/../../templates/pages/front-page.php';
-//             break;          
-//     }
- 
-//     if ( file_exists( $template ) ) {
-//         include $template;
-//     }
- 
-//     return $template;
-// }
-

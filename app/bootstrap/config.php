@@ -1,24 +1,16 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * File: ./app/config.php
- * This file define some constants of this theme and merge custom config
+ * This file define some constants of this theme and merge custom config.
  * 
- * --
+ * @since: 1.0.0
+ * @version: 1.0.0
  * 
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- */
+ */ if (!defined('ABSPATH')) exit;
 
-/**
- * Check if this file is executed in WordPress environment.
- * if the ABSPATH constant don't exists, this theme will be not executed
- */
-if (!defined( 'ABSPATH' )) exit;
 
 /**
  * The absolute URL of the site
@@ -165,6 +157,13 @@ const WPTB_DIR__TEMPLATES = WPTB_DIR__THEME . "templates" . DS;
  * @var string
  */
 const WPTB_DIR__COMPONENTS = WPTB_DIR__TEMPLATES . "components" . DS;
+
+/**
+ * Define the path the "templates/partials" directory
+ * 
+ * @var string
+ */
+const WPTB_DIR__PARTIALS = WPTB_DIR__TEMPLATES . "partials" . DS;
 
 /**
  * Define the path the "config" directory

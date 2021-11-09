@@ -1,35 +1,76 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * Front Page is used to display the homepage
  * @see https://developer.wordpress.org/themes/template-files-section/post-template-files/#home-php
  * 
  * Template Name: Homepage
- */
-if (!defined( 'ABSPATH' )) exit;
+ * Template Type: Post Template
+ * Author: OSW3
+ * Author URI: http://osw3.net
+ * Version: 1.0.0
+ */ if (!defined('ABSPATH')) exit;
 
-//======================================================================
 
 // Init Sliders
 $WpSliders = new WpSliders;
 ?>
-<?php get_header(); ?>
+<?php get_header() ?>
 
-<section class="wptb-section wptb-section-top">
-    SECTION TOP
-</section>
-<section class="wptb-section wptb-section-top">
-    SECTION TOP
-</section>
-<section class="wptb-section wptb-section-top">
-    SECTION TOP
-</section>
-<section class="wptb-section wptb-section-top">
-    SPONSORS / PARTNERS
-</section>
+<h2>Section Boxed</h2>
+<?php wptb__render_section("lorem/01", [], [
+    'id' => "section-test-01",
+    // 'class' => "wptb-section-boxed"
+    'container-fluid' => false,
+]) ?>
+<hr>
 
+<h2>Section Fluid</h2>
+<?php wptb__render_section("lorem/01", [], [
+    'id' => "section-test-02",
+    // 'class' => "wptb-section-fluid"
+    'container-fluid' => true,
+]) ?>
+<hr>
+
+
+
+
+
+<!-- Hero -->
+<?php wptb__render_section("hero/01") ?>
+<?php //wptb__render_section("hero/02", [], ['container-fluid' => true]) ?>
+<?php //wptb__render_section("hero/03", [], ['container-fluid' => true]) ?>
+<?php //wptb__render_section("hero/04", [], []) ?>
+<?php //wptb__render_section("hero/05", [], ['container-fluid' => true]) ?>
+<?php //wptb__render_section("hero/06", [], ['container-fluid' => true]) ?>
+
+
+<!-- Horizontal Accordion -->
+<?php wptb__render_section("accordion/01", [
+    'items' => [
+        [
+            'title' => "A propos de nous",
+            'illustration' => "http://wgl-demo.net/atlets/wp-content/uploads/2020/07/faq_01.jpg"
+        ],
+        [
+            'title' => "Notre boutique",
+            'illustration' => "http://wgl-demo.net/atlets/wp-content/uploads/2020/07/faq_02.jpg"
+        ],
+        [
+            'title' => "Sponsors",
+            'illustration' => "http://wgl-demo.net/atlets/wp-content/uploads/2020/07/faq_03.jpg"
+        ],
+        [
+            'title' => "Nous soutenir",
+            'illustration' => "http://wgl-demo.net/atlets/wp-content/uploads/2020/07/faq_04.jpg"
+        ],
+    ]
+],[
+    'container-fluid' => true,
+]) ?>
 
 
 
@@ -67,6 +108,8 @@ $WpSliders = new WpSliders;
             </tbody>
         </table>
     </section>
+
+
 
 </div>
 <?php get_footer(); ?>

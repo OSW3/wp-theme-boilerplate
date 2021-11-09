@@ -1,24 +1,24 @@
 <?php
-//======================================================================
-//  WordPress Theme Boilerplate by OSW3
-//======================================================================
+/**
+ * =====================================================================
+ * WordPress Theme Boilerplate by OSW3
+ * =====================================================================
+ * 
+ * This file autoload assets of the theme (css & js).
+ * 
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
-// File: ./app/assets.php
-// This file autoload assets of the theme (css & js)
 
-// required: yes
+// Define $assets register
+$assets             = [];
+$assets['styles']   = [];
+$assets['scripts']  = [];
 
-//======================================================================
-
-// Place $assets to the global namespace
-// global $assets;
-
-$assets = [
-    'styles' => [], 
-    'scripts' => []
-];
-
-wptb_include( WPTB_DIR__CONFIG . "assets.php");
+// Import $assets definition (custom config)
+wptb__include( WPTB_DIR__CONFIG . "assets.php");
 
 define("ASSETS", $assets); 
 

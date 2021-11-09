@@ -5,7 +5,7 @@
  * =====================================================================
  * 
  * Template of Contact Form page
- * More info at https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#comments-php
+ * @see https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#comments-php
  * 
  * Template Type: Partial
  * Author: OSW3
@@ -15,5 +15,4 @@
 
 /**
  * Include the file from the template directory
- */
-wptb_include( WPTB_DIR__TEMPLATES . "partials/comments.php" );
+ */ wptb__include(WPTB_DIR__TEMPLATES. "partials/comments.php");

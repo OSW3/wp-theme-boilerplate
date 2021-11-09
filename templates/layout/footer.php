@@ -12,41 +12,17 @@
  * Version: 1.0.0
  */ if (!defined( 'ABSPATH' )) exit;
 ?>
-        </div><!-- End .main-content -->
+    </div><!-- End .main-content -->
 
-        <footer class="main-footer">
-            <div class="footer-nav">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-3">
-                            xxx
-                        </div>
-                        <div class="col-3">
-                            xxx
-                        </div>
-                        <div class="col-3">
-                            xxx
-                        </div>
-                        <div class="col-3">
-                            
-                            <?php wptb_getLastetPosts([
-                                // 'post_type' => "post",              // Specify Post Type
-                                // 'category_name' => "category-1", // Specify a category (slug)
-                                'posts_per_page' => 4,          // Specify item per page
-                                // 'order' => "ASC",
-                            ], "excerpt-footer"); ?>
+    <!-- Footer Newsletter -->
+    <?php wptb__render_component("newsletter/banner/01") ?>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-coyright">
-                <div class="container">
-                    Footer
-                </div>
-            </div>
-        </footer>
 
+    <!-- Main Footer -->
+    <footer class="main-footer">
+    <?php wptb__render_component("footer/01") ?>
+    </footer>
+    
     <!-- </div> --><!-- End .wrapper -->
 
     <?php wp_footer(); ?>

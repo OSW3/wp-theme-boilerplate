@@ -1,26 +1,16 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * File: ./app/error-reporting.php
  * This file override the Apache setting about the errors reportings.
- *
- * @see http://php.net/manual/fr/function.error-reporting.php
  * 
- * --
+ * @since: 1.0.0
+ * @version: 1.0.0
  * 
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- * DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE --- DON'T MODIFY THIS FILE
- */
+ */ if (!defined('ABSPATH')) exit;
 
-/**
- * Check if this file is executed in WordPress environment.
- * if the ABSPATH constant don't exists, this theme will be not executed
- */
-if (!defined( 'ABSPATH' )) exit;
 
 /**
  * Define $env value if is not set

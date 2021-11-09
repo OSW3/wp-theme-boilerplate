@@ -22,6 +22,7 @@ if (!defined( 'ABSPATH' )) exit;
     <div class="row">
         <div class="col-12">
 
+        aaaa
             <?php wptb_getPosts([
                 'post_type' => "post",              // Specify Post Type
                 'category_name' => "category-1", // Specify a category (slug)

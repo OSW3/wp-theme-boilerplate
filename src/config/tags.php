@@ -1,25 +1,23 @@
 <?php
-//======================================================================
-//  WordPress Theme Boilerplate by OSW3
-//======================================================================
+/**
+ * =====================================================================
+ * WordPress Theme Boilerplate by OSW3
+ * =====================================================================
+ * 
+ * Use this file to define categories and tags will be created when installing
+ * the theme.
+ * 
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
-// File: ./config/taxonomies.php
-// Use this file to define categories and tags will be created when installing the theme
 
-// required: recommended
-
-//======================================================================
-
-// Check the ABSPATH constant for security
-// if the ABSPATH constant don't exists, this theme will be not executed
-if (!defined( 'ABSPATH' )) exit;
-
-//======================================================================
-
-// 1. Comment the line below if you need to define tags for your website
-// return;
-
-wptb_addTag("Tag 1", 0, "The tag 1 description");
-wptb_addTag("Tag 2", 0, "The tag 2 description");
-wptb_addTag("Tag 3", 0, "The tag 3 description");
-wptb_addTag("Tag 4" ,0, "The tag 4 description");
+/**
+ * Add an example tag 
+ * 
+ * @param string $name The label of the tag
+ * @param int ???
+ * @param string $description The description of the tag
+ */
+wptb_addTag("Example Tag ", 0, "The example tag description");

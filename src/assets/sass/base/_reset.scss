@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    border: 10px solid brown;
+    // border: 10px solid brown;
     // @include property('background-color', 'layout--document--bg-color');
     @extend %window-size;
     // min-height: inherit;
@@ -62,4 +62,10 @@ a, .nav-link {
     &:hover {
         text-decoration: inherit;
     }
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Livvic', sans-serif;
 }

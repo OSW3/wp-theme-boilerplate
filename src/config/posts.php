@@ -1,33 +1,61 @@
 <?php
-//======================================================================
-//  WordPress Theme Boilerplate by OSW3
-//======================================================================
+/**
+ * =====================================================================
+ * WordPress Theme Boilerplate by OSW3
+ * =====================================================================
+ * 
+ * Use this file to define the posts that will be created when installing the
+ * theme.
+ * 
+ * @since: 1.0.0
+ * @version: 1.0.0
+ */ if (!defined('ABSPATH')) exit;
 
-// File: ./config/posts.php
-// Use this file to define the posts that will be created when installing the theme
 
-// required: recommended
+/**
+ * Generate the Excerpt on save the post
+ * 
+ * @var bool
+ * @default false
+ */
+const WPTB_GENERATE_EXCERPT = true;
 
-//======================================================================
 
-// Check the ABSPATH constant for security
-// if the ABSPATH constant don't exists, this theme will be not executed
-if (!defined( 'ABSPATH' )) exit;
-
-//======================================================================
-
-// 1. Comment the line below if you need to define pages for your website
-// return;
-
-// Define the lentgh of posts excerpt
-// default: 40
+/**
+ * Define the lentgh of posts excerpt
+ * 
+ * @var int
+ * @default 40
+ */
 const WPTB_EXCERPT_LENGTH = 40;
 
-// Define excerpt ellipsis symbole
-// default: [...]
-const WPTB_EXCERPT_MORE = " …";
+/**
+ * Define excerpt ellipsis symbole
+ * 
+ * @var string
+ * @default [...]
+ */
+const WPTB_EXCERPT_MORE = " &hellip;";
 
-// Define permalink structure
-// Default null
+/**
+ * Define permalink structure
+ * 
+ * @var string
+ * @default null
+ * 
+ * @value (Plain)               null
+ * @value (Day and name)        /%year%/%monthnum%/%day%/%postname%/
+ * @value (Month and name)      /%year%/%monthnum%/%postname%/
+ * @value (Numeric)             /archives/%post_id%
+ * @value (Post name)           /%postname%/
+ * @value (Custom structure)    /blog/%postname%/
+ */
 const WPTB_PERMALINK_STRUCTURE = "/blog/%postname%/";
-const WPTB_PERMALINK_FORCE = true;
+
+/**
+ * If True, the activation of this theme force WordPress to override the 
+ * permalink to the value defined by WPTB_PERMALINK_STRUCTURE.
+ * 
+ * @var bool
+ */
+const WPTB_OVERRIDE_PERMALINK = true;

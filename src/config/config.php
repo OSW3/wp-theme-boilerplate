@@ -1,19 +1,15 @@
 <?php
 /**
+ * =====================================================================
  * WordPress Theme Boilerplate by OSW3
- * --
+ * =====================================================================
  * 
- * File: ./config/config.php
- * This file set some config values
+ * This file set some config values.
  * 
- * required: recommended
- */
-
-/**
- * Check if this file is executed in WordPress environment.
- * if the ABSPATH constant don't exists, this theme will be not executed
- */
-if (!defined( 'ABSPATH' )) exit;
+ * @since: 1.0.0
+ * @version: 1.0.0
+ * 
+ */ if (!defined('ABSPATH')) exit;
 
 
 /**
@@ -27,7 +23,7 @@ $env = "prod";
 /**
  * The list of domains which are automatically considered as a "dev" environment
  * 
- * @var array
+ * @var string[]
  */
 $dev_domains = [
    "127.0.0.1",

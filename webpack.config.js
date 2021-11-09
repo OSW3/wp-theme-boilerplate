@@ -11,7 +11,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const entries = {
     vendor:     "./src/assets/scripts/app/vendor.js",
     main:       "./src/assets/scripts/app/main.js",
-    turbo:      "./src/assets/scripts/app/turbo.js",
+    // turbo:      "./src/assets/scripts/app/turbo.js",
 };
 
 
@@ -42,10 +42,10 @@ const stylesheets = {
             options: { importLoaders: 1 }
         }, 
     
-        {
-            loader: 'postcss-loader',
-            options: { sourceMap: true }
-        },
+        // {
+        //     loader: 'postcss-loader',
+        //     options: { sourceMap: true }
+        // },
   
         { 
             loader: "sass-loader",
@@ -61,6 +61,7 @@ const fonts = {
   
 const images = {
     test: /\.(gif|png|jpe?g|svg)$/i,
+    options: { name: 'images/[name]-[hash].[ext]' },
     use: [
         'file-loader',
         'image-webpack-loader',

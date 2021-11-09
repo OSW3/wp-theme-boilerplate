@@ -5,7 +5,7 @@
  * =====================================================================
  * 
  * Template of Contact Form page
- * More info at -
+ * @see -
  * 
  * Template Name : Contact Page
  * Template Type: Custom Template
@@ -16,5 +16,4 @@
 
 /**
  * Include the file from the template directory
- */
-wptb_include( WPTB_DIR__TEMPLATES . "pages/contact.php" );
+ */ wptb__include(WPTB_DIR__TEMPLATES. "pages/contact.php");

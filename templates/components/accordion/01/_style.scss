@@ -1,0 +1,102 @@
+.wptb-accordion-service {
+    // border: 10px solid red;
+    // background-color: cadetblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 0px;
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-left: -1.5rem;
+    // margin-right: -1.5rem;
+}
+.wptb-accordion-item {
+    // background-color: cadetblue;
+    // width: 20%;
+    min-height: 360px;
+    
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    display: flex;
+
+    // padding-left: 15px;
+    // padding-right: 15px;
+}
+.wptb-accordion-item.active {
+    // background-color: hotpink;
+    // padding-left: 1.5rem;
+    // padding-right: 1.5rem;
+}
+
+.wptb-accordion-header {
+    transition: 0.5s;
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.wptb-accordion-body {
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.wptb-accordion-item.active .wptb-accordion-header {
+    // background-color: orange;
+}
+.wptb-accordion-item.active .wptb-accordion-body {
+    opacity: 1;
+}
+
+.wptb-accordion-header .wptb-accordion-inner {
+    background-position: center center;
+    background-size: cover;
+}
+.wptb-accordion-inner {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 4px;
+}
+
+.wptb-accordion-body .wptb-accordion-inner {
+    padding: 40px 20px 40px 40px;
+    box-shadow: 0px 0px 38px 0px rgb(0 12 22 / 56%);
+    // background-color: #00182c;
+}
+
+.wptb-accordion-body .wptb-accordion-inner::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    right: -60px;
+    border-radius: 50%;
+    background-color: #00182C;
+}
+
+
+
+.wptb-accordion-item-title {
+    margin: 50px 0px 0px 0px;
+    // color: #ffffff;
+}
+
+.wptb-accordion-item-content {
+    margin: 10px 0px 46px 0px;
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 400;
+    // color: #ffffff;
+}

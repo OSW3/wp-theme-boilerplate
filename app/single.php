@@ -4,7 +4,7 @@
  * WordPress Theme Boilerplate by OSW3
  * =====================================================================
  * 
- * More info at https://developer.wordpress.org/themes/template-files-section/post-template-files/#single-php
+ * @see https://developer.wordpress.org/themes/template-files-section/post-template-files/#single-php
  * 
  * Template Name: Post single
  * Template Type: Post Template
@@ -15,5 +15,4 @@
 
 /**
  * Include the file from the template directory
- */
-wptb_include( WPTB_DIR__TEMPLATES . "pages/single.php" );
+ */ wptb__include(WPTB_DIR__TEMPLATES. "pages/single.php");
