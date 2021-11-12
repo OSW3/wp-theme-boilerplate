@@ -22,7 +22,7 @@
  */
 function wptb__menu_parse(string $name, string $component)
 {
-    foreach (wptb__menu_items($name) as $item)
+    foreach (wptb__menu_getItems($name) as $item)
     {
         // Convert the Classes array to a string
         $item->classes = implode(" ", $item->classes);

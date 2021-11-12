@@ -1,39 +1,33 @@
 <?php
-//======================================================================
-//  WordPress Theme Boilerplate by OSW3
-//======================================================================
+/**
+ * =====================================================================
+ * WordPress Theme Boilerplate by OSW3
+ * =====================================================================
+ * 
+ * Add new page in database
+ * 
+ * @author http://osw3.net
+ * @version: 1.0.0
+ * @since: 1.0.0
+ * 
+ */ if (function_exists("wptb__page_create")) return;
 
-// File: ./functions/wptb_addPage.php
-// Function: wptb_addPage
-
-// Add new page in database
-
-// required: yes
 
 /**
- * @usage wptb_addPage(string $title, array $options = [])
- * 
- * @example wptb_addPage("My new page", []);
- * 
  * @param required $title of the page
  * @param optional $options array
  */
-
-//======================================================================
-
-// Prevent function declaration
-if (function_exists('wptb_addPage')) return;
-
-function wptb_addPage(string $title, array $options = [])
+function wptb__page_create(string $title, array $options = [])
 {
     $options = array_merge([
-        'slug'      => null,
-        'content'   => "",
-        'status'    => "publish",
-        'template'  => null,
-        'homepage'  => false,
-        'postspage' => false,
-        'author'    => 1,
+        'slug'              => null,
+        'content'           => "",
+        'status'            => "publish",
+        'template'          => null,
+        'author'            => 1,
+        'static-homepage'   => false,
+        'static-posts'      => false,
+        'static-privacy'    => false,
     ], $options);
 
     // Retrieve page if page exists
@@ -67,16 +61,22 @@ function wptb_addPage(string $title, array $options = [])
     }
 
     // Define the page as the Homepage
-    if ( $page_id != null && $options['homepage'])
+    if ( $page_id != null && $options['static-homepage'])
     {
         update_option( 'page_on_front', $page_id );
         update_option( 'show_on_front', 'page' );
     }
 
     // Define the page as the Post Page
-    if ( $page_id != null && $options['postspage'])
+    if ( $page_id != null && $options['static-posts'])
     {
         update_option( 'page_for_posts', $page_id );
+    }
+
+    // Define the page as the Privacy Page
+    if ( $page_id != null && $options['static-privacy'])
+    {
+        update_option( 'wp_page_for_privacy_policy', $page_id );
     }
 
     unset($page);

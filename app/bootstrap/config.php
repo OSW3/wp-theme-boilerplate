@@ -173,6 +173,13 @@ const WPTB_DIR__PARTIALS = WPTB_DIR__TEMPLATES . "partials" . DS;
 const WPTB_DIR__CONFIG = WPTB_DIR__THEME . DIR_SRC . "config" . DS;
 
 /**
+ * Define the path the "register" directory
+ * 
+ * @var string
+ */
+const WPTB_DIR__REGISTER = WPTB_DIR__THEME . DIR_SRC . "register" . DS;
+
+/**
  * Define the path the "functions" directory
  * 
  * @var string

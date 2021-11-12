@@ -58,7 +58,12 @@ function wptb_setup__init()
 }
 add_action('init', "wptb_setup__init");
 
-
+/**
+ * Create the post excerpt
+ *
+ * @param integer $post_id
+ * @return void
+ */
 function wptb_setup__post_excerpt(int $post_id) 
 {
     if (!wp_is_post_revision($post_id) && defined('WPTB_GENERATE_EXCERPT') && WPTB_GENERATE_EXCERPT === true)
@@ -71,17 +76,26 @@ function wptb_setup__post_excerpt(int $post_id)
         $excerpt_length = defined(WPTB_EXCERPT_LENGTH) ? WPTB_EXCERPT_LENGTH : 50;
 
         $excerpt = strip_tags($post->post_content);
+
+        // // Excerpt based on words counting
         // $excerpt = explode(" ", $excerpt);
         // $excerpt = array_slice($excerpt, 0, $excerpt_length);
         // $excerpt = implode(" ", $excerpt);
-        $excerpt = substr($excerpt, 0, $excerpt_length);
-        $excerpt.= WPTB_EXCERPT_MORE;
 
-        // update the post, which calls save_post again
-        wp_update_post( [
-            'ID' => $post_id,
-            'post_excerpt' => trim($excerpt),
-        ] );
+        // Excerpt based on characters counting
+        $excerpt = substr($excerpt, 0, $excerpt_length);
+
+        // Update the Excerpt only if the post have some content
+        if (!empty($excerpt))
+        {
+            $excerpt.= WPTB_EXCERPT_MORE;
+    
+            // update the post, which calls save_post again
+            wp_update_post( [
+                'ID' => $post_id,
+                'post_excerpt' => trim($excerpt),
+            ] );
+        }
  
         // re-hook this function
         add_action('save_post', 'wptb_setup__post_excerpt');

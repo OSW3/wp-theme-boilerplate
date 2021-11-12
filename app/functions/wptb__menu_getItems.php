@@ -10,7 +10,7 @@
  * @version: 1.0.0
  * @since: 1.0.0
  * 
- */ if (function_exists("wptb__menu_items")) return;
+ */ if (function_exists("wptb__menu_getItems")) return;
 
 
 /**
@@ -20,7 +20,7 @@
  * 
  * @return array
  */
-function wptb__menu_items(string $name): array
+function wptb__menu_getItems(string $name): array
 {
     $locale = null;
 

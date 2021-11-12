@@ -16,16 +16,87 @@ function wptb__install()
 {
     global $wp_rewrite;
 
-    if (is_admin())
+    // Define the locations of config files
+    $conf_categories = WPTB_DIR__REGISTER."categories.php";
+    $conf_tags       = WPTB_DIR__REGISTER."tags.php";
+    // $conf_posts      = WPTB_DIR__REGISTER."posts.php";
+    $conf_pages      = WPTB_DIR__REGISTER."pages.php";
+    $conf_menus      = WPTB_DIR__REGISTER."menus.php";
+
+    // Create new categories
+    if (is_admin() && file_exists($conf_categories))
     {
-        wptb__include( WPTB_DIR__CONFIG.DS."categories.php" );
-        wptb__include( WPTB_DIR__CONFIG.DS."tags.php" );
-        // wptb__include( WPTB_DIR__CONFIG.DS."posts.php" );
-        wptb__include( WPTB_DIR__CONFIG.DS."pages.php" );
-        wptb__include( WPTB_DIR__CONFIG.DS."menus.php" );
+        $categories = include $conf_categories;
+
+        if (!is_array($categories)) 
+            throw new Exception("The file ".$conf_categories." must return an Array.");
+
+        foreach ($categories as $category) 
+            wptb__category_create($category);
     }
 
-    // Change the Permalink Structure
+    // Create new tags
+    if (is_admin() && file_exists($conf_tags))
+    {
+        $tags = include $conf_tags;
+
+        if (!is_array($tags)) 
+        throw new Exception("The file ".$conf_tags." must return an Array.");
+
+        foreach ($tags as $tag) 
+            wptb__tag_create($tag);
+    }
+
+    // Create new custom posts
+    if (false && is_admin() && file_exists($conf_posts))
+    {
+        // TODO: Create custom post
+    }
+
+    // Create new pages
+    if (is_admin() && file_exists($conf_pages))
+    {
+        $pages = include $conf_pages;
+
+        if (!is_array($pages)) 
+        throw new Exception("The file ".$conf_pages." must return an Array.");
+
+        foreach ($pages as $page) 
+            wptb__page_create($page['name'], $page);
+    }
+
+    // Create new menus
+    if (is_admin() && file_exists($conf_menus))
+    {
+        $menus = include $conf_menus;
+
+        if (!is_array($menus)) 
+        throw new Exception("The file ".$conf_menus." must return an Array.");
+
+        foreach ($menus as $menu)
+        {
+            $items = isset($menu['items']) ? $menu['items'] : [];
+            $options = isset($menu['options']) ? $menu['options'] : [];
+
+            wptb__menu__create($menu['name'], $items, $options);
+        }
+    }
+
+
+
+    // exit;
+
+
+
+
+
+
+    // if (is_admin())
+    // {
+    //     // wptb__include( WPTB_DIR__CONFIG.DS."menus.php" );
+    // }
+
+    // Update the Permalink Structure
     $permalink = get_option('permalink_structure');
 
     if ((empty($permalink) || (defined('WPTB_OVERRIDE_PERMALINK') && WPTB_OVERRIDE_PERMALINK)) && defined('WPTB_PERMALINK_STRUCTURE'))

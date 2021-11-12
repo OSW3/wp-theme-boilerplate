@@ -16,7 +16,7 @@
 
     <!-- Header NavBar -->
     <?php wptb__render_component("navbar/01", [
-        'main_menu' => wptb__menu_items('main-menu')
+        'main_menu' => wptb__menu_getItems('main-menu')
     ]) ?>
 
 </header>
