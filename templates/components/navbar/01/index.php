@@ -7,6 +7,10 @@
  * Component: Navbar 01
  * 
  */ if (!defined('ABSPATH')) exit;
+
+
+$items = wptb__menu_getItems("main-menu");
+
 ?>
 
 <nav class="navbar navbar-expand-lg">
@@ -22,14 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             
             <!-- Main Menu -->
-            <ul class="navbar-nav me-auto">
-                <?php wptb__menu_parse("main-menu", "nav-item/01") ?>
-            </ul>
-            
+            <?php wptb__render_component("navbar-nav/default", [
+                'items' => wptb__menu_getItems("main-menu"),
+                'attr_class' => "me-auto",
+            ]) ?>
+
             <!-- Social Menu -->
-            <ul class="navbar-nav ms-auto">
-                <?php wptb__menu_parse("social-menu", "nav-item/01") ?>
-            </ul>
+            <?php wptb__render_component("navbar-nav/default", [
+                'items' => wptb__menu_getItems("social-menu"),
+                'attr_class' => "ms-auto",
+            ]) ?>
 
             <!-- Search form -->
             <?php get_search_form() ?>

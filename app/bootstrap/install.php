@@ -50,7 +50,6 @@ function wptb__install()
     // Create new custom posts
     if (false && is_admin() && file_exists($conf_posts))
     {
-        // TODO: Create custom post
     }
 
     // Create new pages
@@ -81,20 +80,7 @@ function wptb__install()
             wptb__menu__create($menu['name'], $items, $options);
         }
     }
-
-
-
-    // exit;
-
-
-
-
-
-
-    // if (is_admin())
-    // {
-    //     // wptb__include( WPTB_DIR__CONFIG.DS."menus.php" );
-    // }
+    
 
     // Update the Permalink Structure
     $permalink = get_option('permalink_structure');

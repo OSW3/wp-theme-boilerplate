@@ -21,13 +21,12 @@ return [
         'name'      => "Main Menu",
         'options'   => [
             'reset' => false, // Delete the menu if already exist
-            // 'update' => true, // Force to update items
         ],
         'items'     => [
             [
                 'title'     => "Accueil",  // Override the title of the page
                 'object'    => "homepage",
-                'update'    => true,
+                'update'    => true, // Force to update items
             ], 
             [
                 'title'     => "All Posts",
@@ -93,43 +92,3 @@ return [
         ],
     ],
 ];
-
-// The main menu
-wptb__menu__create("Main Menu", [
-    [
-        'title'     => "Accueil",  // Override the title of the page
-        'object'    => "homepage",
-    ], 
-    [
-        'title'     => "All Posts",
-        'object'    => "blog",
-    ], 
-    [
-        'object'    => "example-with-static-content",
-    ], 
-    [
-        'object'    => "example-with-dynamic-content",
-    ], 
-]);
-
-// 3. Create a menu with custom links
-wptb__menu__create("Social Menu", [
-    [
-        'title'     => "Facebook",
-        'classes'   => "social social-facebook",
-        'url'       => "http://facebook.com/",
-        'target'    => "_blank"
-    ], 
-    [
-        'title'     => "Twitter",
-        'classes'   => "social social-twitter",
-        'url'       => "http://twitter.com/",
-        'target'    => "_blank"
-    ], 
-    [
-        'title'     => "Instagram",
-        'classes'   => "social social-instagram",
-        'url'       => "http://instagram.com/",
-        'target'    => "_blank"
-    ]
-]);

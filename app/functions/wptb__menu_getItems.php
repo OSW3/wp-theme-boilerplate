@@ -17,10 +17,11 @@
  * Retrieve a menu in database and return the array of menu items
  * 
  * @param string $name of the menu
+ * @param bool $nested if true, rebuild the menu 
  * 
  * @return array
  */
-function wptb__menu_getItems(string $name): array
+function wptb__menu_getItems(string $name, bool $nested=true): array
 {
     $locale = null;
 
@@ -34,7 +35,12 @@ function wptb__menu_getItems(string $name): array
         $name.= "-".$locale;
     }
 
-    $menu = wp_get_nav_menu_items($name);
+    $items = wp_get_nav_menu_items($name);
 
-    return $menu ? $menu : [];
+    if ($nested) 
+    {
+        $items = makeRecursive($items, "menu_item_parent", "ID", "children");
+    }
+    
+    return $items ? $items : [];
 }

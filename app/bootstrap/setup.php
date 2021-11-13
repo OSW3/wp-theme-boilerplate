@@ -50,13 +50,30 @@ function wptb_setup__init()
         register_nav_menus(["main-menu" => "Main menu"]);
     }
 
+    
+    // Add custom post to the registry
+    // --
+
+    $postsRegistryFile = WPTB_DIR__REGISTER."posts.php";
+
+    $posts = file_exists($postsRegistryFile) 
+        ? include $postsRegistryFile 
+        : [];
+    
+    if (is_array($posts)) foreach ($posts as $post)
+    {
+        register_post_type($post['type'], $post['properties']);
+    }
+    
+
+    // Add
     // Assets Shortcodes
     add_shortcode( 'images', function( $atts )
     {
         return WPTB_URL__IMAGES . $atts['src'];
     });
 }
-add_action('init', "wptb_setup__init");
+add_action('init', "wptb_setup__init", 0);
 
 /**
  * Create the post excerpt
