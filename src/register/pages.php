@@ -57,14 +57,21 @@ return [
         'template'          => "contact.php",
     ],
     [
-        'name'      => "Example with Static Content",
-        'slug'      => "example-with-static-content",
-        'content'   => "This content is write in the Pages editor",
-        'template'  => "custom-static.php",
+        'name'              => "Example with Static Content",
+        'slug'              => "example-with-static-content",
+        'content'           => "This content is write in the Pages editor",
+        'template'          => "custom-static.php",
     ],
     [
-        'name'      => "Example with Dynamic Content",
-        'slug'      => "example-with-dynamic-content",
-        'template'  => "custom-dynamic.php",
+        'name'              => "Example with Dynamic Content",
+        'slug'              => "example-with-dynamic-content",
+        'template'          => "custom-dynamic.php",
+    ],
+
+
+    [
+        'name'              => "UI Elements",
+        'slug'              => "ui-elements",
+        'template'          => "ui-elements.php",
     ],
 ];

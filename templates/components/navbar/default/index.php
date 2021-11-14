@@ -7,14 +7,10 @@
  * Component: Navbar 01
  * 
  */ if (!defined('ABSPATH')) exit;
-
-
-$items = wptb__menu_getItems("main-menu");
-
 ?>
 
 <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <div class="container">
 
         <a class="navbar-brand" href="<?= home_url() ?>">Navbar</a>
 
@@ -28,14 +24,14 @@ $items = wptb__menu_getItems("main-menu");
             <!-- Main Menu -->
             <?php wptb__render_component("navbar-nav/default", [
                 'items' => wptb__menu_getItems("main-menu"),
-                'attr_class' => "me-auto",
+                'attr_class' => "ms-auto me-auto",
             ]) ?>
 
             <!-- Social Menu -->
-            <?php wptb__render_component("navbar-nav/default", [
+            <?php /* wptb__render_component("navbar-nav/default", [
                 'items' => wptb__menu_getItems("social-menu"),
                 'attr_class' => "ms-auto",
-            ]) ?>
+            ]) */ ?>
 
             <!-- Search form -->
             <?php get_search_form() ?>

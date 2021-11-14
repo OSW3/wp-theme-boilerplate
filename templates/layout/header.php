@@ -26,10 +26,14 @@
     
 </head>
 <body>
+        
+    <!-- Notice -->
+    <?php wptb__render_component("notice/default") ?>
     
-    <!-- <div class="wrapper"> -->
-    
+    <!-- TopBar -->
+    <?php wptb__render_component("topbar/default") ?>
+
     <!-- Main Header -->
-    <?php wptb__render_component("header/01") ?>
+    <?php wptb__render_component("header/default") ?>
 
     <div class="main-content">

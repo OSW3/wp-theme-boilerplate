@@ -29,19 +29,14 @@ return [
                 'update'    => true, // Force to update items
             ], 
             [
-                'title'     => "All Posts",
-                'object'    => "blog",
-                'position'  => 55,
-            ], 
-            [
-                'object'    => "example-with-static-content",
-            ], 
-            [
-                'object'    => "example-with-dynamic-content",
-            ], 
-            [
                 'title'     => "Multi Levels",
                 'children'  => [
+                    [
+                        'object'    => "example-with-static-content",
+                    ], 
+                    [
+                        'object'    => "example-with-dynamic-content",
+                    ], 
                     [
                         'title'     => "Menu A"
                     ],
@@ -54,13 +49,21 @@ return [
                             [
                                 'title'     => "Menu B-2"
                             ],
+                            [
+                                'object'    => "ui-elements",
+                            ], 
                         ]
                     ],
                     [
                         'title'     => "Menu C"
                     ],
                 ]
-            ]
+            ],
+            [
+                'title'     => "All Posts",
+                'object'    => "blog",
+                // 'position'  => 55,
+            ], 
         ],
     ],
 
@@ -71,20 +74,20 @@ return [
         ],
         'items'     => [
             [
-                'title'     => "Facebook by Meta",
+                'title'     => "FB",
                 'classes'   => "social social-facebook",
                 'url'       => "http://facebook.com/",
                 'target'    => "_blank",
                 'update'    => true,
             ], 
             [
-                'title'     => "Twitter",
+                'title'     => "TW",
                 'classes'   => "social social-twitter",
                 'url'       => "http://twitter.com/",
                 'target'    => "_blank"
             ], 
             [
-                'title'     => "Instagram",
+                'title'     => "IG",
                 'classes'   => "social social-instagram",
                 'url'       => "http://instagram.com/",
                 'target'    => "_blank"

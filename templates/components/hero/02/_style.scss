@@ -1,0 +1,44 @@
+&.wptb--hero-02 {
+    background-image: url('../images/banner/03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    color: #FFFFFF;
+
+    & > * {
+        z-index: 10;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        z-index: 1;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        z-index: 2;
+        
+        background: rgb(238,238,238);
+        background: -moz-linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(238,238,238,1) 10%, rgba(238,238,238,0) 50%);
+        background: -webkit-linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(238,238,238,1) 10%, rgba(238,238,238,0) 50%);
+        background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(238,238,238,1) 10%, rgba(238,238,238,0) 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#eeeeee",GradientType=1);
+    }
+}

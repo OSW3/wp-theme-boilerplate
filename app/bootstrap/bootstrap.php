@@ -21,6 +21,12 @@ const DS = DIRECTORY_SEPARATOR;
 
 
 /**
+ * Load simplify plugin
+ */
+// require_once __DIR__ . DS . "simplify.php";
+
+
+/**
  * Load the theme configuration
  */
 require_once __DIR__ . DS . "config.php";

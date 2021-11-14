@@ -1,0 +1,36 @@
+.wptb--notice-default {
+    background-color: transparent;
+    background-image: url(https://gostore-be87.kxcdn.com/gostore/wp-content/uploads/2021/04/store-noted.jpg);
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    .container,
+    .container-fluid {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+
+        strong {
+            color: rgb(238, 0, 0);
+        }
+
+        a {
+            color: rgb(238, 0, 0);
+            text-decoration: underline;
+            transition: .3s;
+        }
+        a:active,
+        a:hover {
+            color: #333333;
+        }
+    }
+}

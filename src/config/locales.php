@@ -18,6 +18,13 @@
 return;
 
 /**
+ * Define the text domain
+ * 
+ * @var string
+ */
+const TEXT_DOMAIN = "wptb_netlab";
+
+/**
  * Define the default locale
  * 
  * @var string

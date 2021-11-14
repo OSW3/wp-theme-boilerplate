@@ -1,0 +1,39 @@
+.wptb--topbar-default {
+    background-color: #333333;
+    color: rgba(255, 255, 255, .6);
+    font-size: .75rem;
+
+    .container,
+    .container-fluid {
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    .list-inline-item {
+        a, span {
+            color: rgba(255, 255, 255, .6);
+            transition: .3s;
+            padding: .4rem;
+        }
+
+        a:active,
+        a:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        a.featured {
+            color: rgba(255, 255, 255, 1);
+            background-color: #0197c5;
+            border-radius: 4px;
+            font-weight: 800;
+        }
+        a.featured:hover,
+        a.featured:active {
+            background-color: #04acdf;
+        }
+    }
+}

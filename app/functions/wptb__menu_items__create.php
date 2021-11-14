@@ -38,7 +38,7 @@ function wptb__menu_items__create(int $menu_id, array $items = [], int $parent =
     
             if ( isset($object->ID) )
             {
-                foreach ($existing_items as $existing_item)
+                if ($existing_items) foreach ($existing_items as $existing_item)
                 {
                     if ($existing_item->object_id == $object->ID)
                     {
@@ -49,7 +49,7 @@ function wptb__menu_items__create(int $menu_id, array $items = [], int $parent =
         }
         else if (isset($item['url']))
         {
-            foreach ($existing_items as $existing_item)
+            if ($existing_items) foreach ($existing_items as $existing_item)
             {
                 if ($existing_item->url == $item['url'])
                 {
@@ -61,7 +61,7 @@ function wptb__menu_items__create(int $menu_id, array $items = [], int $parent =
         {
             $item['url'] = "#". wptb__slugify($item['title']);
 
-            foreach ($existing_items as $existing_item)
+            if ($existing_items) foreach ($existing_items as $existing_item)
             {
                 if ($existing_item->url == $item['url'])
                 {
@@ -76,6 +76,8 @@ function wptb__menu_items__create(int $menu_id, array $items = [], int $parent =
     foreach ($items as $item) 
     {
         $item_id = wptb__menu_item__create($menu_id, $item);
+
+        if (!is_int($item_id)) $item_id = 0;
 
         if (isset($item['children']) && is_array($item['children']))
             wptb__menu_items__create($menu_id, $item['children'], $item_id);

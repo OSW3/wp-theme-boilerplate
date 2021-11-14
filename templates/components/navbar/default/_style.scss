@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #001322;
+    // background-image: url('../images/navbar-bg.png');
+    position: relative;
+
+    .navbar-brand
+    {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin: 1rem 2rem 1rem 0;
+    }
+
+    .nav-item {
+        padding: 0 1rem;;
+
+        .nav-link {
+            color: #FFFFFF;
+            text-transform: uppercase;
+    
+            &:hover, &:active, &.active {
+                color: #ff6b22;
+    
+            }
+        }
+    }
+
+    @import "./../../searchform/default/style";
+    // .nav-link:hover::after
+    // .nav-link:hover::after {
+    //     color: #FFFFFF;
+    // }
+}

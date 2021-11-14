@@ -16,6 +16,9 @@
 // Actions
 //-----------------------------------------------------
 
+
+if (!defined('TEXT_DOMAIN')) define("TEXT_DOMAIN", null);
+
 /**
  * Add action after theme setup
  *
@@ -66,7 +69,19 @@ function wptb_setup__init()
     }
     
 
-    // Add
+
+
+
+    // add_action('init', 'wptb__flush_rewrite_rules');
+    // add_action('generate_rewrite_rules', 'wptb__assets_add_rewrites');
+
+
+
+
+
+    // Add Shortcodes
+    // --
+
     // Assets Shortcodes
     add_shortcode( 'images', function( $atts )
     {
@@ -74,6 +89,39 @@ function wptb_setup__init()
     });
 }
 add_action('init', "wptb_setup__init", 0);
+
+
+
+
+
+
+
+
+
+
+// function wptb__assets_add_rewrites($wp_rewrite) {
+//     // $path = str_replace(home_url('/'), '', get_template_directory_uri());
+
+//     $wp_rewrite->non_wp_rules += array(
+//         "dist/(.*)"      => WPTB_URL__THEME . "dist/$1",
+//         //'assets/css/(.*)'      => $path . '/assets/css/$1',
+//     );
+
+//     // dd($wp_rewrite);
+// }
+// function wptb__flush_rewrite_rules() {
+//     global $wp_rewrite;
+//     $wp_rewrite->flush_rules();
+// }
+
+
+
+
+
+
+
+
+
 
 /**
  * Create the post excerpt
@@ -190,6 +238,21 @@ function wptb_setup___html_minyfy_finish( $html )
     return $html;
 }
 add_action('get_header', 'wptb_setup___html_minify_start');
+
+/**
+ * Change the search key 
+ *
+ * @return void
+ */
+function wptb_setup__change_search_url() {
+    if (is_search() && !empty($_GET['q'])) 
+    {
+        wp_redirect( home_url("/search/").urlencode( get_query_var( 'q' ) ) );
+        exit();
+    }  
+}
+add_action( 'template_redirect', 'wptb_setup__change_search_url' );
+
 
 
 //-----------------------------------------------------

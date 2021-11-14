@@ -9,3 +9,9 @@
 // 1. Bootstrap Jumbotron
 // ------------------
 // @import 'node_modules/bootstrap/scss/jumbotron';
+
+.wptb--hero {
+    // border: 10px solid red;
+
+    @import './../../../../../templates/components/hero/02/style';
+}

@@ -19,29 +19,11 @@ $WpSliders = new WpSliders;
 ?>
 <?php get_header() ?>
 
-<h2>Section Boxed</h2>
-<?php wptb__render_section("lorem/01", [], [
-    'id' => "section-test-01",
-    // 'class' => "wptb-section-boxed"
-    'container-fluid' => false,
-]) ?>
-<hr>
-
-<h2>Section Fluid</h2>
-<?php wptb__render_section("lorem/01", [], [
-    'id' => "section-test-02",
-    // 'class' => "wptb-section-fluid"
-    'container-fluid' => true,
-]) ?>
-<hr>
-
-
-
 
 
 <!-- Hero -->
-<?php wptb__render_section("hero/01") ?>
-<?php //wptb__render_section("hero/02", [], ['container-fluid' => true]) ?>
+<?php //wptb__render_section("hero/01") ?>
+<?php wptb__render_component("hero/02", []) ?>
 <?php //wptb__render_section("hero/03", [], ['container-fluid' => true]) ?>
 <?php //wptb__render_section("hero/04", [], []) ?>
 <?php //wptb__render_section("hero/05", [], ['container-fluid' => true]) ?>
@@ -109,7 +91,28 @@ $WpSliders = new WpSliders;
         </table>
     </section>
 
-
-
 </div>
+
+
+
+
+
+<?php /*
+<h2>Section Boxed</h2>
+<?php wptb__render_section("lorem/01", [], [
+    'id' => "section-test-01",
+    // 'class' => "wptb-section-boxed"
+    'container-fluid' => false,
+]) ?>
+<hr>
+
+<h2>Section Fluid</h2>
+<?php wptb__render_section("lorem/01", [], [
+    'id' => "section-test-02",
+    // 'class' => "wptb-section-fluid"
+    'container-fluid' => true,
+]) ?>
+<hr>
+*/ ?>
+
 <?php get_footer(); ?>
